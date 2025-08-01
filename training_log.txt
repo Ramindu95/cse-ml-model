@@ -1,0 +1,777 @@
+INFO: package: mysql.connector.plugins
+INFO: plugin_name: caching_sha2_password
+INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+INFO: 🔄 Starting feature engineering...
+INFO: 💰 Merging financial data with stock data...
+INFO: ✅ Merged data shape: (854, 44)
+INFO: 📈 Adding technical indicators...
+WARNING: Error calculating PVT for 1: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 2: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 3: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 4: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 6: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 8: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 9: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 10: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 13: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 14: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 16: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 18: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 19: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 20: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 21: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 22: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 23: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 24: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 25: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 26: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 30: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 31: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 32: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 33: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 34: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 35: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 37: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 40: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 43: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 44: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 45: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 46: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 48: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 49: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 53: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 54: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 55: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 56: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 58: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 59: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 60: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 61: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 62: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 63: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 64: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 65: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 66: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 67: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 68: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 69: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 70: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 71: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 72: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 73: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 74: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 76: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 78: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 79: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 81: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 82: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 83: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 84: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 85: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 86: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 89: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 90: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 91: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 92: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 93: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 95: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 96: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 97: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 98: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 100: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 101: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 102: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 103: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 104: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 105: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 106: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 107: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 108: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 111: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 112: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 113: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 115: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 116: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 117: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 118: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 119: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 120: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 121: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 122: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 123: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 124: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 125: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 126: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 127: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 128: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 129: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 132: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 133: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 135: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 139: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 140: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 141: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 142: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 143: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 145: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 146: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 147: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 148: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 149: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 150: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 151: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 152: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 153: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 154: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 155: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 156: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 157: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 158: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 159: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 160: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 162: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 163: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 164: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 166: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 167: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 168: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 170: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 171: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 172: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 175: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 176: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 177: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 178: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 179: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 180: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 182: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 183: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 184: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 185: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 186: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 187: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 189: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 190: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 192: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 193: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 195: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 196: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 198: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 199: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 200: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 201: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 202: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 203: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 204: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 205: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 206: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 207: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 208: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 209: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 210: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 211: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 212: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 215: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 216: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 217: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 218: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 220: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 221: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 222: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 223: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 224: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 225: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 226: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 227: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 228: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 229: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 231: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 232: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 234: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 235: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 241: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 243: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 245: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 246: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 247: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 250: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 251: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 252: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 255: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 256: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 257: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 258: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 259: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 262: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 265: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 266: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 267: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 268: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 271: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 272: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 274: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 275: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 276: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 277: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 279: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 280: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 281: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 282: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 283: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 284: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 285: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 286: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 288: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 289: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 290: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 291: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 293: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 295: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 296: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 299: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 301: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 302: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 303: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 304: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 306: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 307: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 308: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 309: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 311: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 314: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 315: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 316: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 317: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 318: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 319: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 321: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 325: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 326: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 327: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 328: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 329: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 330: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 331: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 333: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 335: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 336: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 337: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 338: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 339: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 340: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 341: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 342: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 346: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 347: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 348: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 349: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 350: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 351: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 353: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 355: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 356: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 357: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 359: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 360: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 361: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 362: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 363: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 364: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 365: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 366: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 367: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 368: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 369: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 370: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 371: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 372: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 373: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 374: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 375: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 376: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 377: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 378: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 379: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 380: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 381: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Not enough data for ATR calculation for company_id 1. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 2. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 3. Expected at least 14 rows, got 4. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 4. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 6. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 8. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 9. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 10. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 13. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 14. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 16. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 18. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 19. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 20. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 21. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 22. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 23. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 24. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 25. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 26. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 30. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 31. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 32. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 33. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 34. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 35. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 37. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 40. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 43. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 44. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 45. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 46. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 48. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 49. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 53. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 54. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 55. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 56. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 58. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 59. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 60. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 61. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 62. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 63. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 64. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 65. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 66. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 67. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 68. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 69. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 70. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 71. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 72. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 73. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 74. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 76. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 78. Expected at least 14 rows, got 2. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 79. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 81. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 82. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 83. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 84. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 85. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 86. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 89. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 90. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 91. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 92. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 93. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 95. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 96. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 97. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 98. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 100. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 101. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 102. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 103. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 104. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 105. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 106. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 107. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 108. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 111. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 112. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 113. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 115. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 116. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 117. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 118. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 119. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 120. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 121. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 122. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 123. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 124. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 125. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 126. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 127. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 128. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 129. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 132. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 133. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 135. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 139. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 140. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 141. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 142. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 143. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 145. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 146. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 147. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 148. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 149. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 150. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 151. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 152. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 153. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 154. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 155. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 156. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 157. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 158. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 159. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 160. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 162. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 163. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 164. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 166. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 167. Expected at least 14 rows, got 2. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 168. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 170. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 171. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 172. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 175. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 176. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 177. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 178. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 179. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 180. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 182. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 183. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 184. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 185. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 186. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 187. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 189. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 190. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 192. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 193. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 195. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 196. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 198. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 199. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 200. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 201. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 202. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 203. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 204. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 205. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 206. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 207. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 208. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 209. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 210. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 211. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 212. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 215. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 216. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 217. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 218. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 220. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 221. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 222. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 223. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 224. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 225. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 226. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 227. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 228. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 229. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 231. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 232. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 234. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 235. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 241. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 243. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 245. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 246. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 247. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 250. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 251. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 252. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 255. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 256. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 257. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 258. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 259. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 262. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 265. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 266. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 267. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 268. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 271. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 272. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 274. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 275. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 276. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 277. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 279. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 280. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 281. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 282. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 283. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 284. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 285. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 286. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 288. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 289. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 290. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 291. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 293. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 295. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 296. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 299. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 301. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 302. Expected at least 14 rows, got 2. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 303. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 304. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 306. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 307. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 308. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 309. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 311. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 314. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 315. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 316. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 317. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 318. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 319. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 321. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 325. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 326. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 327. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 328. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 329. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 330. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 331. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 333. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 335. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 336. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 337. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 338. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 339. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 340. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 341. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 342. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 346. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 347. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 348. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 349. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 350. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 351. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 353. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 355. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 356. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 357. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 359. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 360. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 361. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 362. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 363. Expected at least 14 rows, got 2. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 364. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 365. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 366. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 367. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 368. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 369. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 370. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 371. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 372. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 373. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 374. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 375. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 376. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 377. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 378. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 379. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 380. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 381. Expected at least 14 rows, got 3. Filling with NaN.
+INFO: 💰 Adding fundamental indicators...
+INFO: 🧹 Cleaning and validating features...
+INFO: 🧹 Cleaning and validating features...
+INFO: Cleaned and validated features. Shape changed from (854, 102) to (854, 102)
+INFO: 🎯 Creating target labels for training...
+INFO: 🎯 Creating target labels...
+INFO: Label distribution: {0.0: 398, 1.0: 108, -1.0: 59}
+INFO: ✅ Feature engineering complete for training!
+INFO:    📊 Technical features: 35
+INFO:    💼 Fundamental features: 51
+INFO:    🔢 Total features (dynamically selected): 86
+INFO: 📋 Final dataset summary for training:
+INFO:    🔢 Samples: 565
+INFO:    📊 Features: 86
+INFO:    🏷️ Label distribution: {-1.0: 59, 0.0: 398, 1.0: 108}
+🚀 Starting Stock Prediction Model Training
+============================================================
+
+📊 Loading data...
+✅ Loaded stock data: 854 records for 289 companies
+✅ Loaded financial data: 6 records for 2 companies
+✅ Loaded stock data: 854 records
+✅ Companies with stock data: 289
+✅ Loaded financial data: 6 records
+✅ Companies with financial data: 2
+
+🔧 Engineering features...
+💾 Feature information saved to: results/feature_info.txt
+
+📊 Splitting dataset...
+Training set: 452 samples
+Test set: 113 samples
+Train labels: {-1.0: 47, 0.0: 318, 1.0: 87}
+Test labels: {-1.0: 12, 0.0: 80, 1.0: 21}
+
+🤖 Training models...
+
+🔄 Training random_forest...
+   ⚖️ Class weights: {np.float64(-1.0): np.float64(3.2056737588652484), np.float64(0.0): np.float64(0.47379454926624737), np.float64(1.0): np.float64(1.7318007662835249)}
+   🔍 Performing hyperparameter tuning for random_forest...
+   ✅ Best parameters: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 200}
+   ✅ Best CV F1 score: 0.6161
+
+============================================================
+EVALUATION RESULTS FOR RANDOM_FOREST
+============================================================
+Accuracy: 0.6283
+F1 Score (weighted): 0.6039
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        Sell       0.29      0.17      0.21        12
+        Hold       0.72      0.81      0.76        80
+         Buy       0.25      0.19      0.22        21
+
+    accuracy                           0.63       113
+   macro avg       0.42      0.39      0.40       113
+weighted avg       0.59      0.63      0.60       113
+
+
+Confusion Matrix:
+[[ 2 10  0]
+ [ 3 65 12]
+ [ 2 15  4]]
+
+Top 15 Most Important Features:
+          feature  importance
+     volume_MA_20    0.068725
+              OBV    0.067370
+        hl_spread    0.065771
+intraday_momentum    0.065059
+             VWAP    0.062213
+           EMA_26    0.062087
+            MA_50    0.061780
+            MA_10    0.060937
+           EMA_12    0.060547
+             MA_5    0.060080
+              PVT    0.055156
+            MA_20    0.053810
+     volume_ratio    0.053353
+      opening_gap    0.051092
+volume_change_pct    0.049859
+💾 Feature importance saved to: results/random_forest_feature_importance.csv
+   💾 Model saved to: models/random_forest_model.pkl
+
+🔄 Training gradient_boosting...
+   ⚖️ Class weights: {np.float64(-1.0): np.float64(3.2056737588652484), np.float64(0.0): np.float64(0.47379454926624737), np.float64(1.0): np.float64(1.7318007662835249)}
+   🔍 Performing hyperparameter tuning for gradient_boosting...
+   ✅ Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'min_samples_split': 5, 'n_estimators': 100}
+   ✅ Best CV F1 score: 0.6001
+
+============================================================
+EVALUATION RESULTS FOR GRADIENT_BOOSTING
+============================================================
+Accuracy: 0.6814
+F1 Score (weighted): 0.6218
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        Sell       0.60      0.25      0.35        12
+        Hold       0.72      0.91      0.81        80
+         Buy       0.14      0.05      0.07        21
+
+    accuracy                           0.68       113
+   macro avg       0.49      0.40      0.41       113
+weighted avg       0.60      0.68      0.62       113
+
+
+Confusion Matrix:
+[[ 3  8  1]
+ [ 2 73  5]
+ [ 0 20  1]]
+
+Top 15 Most Important Features:
+          feature  importance
+intraday_momentum    0.132014
+     volume_MA_20    0.112877
+        hl_spread    0.110940
+              PVT    0.106519
+              OBV    0.104548
+      opening_gap    0.079538
+volume_change_pct    0.068839
+     volume_ratio    0.067015
+             VWAP    0.052798
+     daily_return    0.027730
+            MA_20    0.026088
+           EMA_26    0.020117
+           EMA_12    0.018348
+             MA_5    0.018203
+            MA_10    0.016205
+💾 Feature importance saved to: results/gradient_boosting_feature_importance.csv
+   💾 Model saved to: models/gradient_boosting_model.pkl
+
+🔄 Training logistic_regression...
+   🔄 Scaling features for logistic_regression...
+   💾 Scaler saved to: scalers/logistic_regression_scaler.pkl
+   ⚖️ Class weights: {np.float64(-1.0): np.float64(3.2056737588652484), np.float64(0.0): np.float64(0.47379454926624737), np.float64(1.0): np.float64(1.7318007662835249)}
+   🔍 Performing hyperparameter tuning for logistic_regression...
+   ✅ Best parameters: {'C': 0.1, 'penalty': 'l2', 'solver': 'liblinear'}
+   ✅ Best CV F1 score: 0.6167
+
+============================================================
+EVALUATION RESULTS FOR LOGISTIC_REGRESSION
+============================================================
+Accuracy: 0.6991
+F1 Score (weighted): 0.6339
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        Sell       0.75      0.25      0.38        12
+        Hold       0.73      0.94      0.82        80
+         Buy       0.17      0.05      0.07        21
+
+    accuracy                           0.70       113
+   macro avg       0.55      0.41      0.42       113
+weighted avg       0.63      0.70      0.63       113
+
+
+Confusion Matrix:
+[[ 3  8  1]
+ [ 1 75  4]
+ [ 0 20  1]]
+   💾 Model saved to: models/logistic_regression_model.pkl
+
+📈 Comparing models...
+
+================================================================================
+MODEL COMPARISON SUMMARY
+================================================================================
+              Model CV F1 Score Test Accuracy Test F1 Score
+logistic_regression      0.6167        0.6991        0.6339
+  gradient_boosting      0.6001        0.6814        0.6218
+      random_forest      0.6161        0.6283        0.6039
+
+💾 Model comparison saved to: results/model_comparison.csv
+
+🏆 Best performing model: logistic_regression
+🎯 Test F1 Score: 0.6339
+🎯 Test Accuracy: 0.6991
+
+💾 Saving training summary...
+💾 Training summary saved to: results/training_summary.txt
+
+🎉 Training Complete!
+📁 Results saved in: results/
+📁 Models saved in: models/
+🏆 Best model: logistic_regression
+📊 Use 'logistic_regression_model.pkl' for predictions
+🔧 Remember to use 'logistic_regression_scaler.pkl' for feature scaling

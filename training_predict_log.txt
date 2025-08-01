@@ -1,0 +1,1172 @@
+INFO: Successfully loaded model from models/random_forest_model.pkl
+INFO: Attempting to read features from results/feature_info.txt
+DEBUG: Line 1 (stripped): 'STOCK PREDICTION FEATURES SUMMARY'
+DEBUG: Line 2 (stripped): '=================================================='
+DEBUG: Line 3 (stripped): ''
+DEBUG: Line 4 (stripped): 'Total Features: 86'
+DEBUG: Line 5 (stripped): 'Technical Features: 35'
+DEBUG: Line 6 (stripped): 'Fundamental Features: 51'
+DEBUG: Line 7 (stripped): ''
+DEBUG: Line 8 (stripped): 'Moving Averages (7 features):'
+DEBUG: Line 9 (stripped): '- MA_5'
+DEBUG: Line 10 (stripped): '- MA_10'
+DEBUG: Line 11 (stripped): '- MA_20'
+DEBUG: Line 12 (stripped): '- MA_50'
+DEBUG: Line 13 (stripped): '- EMA_12'
+DEBUG: Line 14 (stripped): '- EMA_26'
+DEBUG: Line 15 (stripped): '- volume_MA_20'
+DEBUG: Line 16 (stripped): ''
+DEBUG: Line 17 (stripped): 'Momentum (9 features):'
+DEBUG: Line 18 (stripped): '- RSI'
+DEBUG: Line 19 (stripped): '- MACD'
+DEBUG: Line 20 (stripped): '- MACD_Signal'
+DEBUG: Line 21 (stripped): '- MACD_Histogram'
+DEBUG: Line 22 (stripped): '- Stoch_K'
+DEBUG: Line 23 (stripped): '- Stoch_D'
+DEBUG: Line 24 (stripped): '- ROC_10'
+DEBUG: Line 25 (stripped): '- momentum_5'
+DEBUG: Line 26 (stripped): '- intraday_momentum'
+DEBUG: Line 27 (stripped): ''
+DEBUG: Line 28 (stripped): 'Volatility (8 features):'
+DEBUG: Line 29 (stripped): '- BB_Upper'
+DEBUG: Line 30 (stripped): '- BB_Middle'
+DEBUG: Line 31 (stripped): '- BB_Lower'
+DEBUG: Line 32 (stripped): '- BB_Width'
+DEBUG: Line 33 (stripped): '- BB_Percent'
+DEBUG: Line 34 (stripped): '- price_volatility'
+DEBUG: Line 35 (stripped): '- ATR'
+DEBUG: Line 36 (stripped): '- volatility_rank'
+DEBUG: Line 37 (stripped): ''
+DEBUG: Line 38 (stripped): 'Volume (4 features):'
+DEBUG: Line 39 (stripped): '- volume_change_pct'
+DEBUG: Line 40 (stripped): '- volume_MA_20'
+DEBUG: Line 41 (stripped): '- volume_ratio'
+DEBUG: Line 42 (stripped): '- PVT'
+DEBUG: Line 43 (stripped): ''
+DEBUG: Line 44 (stripped): 'Price Action (6 features):'
+DEBUG: Line 45 (stripped): '- daily_return'
+DEBUG: Line 46 (stripped): '- price_vs_20day_high'
+DEBUG: Line 47 (stripped): '- price_vs_20day_low'
+DEBUG: Line 48 (stripped): '- hl_spread'
+DEBUG: Line 49 (stripped): '- intraday_momentum'
+DEBUG: Line 50 (stripped): '- opening_gap'
+DEBUG: Line 51 (stripped): ''
+DEBUG: Line 52 (stripped): 'Valuation (5 features):'
+DEBUG: Line 53 (stripped): '- PE_ratio'
+DEBUG: Line 54 (stripped): '- PB_ratio'
+DEBUG: Line 55 (stripped): '- current_ratio'
+DEBUG: Line 56 (stripped): '- cash_ratio'
+DEBUG: Line 57 (stripped): '- quick_ratio'
+DEBUG: Line 58 (stripped): ''
+DEBUG: Line 59 (stripped): 'Profitability (7 features):'
+DEBUG: Line 60 (stripped): '- ROA'
+DEBUG: Line 61 (stripped): '- ROE'
+DEBUG: Line 62 (stripped): '- gross_margin'
+DEBUG: Line 63 (stripped): '- operating_margin'
+DEBUG: Line 64 (stripped): '- net_margin'
+DEBUG: Line 65 (stripped): '- operating_cash_margin'
+DEBUG: Line 66 (stripped): '- fcf_margin'
+DEBUG: Line 67 (stripped): ''
+DEBUG: Line 68 (stripped): 'Liquidity (12 features):'
+DEBUG: Line 69 (stripped): '- financial_cash_and_equivalents'
+DEBUG: Line 70 (stripped): '- financial_current_assets'
+DEBUG: Line 71 (stripped): '- financial_current_liabilities'
+DEBUG: Line 72 (stripped): '- financial_operating_cash_flow'
+DEBUG: Line 73 (stripped): '- financial_investing_cash_flow'
+DEBUG: Line 74 (stripped): '- financial_financing_cash_flow'
+DEBUG: Line 75 (stripped): '- financial_net_cash_change'
+DEBUG: Line 76 (stripped): '- current_ratio'
+DEBUG: Line 77 (stripped): '- cash_ratio'
+DEBUG: Line 78 (stripped): '- quick_ratio'
+DEBUG: Line 79 (stripped): '- operating_cash_margin'
+DEBUG: Line 80 (stripped): '- free_cash_flow'
+DEBUG: Line 81 (stripped): ''
+DEBUG: Line 82 (stripped): 'Growth (4 features):'
+DEBUG: Line 83 (stripped): '- financial_revenue_growth'
+DEBUG: Line 84 (stripped): '- financial_net_income_growth'
+DEBUG: Line 85 (stripped): '- financial_total_assets_growth'
+DEBUG: Line 86 (stripped): '- EPS_growth'
+DEBUG: Line 87 (stripped): ''
+DEBUG: Line 88 (stripped): 'Debt (4 features):'
+DEBUG: Line 89 (stripped): '- financial_short_term_debt'
+DEBUG: Line 90 (stripped): '- financial_long_term_debt'
+DEBUG: Line 91 (stripped): '- debt_to_equity'
+DEBUG: Line 92 (stripped): '- debt_to_assets'
+DEBUG: Line 93 (stripped): ''
+DEBUG: Line 94 (stripped): 'ALL FEATURES LIST (Dynamically Selected for the Last Run):'
+INFO: Found 'ALL FEATURES LIST' section header.
+DEBUG: Line 95 (stripped): '--------------------'
+DEBUG: Skipping separator line after 'ALL FEATURES LIST' header.
+DEBUG: Line 96 (stripped): '1. ATR'
+DEBUG: Extracted feature: 'ATR'
+DEBUG: Line 97 (stripped): '2. BB_Lower'
+DEBUG: Extracted feature: 'BB_Lower'
+DEBUG: Line 98 (stripped): '3. BB_Middle'
+DEBUG: Extracted feature: 'BB_Middle'
+DEBUG: Line 99 (stripped): '4. BB_Percent'
+DEBUG: Extracted feature: 'BB_Percent'
+DEBUG: Line 100 (stripped): '5. BB_Upper'
+DEBUG: Extracted feature: 'BB_Upper'
+DEBUG: Line 101 (stripped): '6. BB_Width'
+DEBUG: Extracted feature: 'BB_Width'
+DEBUG: Line 102 (stripped): '7. EMA_12'
+DEBUG: Extracted feature: 'EMA_12'
+DEBUG: Line 103 (stripped): '8. EMA_26'
+DEBUG: Extracted feature: 'EMA_26'
+DEBUG: Line 104 (stripped): '9. EPS'
+DEBUG: Extracted feature: 'EPS'
+DEBUG: Line 105 (stripped): '10. EPS_growth'
+DEBUG: Extracted feature: 'EPS_growth'
+DEBUG: Line 106 (stripped): '11. MACD'
+DEBUG: Extracted feature: 'MACD'
+DEBUG: Line 107 (stripped): '12. MACD_Histogram'
+DEBUG: Extracted feature: 'MACD_Histogram'
+DEBUG: Line 108 (stripped): '13. MACD_Signal'
+DEBUG: Extracted feature: 'MACD_Signal'
+DEBUG: Line 109 (stripped): '14. MA_10'
+DEBUG: Extracted feature: 'MA_10'
+DEBUG: Line 110 (stripped): '15. MA_20'
+DEBUG: Extracted feature: 'MA_20'
+DEBUG: Line 111 (stripped): '16. MA_5'
+DEBUG: Extracted feature: 'MA_5'
+DEBUG: Line 112 (stripped): '17. MA_50'
+DEBUG: Extracted feature: 'MA_50'
+DEBUG: Line 113 (stripped): '18. OBV'
+DEBUG: Extracted feature: 'OBV'
+DEBUG: Line 114 (stripped): '19. PB_ratio'
+DEBUG: Extracted feature: 'PB_ratio'
+DEBUG: Line 115 (stripped): '20. PE_ratio'
+DEBUG: Extracted feature: 'PE_ratio'
+DEBUG: Line 116 (stripped): '21. PVT'
+DEBUG: Extracted feature: 'PVT'
+DEBUG: Line 117 (stripped): '22. ROA'
+DEBUG: Extracted feature: 'ROA'
+DEBUG: Line 118 (stripped): '23. ROC_10'
+DEBUG: Extracted feature: 'ROC_10'
+DEBUG: Line 119 (stripped): '24. ROE'
+DEBUG: Extracted feature: 'ROE'
+DEBUG: Line 120 (stripped): '25. RSI'
+DEBUG: Extracted feature: 'RSI'
+DEBUG: Line 121 (stripped): '26. Stoch_D'
+DEBUG: Extracted feature: 'Stoch_D'
+DEBUG: Line 122 (stripped): '27. Stoch_K'
+DEBUG: Extracted feature: 'Stoch_K'
+DEBUG: Line 123 (stripped): '28. VWAP'
+DEBUG: Extracted feature: 'VWAP'
+DEBUG: Line 124 (stripped): '29. asset_turnover'
+DEBUG: Extracted feature: 'asset_turnover'
+DEBUG: Line 125 (stripped): '30. cash_ratio'
+DEBUG: Extracted feature: 'cash_ratio'
+DEBUG: Line 126 (stripped): '31. current_ratio'
+DEBUG: Extracted feature: 'current_ratio'
+DEBUG: Line 127 (stripped): '32. daily_return'
+DEBUG: Extracted feature: 'daily_return'
+DEBUG: Line 128 (stripped): '33. debt_to_assets'
+DEBUG: Extracted feature: 'debt_to_assets'
+DEBUG: Line 129 (stripped): '34. debt_to_equity'
+DEBUG: Extracted feature: 'debt_to_equity'
+DEBUG: Line 130 (stripped): '35. fcf_margin'
+DEBUG: Extracted feature: 'fcf_margin'
+DEBUG: Line 131 (stripped): '36. financial_accounts_payable'
+DEBUG: Extracted feature: 'financial_accounts_payable'
+DEBUG: Line 132 (stripped): '37. financial_accounts_receivable'
+DEBUG: Extracted feature: 'financial_accounts_receivable'
+DEBUG: Line 133 (stripped): '38. financial_cash_and_equivalents'
+DEBUG: Extracted feature: 'financial_cash_and_equivalents'
+DEBUG: Line 134 (stripped): '39. financial_cost_of_goods_sold'
+DEBUG: Extracted feature: 'financial_cost_of_goods_sold'
+DEBUG: Line 135 (stripped): '40. financial_current_assets'
+DEBUG: Extracted feature: 'financial_current_assets'
+DEBUG: Line 136 (stripped): '41. financial_current_liabilities'
+DEBUG: Extracted feature: 'financial_current_liabilities'
+DEBUG: Line 137 (stripped): '42. financial_dividends_paid'
+DEBUG: Extracted feature: 'financial_dividends_paid'
+DEBUG: Line 138 (stripped): '43. financial_earnings_per_share'
+DEBUG: Extracted feature: 'financial_earnings_per_share'
+DEBUG: Line 139 (stripped): '44. financial_financing_cash_flow'
+DEBUG: Extracted feature: 'financial_financing_cash_flow'
+DEBUG: Line 140 (stripped): '45. financial_gross_profit'
+DEBUG: Extracted feature: 'financial_gross_profit'
+DEBUG: Line 141 (stripped): '46. financial_interest_expense'
+DEBUG: Extracted feature: 'financial_interest_expense'
+DEBUG: Line 142 (stripped): '47. financial_inventory'
+DEBUG: Extracted feature: 'financial_inventory'
+DEBUG: Line 143 (stripped): '48. financial_investing_cash_flow'
+DEBUG: Extracted feature: 'financial_investing_cash_flow'
+DEBUG: Line 144 (stripped): '49. financial_is_audited'
+DEBUG: Extracted feature: 'financial_is_audited'
+DEBUG: Line 145 (stripped): '50. financial_long_term_debt'
+DEBUG: Extracted feature: 'financial_long_term_debt'
+DEBUG: Line 146 (stripped): '51. financial_net_cash_change'
+DEBUG: Extracted feature: 'financial_net_cash_change'
+DEBUG: Line 147 (stripped): '52. financial_net_income'
+DEBUG: Extracted feature: 'financial_net_income'
+DEBUG: Line 148 (stripped): '53. financial_net_income_growth'
+DEBUG: Extracted feature: 'financial_net_income_growth'
+DEBUG: Line 149 (stripped): '54. financial_operating_cash_flow'
+DEBUG: Extracted feature: 'financial_operating_cash_flow'
+DEBUG: Line 150 (stripped): '55. financial_operating_expenses'
+DEBUG: Extracted feature: 'financial_operating_expenses'
+DEBUG: Line 151 (stripped): '56. financial_operating_income'
+DEBUG: Extracted feature: 'financial_operating_income'
+DEBUG: Line 152 (stripped): '57. financial_period_start_date'
+DEBUG: Extracted feature: 'financial_period_start_date'
+DEBUG: Line 153 (stripped): '58. financial_period_type'
+DEBUG: Extracted feature: 'financial_period_type'
+DEBUG: Line 154 (stripped): '59. financial_revenue'
+DEBUG: Extracted feature: 'financial_revenue'
+DEBUG: Line 155 (stripped): '60. financial_revenue_growth'
+DEBUG: Extracted feature: 'financial_revenue_growth'
+DEBUG: Line 156 (stripped): '61. financial_shares_outstanding'
+DEBUG: Extracted feature: 'financial_shares_outstanding'
+DEBUG: Line 157 (stripped): '62. financial_short_term_debt'
+DEBUG: Extracted feature: 'financial_short_term_debt'
+DEBUG: Line 158 (stripped): '63. financial_tax_expense'
+DEBUG: Extracted feature: 'financial_tax_expense'
+DEBUG: Line 159 (stripped): '64. financial_total_assets'
+DEBUG: Extracted feature: 'financial_total_assets'
+DEBUG: Line 160 (stripped): '65. financial_total_assets_growth'
+DEBUG: Extracted feature: 'financial_total_assets_growth'
+DEBUG: Line 161 (stripped): '66. financial_total_equity'
+DEBUG: Extracted feature: 'financial_total_equity'
+DEBUG: Line 162 (stripped): '67. financial_total_liabilities'
+DEBUG: Extracted feature: 'financial_total_liabilities'
+DEBUG: Line 163 (stripped): '68. free_cash_flow'
+DEBUG: Extracted feature: 'free_cash_flow'
+DEBUG: Line 164 (stripped): '69. gross_margin'
+DEBUG: Extracted feature: 'gross_margin'
+DEBUG: Line 165 (stripped): '70. hl_spread'
+DEBUG: Extracted feature: 'hl_spread'
+DEBUG: Line 166 (stripped): '71. intraday_momentum'
+DEBUG: Extracted feature: 'intraday_momentum'
+DEBUG: Line 167 (stripped): '72. inventory_turnover'
+DEBUG: Extracted feature: 'inventory_turnover'
+DEBUG: Line 168 (stripped): '73. momentum_5'
+DEBUG: Extracted feature: 'momentum_5'
+DEBUG: Line 169 (stripped): '74. net_margin'
+DEBUG: Extracted feature: 'net_margin'
+DEBUG: Line 170 (stripped): '75. opening_gap'
+DEBUG: Extracted feature: 'opening_gap'
+DEBUG: Line 171 (stripped): '76. operating_cash_margin'
+DEBUG: Extracted feature: 'operating_cash_margin'
+DEBUG: Line 172 (stripped): '77. operating_margin'
+DEBUG: Extracted feature: 'operating_margin'
+DEBUG: Line 173 (stripped): '78. price_acceleration'
+DEBUG: Extracted feature: 'price_acceleration'
+DEBUG: Line 174 (stripped): '79. price_volatility'
+DEBUG: Extracted feature: 'price_volatility'
+DEBUG: Line 175 (stripped): '80. price_vs_20day_high'
+DEBUG: Extracted feature: 'price_vs_20day_high'
+DEBUG: Line 176 (stripped): '81. price_vs_20day_low'
+DEBUG: Extracted feature: 'price_vs_20day_low'
+DEBUG: Line 177 (stripped): '82. quick_ratio'
+DEBUG: Extracted feature: 'quick_ratio'
+DEBUG: Line 178 (stripped): '83. volatility_rank'
+DEBUG: Extracted feature: 'volatility_rank'
+DEBUG: Line 179 (stripped): '84. volume_MA_20'
+DEBUG: Extracted feature: 'volume_MA_20'
+DEBUG: Line 180 (stripped): '85. volume_change_pct'
+DEBUG: Extracted feature: 'volume_change_pct'
+DEBUG: Line 181 (stripped): '86. volume_ratio'
+DEBUG: Extracted feature: 'volume_ratio'
+INFO: Finished reading feature info. Found 86 features before deduplication.
+INFO: Loaded 86 unique training features for prediction: ['ATR', 'BB_Lower', 'BB_Middle', 'BB_Percent', 'BB_Upper', 'BB_Width', 'EMA_12', 'EMA_26', 'EPS', 'EPS_growth', 'MACD', 'MACD_Histogram', 'MACD_Signal', 'MA_10', 'MA_20', 'MA_5', 'MA_50', 'OBV', 'PB_ratio', 'PE_ratio', 'PVT', 'ROA', 'ROC_10', 'ROE', 'RSI', 'Stoch_D', 'Stoch_K', 'VWAP', 'asset_turnover', 'cash_ratio', 'current_ratio', 'daily_return', 'debt_to_assets', 'debt_to_equity', 'fcf_margin', 'financial_accounts_payable', 'financial_accounts_receivable', 'financial_cash_and_equivalents', 'financial_cost_of_goods_sold', 'financial_current_assets', 'financial_current_liabilities', 'financial_dividends_paid', 'financial_earnings_per_share', 'financial_financing_cash_flow', 'financial_gross_profit', 'financial_interest_expense', 'financial_inventory', 'financial_investing_cash_flow', 'financial_is_audited', 'financial_long_term_debt', 'financial_net_cash_change', 'financial_net_income', 'financial_net_income_growth', 'financial_operating_cash_flow', 'financial_operating_expenses', 'financial_operating_income', 'financial_period_start_date', 'financial_period_type', 'financial_revenue', 'financial_revenue_growth', 'financial_shares_outstanding', 'financial_short_term_debt', 'financial_tax_expense', 'financial_total_assets', 'financial_total_assets_growth', 'financial_total_equity', 'financial_total_liabilities', 'free_cash_flow', 'gross_margin', 'hl_spread', 'intraday_momentum', 'inventory_turnover', 'momentum_5', 'net_margin', 'opening_gap', 'operating_cash_margin', 'operating_margin', 'price_acceleration', 'price_volatility', 'price_vs_20day_high', 'price_vs_20day_low', 'quick_ratio', 'volatility_rank', 'volume_MA_20', 'volume_change_pct', 'volume_ratio']
+INFO: Loading all historical stock data from the database... (This might take a moment)
+INFO: package: mysql.connector.plugins
+INFO: plugin_name: caching_sha2_password
+INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+INFO: Loading all historical financial data from the database... (This might take a moment)
+INFO: Latest available stock data date: 2025-07-31
+INFO: Preparing to generate features for predictions based on data up to: 2025-07-31
+INFO: Filtering stock data from 2025-05-02 up to and including 2025-07-31 for feature engineering.
+INFO: Filtered stock data for feature engineering: (854, 14)
+INFO: Filtered financial data for feature engineering: (6, 32)
+INFO: 🔄 Starting feature engineering...
+INFO: 💰 Merging financial data with stock data...
+INFO: ✅ Merged data shape: (854, 44)
+INFO: 📈 Adding technical indicators...
+WARNING: Error calculating PVT for 1: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 2: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 3: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 4: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 6: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 8: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 9: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 10: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 13: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 14: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 16: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 18: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 19: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 20: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 21: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 22: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 23: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 24: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 25: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 26: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 30: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 31: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 32: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 33: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 34: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 35: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 37: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 40: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 43: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 44: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 45: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 46: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 48: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 49: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 53: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 54: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 55: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 56: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 58: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 59: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 60: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 61: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 62: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 63: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 64: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 65: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 66: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 67: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 68: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 69: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 70: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 71: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 72: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 73: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 74: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 76: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 78: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 79: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 81: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 82: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 83: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 84: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 85: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 86: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 89: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 90: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 91: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 92: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 93: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 95: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 96: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 97: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 98: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 100: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 101: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 102: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 103: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 104: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 105: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 106: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 107: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 108: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 111: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 112: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 113: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 115: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 116: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 117: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 118: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 119: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 120: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 121: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 122: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 123: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 124: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 125: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 126: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 127: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 128: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 129: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 132: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 133: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 135: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 139: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 140: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 141: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 142: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 143: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 145: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 146: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 147: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 148: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 149: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 150: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 151: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 152: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 153: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 154: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 155: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 156: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 157: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 158: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 159: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 160: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 162: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 163: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 164: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 166: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 167: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 168: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 170: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 171: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 172: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 175: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 176: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 177: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 178: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 179: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 180: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 182: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 183: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 184: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 185: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 186: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 187: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 189: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 190: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 192: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 193: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 195: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 196: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 198: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 199: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 200: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 201: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 202: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 203: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 204: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 205: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 206: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 207: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 208: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 209: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 210: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 211: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 212: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 215: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 216: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 217: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 218: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 220: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 221: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 222: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 223: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 224: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 225: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 226: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 227: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 228: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 229: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 231: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 232: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 234: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 235: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 241: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 243: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 245: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 246: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 247: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 250: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 251: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 252: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 255: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 256: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 257: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 258: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 259: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 262: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 265: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 266: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 267: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 268: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 271: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 272: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 274: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 275: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 276: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 277: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 279: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 280: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 281: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 282: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 283: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 284: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 285: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 286: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 288: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 289: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 290: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 291: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 293: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 295: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 296: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 299: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 301: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 302: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 303: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 304: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 306: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 307: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 308: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 309: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 311: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 314: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 315: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 316: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 317: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 318: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 319: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 321: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 325: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 326: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 327: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 328: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 329: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 330: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 331: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 333: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 335: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 336: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 337: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 338: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 339: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 340: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 341: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 342: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 346: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 347: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 348: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 349: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 350: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 351: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 353: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 355: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 356: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 357: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 359: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 360: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 361: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 362: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 363: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 364: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 365: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 366: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 367: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 368: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 369: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 370: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 371: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 372: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 373: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 374: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 375: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 376: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 377: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 378: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 379: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 380: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Error calculating PVT for 381: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
+WARNING: Not enough data for ATR calculation for company_id 1. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 2. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 3. Expected at least 14 rows, got 4. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 4. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 6. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 8. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 9. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 10. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 13. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 14. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 16. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 18. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 19. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 20. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 21. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 22. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 23. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 24. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 25. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 26. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 30. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 31. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 32. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 33. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 34. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 35. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 37. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 40. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 43. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 44. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 45. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 46. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 48. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 49. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 53. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 54. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 55. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 56. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 58. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 59. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 60. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 61. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 62. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 63. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 64. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 65. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 66. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 67. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 68. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 69. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 70. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 71. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 72. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 73. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 74. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 76. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 78. Expected at least 14 rows, got 2. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 79. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 81. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 82. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 83. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 84. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 85. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 86. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 89. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 90. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 91. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 92. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 93. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 95. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 96. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 97. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 98. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 100. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 101. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 102. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 103. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 104. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 105. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 106. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 107. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 108. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 111. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 112. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 113. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 115. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 116. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 117. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 118. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 119. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 120. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 121. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 122. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 123. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 124. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 125. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 126. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 127. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 128. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 129. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 132. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 133. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 135. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 139. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 140. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 141. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 142. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 143. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 145. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 146. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 147. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 148. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 149. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 150. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 151. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 152. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 153. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 154. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 155. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 156. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 157. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 158. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 159. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 160. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 162. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 163. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 164. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 166. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 167. Expected at least 14 rows, got 2. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 168. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 170. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 171. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 172. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 175. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 176. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 177. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 178. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 179. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 180. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 182. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 183. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 184. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 185. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 186. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 187. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 189. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 190. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 192. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 193. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 195. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 196. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 198. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 199. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 200. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 201. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 202. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 203. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 204. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 205. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 206. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 207. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 208. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 209. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 210. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 211. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 212. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 215. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 216. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 217. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 218. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 220. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 221. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 222. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 223. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 224. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 225. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 226. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 227. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 228. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 229. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 231. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 232. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 234. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 235. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 241. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 243. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 245. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 246. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 247. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 250. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 251. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 252. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 255. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 256. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 257. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 258. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 259. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 262. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 265. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 266. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 267. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 268. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 271. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 272. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 274. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 275. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 276. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 277. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 279. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 280. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 281. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 282. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 283. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 284. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 285. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 286. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 288. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 289. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 290. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 291. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 293. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 295. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 296. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 299. Expected at least 14 rows, got 1. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 301. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 302. Expected at least 14 rows, got 2. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 303. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 304. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 306. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 307. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 308. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 309. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 311. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 314. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 315. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 316. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 317. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 318. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 319. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 321. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 325. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 326. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 327. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 328. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 329. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 330. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 331. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 333. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 335. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 336. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 337. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 338. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 339. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 340. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 341. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 342. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 346. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 347. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 348. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 349. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 350. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 351. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 353. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 355. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 356. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 357. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 359. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 360. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 361. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 362. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 363. Expected at least 14 rows, got 2. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 364. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 365. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 366. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 367. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 368. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 369. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 370. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 371. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 372. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 373. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 374. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 375. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 376. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 377. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 378. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 379. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 380. Expected at least 14 rows, got 3. Filling with NaN.
+WARNING: Not enough data for ATR calculation for company_id 381. Expected at least 14 rows, got 3. Filling with NaN.
+INFO: 💰 Adding fundamental indicators...
+INFO: 🧹 Cleaning and validating features...
+INFO: 🧹 Cleaning and validating features...
+INFO: Aligning features to 86 training features...
+INFO: Features aligned. Current columns: ['ATR', 'BB_Lower', 'BB_Middle', 'BB_Percent', 'BB_Upper', 'BB_Width', 'EMA_12', 'EMA_26', 'EPS', 'EPS_growth', 'MACD', 'MACD_Histogram', 'MACD_Signal', 'MA_10', 'MA_20', 'MA_5', 'MA_50', 'OBV', 'PB_ratio', 'PE_ratio', 'PVT', 'ROA', 'ROC_10', 'ROE', 'RSI', 'Stoch_D', 'Stoch_K', 'VWAP', 'asset_turnover', 'cash_ratio', 'current_ratio', 'daily_return', 'debt_to_assets', 'debt_to_equity', 'fcf_margin', 'financial_accounts_payable', 'financial_accounts_receivable', 'financial_cash_and_equivalents', 'financial_cost_of_goods_sold', 'financial_current_assets', 'financial_current_liabilities', 'financial_dividends_paid', 'financial_earnings_per_share', 'financial_financing_cash_flow', 'financial_gross_profit', 'financial_interest_expense', 'financial_inventory', 'financial_investing_cash_flow', 'financial_is_audited', 'financial_long_term_debt', 'financial_net_cash_change', 'financial_net_income', 'financial_net_income_growth', 'financial_operating_cash_flow', 'financial_operating_expenses', 'financial_operating_income', 'financial_period_start_date', 'financial_period_type', 'financial_revenue', 'financial_revenue_growth', 'financial_shares_outstanding', 'financial_short_term_debt', 'financial_tax_expense', 'financial_total_assets', 'financial_total_assets_growth', 'financial_total_equity', 'financial_total_liabilities', 'free_cash_flow', 'gross_margin', 'hl_spread', 'intraday_momentum', 'inventory_turnover', 'momentum_5', 'net_margin', 'opening_gap', 'operating_cash_margin', 'operating_margin', 'price_acceleration', 'price_volatility', 'price_vs_20day_high', 'price_vs_20day_low', 'quick_ratio', 'volatility_rank', 'volume_MA_20', 'volume_change_pct', 'volume_ratio']
+INFO: Cleaned and validated features. Shape changed from (854, 102) to (854, 86)
+INFO: ℹ️ Skipping target label creation for prediction.
+INFO: ✅ Feature engineering complete for prediction!
+INFO:    🔢 Samples for prediction: 854
+INFO:    📊 Features: 86
+INFO: Feature engineering completed by FeatureEngineer for prediction. Shape: (854, 86)
+INFO: Prepared final data for prediction with shape: (289, 86)
+INFO: 
+--- Predictions ---
+INFO: 
+     index  company_id trade_date Predicted_Action  Probability_Sell  Probability_Hold  Probability_Buy
+0        0           1 2025-07-28             Hold          0.042918          0.668101         0.288981
+1        1           2 2025-07-28             Hold          0.128680          0.475593         0.395728
+2        2           3 2025-07-31             Hold          0.213886          0.528841         0.257273
+3        3           4 2025-07-31             Hold          0.255351          0.519326         0.225323
+4        4           6 2025-07-31             Hold          0.140156          0.606437         0.253407
+5        5           8 2025-07-31              Buy          0.172714          0.326835         0.500451
+6        6           9 2025-07-31             Hold          0.314313          0.388800         0.296887
+7        7          10 2025-07-31              Buy          0.321765          0.223124         0.455111
+8        8          13 2025-07-31             Hold          0.208205          0.434021         0.357774
+9        9          14 2025-07-31             Hold          0.162756          0.565937         0.271307
+10      10          16 2025-07-31             Hold          0.225916          0.478548         0.295536
+11      11          18 2025-07-31             Hold          0.186269          0.534158         0.279573
+12      12          19 2025-07-31             Hold          0.182880          0.701530         0.115591
+13      13          20 2025-07-31             Sell          0.550280          0.186412         0.263307
+14      14          21 2025-07-31             Sell          0.339880          0.322752         0.337367
+15      15          22 2025-07-31             Hold          0.101980          0.529436         0.368584
+16      16          23 2025-07-31              Buy          0.157179          0.337282         0.505539
+17      17          24 2025-07-31             Hold          0.163398          0.635494         0.201108
+18      18          25 2025-07-31             Hold          0.230085          0.541612         0.228303
+19      19          26 2025-07-31              Buy          0.238117          0.328509         0.433374
+20      20          30 2025-07-31             Hold          0.283193          0.384063         0.332744
+21      21          31 2025-07-31             Hold          0.254085          0.452070         0.293846
+22      22          32 2025-07-31              Buy          0.237192          0.337625         0.425183
+23      23          33 2025-07-31             Hold          0.310672          0.402128         0.287200
+24      24          34 2025-07-31             Hold          0.092829          0.563325         0.343846
+25      25          35 2025-07-31             Hold          0.222479          0.473800         0.303721
+26      26          37 2025-07-31             Hold          0.179465          0.566935         0.253601
+27      27          40 2025-07-31             Hold          0.133022          0.639294         0.227684
+28      28          43 2025-07-31              Buy          0.155878          0.360576         0.483547
+29      29          44 2025-07-31             Hold          0.294471          0.405353         0.300176
+30      30          45 2025-07-31             Hold          0.178806          0.675506         0.145688
+31      31          46 2025-07-31             Hold          0.127260          0.464899         0.407842
+32      32          48 2025-07-31             Hold          0.164493          0.510085         0.325423
+33      33          49 2025-07-31             Hold          0.349238          0.371986         0.278775
+34      34          53 2025-07-31              Buy          0.238306          0.332446         0.429248
+35      35          54 2025-07-31              Buy          0.153378          0.316422         0.530200
+36      36          55 2025-07-31             Hold          0.072504          0.575162         0.352334
+37      37          56 2025-07-31             Hold          0.127892          0.555134         0.316975
+38      38          58 2025-07-31             Hold          0.288616          0.412525         0.298859
+39      39          59 2025-07-31             Hold          0.294103          0.420435         0.285463
+40      40          60 2025-07-31             Hold          0.112626          0.777154         0.110220
+41      41          61 2025-07-31             Hold          0.073008          0.720807         0.206185
+42      42          62 2025-07-31             Hold          0.263863          0.496362         0.239775
+43      43          63 2025-07-31             Hold          0.233725          0.476092         0.290183
+44      44          64 2025-07-31              Buy          0.150637          0.410920         0.438443
+45      45          65 2025-07-31             Hold          0.227015          0.481435         0.291550
+46      46          66 2025-07-31             Hold          0.211028          0.491111         0.297862
+47      47          67 2025-07-31             Hold          0.173332          0.534435         0.292233
+48      48          68 2025-07-31             Hold          0.119504          0.678814         0.201682
+49      49          69 2025-07-31             Hold          0.259047          0.460292         0.280661
+50      50          70 2025-07-31             Hold          0.124739          0.515992         0.359269
+51      51          71 2025-07-31             Hold          0.143023          0.478912         0.378064
+52      52          72 2025-07-31             Hold          0.154222          0.506933         0.338845
+53      53          73 2025-07-31             Hold          0.065592          0.690031         0.244378
+54      54          74 2025-07-31             Hold          0.117011          0.515363         0.367627
+55      55          76 2025-07-31             Hold          0.092920          0.775785         0.131295
+56      56          78 2025-07-31             Hold          0.097195          0.735097         0.167707
+57      57          79 2025-07-31             Hold          0.102000          0.521932         0.376067
+58      58          81 2025-07-31             Hold          0.145358          0.714211         0.140431
+59      59          82 2025-07-31             Hold          0.248619          0.557749         0.193632
+60      60          83 2025-07-31             Hold          0.232669          0.404026         0.363305
+61      61          84 2025-07-31             Hold          0.157183          0.542253         0.300564
+62      62          85 2025-07-31              Buy          0.208537          0.242969         0.548494
+63      63          86 2025-07-31             Hold          0.241224          0.452750         0.306027
+64      64          89 2025-07-31             Hold          0.064943          0.800612         0.134445
+65      65          90 2025-07-31             Hold          0.158934          0.558100         0.282966
+66      66          91 2025-07-31             Hold          0.150871          0.491431         0.357698
+67      67          92 2025-07-31              Buy          0.126549          0.401908         0.471544
+68      68          93 2025-07-31              Buy          0.110755          0.260782         0.628464
+69      69          95 2025-07-31              Buy          0.164832          0.374806         0.460362
+70      70          96 2025-07-31             Hold          0.197570          0.407603         0.394827
+71      71          97 2025-07-31             Hold          0.107624          0.815380         0.076996
+72      72          98 2025-07-31             Hold          0.176535          0.421404         0.402061
+73      73         100 2025-07-31              Buy          0.224175          0.342941         0.432884
+74      74         101 2025-07-31              Buy          0.103100          0.447419         0.449481
+75      75         102 2025-07-31              Buy          0.158159          0.402339         0.439501
+76      76         103 2025-07-31             Hold          0.224986          0.558907         0.216108
+77      77         104 2025-07-31             Hold          0.257218          0.532521         0.210261
+78      78         105 2025-07-31             Hold          0.115399          0.554491         0.330110
+79      79         106 2025-07-31             Hold          0.164690          0.430765         0.404545
+80      80         107 2025-07-31              Buy          0.221712          0.207256         0.571032
+81      81         108 2025-07-31             Hold          0.183609          0.631081         0.185310
+82      82         111 2025-07-31             Hold          0.172882          0.558004         0.269115
+83      83         112 2025-07-31             Hold          0.197869          0.647250         0.154881
+84      84         113 2025-07-31              Buy          0.130522          0.329812         0.539666
+85      85         115 2025-07-31             Hold          0.123382          0.585691         0.290927
+86      86         116 2025-07-31             Hold          0.357374          0.390944         0.251683
+87      87         117 2025-07-31             Hold          0.147092          0.628899         0.224009
+88      88         118 2025-07-31              Buy          0.242262          0.228076         0.529662
+89      89         119 2025-07-31             Hold          0.071289          0.827960         0.100751
+90      90         120 2025-07-31             Hold          0.216111          0.525578         0.258311
+91      91         121 2025-07-31             Hold          0.195554          0.559526         0.244920
+92      92         122 2025-07-31              Buy          0.331233          0.294482         0.374286
+93      93         123 2025-07-31             Hold          0.077590          0.690109         0.232302
+94      94         124 2025-07-31              Buy          0.323436          0.333536         0.343027
+95      95         125 2025-07-31             Hold          0.124000          0.440835         0.435165
+96      96         126 2025-07-31             Hold          0.152378          0.575352         0.272270
+97      97         127 2025-07-31             Hold          0.216843          0.416094         0.367063
+98      98         128 2025-07-31             Hold          0.275352          0.393396         0.331252
+99      99         129 2025-07-31              Buy          0.074906          0.455475         0.469618
+100    100         132 2025-07-31             Hold          0.198197          0.553680         0.248123
+101    101         133 2025-07-31             Hold          0.211376          0.423361         0.365263
+102    102         135 2025-07-31             Hold          0.155220          0.532138         0.312642
+103    103         139 2025-07-31             Hold          0.338854          0.487927         0.173220
+104    104         140 2025-07-31             Hold          0.158533          0.660444         0.181023
+105    105         141 2025-07-31              Buy          0.138706          0.426327         0.434968
+106    106         142 2025-07-31             Hold          0.135527          0.581544         0.282929
+107    107         143 2025-07-31             Hold          0.170385          0.601665         0.227950
+108    108         145 2025-07-31              Buy          0.188595          0.270448         0.540957
+109    109         146 2025-07-31             Hold          0.175200          0.529779         0.295021
+110    110         147 2025-07-31             Hold          0.013272          0.945593         0.041135
+111    111         148 2025-07-31             Hold          0.103423          0.762569         0.134007
+112    112         149 2025-07-31             Hold          0.314704          0.521276         0.164020
+113    113         150 2025-07-31              Buy          0.120556          0.319745         0.559699
+114    114         151 2025-07-31             Hold          0.248211          0.493099         0.258690
+115    115         152 2025-07-31             Hold          0.274992          0.452104         0.272904
+116    116         153 2025-07-31             Hold          0.180183          0.583987         0.235830
+117    117         154 2025-07-31              Buy          0.068230          0.320846         0.610924
+118    118         155 2025-07-31              Buy          0.145218          0.395442         0.459339
+119    119         156 2025-07-31             Hold          0.169421          0.546682         0.283897
+120    120         157 2025-07-31             Hold          0.363625          0.414936         0.221440
+121    121         158 2025-07-31             Hold          0.096576          0.519925         0.383499
+122    122         159 2025-07-31             Sell          0.349307          0.306681         0.344012
+123    123         160 2025-07-31             Hold          0.168170          0.493089         0.338741
+124    124         162 2025-07-31             Hold          0.222662          0.482728         0.294610
+125    125         163 2025-07-31             Hold          0.171451          0.650098         0.178451
+126    126         164 2025-07-31             Hold          0.278903          0.399352         0.321745
+127    127         166 2025-07-31             Hold          0.117050          0.620973         0.261977
+128    128         167 2025-07-31             Hold          0.139247          0.714081         0.146673
+129    129         168 2025-07-31             Hold          0.311150          0.410253         0.278597
+130    130         170 2025-07-31             Hold          0.130692          0.677849         0.191458
+131    131         171 2025-07-31             Sell          0.423152          0.336723         0.240125
+132    132         172 2025-07-31             Hold          0.111885          0.603453         0.284662
+133    133         175 2025-07-31             Hold          0.266292          0.501256         0.232452
+134    134         176 2025-07-31              Buy          0.113200          0.436997         0.449803
+135    135         177 2025-07-31             Hold          0.208707          0.452730         0.338563
+136    136         178 2025-07-31             Hold          0.138592          0.577538         0.283869
+137    137         179 2025-07-31             Hold          0.244264          0.469585         0.286151
+138    138         180 2025-07-31             Hold          0.209876          0.639003         0.151121
+139    139         182 2025-07-31             Hold          0.145074          0.506049         0.348877
+140    140         183 2025-07-31             Hold          0.208199          0.527159         0.264642
+141    141         184 2025-07-31             Hold          0.218226          0.452921         0.328853
+142    142         185 2025-07-31              Buy          0.276431          0.334502         0.389067
+143    143         186 2025-07-31              Buy          0.188727          0.268213         0.543060
+144    144         187 2025-07-31              Buy          0.153619          0.296777         0.549604
+145    145         189 2025-07-31              Buy          0.093536          0.438236         0.468228
+146    146         190 2025-07-31             Hold          0.090985          0.782476         0.126539
+147    147         192 2025-07-31             Hold          0.282776          0.467928         0.249296
+148    148         193 2025-07-31             Hold          0.068914          0.803928         0.127158
+149    149         195 2025-07-31             Hold          0.298717          0.461031         0.240251
+150    150         196 2025-07-31             Hold          0.101222          0.754308         0.144470
+151    151         198 2025-07-31             Hold          0.301249          0.422302         0.276449
+152    152         199 2025-07-31              Buy          0.332237          0.325944         0.341819
+153    153         200 2025-07-31             Hold          0.224817          0.429712         0.345471
+154    154         201 2025-07-31              Buy          0.244848          0.287786         0.467366
+155    155         202 2025-07-31             Sell          0.361493          0.325635         0.312873
+156    156         203 2025-07-31             Hold          0.172811          0.576916         0.250273
+157    157         204 2025-07-31             Hold          0.086102          0.545492         0.368406
+158    158         205 2025-07-31             Hold          0.108867          0.757110         0.134023
+159    159         206 2025-07-31             Hold          0.286928          0.449156         0.263916
+160    160         207 2025-07-31             Hold          0.145816          0.463336         0.390848
+161    161         208 2025-07-31             Hold          0.410527          0.428742         0.160731
+162    162         209 2025-07-31             Hold          0.200912          0.480009         0.319079
+163    163         210 2025-07-31             Hold          0.211396          0.567840         0.220764
+164    164         211 2025-07-31             Hold          0.195267          0.447379         0.357354
+165    165         212 2025-07-31             Hold          0.098016          0.742511         0.159472
+166    166         215 2025-07-31             Hold          0.250082          0.394473         0.355444
+167    167         216 2025-07-31             Hold          0.117039          0.512139         0.370821
+168    168         217 2025-07-31             Hold          0.228288          0.580735         0.190976
+169    169         218 2025-07-31             Hold          0.355059          0.459786         0.185156
+170    170         220 2025-07-31             Sell          0.542522          0.281317         0.176160
+171    171         221 2025-07-31             Hold          0.341035          0.414909         0.244056
+172    172         222 2025-07-31             Sell          0.540741          0.325966         0.133292
+173    173         223 2025-07-31             Sell          0.412964          0.409244         0.177792
+174    174         224 2025-07-31             Hold          0.284635          0.521301         0.194064
+175    175         225 2025-07-31              Buy          0.135865          0.382327         0.481808
+176    176         226 2025-07-31             Hold          0.132054          0.617933         0.250013
+177    177         227 2025-07-31             Sell          0.422527          0.336768         0.240705
+178    178         228 2025-07-31              Buy          0.118353          0.421278         0.460368
+179    179         229 2025-07-31              Buy          0.121991          0.337033         0.540976
+180    180         231 2025-07-31             Hold          0.187931          0.573497         0.238572
+181    181         232 2025-07-31             Hold          0.237790          0.543571         0.218638
+182    182         234 2025-07-31             Hold          0.071971          0.510536         0.417492
+183    183         235 2025-07-31             Hold          0.125299          0.554077         0.320625
+184    184         241 2025-07-31              Buy          0.126576          0.410700         0.462724
+185    185         243 2025-07-31             Hold          0.212680          0.542632         0.244688
+186    186         245 2025-07-31              Buy          0.107704          0.404995         0.487301
+187    187         246 2025-07-31             Hold          0.200181          0.675238         0.124581
+188    188         247 2025-07-31             Hold          0.167893          0.548253         0.283854
+189    189         250 2025-07-31              Buy          0.210204          0.339739         0.450056
+190    190         251 2025-07-31             Hold          0.193179          0.465157         0.341663
+191    191         252 2025-07-31             Sell          0.513263          0.314429         0.172308
+192    192         255 2025-07-31             Hold          0.187173          0.558529         0.254298
+193    193         256 2025-07-31             Hold          0.202751          0.506249         0.291000
+194    194         257 2025-07-31             Hold          0.281929          0.393575         0.324496
+195    195         258 2025-07-31             Hold          0.171929          0.484574         0.343497
+196    196         259 2025-07-31             Hold          0.252056          0.442660         0.305284
+197    197         262 2025-07-31             Hold          0.230820          0.497575         0.271605
+198    198         265 2025-07-31             Sell          0.447474          0.340586         0.211940
+199    199         266 2025-07-31             Hold          0.096035          0.640502         0.263464
+200    200         267 2025-07-31             Hold          0.113378          0.700249         0.186373
+201    201         268 2025-07-31             Hold          0.260522          0.413421         0.326057
+202    202         271 2025-07-31              Buy          0.299467          0.294955         0.405578
+203    203         272 2025-07-31              Buy          0.273938          0.287977         0.438085
+204    204         274 2025-07-31             Hold          0.158620          0.520058         0.321322
+205    205         275 2025-07-31             Hold          0.157922          0.637244         0.204834
+206    206         276 2025-07-31             Hold          0.159372          0.501703         0.338925
+207    207         277 2025-07-31             Hold          0.273788          0.421281         0.304930
+208    208         279 2025-07-31             Hold          0.350255          0.411503         0.238242
+209    209         280 2025-07-31             Hold          0.095657          0.710607         0.193737
+210    210         281 2025-07-31             Hold          0.296506          0.399689         0.303805
+211    211         282 2025-07-31             Hold          0.149378          0.465913         0.384708
+212    212         283 2025-07-31             Hold          0.235365          0.455583         0.309052
+213    213         284 2025-07-31             Sell          0.418582          0.391351         0.190067
+214    214         285 2025-07-31             Hold          0.282229          0.568437         0.149333
+215    215         286 2025-07-31             Hold          0.233229          0.538827         0.227944
+216    216         288 2025-07-31             Hold          0.172278          0.679565         0.148157
+217    217         289 2025-07-31             Hold          0.271839          0.378475         0.349686
+218    218         290 2025-07-31             Hold          0.082782          0.460264         0.456954
+219    219         291 2025-07-31             Hold          0.211329          0.487452         0.301219
+220    220         293 2025-07-31             Hold          0.217890          0.494827         0.287283
+221    221         295 2025-07-31             Sell          0.435625          0.240426         0.323949
+222    222         296 2025-07-31             Hold          0.088359          0.690857         0.220784
+223    223         299 2025-07-31             Hold          0.051539          0.847814         0.100647
+224    224         301 2025-07-31             Sell          0.391775          0.378146         0.230079
+225    225         302 2025-07-31             Hold          0.012650          0.869059         0.118291
+226    226         303 2025-07-31              Buy          0.146875          0.320587         0.532538
+227    227         304 2025-07-31             Hold          0.266894          0.446951         0.286155
+228    228         306 2025-07-31              Buy          0.360915          0.250798         0.388286
+229    229         307 2025-07-31             Hold          0.118834          0.500007         0.381159
+230    230         308 2025-07-31             Hold          0.106791          0.579205         0.314004
+231    231         309 2025-07-31             Hold          0.091117          0.677437         0.231446
+232    232         311 2025-07-31              Buy          0.174764          0.364896         0.460340
+233    233         314 2025-07-31             Hold          0.107442          0.675071         0.217488
+234    234         315 2025-07-31             Hold          0.298014          0.356068         0.345917
+235    235         316 2025-07-31              Buy          0.191811          0.277193         0.530996
+236    236         317 2025-07-31             Hold          0.305035          0.431606         0.263360
+237    237         318 2025-07-31              Buy          0.241556          0.371736         0.386708
+238    238         319 2025-07-31             Hold          0.159996          0.634780         0.205223
+239    239         321 2025-07-31             Hold          0.229899          0.464846         0.305256
+240    240         325 2025-07-31              Buy          0.218675          0.226564         0.554761
+241    241         326 2025-07-31             Sell          0.695266          0.145046         0.159687
+242    242         327 2025-07-31              Buy          0.133651          0.369959         0.496390
+243    243         328 2025-07-31             Hold          0.151596          0.428400         0.420004
+244    244         329 2025-07-31             Hold          0.244301          0.565215         0.190485
+245    245         330 2025-07-31             Hold          0.169298          0.592637         0.238065
+246    246         331 2025-07-31             Hold          0.084647          0.565502         0.349851
+247    247         333 2025-07-31             Hold          0.212478          0.503617         0.283906
+248    248         335 2025-07-31             Hold          0.257324          0.561767         0.180909
+249    249         336 2025-07-31             Hold          0.239930          0.467173         0.292897
+250    250         337 2025-07-31              Buy          0.331454          0.240566         0.427979
+251    251         338 2025-07-31             Hold          0.220646          0.407594         0.371760
+252    252         339 2025-07-31              Buy          0.263240          0.304696         0.432064
+253    253         340 2025-07-31             Hold          0.092441          0.775208         0.132352
+254    254         341 2025-07-31             Hold          0.091582          0.717600         0.190817
+255    255         342 2025-07-31             Hold          0.180219          0.561124         0.258657
+256    256         346 2025-07-31             Hold          0.233841          0.595781         0.170378
+257    257         347 2025-07-31             Sell          0.482845          0.344514         0.172640
+258    258         348 2025-07-31             Hold          0.241355          0.423919         0.334726
+259    259         349 2025-07-31             Hold          0.172491          0.617406         0.210103
+260    260         350 2025-07-31             Sell          0.610211          0.175037         0.214752
+261    261         351 2025-07-31              Buy          0.125437          0.386588         0.487975
+262    262         353 2025-07-31             Hold          0.178393          0.596319         0.225288
+263    263         355 2025-07-31             Hold          0.106479          0.469667         0.423854
+264    264         356 2025-07-31              Buy          0.151171          0.418715         0.430114
+265    265         357 2025-07-31             Hold          0.215003          0.426867         0.358130
+266    266         359 2025-07-31             Hold          0.327039          0.363421         0.309539
+267    267         360 2025-07-31             Hold          0.072411          0.566865         0.360725
+268    268         361 2025-07-31             Sell          0.525586          0.234180         0.240233
+269    269         362 2025-07-31             Hold          0.289998          0.500600         0.209401
+270    270         363 2025-07-31              Buy          0.260080          0.349287         0.390633
+271    271         364 2025-07-31             Hold          0.047267          0.824544         0.128189
+272    272         365 2025-07-31             Hold          0.148120          0.497391         0.354489
+273    273         366 2025-07-31             Hold          0.244916          0.450347         0.304737
+274    274         367 2025-07-31             Hold          0.191332          0.669698         0.138971
+275    275         368 2025-07-31             Hold          0.129849          0.491798         0.378353
+276    276         369 2025-07-31             Hold          0.106262          0.689914         0.203824
+277    277         370 2025-07-31             Sell          0.452331          0.376228         0.171441
+278    278         371 2025-07-31             Hold          0.400982          0.462368         0.136650
+279    279         372 2025-07-31             Hold          0.209225          0.527720         0.263055
+280    280         373 2025-07-31             Hold          0.081729          0.737118         0.181153
+281    281         374 2025-07-31             Hold          0.241711          0.454438         0.303851
+282    282         375 2025-07-31             Hold          0.257811          0.396678         0.345511
+283    283         376 2025-07-31              Buy          0.140275          0.414966         0.444759
+284    284         377 2025-07-31             Hold          0.130247          0.516387         0.353366
+285    285         378 2025-07-31             Hold          0.147653          0.523703         0.328644
+286    286         379 2025-07-31             Sell          0.427139          0.343654         0.229207
+287    287         380 2025-07-31             Hold          0.123129          0.592580         0.284291
+288    288         381 2025-07-31             Sell          0.488545          0.352422         0.159033
+✅ Loaded stock data: 854 records for 289 companies
+✅ Loaded financial data: 6 records for 2 companies

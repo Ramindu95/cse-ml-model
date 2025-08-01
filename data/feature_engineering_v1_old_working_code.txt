@@ -1,0 +1,722 @@
+import pandas as pd
+import numpy as np
+import ta
+from typing import Optional, Tuple, List
+import warnings
+warnings.filterwarnings('ignore')
+
+class FeatureEngineer:
+    """
+    Comprehensive feature engineering class for stock market data.
+    Handles both technical and fundamental analysis features.
+    """
+    
+    def __init__(self):
+        self.technical_features = []
+        self.fundamental_features = []
+        self.all_features = []
+        
+    def merge_financial_with_stock_data(self, stock_df: pd.DataFrame, financial_df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Merge financial data with stock data using nearest date matching.
+        """
+        if financial_df is None or financial_df.empty:
+            return stock_df.copy()
+            
+        merged_data = []
+        
+        # Ensure 'period_end_date' is datetime in financial_df for proper comparison
+        financial_df['period_end_date'] = pd.to_datetime(financial_df['period_end_date'])
+        
+        # Ensure financial_df columns are strings to prevent issues if column names are integers etc.
+        financial_df.columns = financial_df.columns.astype(str)
+        
+        # Ensure company_id in financial_df is consistent string type
+        financial_df['company_id'] = financial_df['company_id'].astype(str)
+
+        # Sort financial data by company and date, so .iloc[0] gets the latest before a trade_date
+        financial_df_sorted = financial_df.sort_values(by=['company_id', 'period_end_date'], ascending=[True, False])
+        
+        # Process each company separately
+        for company_id_val in stock_df['company_id'].unique():
+            # Ensure the company_id from stock_df is also a string for consistent comparison
+            company_id_val_str = str(company_id_val) 
+            
+            company_stock = stock_df[stock_df['company_id'] == company_id_val].copy()
+            # Use the string-converted company_id for filtering
+            company_financial = financial_df_sorted[financial_df_sorted['company_id'] == company_id_val_str]
+            
+            if company_financial.empty:
+                merged_data.append(company_stock)
+                continue
+            
+            # FIXED: Process each stock row individually instead of using apply
+            for idx, stock_row in company_stock.iterrows():
+                stock_trade_date = stock_row['trade_date']
+                
+                # Find the most recent financial data before or on the trade date
+                relevant_financials = company_financial[
+                    company_financial['period_end_date'] <= stock_trade_date
+                ]
+                
+                if not relevant_financials.empty:
+                    latest_financial_row = relevant_financials.iloc[0]
+                    
+                    # Add financial data to the stock row
+                    for col_name in financial_df.columns:
+                        if col_name not in ['company_id', 'period_end_date']:
+                            if col_name in latest_financial_row.index:
+                                company_stock.at[idx, f'financial_{col_name}'] = latest_financial_row[col_name]
+                            else:
+                                company_stock.at[idx, f'financial_{col_name}'] = np.nan
+                else:
+                    # No financial data available for this date, fill with NaN
+                    for col_name in financial_df.columns:
+                        if col_name not in ['company_id', 'period_end_date']:
+                            company_stock.at[idx, f'financial_{col_name}'] = np.nan
+            
+            merged_data.append(company_stock)
+        
+        result = pd.concat(merged_data, ignore_index=True) if merged_data else stock_df.copy()
+        print(f"✅ Merged data shape: {result.shape}")
+        return result
+
+    # Technical Analysis Features (Leave these as is, they extend self.technical_features)
+    def add_moving_averages(self, df: pd.DataFrame, windows: List[int] = [5, 10, 20, 50]) -> pd.DataFrame:
+        """Add multiple moving averages"""
+        for w in windows:
+            df[f'MA_{w}'] = df.groupby('company_id')['close_price'].transform(
+                lambda x: x.rolling(window=w, min_periods=1).mean()
+            )
+            # Only extend if not already added to prevent duplicates on multiple runs
+            if f'MA_{w}' not in self.technical_features:
+                self.technical_features.append(f'MA_{w}')
+        return df
+
+    def add_exponential_moving_averages(self, df: pd.DataFrame, windows: List[int] = [12, 26]) -> pd.DataFrame:
+        """Add exponential moving averages"""
+        for w in windows:
+            df[f'EMA_{w}'] = df.groupby('company_id')['close_price'].transform(
+                lambda x: x.ewm(span=w).mean()
+            )
+            if f'EMA_{w}' not in self.technical_features:
+                self.technical_features.append(f'EMA_{w}')
+        return df
+
+    def add_rsi(self, df: pd.DataFrame, window: int = 14) -> pd.DataFrame:
+        """Add Relative Strength Index"""
+        def safe_rsi(series):
+            # Ensure proper handling for small series
+            if len(series) < window:
+                return pd.Series([np.nan] * len(series), index=series.index)
+            try:
+                # Use ta library if possible, it handles fillna directly
+                return ta.momentum.rsi(series, window=window, fillna=False) # Fillna will be handled by clean_and_validate
+            except Exception as e:
+                print(f"RSI calculation failed for a series, falling back. Error: {e}")
+                delta = series.diff()
+                gain = (delta.where(delta > 0, 0)).rolling(window=window).mean()
+                loss = (-delta.where(delta < 0, 0)).rolling(window=window).mean()
+                # Avoid division by zero, replace with a large number or np.inf before division
+                rs = gain / loss.replace(0, np.nan) # Replace 0 with NaN for proper division handling
+                rsi = 100 - (100 / (1 + rs))
+                return rsi
+        
+        df['RSI'] = df.groupby('company_id')['close_price'].transform(safe_rsi)
+        if 'RSI' not in self.technical_features:
+            self.technical_features.append('RSI')
+        return df
+
+    def add_macd(self, df: pd.DataFrame, fast: int = 12, slow: int = 26, signal: int = 9) -> pd.DataFrame:
+        """Add MACD indicators"""
+        # MACD calculation using ta library directly with groupby transform
+        # The ta library's MACD functions are designed to handle series.
+        # We need to ensure the columns are added back to the main DataFrame correctly.
+
+        # Create temporary columns for MACD components
+        df['temp_MACD'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: ta.trend.macd(x, window_fast=fast, window_slow=slow, fillna=False)
+        )
+        df['temp_MACD_Signal'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: ta.trend.macd_signal(x, window_fast=fast, window_slow=slow, window_sign=signal, fillna=False)
+        )
+        df['temp_MACD_Histogram'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: ta.trend.macd_diff(x, window_fast=fast, window_slow=slow, window_sign=signal, fillna=False)
+        )
+
+        # Rename and finalize columns
+        df['MACD'] = df['temp_MACD']
+        df['MACD_Signal'] = df['temp_MACD_Signal']
+        df['MACD_Histogram'] = df['temp_MACD_Histogram']
+        
+        # Drop temporary columns
+        df.drop(columns=['temp_MACD', 'temp_MACD_Signal', 'temp_MACD_Histogram'], errors='ignore', inplace=True)
+
+        macd_features = ['MACD', 'MACD_Signal', 'MACD_Histogram']
+        for feat in macd_features:
+            if feat not in self.technical_features:
+                self.technical_features.append(feat)
+        
+        return df
+
+    def add_bollinger_bands(self, df: pd.DataFrame, window: int = 20, std_dev: int = 2) -> pd.DataFrame:
+        """Add Bollinger Bands"""
+        # Ensure 'close_price' is always present
+        if 'close_price' not in df.columns:
+            return df
+
+        # Calculate BB components using ta library
+        # The ta functions return a Series directly, so transform works well
+        df['BB_Upper'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: ta.volatility.bollinger_hband(x, window=window, window_dev=std_dev, fillna=False)
+        )
+        df['BB_Middle'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: ta.volatility.bollinger_mavg(x, window=window, fillna=False)
+        )
+        df['BB_Lower'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: ta.volatility.bollinger_lband(x, window=window, window_dev=std_dev, fillna=False)
+        )
+        df['BB_Width'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: ta.volatility.bollinger_wband(x, window=window, window_dev=std_dev, fillna=False)
+        )
+        df['BB_Percent'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: ta.volatility.bollinger_pband(x, window=window, window_dev=std_dev, fillna=False)
+        )
+        
+        bb_features = ['BB_Upper', 'BB_Middle', 'BB_Lower', 'BB_Width', 'BB_Percent']
+        for feat in bb_features:
+            if feat not in self.technical_features:
+                self.technical_features.append(feat)
+        
+        return df
+
+    def add_stochastic_oscillator(self, df: pd.DataFrame, k_window: int = 14, d_window: int = 3) -> pd.DataFrame:
+        """Add Stochastic Oscillator"""
+        # Ensure 'high_price', 'low_price', 'close_price' are present
+        if not all(col in df.columns for col in ['high_price', 'low_price', 'close_price']):
+            print("Warning: Missing high_price, low_price or close_price for Stochastic Oscillator. Skipping.")
+            df['Stoch_K'] = np.nan # Ensure column exists even if not calculated
+            df['Stoch_D'] = np.nan # Ensure column exists even if not calculated
+            return df 
+
+        stoch_k_results = []
+        stoch_d_results = []
+
+        for company_id, group_df in df.groupby('company_id'):
+            # Calculate %K for the current group
+            k_series = ta.momentum.stoch(
+                high=group_df['high_price'],
+                low=group_df['low_price'],
+                close=group_df['close_price'],
+                window=k_window,
+                fillna=False
+            )
+            # Calculate %D for the current group
+            d_series = ta.momentum.stoch_signal(
+                high=group_df['high_price'],
+                low=group_df['low_price'],
+                close=group_df['close_price'],
+                window=k_window,
+                smooth_window=d_window,
+                fillna=False
+            )
+            
+            stoch_k_results.append(k_series)
+            stoch_d_results.append(d_series)
+
+        # Concatenate all results and reindex to match the original DataFrame's index
+        # This is robust against cases where individual series might have slightly different indices
+        # due to fillna=False or start of window.
+        df['Stoch_K'] = pd.concat(stoch_k_results).reindex(df.index)
+        df['Stoch_D'] = pd.concat(stoch_d_results).reindex(df.index)
+        
+        stoch_features = ['Stoch_K', 'Stoch_D']
+        for feat in stoch_features:
+            if feat not in self.technical_features:
+                self.technical_features.append(feat)
+        
+        return df
+
+    def _calculate_pvt(self, close_prices: pd.Series, volumes: pd.Series) -> pd.Series:
+        """Manually calculate Price-Volume Trend (PVT) for a single series, matching ta.volume.pvt(fillna=False) behavior."""
+        # Ensure numeric types and handle potential NaNs in input
+        close_prices_numeric = pd.to_numeric(close_prices, errors='coerce')
+        volumes_numeric = pd.to_numeric(volumes, errors='coerce')
+
+        # Create a temporary DataFrame to align close and volume, then drop NaNs for calculation
+        temp_df = pd.DataFrame({'close': close_prices_numeric, 'volume': volumes_numeric}, index=close_prices.index)
+        temp_df = temp_df.dropna() # Drop rows where either is NaN
+
+        if len(temp_df) < 2:
+            return pd.Series(np.nan, index=close_prices.index) # Not enough data for calculation
+
+        # Calculate percentage change of close price
+        pct_change = temp_df['close'].pct_change()
+
+        # Calculate the PVT contribution for each period: (pct_change * volume)
+        # Note: ta.volume.pvt generally uses current volume, not shifted.
+        pvt_contribution = pct_change * temp_df['volume']
+
+        # Calculate cumulative sum. The first value of pvt_contribution will be NaN.
+        # This effectively makes the first PVT value NaN, as per ta.volume.pvt(fillna=False)
+        pvt_series_calculated = pvt_contribution.cumsum()
+
+        # Reindex to the original series index, filling new NaNs for initial period.
+        # The first non-NaN value will be the starting point of PVT accumulation.
+        final_pvt = pd.Series(np.nan, index=close_prices.index, dtype=float)
+        final_pvt.loc[pvt_series_calculated.index] = pvt_series_calculated
+
+        return final_pvt
+
+    def add_volume_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add volume-based indicators"""
+        # Volume change percentage
+        df['volume_change_pct'] = df.groupby('company_id')['volume'].pct_change().fillna(0)
+
+        # Volume moving average
+        df['volume_MA_20'] = df.groupby('company_id')['volume'].transform(
+            lambda x: x.rolling(window=20, min_periods=1).mean()
+        ).fillna(0)
+
+        # Volume ratio
+        df['volume_ratio'] = (df['volume'] / df['volume_MA_20']).replace([np.inf, -np.inf], 1).fillna(1)
+
+        # Price-Volume Trend (PVT) - using try-except for ta.volume.pvt or fallback to manual
+        pvt_results = []
+        for company_id, group_df in df.groupby('company_id'):
+            try:
+                # Try using ta.volume.pvt first
+                pvt_series = ta.volume.pvt(
+                    close=group_df['close_price'],
+                    volume=group_df['volume'],
+                    fillna=False
+                )
+            except AttributeError:
+                # Fallback to manual calculation if ta.volume.pvt is not found
+                print(f"Warning: ta.volume.pvt not found for {company_id}, falling back to manual PVT calculation.")
+                pvt_series = self._calculate_pvt(
+                    close_prices=group_df['close_price'],
+                    volumes=group_df['volume']
+                )
+            except Exception as e:
+                print(f"Error calculating PVT for {company_id}: {e}. Filling with NaN.")
+                pvt_series = pd.Series(np.nan, index=group_df.index)
+
+            pvt_results.append(pvt_series)
+        
+        df['PVT'] = pd.concat(pvt_results).reindex(df.index)
+        
+        volume_features = ['volume_change_pct', 'volume_MA_20', 'volume_ratio', 'PVT']
+        for feat in volume_features:
+            if feat not in self.technical_features:
+                self.technical_features.append(feat)
+        return df
+
+    def add_volatility_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add volatility indicators"""
+        # Price volatility (Rolling Standard Deviation of returns)
+        df['price_volatility'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: x.pct_change().rolling(window=20, min_periods=1).std()
+        ).fillna(0)
+        
+        # Average True Range
+        if all(col in df.columns for col in ['high_price', 'low_price', 'close_price']):
+            atr_results = []
+            atr_window = 14 # Define the ATR window
+            for company_id, group_df in df.groupby('company_id'):
+                # Check if the group has enough data for ATR calculation
+                if len(group_df) >= atr_window: # ATR needs at least 'window' data points
+                    atr_series = ta.volatility.average_true_range(
+                        high=group_df['high_price'],
+                        low=group_df['low_price'],
+                        close=group_df['close_price'],
+                        window=atr_window, # Use the defined window
+                        fillna=False
+                    )
+                    atr_results.append(atr_series)
+                else:
+                    # If not enough data, append a Series of NaNs with the correct index
+                    print(f"Warning: Not enough data for ATR calculation for company_id {company_id}. Expected at least {atr_window} rows, got {len(group_df)}. Filling with NaN.")
+                    atr_results.append(pd.Series(np.nan, index=group_df.index))
+            
+            # Concatenate all results and reindex to match the original DataFrame's index
+            df['ATR'] = pd.concat(atr_results).reindex(df.index)
+        else:
+            df['ATR'] = np.nan # If required columns are missing, ATR will be NaN
+        
+        volatility_features = ['price_volatility', 'ATR']
+        for feat in volatility_features:
+            if feat not in self.technical_features:
+                self.technical_features.append(feat)
+        return df
+
+    def add_momentum_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add momentum indicators"""
+        # Rate of Change
+        df['ROC_10'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: ta.momentum.roc(x, window=10, fillna=False)
+        )
+        
+        # Momentum (simple price change)
+        df['momentum_5'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: x.diff(periods=5)
+        )
+        
+        # Price acceleration (rate of change of price change)
+        df['price_acceleration'] = df.groupby('company_id')['close_price'].transform(
+            lambda x: x.pct_change().diff()
+        )
+        
+        momentum_features = ['ROC_10', 'momentum_5', 'price_acceleration']
+        for feat in momentum_features:
+            if feat not in self.technical_features:
+                self.technical_features.append(feat)
+        return df
+
+    def add_price_action_features(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add price action features"""
+        # Daily returns
+        df['daily_return'] = df.groupby('company_id')['close_price'].pct_change()
+        
+        # Price position relative to recent highs/lows
+        df['price_vs_20day_high'] = (df['close_price'] / 
+            df.groupby('company_id')['close_price'].transform(
+                lambda x: x.rolling(window=20, min_periods=1).max()
+            ))
+        
+        df['price_vs_20day_low'] = (df['close_price'] / 
+            df.groupby('company_id')['close_price'].transform(
+                lambda x: x.rolling(window=20, min_periods=1).min()
+            ))
+        
+        # Volatility rank (rank of absolute daily returns)
+        df['volatility_rank'] = df.groupby('company_id')['daily_return'].transform(
+            lambda x: x.abs().rolling(window=20, min_periods=1).rank(pct=True)
+        )
+        
+        price_action_features = ['daily_return', 'price_vs_20day_high', 'price_vs_20day_low', 'volatility_rank']
+        
+        # OHLC-specific features
+        if all(col in df.columns for col in ['high_price', 'low_price', 'open_price', 'close_price']):
+            df['hl_spread'] = ((df['high_price'] - df['low_price']) / df['close_price'])
+            df['intraday_momentum'] = ((df['close_price'] - df['open_price']) / df['open_price'])
+            price_action_features.extend(['hl_spread', 'intraday_momentum'])
+            
+            # For opening_gap, ensure 'previous_close' is available from create_labels or prior step
+            if 'close_price' in df.columns: # Assuming previous_close is based on this
+                df['previous_close'] = df.groupby('company_id')['close_price'].shift(1)
+                df['opening_gap'] = ((df['open_price'] - df['previous_close']) / df['previous_close'])
+                price_action_features.append('opening_gap')
+        
+        for feat in price_action_features:
+            if feat not in self.technical_features:
+                self.technical_features.append(feat)
+        return df
+
+    # Fundamental Analysis Features
+    def add_financial_ratios(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add fundamental financial ratios"""
+        # Ensure required financial columns exist before calculations.
+        # If they don't, the ratio columns will be created as NaN and filled later.
+        required_financial_cols = [
+            'market_cap', 'financial_net_income', 'financial_total_equity', 'financial_long_term_debt',
+            'financial_short_term_debt', 'financial_total_assets', 'financial_current_assets',
+            'financial_current_liabilities', 'financial_cash_and_equivalents', 'financial_inventory',
+            'financial_gross_profit', 'financial_revenue', 'financial_operating_income',
+            'financial_cost_of_goods_sold', 'financial_operating_cash_flow', 
+            'financial_investing_cash_flow' 
+        ]
+        
+        for col in required_financial_cols:
+            if col not in df.columns:
+                df[col] = np.nan 
+
+        # Valuation ratios
+        df['PE_ratio'] = df['market_cap'] / (df['financial_net_income'].replace(0, np.nan) * 4)  
+        df['PB_ratio'] = df['market_cap'] / df['financial_total_equity'].replace(0, np.nan)
+        
+        # Debt ratios
+        total_debt = (df['financial_long_term_debt'].fillna(0) + df['financial_short_term_debt'].fillna(0))
+        df['debt_to_equity'] = total_debt / df['financial_total_equity'].replace(0, np.nan)
+        df['debt_to_assets'] = total_debt / df['financial_total_assets'].replace(0, np.nan)
+        
+        # Liquidity ratios
+        df['current_ratio'] = df['financial_current_assets'] / df['financial_current_liabilities'].replace(0, np.nan)
+        df['cash_ratio'] = df['financial_cash_and_equivalents'] / df['financial_current_liabilities'].replace(0, np.nan)
+        df['quick_ratio'] = (df['financial_current_assets'] - df['financial_inventory'].fillna(0)) / df['financial_current_liabilities'].replace(0, np.nan)
+        
+        # Profitability ratios
+        df['ROA'] = (df['financial_net_income'] * 4) / df['financial_total_assets'].replace(0, np.nan) 
+        df['ROE'] = (df['financial_net_income'] * 4) / df['financial_total_equity'].replace(0, np.nan) 
+        df['gross_margin'] = df['financial_gross_profit'] / df['financial_revenue'].replace(0, np.nan)
+        df['operating_margin'] = df['financial_operating_income'] / df['financial_revenue'].replace(0, np.nan)
+        df['net_margin'] = df['financial_net_income'] / df['financial_revenue'].replace(0, np.nan)
+        
+        # Efficiency ratios
+        df['asset_turnover'] = (df['financial_revenue'] * 4) / df['financial_total_assets'].replace(0, np.nan) 
+        df['inventory_turnover'] = (df['financial_cost_of_goods_sold'] * 4) / df['financial_inventory'].replace(0, np.nan) 
+        
+        # Cash flow ratios
+        df['operating_cash_margin'] = df['financial_operating_cash_flow'] / df['financial_revenue'].replace(0, np.nan)
+        df['free_cash_flow'] = df['financial_operating_cash_flow'].fillna(0) - df['financial_investing_cash_flow'].fillna(0)
+        df['fcf_margin'] = df['free_cash_flow'] / df['financial_revenue'].replace(0, np.nan)
+        
+        fundamental_ratios = [
+            'PE_ratio', 'PB_ratio', 'debt_to_equity', 'debt_to_assets', 'current_ratio', 
+            'cash_ratio', 'quick_ratio', 'ROA', 'ROE', 'gross_margin', 'operating_margin', 
+            'net_margin', 'asset_turnover', 'inventory_turnover', 'operating_cash_margin', 
+            'free_cash_flow', 'fcf_margin'
+        ]
+        
+        # Ensure ratios are added to self.fundamental_features if they were potentially created
+        for col in fundamental_ratios:
+            if col in df.columns and col not in self.fundamental_features: 
+                self.fundamental_features.append(col)
+                
+        return df
+
+    def add_growth_metrics(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add growth metrics"""
+        # Ensure 'financial_revenue' and other base cols exist for growth calculations
+        base_growth_cols = ['financial_revenue', 'financial_net_income', 'financial_total_assets', 'financial_earnings_per_share']
+        
+        for col in base_growth_cols:
+            if col not in df.columns:
+                df[col] = np.nan 
+
+        growth_features = []
+        for col in base_growth_cols:
+            if col in df.columns: 
+                growth_col = f'{col}_growth'
+                df[growth_col] = df.groupby('company_id')[col].pct_change() 
+                growth_features.append(growth_col)
+        
+        for col in growth_features:
+            if col not in self.fundamental_features: 
+                self.fundamental_features.append(col)
+        
+        return df
+
+    def clean_and_validate_features(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Clean and validate all engineered features"""
+        
+        all_feature_cols = self.technical_features + self.fundamental_features
+        
+        for col in all_feature_cols:
+            if col in df.columns:
+                # CRITICAL: Ensure the column is numeric. Coerce errors to NaN.
+                df[col] = pd.to_numeric(df[col], errors='coerce')
+
+                df[col] = df[col].replace([np.inf, -np.inf], np.nan)
+                
+                if df[col].std(skipna=True) > 0 and df[col].count() > 1: 
+                    mean_val = df[col].mean(skipna=True)
+                    std_val = df[col].std(skipna=True)
+                    
+                    # Ensure mean_val and std_val are not NaN before arithmetic operations
+                    if pd.notna(mean_val) and pd.notna(std_val):
+                        lower_bound = mean_val - 5 * std_val
+                        upper_bound = mean_val + 5 * std_val
+                        df[col] = df[col].clip(lower=lower_bound, upper=upper_bound)
+                    else:
+                        # If mean/std are NaN, the column might be entirely NaN or constant.
+                        # Clipping won't apply, so it's fine.
+                        pass
+                
+                median_val = df[col].median(skipna=True)
+                # Fill NaN values. Use median if valid, otherwise 0.
+                df[col] = df[col].fillna(median_val if pd.notna(median_val) else 0)
+            else:
+                print(f"Warning: Feature '{col}' not found in DataFrame during cleaning. Skipping.")
+        
+        return df
+
+    def create_labels(self, df: pd.DataFrame, threshold: float = 0.02) -> pd.DataFrame:
+        """Create target labels for prediction"""
+        
+        df['next_close_price'] = df.groupby('company_id')['close_price'].shift(-1)
+        df['price_diff'] = df['next_close_price'] - df['close_price']
+        
+        def create_label(row):
+            if pd.isna(row['price_diff']) or row['close_price'] == 0: 
+                return None  
+            
+            pct_change = row['price_diff'] / row['close_price']
+            if pct_change > threshold:
+                return 1  
+            elif pct_change < -threshold:
+                return -1  
+            else:
+                return 0  
+        
+        df['label'] = df.apply(create_label, axis=1)
+        return df
+
+    def create_features_and_labels(self, stock_df: pd.DataFrame, financial_df: Optional[pd.DataFrame] = None) -> Tuple[pd.DataFrame, pd.Series, pd.DataFrame]:
+        """
+        Main method to create all features and labels
+        
+        Returns:
+            X: Feature matrix
+            y: Target labels
+            metadata: Additional information (company_id, dates, etc.)
+        """
+        
+        self.technical_features = []
+        self.fundamental_features = []
+        
+        print("🔄 Starting feature engineering...")
+        
+        if 'trade_date' not in stock_df.columns:
+            raise ValueError("stock_df must contain a 'trade_date' column.")
+        stock_df['trade_date'] = pd.to_datetime(stock_df['trade_date'])
+        stock_df = stock_df.sort_values(by=['company_id', 'trade_date']).reset_index(drop=True)
+
+
+        if financial_df is not None and not financial_df.empty:
+            df = self.merge_financial_with_stock_data(stock_df, financial_df)
+        else:
+            df = stock_df.copy()
+            print("ℹ️ No financial data provided, using technical indicators only")
+        
+        df = df.sort_values(['company_id', 'trade_date'])
+        
+        # Ensure base price/volume/market_cap columns are numeric right after initial load/merge
+        base_numeric_cols = ['open_price', 'high_price', 'low_price', 'close_price', 'volume', 'market_cap']
+        for col in base_numeric_cols:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors='coerce')
+        
+        print("📈 Adding technical indicators...")
+        df = self.add_moving_averages(df)
+        df = self.add_exponential_moving_averages(df)
+        df = self.add_rsi(df)
+        df = self.add_macd(df)
+        df = self.add_bollinger_bands(df)
+        df = self.add_stochastic_oscillator(df)
+        df = self.add_volume_indicators(df)
+        df = self.add_volatility_indicators(df)
+        df = self.add_momentum_indicators(df)
+        df = self.add_price_action_features(df)
+        
+        if 'financial_revenue' in df.columns and not df['financial_revenue'].isna().all():
+            print("💰 Adding fundamental indicators...")
+            df = self.add_financial_ratios(df)
+            df = self.add_growth_metrics(df)
+        else:
+            print("⚠️ Financial data not available or merged successfully for fundamental indicators (financial_revenue not found or all NaN).")
+
+        
+        print("🧹 Cleaning and validating features...")
+        df = self.clean_and_validate_features(df)
+        
+        print("🎯 Creating target labels...")
+        df = self.create_labels(df) 
+        
+        df.dropna(subset=['label'], inplace=True)
+        
+        # --- CRITICAL FIX: Dynamically determine which features are actually present in the DataFrame ---
+        
+        all_potential_features_from_lists = list(set(self.technical_features + self.fundamental_features))
+        
+        base_stock_cols = ['open_price', 'high_price', 'low_price', 'close_price', 'volume', 'market_cap']
+        
+        self.all_features = [
+            col for col in (all_potential_features_from_lists + base_stock_cols)
+            if col in df.columns 
+        ]
+
+        columns_to_exclude_from_X = [
+            'trade_date', 'company_id', 'symbol', 'next_close_price', 'price_diff', 'label', 'previous_close',
+        ]
+        self.all_features = [col for col in self.all_features if col not in columns_to_exclude_from_X]
+
+        self.all_features.sort()
+        
+        print(f"✅ Feature engineering complete!")
+        print(f"   📊 Technical features: {len(self.technical_features)}")
+        print(f"   💼 Fundamental features: {len(self.fundamental_features)}")
+        print(f"   🔢 Total features (dynamically selected): {len(self.all_features)}")
+        
+        X = df[self.all_features].copy()
+        y = df['label'].copy()
+        
+        metadata_cols = ['company_id', 'trade_date', 'symbol', 'close_price', 'next_close_price', 'label'] 
+        available_metadata_cols = [col for col in metadata_cols if col in df.columns]
+        metadata = df[available_metadata_cols].copy()
+        
+        print(f"📋 Final dataset summary:")
+        print(f"   🔢 Samples: {len(X)}")
+        print(f"   📊 Features: {len(X.columns)}")
+        print(f"   🏷️ Label distribution: {y.value_counts().sort_index().to_dict()}")
+        
+        return X.reset_index(drop=True), y.reset_index(drop=True), metadata.reset_index(drop=True)
+
+    def get_feature_importance_groups(self) -> dict:
+        """Return features grouped by category for analysis"""
+        
+        feature_groups = {
+            'Moving Averages': [f for f in self.technical_features if 'MA_' in f or 'EMA_' in f],
+            'Momentum': [f for f in self.technical_features if any(x in f for x in ['RSI', 'MACD', 'ROC', 'momentum', 'Stoch'])],
+            'Volatility': [f for f in self.technical_features if any(x in f for x in ['BB_', 'ATR', 'volatility'])],
+            'Volume': [f for f in self.technical_features if 'volume' in f or 'PVT' in f],
+            'Price Action': [f for f in self.technical_features if any(x in f for x in ['daily_return', 'price_vs', 'hl_spread', 'gap', 'intraday'])],
+            'Valuation': [f for f in self.fundamental_features if any(x in f for x in ['PE_', 'PB_', 'ratio'])],
+            'Profitability': [f for f in self.fundamental_features if any(x in f for x in ['ROA', 'ROE', 'margin'])],
+            'Liquidity': [f for f in self.fundamental_features if any(x in f for x in ['current_', 'cash_', 'quick_'])],
+            'Growth': [f for f in self.fundamental_features if 'growth' in f],
+            'Debt': [f for f in self.fundamental_features if 'debt' in f]
+        }
+        
+        return {k: v for k, v in feature_groups.items() if v} 
+
+    def save_feature_info(self, filepath: str = 'feature_info.txt'):
+        """Save information about created features"""
+        
+        feature_groups = self.get_feature_importance_groups()
+        
+        with open(filepath, 'w') as f:
+            f.write("STOCK PREDICTION FEATURES SUMMARY\n")
+            f.write("="*50 + "\n\n")
+            f.write(f"Total Features: {len(self.all_features)}\n")
+            f.write(f"Technical Features: {len(self.technical_features)}\n")
+            f.write(f"Fundamental Features: {len(self.fundamental_features)}\n\n")
+            
+            for group_name, features in feature_groups.items():
+                f.write(f"{group_name} ({len(features)} features):\n")
+                for feature in features:
+                    f.write(f"  - {feature}\n")
+                f.write("\n")
+            
+            f.write("ALL FEATURES LIST (Dynamically Selected for the Last Run):\n")
+            f.write("-" * 20 + "\n")
+            for i, feature in enumerate(self.all_features, 1):
+                f.write(f"{i:2d}. {feature}\n")
+        
+        print(f"💾 Feature information saved to: {filepath}")
+
+# Convenience function for backward compatibility
+def prepare_features_labels(stock_df: pd.DataFrame, financial_df: Optional[pd.DataFrame] = None, include_financials: bool = True) -> Tuple[pd.DataFrame, pd.Series]:
+    """
+    Backward compatibility function for existing training scripts
+    """
+    engineer = FeatureEngineer()
+    
+    financial_data = financial_df if include_financials else None
+    X, y, metadata = engineer.create_features_and_labels(stock_df, financial_data)
+    
+    return X, y
+
+# Main function for testing
+def main():
+    """Test the feature engineering module"""
+    
+    print("This is a standalone feature engineering module.")
+    print("Import this module in your training script to use the FeatureEngineer class.")
+    print("\nExample usage:")
+    print("from data.feature_engineering import FeatureEngineer")
+    print("engineer = FeatureEngineer()")
+    print("X, y, metadata = engineer.create_features_and_labels(stock_df, financial_df)")
+
+if __name__ == "__main__":
+    main()

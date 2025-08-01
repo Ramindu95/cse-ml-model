@@ -1,0 +1,36 @@
+def add_volume_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add volume-based indicators"""
+        # Volume change percentage
+        df['volume_change_pct'] = df.groupby('company_id')['volume'].pct_change().fillna(0)
+
+        # Volume moving average
+        # Ensure this is directly assigned as a column in df
+        df['volume_MA_20'] = df.groupby('company_id')['volume'].transform(
+            lambda x: x.rolling(window=20, min_periods=1).mean()
+        ).fillna(0)
+
+        # Volume ratio
+        df['volume_ratio'] = (df['volume'] / df['volume_MA_20']).replace([np.inf, -np.inf], 1).fillna(1)
+
+        # Price-Volume Trend (FIXED for 'Column not found: None' error - Third attempt, this should be it!)
+        df['price_change'] = df.groupby('company_id')['close_price'].pct_change().fillna(0)
+
+        # Create a TEMPORARY column in df for the PVT component calculation
+        # This is crucial because groupby(...)[column_name] needs the column to exist in the DataFrame.
+        temp_pvt_calc_col_name = '_temp_pvt_calc_component'
+        df[temp_pvt_calc_col_name] = df['price_change'] * df['volume']
+
+        # Now, perform the cumulative sum using .transform() on this temporary column
+        df['PVT'] = df.groupby('company_id')[temp_pvt_calc_col_name].transform(
+            lambda x: x.cumsum()
+        )
+
+        # Clean up the temporary column as it's no longer needed
+        df.drop(columns=[temp_pvt_calc_col_name], inplace=True)
+        
+        # Final fillna for the PVT column, in case any NaNs remain (e.g., first entry per company)
+        df['PVT'] = df['PVT'].fillna(0)
+
+        volume_features = ['volume_change_pct', 'volume_MA_20', 'volume_ratio', 'PVT']
+        self.technical_features.extend(volume_features)
+        return df

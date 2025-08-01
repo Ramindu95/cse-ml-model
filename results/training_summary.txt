@@ -1,0 +1,42 @@
+STOCK PREDICTION MODEL TRAINING SUMMARY
+============================================================
+
+Training Date: 2025-08-01 00:25:46
+Dataset Size: 565 samples
+Number of Features: 86
+Number of Companies: 284
+Date Range: 2025-07-27 00:00:00 to 2025-07-29 00:00:00
+
+LABEL DISTRIBUTION:
+  Sell: 59 (10.4%)
+  Hold: 398 (70.4%)
+  Buy: 108 (19.1%)
+
+FEATURE GROUPS:
+  Moving Averages: 7 features
+  Momentum: 9 features
+  Volatility: 8 features
+  Volume: 4 features
+  Price Action: 6 features
+  Valuation: 5 features
+  Profitability: 7 features
+  Liquidity: 12 features
+  Growth: 4 features
+  Debt: 4 features
+
+MODEL PERFORMANCE:
+Best Model: logistic_regression
+  random_forest:
+    CV F1 Score: 0.6161
+    Test Accuracy: 0.6283
+    Test F1 Score: 0.6039
+  gradient_boosting:
+    CV F1 Score: 0.6001
+    Test Accuracy: 0.6814
+    Test F1 Score: 0.6218
+  logistic_regression:
+    CV F1 Score: 0.6167
+    Test Accuracy: 0.6991
+    Test F1 Score: 0.6339
+
+TOP 10 FEATURES (from best model):
