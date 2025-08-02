@@ -1,0 +1,57 @@
+{
+  "company_name": "ABANS ELECTRICALS PLC",
+  "company_symbol": "ABAN.N0000",
+  "report_type": "Interim",
+  "report_date": "1 April 2023",
+  "currency_unit": "LKR",
+  "scale_factor": 1.0,
+  "financial_metrics": {
+    "revenue": null,
+    "profit_for_period": null,
+    "operating_profit": null,
+    "total_assets": 5.2792415575148265e+19,
+    "total_liabilities": 2.6644009182881812e+19,
+    "total_equity": 2.6148406382266454e+19,
+    "basic_eps": null,
+    "gross_profit": null,
+    "ebitda": null,
+    "net_cash_flow": null
+  },
+  "shareholders": [],
+  "directors": [
+    {
+      "name": "Shareholding as at",
+      "role": null
+    },
+    {
+      "name": "Mrs. Aban Pestonjee",
+      "role": "Non-Executive Non-Independent Director"
+    },
+    {
+      "name": "Mrs. Saroshi Dubash",
+      "role": "Executive Director"
+    },
+    {
+      "name": "Mr. Kumar Se Silva",
+      "role": "Independent Director"
+    },
+    {
+      "name": "Mr. D M R Phillips",
+      "role": "Independent Director"
+    },
+    {
+      "name": "Mr. Rajaratnam Selvaskandan",
+      "role": "Senior Non-Executive Independent Director"
+    },
+    {
+      "name": "Total Number of Public",
+      "role": null
+    }
+  ],
+  "audit_status": "Unknown",
+  "errata_notice": null,
+  "contingent_liabilities": "Letter of credit opened with banks favoring suppliers  \nLKR 519.13 Million \n \n \nQtr Ended \nQtr Ended \nYear Ended \n \n31.12.2024 \n31.12.2023 \n31.03.2024 \n \nRs. \nRs. \nRs.",
+  "events_after_reporting": null,
+  "extraction_confidence": 0.5,
+  "document_hash": null
+}

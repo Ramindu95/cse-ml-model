@@ -1,0 +1,21 @@
+Financial Data Extraction Summary
+==================================
+
+Company: DIALOG FINANCE PLC (CALF)
+Report Type: Interim
+Report Date: 30 JUNE 2025
+Extraction Confidence: 0.50
+Document Hash: None
+
+Financial Metrics:
+- Revenue: None
+- Profit For Period: None
+- Operating Profit: None
+- Total Assets: None
+- Total Liabilities: None
+- Total Equity: None
+- Basic Eps: None
+- Gross Profit: None
+- Ebitda: None
+- Net Cash Flow: None
+

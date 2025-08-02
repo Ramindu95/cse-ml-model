@@ -3,50 +3,129 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import joblib # For loading scikit-learn models
 from datetime import date
-from typing import List, Dict, Union, Optional
+from typing import List, Dict, Union, Optional, Any
+import os
+import logging
+import json
+from pathlib import Path
+import sys
 
-# Adjust import paths based on your directory structure
-from data.data_loader import load_stock_data, load_financial_data, get_connection
-from data.feature_engineering import FeatureEngineer
+# --- Configure Logging ---
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+logger = logging.getLogger(__name__) # Use logger for this module
+
+# --- Adjust import paths for fs_parser.py ---
+# This assumes predict_api.py is at the project root (e.g., cse-analysis-backend/predict_api.py)
+# and fs_parser.py is in 'data/fs_data' relative to that root.
+script_dir = Path(__file__).parent # This will be 'cse-analysis-backend/' if run from there
+
+fs_parser_path = script_dir / "data" / "fs_data" # Corrected path: data/fs_data relative to script_dir
+if str(fs_parser_path) not in sys.path:
+    sys.path.insert(0, str(fs_parser_path))
+
+try:
+    # Import FinancialParser and related data models for feedback
+    from fs_parser import FinancialParser, ExtractedFinancialData, ExtractionFeedback
+    logger.info("✅ Successfully imported fs_parser for feedback functionality.")
+except ImportError as e:
+    logger.error(f"❌ Failed to import fs_parser: {e}. Feedback API will not be available.")
+    # Do not sys.exit(1) here, as the main prediction API should still function.
+    FinancialParser = None # Set to None to prevent errors later
+
+# --- Data Loader and Feature Engineering Imports (from your original predict_api.py) ---
+# Assuming these are in a 'data' directory relative to the project root.
+data_loader_path = script_dir / "data" # Corrected path: data relative to script_dir
+if str(data_loader_path) not in sys.path:
+    sys.path.insert(0, str(data_loader_path))
+
+try:
+    from data_loader import load_stock_data, load_financial_data, get_connection
+    from feature_engineering import FeatureEngineer
+    logger.info("✅ Successfully imported data_loader and feature_engineering.")
+except ImportError as e:
+    logger.error(f"❌ Failed to import data_loader or feature_engineering: {e}. Prediction API will not be fully functional.")
+    load_stock_data = None
+    load_financial_data = None
+    get_connection = None
+    FeatureEngineer = None
+
 
 # --- Configuration ---
-# Path to your trained model.
-# Now pointing to a specific model within the 'models' directory.
-MODEL_DIRECTORY = "models"
-DEFAULT_MODEL_FILENAME = "random_forest_model.pkl" # Choose your default model here
-MODEL_PATH = f"{MODEL_DIRECTORY}/{DEFAULT_MODEL_FILENAME}"
+# Path to your trained model and training features
+MODEL_DIRECTORY = "models" # Relative to where predict_api.py is run from
+DEFAULT_MODEL_FILENAME = "random_forest_model.pkl"
+TRAINING_FEATURES_FILENAME = "training_features.json"
+MODEL_PATH = Path(MODEL_DIRECTORY) / DEFAULT_MODEL_FILENAME
+TRAINING_FEATURES_PATH = Path(MODEL_DIRECTORY) / TRAINING_FEATURES_FILENAME
 
 # --- FastAPI App Initialization ---
 app = FastAPI(
-    title="Stock Prediction API",
-    description="API for predicting stock movements (Buy, Hold, Sell) based on historical and financial data.",
+    title="Stock Prediction & Financial Extraction Feedback API",
+    description="API for predicting stock movements and receiving feedback on financial data extraction.",
     version="1.0.0"
 )
 
-# --- Load Model and Feature Engineer Globally ---
-# This ensures the model and feature engineer are loaded once when the app starts
+# --- Global Resources ---
 model = None
 feature_engineer = None
+training_features = None
+financial_parser: Optional[FinancialParser] = None # Global instance for feedback
 
 @app.on_event("startup")
 async def load_resources():
-    """Load the trained model and initialize the FeatureEngineer on startup."""
-    global model, feature_engineer
+    """Load all resources: ML model, Feature Engineer, and FinancialParser."""
+    global model, feature_engineer, training_features, financial_parser
+    
+    # --- Load Stock Prediction Resources ---
     try:
-        model = joblib.load(MODEL_PATH)
-        print(f"✅ Model loaded successfully from {MODEL_PATH}")
-    except FileNotFoundError:
-        # Provide a more helpful error message including the expected path
-        raise RuntimeError(f"❌ Model file not found at {MODEL_PATH}. "
-                           "Please ensure it exists and train a model if necessary.")
+        if not MODEL_PATH.exists():
+            logger.error(f"❌ Model file not found at {MODEL_PATH}. Prediction API will be limited.")
+        else:
+            model = joblib.load(MODEL_PATH)
+            logger.info(f"✅ Stock Prediction Model loaded successfully from {MODEL_PATH}")
+        
+        if FeatureEngineer: # Check if FeatureEngineer was imported successfully
+            feature_engineer = FeatureEngineer()
+            logger.info("✅ FeatureEngineer initialized")
+        else:
+            logger.warning("⚠️ FeatureEngineer not initialized due to import error.")
+        
+        if TRAINING_FEATURES_PATH.exists():
+            if feature_engineer:
+                training_features = feature_engineer.load_training_features(TRAINING_FEATURES_PATH)
+                if training_features:
+                    logger.info(f"✅ Loaded {len(training_features)} training features")
+                else:
+                    logger.warning("⚠️ Training features file exists but no features loaded")
+            else:
+                logger.warning("⚠️ Cannot load training features: FeatureEngineer not initialized.")
+        else:
+            logger.warning(f"⚠️ Training features file not found at {TRAINING_FEATURES_PATH}")
+            logger.warning("   This may cause feature alignment issues during prediction")
+            
     except Exception as e:
-        raise RuntimeError(f"❌ Error loading model: {e}")
+        logger.error(f"❌ Error during stock prediction resource startup: {e}")
+        # Allow the app to start, but prediction functionality might be impaired.
 
-    feature_engineer = FeatureEngineer()
-    print("✅ FeatureEngineer initialized.")
+    # --- Initialize FinancialParser for Feedback ---
+    if FinancialParser: # Check if FinancialParser was imported successfully
+        try:
+            # Adjust ml_model_dir and db_path for FinancialParser
+            # Assuming 'ml_models' is at the project root and 'extraction_learning.db' is in 'data/fs_data'
+            # relative to the project root.
+            fp_ml_model_dir = script_dir / "ml_models" # Project root / ml_models
+            fp_db_path = script_dir / "data" / "fs_data" / "extraction_learning.db" # Project root / data / fs_data / db
+            
+            financial_parser = FinancialParser(ml_model_dir=str(fp_ml_model_dir), db_path=str(fp_db_path))
+            logger.info("✅ FinancialParser initialized successfully for feedback API.")
+        except Exception as e:
+            logger.error(f"❌ Failed to initialize FinancialParser for feedback: {e}")
+            financial_parser = None # Ensure it's None if initialization fails
+    else:
+        logger.warning("⚠️ FinancialParser not initialized: Class not found due to import error.")
 
 
-# --- Pydantic Models for Request and Response ---
+# --- Pydantic Models for Request and Response (Stock Prediction) ---
 
 class StockDataPoint(BaseModel):
     company_id: int
@@ -100,30 +179,39 @@ class PredictionRequest(BaseModel):
     company_id: int
     recent_stock_data: List[StockDataPoint]
     recent_financial_data: Optional[List[FinancialDataPoint]] = None
-    # Optional: Allow specifying which model to use, though default is set
-    # model_name: Optional[str] = DEFAULT_MODEL_FILENAME # This would require loading dynamically per request or having a registry
 
 class PredictionResponse(BaseModel):
     company_id: int
     trade_date: date
     predicted_action: str
     prediction_label: int
+    confidence: Optional[float] = None
+    features_used: Optional[int] = None
+    technical_features: Optional[int] = None
+    fundamental_features: Optional[int] = None
 
-# --- Helper Functions ---
+# --- Pydantic Model for Feedback (Financial Extraction) ---
+class FeedbackItem(BaseModel):
+    document_hash: str
+    field_name: str
+    extracted_value: Any
+    correct_value: Any
+    confidence_score: Optional[float] = None
+    user_id: str = "frontend_user" # Default user ID for feedback
 
-# Keep get_latest_data_for_company and get_latest_financial_data_for_company
-# if you intend to fetch data from the DB within the API.
-# If the API consumer always sends all data, these might not be strictly necessary for '/predict'
-# but useful for other potential endpoints or internal logic.
+# --- Helper Functions (Stock Prediction) ---
 
 def get_latest_data_for_company(company_id: int, num_days: int = 60) -> pd.DataFrame:
     """
     Fetches the most recent 'num_days' of stock data for a given company.
     """
+    if get_connection is None:
+        logger.error("Database connection function not available.")
+        return pd.DataFrame()
     conn = None
     try:
         conn = get_connection()
-        query = f"""
+        query = """
             SELECT
                 trade_date, open_price, high_price, low_price, close_price, volume,
                 turnover, market_cap, previous_close, percentage_change, change_amount
@@ -134,10 +222,10 @@ def get_latest_data_for_company(company_id: int, num_days: int = 60) -> pd.DataF
         """
         df = pd.read_sql(query, conn, params=(company_id, num_days))
         df['trade_date'] = pd.to_datetime(df['trade_date'])
-        df['company_id'] = company_id # Add company_id back
+        df['company_id'] = company_id
         return df.sort_values('trade_date')
     except Exception as e:
-        print(f"Error fetching latest stock data for company {company_id}: {e}")
+        logger.error(f"Error fetching latest stock data for company {company_id}: {e}")
         return pd.DataFrame()
     finally:
         if conn and conn.is_connected():
@@ -147,10 +235,13 @@ def get_latest_financial_data_for_company(company_id: int, num_statements: int =
     """
     Fetches the most recent financial statements for a given company.
     """
+    if get_connection is None:
+        logger.error("Database connection function not available.")
+        return pd.DataFrame()
     conn = None
     try:
         conn = get_connection()
-        query = f"""
+        query = """
             SELECT *
             FROM financial_statements
             WHERE company_id = %s
@@ -159,121 +250,390 @@ def get_latest_financial_data_for_company(company_id: int, num_statements: int =
         """
         df = pd.read_sql(query, conn, params=(company_id, num_statements))
         for col in ['period_start_date', 'period_end_date']:
-            df[col] = pd.to_datetime(df[col])
+            if col in df.columns:
+                df[col] = pd.to_datetime(df[col])
         return df.sort_values('period_end_date', ascending=False)
     except Exception as e:
-        print(f"Error fetching latest financial data for company {company_id}: {e}")
+        logger.error(f"Error fetching latest financial data for company {company_id}: {e}")
         return pd.DataFrame()
     finally:
         if conn and conn.is_connected():
             conn.close()
 
+def map_prediction_to_action(prediction_label: int) -> str:
+    """
+    Map numerical prediction labels to human-readable actions.
+    Standard mapping: 0=Sell, 1=Hold, 2=Buy
+    """
+    action_map = {
+        0: "Sell",
+        1: "Hold", 
+        2: "Buy"
+    }
+    return action_map.get(prediction_label, "Hold")
+
+def validate_data_consistency(request: PredictionRequest) -> None:
+    """Validate that all provided data is for the same company"""
+    # Validate company_id consistency in stock data
+    stock_company_ids = set(s.company_id for s in request.recent_stock_data)
+    if len(stock_company_ids) > 1 or request.company_id not in stock_company_ids:
+        raise HTTPException(
+            status_code=400, 
+            detail="All stock data must be for the same company as specified in company_id."
+        )
+
+    # Validate company_id consistency in financial data if provided
+    if request.recent_financial_data:
+        financial_company_ids = set(f.company_id for f in request.recent_financial_data)
+        if len(financial_company_ids) > 1 or request.company_id not in financial_company_ids:
+            raise HTTPException(
+                status_code=400, 
+                detail="All financial data must be for the same company as specified in company_id."
+            )
+
+def prepare_dataframes_from_request(request: PredictionRequest) -> tuple[pd.DataFrame, Optional[pd.DataFrame]]:
+    """Convert Pydantic request data to pandas DataFrames"""
+    try:
+        # Convert stock data to DataFrame
+        stock_df = pd.DataFrame([s.model_dump() for s in request.recent_stock_data])
+        stock_df['trade_date'] = pd.to_datetime(stock_df['trade_date'])
+        stock_df = stock_df.sort_values('trade_date').reset_index(drop=True)
+
+        # Convert financial data to DataFrame if provided
+        financial_df = None
+        if request.recent_financial_data:
+            financial_df = pd.DataFrame([f.model_dump() for f in request.recent_financial_data])
+            for col in ['period_start_date', 'period_end_date']:
+                if col in financial_df.columns:
+                    financial_df[col] = pd.to_datetime(financial_df[col])
+            financial_df = financial_df.sort_values('period_end_date', ascending=False).reset_index(drop=True)
+
+        return stock_df, financial_df
+
+    except Exception as e:
+        logger.error(f"Error converting request data to DataFrames: {e}")
+        raise HTTPException(status_code=400, detail=f"Error processing input data: {e}")
 
 # --- API Endpoints ---
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to the Stock Prediction API!"}
+    return {
+        "message": "Welcome to the Stock Prediction & Financial Extraction Feedback API!",
+        "version": "1.0.0",
+        "status": "active",
+        "endpoints": {
+            "predict": "/predict - Make prediction with provided data",
+            "predict_from_db": "/predict/company/{company_id} - Make prediction using database data",
+            "feedback": "/feedback - Record financial extraction feedback",
+            "status": "/status - Check API status",
+            "health": "/health - Health check",
+            "features": "/features/info - Get feature information"
+        }
+    }
 
 @app.post("/predict", response_model=PredictionResponse)
 async def predict_stock_action(request: PredictionRequest):
     """
     Predicts the next day's stock action (Buy, Hold, Sell) for a given company.
-    Requires recent historical stock data and optional financial data.
+    Uses the FeatureEngineer class for comprehensive feature generation.
     """
     if model is None or feature_engineer is None:
-        raise HTTPException(status_code=503, detail="Model or Feature Engineer not loaded. Server is starting up or encountered an error.")
+        raise HTTPException(
+            status_code=503, 
+            detail="Stock Prediction Model or Feature Engineer not loaded. Server is starting up or encountered an error."
+        )
+    if load_stock_data is None or load_financial_data is None or get_connection is None:
+        raise HTTPException(
+            status_code=503,
+            detail="Database functions not loaded. Check data_loader import."
+        )
 
-    # Convert incoming Pydantic data to Pandas DataFrame
-    stock_df = pd.DataFrame([s.model_dump() for s in request.recent_stock_data])
-    stock_df['trade_date'] = pd.to_datetime(stock_df['trade_date'])
+    # Validate minimum data requirements
+    if len(request.recent_stock_data) < 20:
+        raise HTTPException(
+            status_code=400,
+            detail="Insufficient historical data. Please provide at least 20 days of stock data for accurate predictions."
+        )
 
-    financial_df = None
-    if request.recent_financial_data:
-        financial_df = pd.DataFrame([f.model_dump() for f in request.recent_financial_data])
-        financial_df['period_start_date'] = pd.to_datetime(financial_df['period_start_date'])
-        financial_df['period_end_date'] = pd.to_datetime(financial_df['period_end_date'])
+    # Validate data consistency
+    validate_data_consistency(request)
 
-    # Ensure the company_id is consistent
-    if stock_df['company_id'].nunique() > 1 or stock_df['company_id'].iloc[0] != request.company_id:
-        raise HTTPException(status_code=400, detail="Provided stock data must be for a single company matching the request's company_id.")
+    # Convert request data to DataFrames
+    stock_df, financial_df = prepare_dataframes_from_request(request)
 
-    if financial_df is not None and (financial_df['company_id'].nunique() > 1 or financial_df['company_id'].iloc[0] != request.company_id):
-        raise HTTPException(status_code=400, detail="Provided financial data must be for a single company matching the request's company_id.")
+    logger.info(f"Processing prediction for company {request.company_id} with {len(stock_df)} stock records and {len(financial_df) if financial_df is not None else 0} financial records")
 
-    # Sort data by date
-    stock_df = stock_df.sort_values('trade_date').reset_index(drop=True)
-    if financial_df is not None:
-        financial_df = financial_df.sort_values('period_end_date', ascending=False).reset_index(drop=True)
-
-    # --- Feature Engineering ---
+    # Feature Engineering using the FeatureEngineer class
     try:
-        df_for_prediction = stock_df.copy()
-        if financial_df is not None and not financial_df.empty:
-            df_for_prediction = feature_engineer.merge_financial_with_stock_data(df_for_prediction, financial_df)
-        
-        df_for_prediction = df_for_prediction.sort_values(['company_id', 'trade_date'])
-        
-        df_for_prediction = feature_engineer.add_moving_averages(df_for_prediction)
-        df_for_prediction = feature_engineer.add_exponential_moving_averages(df_for_prediction)
-        df_for_prediction = feature_engineer.add_rsi(df_for_prediction)
-        df_for_prediction = feature_engineer.add_macd(df_for_prediction)
-        df_for_prediction = feature_engineer.add_bollinger_bands(df_for_prediction)
-        df_for_prediction = feature_engineer.add_stochastic_oscillator(df_for_prediction)
-        df_for_prediction = feature_engineer.add_volume_indicators(df_for_prediction)
-        df_for_prediction = feature_engineer.add_volatility_indicators(df_for_prediction)
-        df_for_prediction = feature_engineer.add_momentum_indicators(df_for_prediction)
-        df_for_prediction = feature_engineer.add_price_action_features(df_for_prediction)
+        X, _, metadata = feature_engineer.create_features_and_labels(
+            stock_df=stock_df,
+            financial_df=financial_df,
+            is_prediction=True,
+            training_features=training_features
+        )
 
-        if 'financial_revenue' in df_for_prediction.columns:
-            df_for_prediction = feature_engineer.add_financial_ratios(df_for_prediction)
-            df_for_prediction = feature_engineer.add_growth_metrics(df_for_prediction)
+        if X.empty:
+            raise HTTPException(
+                status_code=400, 
+                detail="Could not generate features from the provided data. Please check data quality and completeness."
+            )
+
+        # Use the latest data point for prediction
+        features_for_prediction = X.tail(1)
         
-        df_for_prediction = feature_engineer.clean_and_validate_features(df_for_prediction)
-
-        # Ensure that `feature_engineer.all_features` is populated after these calls
-        feature_engineer.all_features = feature_engineer.technical_features + feature_engineer.fundamental_features
-        
-        if not feature_engineer.all_features:
-            raise HTTPException(status_code=500, detail="No features generated. Check feature engineering logic.")
-
-        # Select the relevant features from the last row
-        features_df = df_for_prediction[feature_engineer.all_features].tail(1)
-
-        if features_df.empty:
-            raise HTTPException(status_code=400, detail="Insufficient data to generate features for prediction. Please provide more historical data.")
+        logger.info(f"Generated {len(X.columns)} features for prediction")
+        logger.info(f"Using latest data point from {metadata['trade_date'].iloc[-1] if not metadata.empty and 'trade_date' in metadata.columns else 'unknown date'}")
 
     except Exception as e:
-        print(f"Error during feature engineering: {e}")
+        logger.error(f"Error during feature engineering: {e}")
         raise HTTPException(status_code=500, detail=f"Error during feature engineering: {e}")
 
-    # --- Make Prediction ---
+    # Make Prediction
     try:
-        prediction_label = model.predict(features_df)[0]
+        # Get prediction
+        prediction_label = model.predict(features_for_prediction)[0]
+        
+        # Get prediction probabilities if available (for confidence)
+        confidence = None
+        if hasattr(model, 'predict_proba'):
+            try:
+                probabilities = model.predict_proba(features_for_prediction)[0]
+                confidence = float(max(probabilities))
+            except Exception as prob_error:
+                logger.warning(f"Could not get prediction probabilities: {prob_error}")
+
+        # Map prediction to action
+        predicted_action = map_prediction_to_action(int(prediction_label))
+        
+        logger.info(f"Prediction completed: {predicted_action} (label: {prediction_label}, confidence: {confidence})")
+
     except Exception as e:
-        print(f"Error during model prediction: {e}")
+        logger.error(f"Error during model prediction: {e}")
         raise HTTPException(status_code=500, detail=f"Error during model prediction: {e}")
 
-    # Map numerical prediction to human-readable action
-    if prediction_label == 1:
-        predicted_action = "Buy"
-    elif prediction_label == -1:
-        predicted_action = "Sell"
-    else:
-        predicted_action = "Hold"
+    # Determine the prediction date (next trading day)
+    latest_trade_date = stock_df['trade_date'].max().date()
+
+    # Count features by type
+    technical_count = len([f for f in feature_engineer.technical_features if f in X.columns])
+    fundamental_count = len([f for f in feature_engineer.fundamental_features if f in X.columns])
 
     return PredictionResponse(
         company_id=request.company_id,
-        trade_date=stock_df['trade_date'].max().date(),
+        trade_date=latest_trade_date,
         predicted_action=predicted_action,
-        prediction_label=int(prediction_label)
+        prediction_label=int(prediction_label),
+        confidence=confidence,
+        features_used=len(X.columns),
+        technical_features=technical_count,
+        fundamental_features=fundamental_count
     )
 
-# --- Endpoint to check model status ---
+@app.get("/predict/company/{company_id}")
+async def predict_from_database(company_id: int, days_lookback: int = 60):
+    """
+    Predict stock action using data directly from the database.
+    Fetches recent stock and financial data automatically.
+    """
+    if model is None or feature_engineer is None:
+        raise HTTPException(
+            status_code=503, 
+            detail="Stock Prediction Model or Feature Engineer not loaded."
+        )
+    if get_latest_data_for_company is None or get_latest_financial_data_for_company is None:
+        raise HTTPException(
+            status_code=503,
+            detail="Database fetching functions not available. Check data_loader import."
+        )
+
+    try:
+        # Fetch data from database
+        stock_df = get_latest_data_for_company(company_id, days_lookback)
+        financial_df = get_latest_financial_data_for_company(company_id, 4)
+
+        if stock_df.empty:
+            raise HTTPException(
+                status_code=404, 
+                detail=f"No stock data found for company_id {company_id}"
+            )
+
+        logger.info(f"Fetched {len(stock_df)} stock records and {len(financial_df) if not financial_df.empty else 0} financial records from database")
+
+        # Use the FeatureEngineer for feature generation
+        X, _, metadata = feature_engineer.create_features_and_labels(
+            stock_df=stock_df,
+            financial_df=financial_df if not financial_df.empty else None,
+            is_prediction=True,
+            training_features=training_features
+        )
+
+        if X.empty:
+            raise HTTPException(
+                status_code=400, 
+                detail="Could not generate features from database data."
+            )
+
+        # Make prediction using latest data point
+        features_for_prediction = X.tail(1)
+        prediction_label = model.predict(features_for_prediction)[0]
+        
+        # Get confidence if available
+        confidence = None
+        if hasattr(model, 'predict_proba'):
+            try:
+                probabilities = model.predict_proba(features_for_prediction)[0]
+                confidence = float(max(probabilities))
+            except Exception:
+                pass
+
+        predicted_action = map_prediction_to_action(int(prediction_label))
+        latest_trade_date = stock_df['trade_date'].max().date()
+
+        # Count features by type
+        technical_count = len([f for f in feature_engineer.technical_features if f in X.columns])
+        fundamental_count = len([f for f in feature_engineer.fundamental_features if f in X.columns])
+
+        return PredictionResponse(
+            company_id=company_id,
+            trade_date=latest_trade_date,
+            predicted_action=predicted_action,
+            prediction_label=int(prediction_label),
+            confidence=confidence,
+            features_used=len(X.columns),
+            technical_features=technical_count,
+            fundamental_features=fundamental_count
+        )
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error in database prediction for company {company_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Error making prediction: {e}")
+
+@app.post("/feedback")
+async def record_feedback_api(feedback_item: FeedbackItem):
+    """
+    API endpoint to record user feedback for extracted financial data.
+    This data will be used for retraining ML models.
+    """
+    if financial_parser is None:
+        raise HTTPException(status_code=500, detail="FinancialParser not initialized. Feedback functionality is unavailable.")
+
+    try:
+        financial_parser.record_feedback(
+            document_hash=feedback_item.document_hash,
+            field_name=feedback_item.field_name,
+            extracted_value=feedback_item.extracted_value,
+            correct_value=feedback_item.correct_value,
+            confidence_score=feedback_item.confidence_score,
+            user_id=feedback_item.user_id
+        )
+        logger.info(f"Received and recorded feedback for document {feedback_item.document_hash}, field {feedback_item.field_name}")
+        return {"message": "Feedback recorded successfully."}
+    except Exception as e:
+        logger.error(f"Error recording feedback: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Failed to record feedback: {e}")
+
 @app.get("/status")
 async def get_status():
+    """Get the current status of the API and loaded resources."""
+    feature_counts = {}
+    if feature_engineer:
+        feature_counts = {
+            "technical_features": len(feature_engineer.technical_features),
+            "fundamental_features": len(feature_engineer.fundamental_features),
+            "all_features": len(feature_engineer.all_features)
+        }
+    
     return {
-        "model_loaded": model is not None,
+        "stock_model_loaded": model is not None,
         "feature_engineer_initialized": feature_engineer is not None,
-        "model_path": MODEL_PATH
+        "training_features_loaded": training_features is not None and len(training_features) > 0,
+        "training_features_count": len(training_features) if training_features else 0,
+        "financial_parser_initialized": financial_parser is not None,
+        "model_path": str(MODEL_PATH),
+        "training_features_path": str(TRAINING_FEATURES_PATH),
+        "feature_counts": feature_counts
     }
+
+@app.get("/health")
+async def health_check():
+    """Simple health check endpoint."""
+    if model is None or feature_engineer is None or financial_parser is None:
+        raise HTTPException(status_code=503, detail="Service not fully ready. Check /status for details.")
+    
+    return {"status": "healthy", "message": "API is running and ready to serve predictions and feedback"}
+
+@app.get("/features/info")
+async def get_feature_info():
+    """Get comprehensive information about the features used by the model."""
+    if not training_features:
+        raise HTTPException(status_code=404, detail="Training features not loaded")
+    
+    if not feature_engineer:
+        raise HTTPException(status_code=503, detail="Feature engineer not initialized")
+    
+    # Get feature groups from the FeatureEngineer
+    feature_groups = feature_engineer.get_feature_importance_groups()
+    
+    # Separate technical and fundamental features
+    technical_features = [f for f in training_features if not f.startswith('financial_')]
+    fundamental_features = [f for f in training_features if f.startswith('financial_')]
+    
+    return {
+        "total_features": len(training_features),
+        "technical_features_count": len(technical_features),
+        "fundamental_features_count": len(fundamental_features),
+        "feature_groups": {
+            group: {
+                "count": len(features),
+                "features": features
+            }
+            for group, features in feature_groups.items()
+        },
+        "sample_technical_features": technical_features[:10],
+        "sample_fundamental_features": fundamental_features[:10] if fundamental_features else [],
+        "feature_engineer_status": {
+            "technical_features_available": len(feature_engineer.technical_features),
+            "fundamental_features_available": len(feature_engineer.fundamental_features),
+            "all_features_available": len(feature_engineer.all_features)
+        }
+    }
+
+@app.post("/features/save")
+async def save_current_features():
+    """Save current feature information to files."""
+    if not feature_engineer:
+        raise HTTPException(status_code=503, detail="Feature engineer not initialized")
+    
+    try:
+        # Save feature info
+        info_path = Path(MODEL_DIRECTORY) / "feature_info.txt"
+        feature_engineer.save_feature_info(str(info_path))
+        
+        # Save training features
+        features_path = Path(MODEL_DIRECTORY) / "training_features.json"
+        feature_engineer.save_training_features(str(features_path))
+        
+        return {
+            "message": "Feature information saved successfully",
+            "files_created": [str(info_path), str(features_path)],
+            "features_saved": len(feature_engineer.all_features)
+        }
+    except Exception as e:
+        logger.error(f"Error saving feature information: {e}")
+        raise HTTPException(status_code=500, detail=f"Error saving features: {e}")
+
+# --- Error Handlers ---
+
+@app.exception_handler(Exception)
+async def general_exception_handler(request, exc):
+    """Handle unexpected exceptions gracefully"""
+    logger.error(f"Unexpected error: {exc}", exc_info=True)
+    return HTTPException(status_code=500, detail="An unexpected error occurred")
+
+if __name__ == "__main__":
+    import uvicorn
+    # Make sure to run this from the project root if your MODEL_DIRECTORY is relative
+    uvicorn.run(app, host="0.0.0.0", port=8000)

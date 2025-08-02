@@ -1,0 +1,2065 @@
+{
+    "reqFinancialAnnouncemnets": [
+        {
+            "id": 48499,
+            "path": "cmt/upload_report_file/492_1754048774591.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "01 Aug 2025 05:16:14 PM",
+            "fileText": "Quarterly Financial Statements as at 30th June 2025 ",
+            "name": "CHEMANEX PLC",
+            "symbol": "CHMX"
+        },
+        {
+            "id": 48498,
+            "path": "cmt/upload_report_file/981_1754047319242. Interim Financial Statements _CDB 30_06_2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "01 Aug 2025 04:51:59 PM",
+            "fileText": "Quarterly Financial Report 30.06.2025",
+            "name": "CITIZENS DEVELOPMENT BUSINESS FINANCE PLC",
+            "symbol": "CDB"
+        },
+        {
+            "id": 48497,
+            "path": "cmt/upload_report_file/403_1754046922052.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "01 Aug 2025 04:45:22 PM",
+            "fileText": "Quarterly Financial Statements as of 30.06.2025",
+            "name": "HAYLEYS FABRIC PLC",
+            "symbol": "MGT"
+        },
+        {
+            "id": 48494,
+            "path": "cmt/upload_report_file/2790_1754045892433.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "01 Aug 2025 04:28:12 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "LUMINEX PLC",
+            "symbol": "LUMX"
+        },
+        {
+            "id": 48493,
+            "path": "cmt/upload_report_file/1101_1754044658211.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "01 Aug 2025 04:07:38 PM",
+            "fileText": "Quarterly Financial Report as of 30-06-2025",
+            "name": "DIALOG FINANCE PLC",
+            "symbol": "CALF"
+        },
+        {
+            "id": 48496,
+            "path": "cmt/upload_report_file/1444_1754044592463.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "01 Aug 2025 04:06:32 PM",
+            "fileText": "Quarterly Financial Statements as of 30 June 2025",
+            "name": "SINGHE HOSPITALS PLC",
+            "symbol": "SINH"
+        },
+        {
+            "id": 48495,
+            "path": "cmt/upload_report_file/881_1754043166628.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "01 Aug 2025 03:42:46 PM",
+            "fileText": "Annual Report for the year ended 31 March 2025",
+            "name": "RESUS ENERGY PLC",
+            "symbol": "HPWR"
+        },
+        {
+            "id": 48492,
+            "path": "cmt/upload_report_file/676_1754041198437.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "01 Aug 2025 03:09:58 PM",
+            "fileText": "Interim Financial Statements as at 30-06-2025",
+            "name": "LANKA CERAMIC PLC",
+            "symbol": "CERA"
+        },
+        {
+            "id": 48491,
+            "path": "cmt/upload_report_file/376_1754039058766.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "01 Aug 2025 02:34:18 PM",
+            "fileText": "Interim Financial Statements as at 30-06-2025",
+            "name": "HOUSING DEVELOPMENT FINANCE CORPORATION BANK OF SRI LANKA",
+            "symbol": "HDFC"
+        },
+        {
+            "id": 48487,
+            "path": "cmt/upload_report_file/1524_1754022292111.N.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "01 Aug 2025 09:54:52 AM",
+            "fileText": "Interim Financial Statements as of 30-06-2025",
+            "name": "B P P L HOLDINGS PLC",
+            "symbol": "BPPL"
+        },
+        {
+            "id": 48488,
+            "path": "cmt/upload_report_file/3138_1754019147083.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "01 Aug 2025 09:02:27 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "CAL FIVE YEAR OPTIMUM FUND (“Units”)",
+            "symbol": "CALI"
+        },
+        {
+            "id": 48484,
+            "path": "cmt/upload_report_file/3279_1754019103606.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "01 Aug 2025 09:01:43 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "CAL FIVE YEAR CLOSED END FUND (“Units”)",
+            "symbol": "CALC"
+        },
+        {
+            "id": 48482,
+            "path": "cmt/upload_report_file/375_1754017954140.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "01 Aug 2025 08:42:34 AM",
+            "fileText": "Interim Financial Statements as of 30th June 2025",
+            "name": "HNB ASSURANCE PLC",
+            "symbol": "HASU"
+        },
+        {
+            "id": 48480,
+            "path": "cmt/upload_report_file/1080_1753961652537.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "31 Jul 2025 05:04:12 PM",
+            "fileText": "Interim financial statements as at 30th June 2025",
+            "name": "TEEJAY LANKA PLC",
+            "symbol": "TJL"
+        },
+        {
+            "id": 48481,
+            "path": "cmt/upload_report_file/726_1753961428892.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "31 Jul 2025 05:00:28 PM",
+            "fileText": "Interim Financial Statements as at 30th June 2025",
+            "name": "TALAWAKELLE TEA ESTATES  PLC",
+            "symbol": "TPL"
+        },
+        {
+            "id": 48479,
+            "path": "cmt/upload_report_file/488_1753958711587.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "31 Jul 2025 04:15:11 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "CONVENIENCE  FOODS (LANKA )PLC",
+            "symbol": "SOY"
+        },
+        {
+            "id": 48475,
+            "path": "cmt/upload_report_file/510_1753957815933.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "31 Jul 2025 04:00:15 PM",
+            "fileText": "Condensed interim consolidated financial statements for the quarter ended 30th June 2025",
+            "name": "SUNSHINE HOLDINGS PLC",
+            "symbol": "SUN"
+        },
+        {
+            "id": 48476,
+            "path": "cmt/upload_report_file/488_1753956801716.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "31 Jul 2025 03:43:21 PM",
+            "fileText": "Interim Financial Statements for the 1st Quarter ended 30th June 2025",
+            "name": "CONVENIENCE  FOODS (LANKA )PLC",
+            "symbol": "SOY"
+        },
+        {
+            "id": 48478,
+            "path": "cmt/upload_report_file/617_1753956523367.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "31 Jul 2025 03:38:43 PM",
+            "fileText": "Interim Financial Statements for the Quarter ended 30th June 2025",
+            "name": "SEYLAN DEVELOPMENTS PLC",
+            "symbol": "CSD"
+        },
+        {
+            "id": 48473,
+            "path": "cmt/upload_report_file/709_1753955762240.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "31 Jul 2025 03:26:02 PM",
+            "fileText": "Interim Financial Statements as at 30/06/2025",
+            "name": "HORANA PLANTATIONS PLC",
+            "symbol": "HOPL"
+        },
+        {
+            "id": 48477,
+            "path": "cmt/upload_report_file/388_1753955485068.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "31 Jul 2025 03:21:25 PM",
+            "fileText": "Interim Financial Statements for the six months ended 30th June 2025 ",
+            "name": "PAN ASIA BANKING CORPORATION PLC",
+            "symbol": "PABC"
+        },
+        {
+            "id": 48474,
+            "path": "cmt/upload_report_file/1063_1753954213078.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "31 Jul 2025 03:00:13 PM",
+            "fileText": "Interim Financial Statements For The Quarter Ended 30th June 2025",
+            "name": "COMMERCIAL CREDIT AND FINANCE PLC",
+            "symbol": "COCR"
+        },
+        {
+            "id": 48472,
+            "path": "cmt/upload_report_file/500_1753929117444.06.2025.pdf",
+            "manualDate": 1750789800000,
+            "uploadedDate": "31 Jul 2025 08:01:57 AM",
+            "fileText": "Interim Financial Statements for the period ended 25th June, 2025",
+            "name": "UNION CHEMICALS LANKA PLC",
+            "symbol": "UCAR"
+        },
+        {
+            "id": 48471,
+            "path": "cmt/upload_report_file/2567_1753877438743.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "30 Jul 2025 05:40:38 PM",
+            "fileText": "Interim Financial Statements as at 30th June 2025 ",
+            "name": "SARVODAYA DEVELOPMENT FINANCE PLC",
+            "symbol": "SDF"
+        },
+        {
+            "id": 48467,
+            "path": "cmt/upload_report_file/728_1753875550402.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "30 Jul 2025 05:09:10 PM",
+            "fileText": "Interim condensed financial statements for the quarter ended 30th June 2025",
+            "name": "WATAWALA PLANTATIONS PLC",
+            "symbol": "WATA"
+        },
+        {
+            "id": 48468,
+            "path": "cmt/upload_report_file/2353_1753874969838.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "30 Jul 2025 04:59:29 PM",
+            "fileText": "Quarterly Financial Statements as at 30-06-2025",
+            "name": "JAT HOLDINGS PLC",
+            "symbol": "JAT"
+        },
+        {
+            "id": 48469,
+            "path": "cmt/upload_report_file/1047_1753874215204.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "30 Jul 2025 04:46:55 PM",
+            "fileText": "Interim Financial Statements for the period ended 30.06.2025",
+            "name": "UNION BANK OF COLOMBO PLC",
+            "symbol": "UBC"
+        },
+        {
+            "id": 48470,
+            "path": "cmt/upload_report_file/1064_1753874167675.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "30 Jul 2025 04:46:07 PM",
+            "fileText": "Interim Financial Statements as at 30th June 2025",
+            "name": "MERCANTILE INVESTMENTS AND FINANCE PLC",
+            "symbol": "MERC"
+        },
+        {
+            "id": 48465,
+            "path": "cmt/upload_report_file/1404_1753871461564.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "30 Jul 2025 04:01:01 PM",
+            "fileText": "Interim Financial Statements for the period ended 30th June 2025",
+            "name": "SIYAPATHA FINANCE PLC",
+            "symbol": "SLFL"
+        },
+        {
+            "id": 48464,
+            "path": "cmt/upload_report_file/668_1753870438568.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "30 Jul 2025 03:43:58 PM",
+            "fileText": "Financial Statements as of 30.06.2025",
+            "name": "CHEVRON LUBRICANTS LANKA PLC",
+            "symbol": "LLUB"
+        },
+        {
+            "id": 48461,
+            "path": "cmt/upload_report_file/731_1753869978077.pdf",
+            "manualDate": 1753813800000,
+            "uploadedDate": "30 Jul 2025 03:36:18 PM",
+            "fileText": "Interim Financial Statements as @ 30th June 2025",
+            "name": "JOHN KEELLS PLC",
+            "symbol": "JKL"
+        },
+        {
+            "id": 48460,
+            "path": "cmt/upload_report_file/606_1753866915807.pdf",
+            "manualDate": 1753813800000,
+            "uploadedDate": "30 Jul 2025 02:45:15 PM",
+            "fileText": "Interim Financial Statements as @ 30th June 2025",
+            "name": "TRANS ASIA HOTELS PLC",
+            "symbol": "TRAN"
+        },
+        {
+            "id": 48459,
+            "path": "cmt/upload_report_file/561_1753866845816.pdf",
+            "manualDate": 1753813800000,
+            "uploadedDate": "30 Jul 2025 02:44:05 PM",
+            "fileText": "Interim Financial Statements as @ 30th June 2025",
+            "name": "JOHN KEELLS HOTELS PLC",
+            "symbol": "KHL"
+        },
+        {
+            "id": 48458,
+            "path": "cmt/upload_report_file/690_1753866772705.pdf",
+            "manualDate": 1753813800000,
+            "uploadedDate": "30 Jul 2025 02:42:52 PM",
+            "fileText": "Interim Financial Statements as @ 30th June 2025",
+            "name": "ASIAN HOTELS & PROPERTIES PLC",
+            "symbol": "AHPL"
+        },
+        {
+            "id": 48457,
+            "path": "cmt/upload_report_file/508_1753866684326.pdf",
+            "manualDate": 1753813800000,
+            "uploadedDate": "30 Jul 2025 02:41:24 PM",
+            "fileText": "Interim Financial Statements as @ 30th June 2025",
+            "name": "JOHN KEELLS HOLDINGS PLC",
+            "symbol": "JKH"
+        },
+        {
+            "id": 48455,
+            "path": "cmt/upload_report_file/443_1753789754148.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "29 Jul 2025 05:19:14 PM",
+            "fileText": "Interim Financial Statements for the six months ended 30th June 2025",
+            "name": "SEYLAN BANK PLC",
+            "symbol": "SEYB"
+        },
+        {
+            "id": 48456,
+            "path": "cmt/upload_report_file/2647_1753789009173.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "29 Jul 2025 05:06:49 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "CAPITAL ALLIANCE PLC",
+            "symbol": "CALT"
+        },
+        {
+            "id": 48454,
+            "path": "cmt/upload_report_file/1069_1753788284573.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "29 Jul 2025 04:54:44 PM",
+            "fileText": "QUARTERLY FINANCIAL STATEMENT AS OF 30TH JUNE 2025",
+            "name": "ABANS FINANCE PLC",
+            "symbol": "AFSL"
+        },
+        {
+            "id": 48453,
+            "path": "cmt/upload_report_file/532_1753783319055.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "29 Jul 2025 03:31:59 PM",
+            "fileText": "Interim Financial Statements as at 30.06.2025",
+            "name": "HAYLEYS LEISURE  PLC",
+            "symbol": "CONN"
+        },
+        {
+            "id": 48451,
+            "path": "cmt/upload_report_file/483_1753783067451.pdf",
+            "manualDate": 1753727400000,
+            "uploadedDate": "29 Jul 2025 03:27:47 PM",
+            "fileText": "Interim Financial Statements as @ 30th June 2025",
+            "name": "KEELLS FOOD PRODUCTS PLC",
+            "symbol": "KFP"
+        },
+        {
+            "id": 48450,
+            "path": "cmt/upload_report_file/462_1753782983998.pdf",
+            "manualDate": 1753727400000,
+            "uploadedDate": "29 Jul 2025 03:26:23 PM",
+            "fileText": "Interim Financial Statements as @ 30th June 2025",
+            "name": "CEYLON COLD STORES PLC",
+            "symbol": "CCS"
+        },
+        {
+            "id": 48449,
+            "path": "cmt/upload_report_file/3218_1753782696641.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "29 Jul 2025 03:21:36 PM",
+            "fileText": "Interim Financial Statements for the Quarter ended 30th June 2025",
+            "name": "DIGITAL MOBILITY SOLUTIONS LANKA PLC",
+            "symbol": "PKME"
+        },
+        {
+            "id": 48444,
+            "path": "cmt/upload_report_file/746_1753757835052.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "29 Jul 2025 08:27:15 AM",
+            "fileText": "Interim Financial Statements as at 30th June 2025",
+            "name": "GESTETNER OF CEYLON PLC",
+            "symbol": "GEST"
+        },
+        {
+            "id": 48440,
+            "path": "cmt/upload_report_file/2512_1753701379552.06.2025 _Sgd.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "28 Jul 2025 04:46:19 PM",
+            "fileText": "Interim Financial Statements as at 30th June 2025",
+            "name": "LANKA CREDIT AND BUSINESS FINANCE PLC",
+            "symbol": "LCBF"
+        },
+        {
+            "id": 48445,
+            "path": "cmt/upload_report_file/401_1753701243218. LRI Quarterly Interim Report 30th June 2025 upload.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "28 Jul 2025 04:44:03 PM",
+            "fileText": "Interim Financial Statements as at 30th June 2025",
+            "name": "LANKA REALTY INVESTMENTS PLC",
+            "symbol": "ASCO"
+        },
+        {
+            "id": 48447,
+            "path": "cmt/upload_report_file/692_1753699535914.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "28 Jul 2025 04:15:35 PM",
+            "fileText": "INTERIM ACCOUNTS FOR THE QUARTER ENDING 30TH JUNE 2025",
+            "name": "THE AUTODROME PLC",
+            "symbol": "AUTO"
+        },
+        {
+            "id": 48443,
+            "path": "cmt/upload_report_file/443_1753697293906.pdf",
+            "manualDate": 1753641000000,
+            "uploadedDate": "28 Jul 2025 03:38:13 PM",
+            "fileText": "Trust Deed - BASEL III compliant Convertible Debenture Issue 2025",
+            "name": "SEYLAN BANK PLC",
+            "symbol": "SEYB"
+        },
+        {
+            "id": 48442,
+            "path": "cmt/upload_report_file/443_1753697244131.pdf",
+            "manualDate": 1753641000000,
+            "uploadedDate": "28 Jul 2025 03:37:24 PM",
+            "fileText": "Prospectus - BASEL III compliant Convertible Debenture Issue 2025",
+            "name": "SEYLAN BANK PLC",
+            "symbol": "SEYB"
+        },
+        {
+            "id": 48438,
+            "path": "cmt/upload_report_file/543_1753693767242.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "28 Jul 2025 02:39:27 PM",
+            "fileText": "Interim Financial Statements as at 30/06/2025",
+            "name": "THE KINGSBURY PLC",
+            "symbol": "SERV"
+        },
+        {
+            "id": 48429,
+            "path": "cmt/upload_report_file/1141_1753438617690.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "25 Jul 2025 03:46:57 PM",
+            "fileText": "Errata to the Annual Report 2024/25",
+            "name": "ACCESS ENGINEERING PLC",
+            "symbol": "AEL"
+        },
+        {
+            "id": 48428,
+            "path": "cmt/upload_report_file/1141_1753438557109.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "25 Jul 2025 03:45:57 PM",
+            "fileText": "Annual Report 2024/25 (Updated)",
+            "name": "ACCESS ENGINEERING PLC",
+            "symbol": "AEL"
+        },
+        {
+            "id": 48427,
+            "path": "cmt/upload_report_file/722_1753435817618.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "25 Jul 2025 03:00:17 PM",
+            "fileText": "Provisional Financial statements for the six month ended 30-06-2025",
+            "name": "MALWATTE VALLEY PLANTATIONS PLC",
+            "symbol": "MAL"
+        },
+        {
+            "id": 48426,
+            "path": "cmt/upload_report_file/450_1753434125093.pdf",
+            "manualDate": 1753381800000,
+            "uploadedDate": "25 Jul 2025 02:32:05 PM",
+            "fileText": "Interim Financial Statements as @ 30th June 2025",
+            "name": "UNION ASSURANCE PLC",
+            "symbol": "UAL"
+        },
+        {
+            "id": 48425,
+            "path": "cmt/upload_report_file/614_1753354996567. pdf.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "24 Jul 2025 04:33:16 PM",
+            "fileText": "QUARTERLY FINANCIAL STATEMENTS FOR PERIOD ENDED 30.06.2025",
+            "name": "C T LAND DEVELOPMENT PLC",
+            "symbol": "CTLD"
+        },
+        {
+            "id": 48424,
+            "path": "cmt/upload_report_file/710_1753353701786.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "24 Jul 2025 04:11:41 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "KAHAWATTE PLANTATIONS PLC",
+            "symbol": "KAHA"
+        },
+        {
+            "id": 48423,
+            "path": "cmt/upload_report_file/499_1753351336754.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "24 Jul 2025 03:32:16 PM",
+            "fileText": "Quaterly Financial Statements for Period Ended 30/06/2025",
+            "name": "STANDARD CAPITAL PLC",
+            "symbol": "SING"
+        },
+        {
+            "id": 48422,
+            "path": "cmt/upload_report_file/499_1753351245879.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "24 Jul 2025 03:30:45 PM",
+            "fileText": "Quaterly Financial Statements for Period Ended 31/03/2025",
+            "name": "STANDARD CAPITAL PLC",
+            "symbol": "SING"
+        },
+        {
+            "id": 48421,
+            "path": "cmt/upload_report_file/666_1753348111092.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "24 Jul 2025 02:38:31 PM",
+            "fileText": "Quarterly Financial Report as of 30.06.2025",
+            "name": "PGP GLASS CEYLON PLC",
+            "symbol": "GLAS"
+        },
+        {
+            "id": 48420,
+            "path": "cmt/upload_report_file/627_1753325712449.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "24 Jul 2025 08:25:12 AM",
+            "fileText": "Interim Financial Statements as at 30th June 2025",
+            "name": "ON ALLY HOLDINGS PLC",
+            "symbol": "ONAL"
+        },
+        {
+            "id": 48415,
+            "path": "cmt/upload_report_file/628_1753324998539.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "24 Jul 2025 08:13:18 AM",
+            "fileText": "Quarterly Financial Statements as at 30.06.2025",
+            "name": "OVERSEAS REALTY (CEYLON) PLC",
+            "symbol": "OSEA"
+        },
+        {
+            "id": 48414,
+            "path": "cmt/upload_report_file/2652_1753270691492.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "23 Jul 2025 05:08:11 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "HSENID BUSINESS SOLUTIONS PLC",
+            "symbol": "HBS"
+        },
+        {
+            "id": 48413,
+            "path": "cmt/upload_report_file/1141_1753269401292.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "23 Jul 2025 04:46:41 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "ACCESS ENGINEERING PLC",
+            "symbol": "AEL"
+        },
+        {
+            "id": 48412,
+            "path": "cmt/upload_report_file/1322_1753268168697.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "23 Jul 2025 04:26:08 PM",
+            "fileText": "Interim Financial Statements as at 30.06.25",
+            "name": "BANSEI ROYAL RESORTS HIKKADUWA PLC",
+            "symbol": "BRR"
+        },
+        {
+            "id": 48411,
+            "path": "cmt/upload_report_file/696_1753265538726.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "23 Jul 2025 03:42:18 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "SATHOSA MOTORS PLC",
+            "symbol": "SMOT"
+        },
+        {
+            "id": 48410,
+            "path": "cmt/upload_report_file/949_1753264694169.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "23 Jul 2025 03:28:14 PM",
+            "fileText": "Interim Financial Statements 30.06.2025",
+            "name": "VALLIBEL FINANCE PLC",
+            "symbol": "VFIN"
+        },
+        {
+            "id": 48408,
+            "path": "cmt/upload_report_file/2790_1753240232299.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "23 Jul 2025 08:40:32 AM",
+            "fileText": "Quarterly Financial Statements as at 30th June, 2025",
+            "name": "LUMINEX PLC",
+            "symbol": "LUMX"
+        },
+        {
+            "id": 48404,
+            "path": "cmt/upload_report_file/1045_1753183212599.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "22 Jul 2025 04:50:12 PM",
+            "fileText": "Annual Report 2024-2025",
+            "name": "HATTON PLANTATIONS PLC",
+            "symbol": "HPL"
+        },
+        {
+            "id": 48403,
+            "path": "cmt/upload_report_file/1041_1753181015920.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "22 Jul 2025 04:13:35 PM",
+            "fileText": "Interim Financial Statements as at 30.06.2025",
+            "name": "SINGER FINANCE (LANKA) PLC",
+            "symbol": "SFIN"
+        },
+        {
+            "id": 48402,
+            "path": "cmt/upload_report_file/614_1753180422609.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "22 Jul 2025 04:03:42 PM",
+            "fileText": "Errata to the Annual Report 2024-2025",
+            "name": "C T LAND DEVELOPMENT PLC",
+            "symbol": "CTLD"
+        },
+        {
+            "id": 48401,
+            "path": "cmt/upload_report_file/456_1753102951843.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "21 Jul 2025 06:32:31 PM",
+            "fileText": "Annual Report - 2024/25",
+            "name": "BUKIT DARAH PLC",
+            "symbol": "BUKI"
+        },
+        {
+            "id": 48400,
+            "path": "cmt/upload_report_file/502_1753098344902.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "21 Jul 2025 05:15:44 PM",
+            "fileText": "Annual Report - 2024/25",
+            "name": "CARSON CUMBERBATCH PLC",
+            "symbol": "CARS"
+        },
+        {
+            "id": 48399,
+            "path": "cmt/upload_report_file/3259_1753090142195.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "21 Jul 2025 02:59:02 PM",
+            "fileText": "Interim Financial Statements as at 30th June 2025",
+            "name": "FINTREX FINANCE PLC",
+            "symbol": "FFL"
+        },
+        {
+            "id": 48398,
+            "path": "cmt/upload_report_file/1064_1753088826223.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "21 Jul 2025 02:37:06 PM",
+            "fileText": "Annual Report for the year ended 31st March 2025",
+            "name": "MERCANTILE INVESTMENTS AND FINANCE PLC",
+            "symbol": "MERC"
+        },
+        {
+            "id": 48382,
+            "path": "cmt/upload_report_file/695_1752832207668.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "18 Jul 2025 03:20:07 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "LANKA ASHOK LEYLAND PLC",
+            "symbol": "ASHO"
+        },
+        {
+            "id": 48381,
+            "path": "cmt/upload_report_file/1068_1752830687790.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "18 Jul 2025 02:54:47 PM",
+            "fileText": "Interim Financial Statement as at 30th June 2025",
+            "name": "ASSOCIATED MOTOR FINANCE COMPANY PLC",
+            "symbol": "AMF"
+        },
+        {
+            "id": 48380,
+            "path": "cmt/upload_report_file/604_1752829484116.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "18 Jul 2025 02:34:44 PM",
+            "fileText": "Interim financial statements for the quarter ended 30th June 2025",
+            "name": "TAL LANKA HOTELS PLC",
+            "symbol": "TAJ"
+        },
+        {
+            "id": 48379,
+            "path": "cmt/upload_report_file/1322_1752746331343.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "17 Jul 2025 03:28:51 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "BANSEI ROYAL RESORTS HIKKADUWA PLC",
+            "symbol": "BRR"
+        },
+        {
+            "id": 48378,
+            "path": "cmt/upload_report_file/379_1752659717382.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "16 Jul 2025 03:25:17 PM",
+            "fileText": "Interim Financial Statements - 30.06.2025",
+            "name": "L B FINANCE PLC",
+            "symbol": "LFIN"
+        },
+        {
+            "id": 48377,
+            "path": "cmt/upload_report_file/729_1752575742240.06.2025.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "15 Jul 2025 04:05:42 PM",
+            "fileText": "Interim Financial Statements as at 30th June 2025",
+            "name": "LANKA IOC PLC",
+            "symbol": "LIOC"
+        },
+        {
+            "id": 48376,
+            "path": "cmt/upload_report_file/441_1752553249369.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "15 Jul 2025 09:50:49 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "SENKADAGALA FINANCE PLC",
+            "symbol": "SFCL"
+        },
+        {
+            "id": 48375,
+            "path": "cmt/upload_report_file/1063_1752552078845.03.31 (2) (1).pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "15 Jul 2025 09:31:18 AM",
+            "fileText": "Audited Financial Statements for the Year Ended 31/03/2025",
+            "name": "COMMERCIAL CREDIT AND FINANCE PLC",
+            "symbol": "COCR"
+        },
+        {
+            "id": 48372,
+            "path": "cmt/upload_report_file/610_1752462473235.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "14 Jul 2025 08:37:53 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "COLOMBO INVESTMENT TRUST PLC",
+            "symbol": "CIT"
+        },
+        {
+            "id": 48368,
+            "path": "cmt/upload_report_file/609_1752237358409.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "11 Jul 2025 06:05:58 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "COLOMBO FORT INVESTMENTS PLC",
+            "symbol": "CFI"
+        },
+        {
+            "id": 48370,
+            "path": "cmt/upload_report_file/688_1752226651721.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "11 Jul 2025 03:07:31 PM",
+            "fileText": "Annual Financial Report as of 31-03-2025",
+            "name": "TOKYO CEMENT COMPANY (LANKA) PLC",
+            "symbol": "TKYO"
+        },
+        {
+            "id": 48363,
+            "path": "cmt/upload_report_file/881_1752059553986.pdf",
+            "manualDate": 1751999400000,
+            "uploadedDate": "09 Jul 2025 04:42:33 PM",
+            "fileText": "GB Framework Issuance of Listed, Rated, Unsecured, Senior, Redeemable Green 4 & 5-year Bonds 2025",
+            "name": "RESUS ENERGY PLC",
+            "symbol": "HPWR"
+        },
+        {
+            "id": 48362,
+            "path": "cmt/upload_report_file/881_1752059499047.pdf",
+            "manualDate": 1751999400000,
+            "uploadedDate": "09 Jul 2025 04:41:39 PM",
+            "fileText": "Accountants Report Issuance of Listed, Rated, Unsecured, Senior, Redeemable Green 4 & 5-year Bonds 2025",
+            "name": "RESUS ENERGY PLC",
+            "symbol": "HPWR"
+        },
+        {
+            "id": 48361,
+            "path": "cmt/upload_report_file/881_1752059419059.pdf",
+            "manualDate": 1751999400000,
+            "uploadedDate": "09 Jul 2025 04:40:19 PM",
+            "fileText": "AOA Issuance of Listed, Rated, Unsecured, Senior, Redeemable Green 4 & 5-year Bonds 2025",
+            "name": "RESUS ENERGY PLC",
+            "symbol": "HPWR"
+        },
+        {
+            "id": 48360,
+            "path": "cmt/upload_report_file/881_1752059339814.pdf",
+            "manualDate": 1751999400000,
+            "uploadedDate": "09 Jul 2025 04:38:59 PM",
+            "fileText": "Trust Deed Part 2 Issuance of Listed, Rated, Unsecured, Senior, Redeemable Green 4 & 5-year Bonds 2025",
+            "name": "RESUS ENERGY PLC",
+            "symbol": "HPWR"
+        },
+        {
+            "id": 48359,
+            "path": "cmt/upload_report_file/881_1752059288311.pdf",
+            "manualDate": 1751999400000,
+            "uploadedDate": "09 Jul 2025 04:38:08 PM",
+            "fileText": "Trust Deed Part 1 Issuance of Listed, Rated, Unsecured, Senior, Redeemable Green 4 & 5-year Bonds 2025",
+            "name": "RESUS ENERGY PLC",
+            "symbol": "HPWR"
+        },
+        {
+            "id": 48358,
+            "path": "cmt/upload_report_file/881_1752059216009.pdf",
+            "manualDate": 1751999400000,
+            "uploadedDate": "09 Jul 2025 04:36:56 PM",
+            "fileText": "Prospectus - Issuance of Listed, Rated, Unsecured, Senior, Redeemable Green 4 & 5-year Bonds 2025",
+            "name": "RESUS ENERGY PLC",
+            "symbol": "HPWR"
+        },
+        {
+            "id": 48357,
+            "path": "cmt/upload_report_file/489_1752029644114.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "09 Jul 2025 08:24:04 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "DILMAH CEYLON TEA COMPANY PLC",
+            "symbol": "CTEA"
+        },
+        {
+            "id": 48356,
+            "path": "cmt/upload_report_file/2998_1751858190933.03.2025.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "07 Jul 2025 08:46:30 AM",
+            "fileText": "Audited Financial Statement as at 31/03/25",
+            "name": "UB FINANCE PLC",
+            "symbol": "UBF"
+        },
+        {
+            "id": 48355,
+            "path": "cmt/upload_report_file/2512_1751857691555.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "07 Jul 2025 08:38:11 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "LANKA CREDIT AND BUSINESS FINANCE PLC",
+            "symbol": "LCBF"
+        },
+        {
+            "id": 48350,
+            "path": "cmt/upload_report_file/763_1751626164722.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jul 2025 04:19:24 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "MULLER AND PHIPPS (CEYLON) PLC",
+            "symbol": "MULL"
+        },
+        {
+            "id": 48351,
+            "path": "cmt/upload_report_file/498_1751625984952.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jul 2025 04:16:24 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "LAXAPANA PLC",
+            "symbol": "LITE"
+        },
+        {
+            "id": 48352,
+            "path": "cmt/upload_report_file/745_1751625444631.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jul 2025 04:07:24 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "E B CREASY & COMPANY PLC",
+            "symbol": "EBCR"
+        },
+        {
+            "id": 48348,
+            "path": "cmt/upload_report_file/1302_1751623131613.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jul 2025 03:28:51 PM",
+            "fileText": "ANNUAL REPORT 2024/2025",
+            "name": "ABANS PLC",
+            "symbol": "ABNS"
+        },
+        {
+            "id": 48353,
+            "path": "cmt/upload_report_file/495_1751621412491.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jul 2025 03:00:12 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "INDUSTRIAL ASPHALTS (CEYLON) PLC",
+            "symbol": "ASPH"
+        },
+        {
+            "id": 48347,
+            "path": "cmt/upload_report_file/455_1751607856269.pdf",
+            "manualDate": 1751567400000,
+            "uploadedDate": "04 Jul 2025 11:14:16 AM",
+            "fileText": "Service Agreement - Sukuk Issue 2025",
+            "name": "VIDULLANKA PLC",
+            "symbol": "VLL"
+        },
+        {
+            "id": 48346,
+            "path": "cmt/upload_report_file/455_1751607792472.pdf",
+            "manualDate": 1751567400000,
+            "uploadedDate": "04 Jul 2025 11:13:12 AM",
+            "fileText": "Purchase Undertaking - Sukuk Issue 2025",
+            "name": "VIDULLANKA PLC",
+            "symbol": "VLL"
+        },
+        {
+            "id": 48345,
+            "path": "cmt/upload_report_file/455_1751607728630.pdf",
+            "manualDate": 1751567400000,
+            "uploadedDate": "04 Jul 2025 11:12:08 AM",
+            "fileText": "Purchase Agreement - Sukuk Issue 2025",
+            "name": "VIDULLANKA PLC",
+            "symbol": "VLL"
+        },
+        {
+            "id": 48344,
+            "path": "cmt/upload_report_file/455_1751607675767.pdf",
+            "manualDate": 1751567400000,
+            "uploadedDate": "04 Jul 2025 11:11:15 AM",
+            "fileText": "Mortgage Bond - Sukuk Issue 2025",
+            "name": "VIDULLANKA PLC",
+            "symbol": "VLL"
+        },
+        {
+            "id": 48343,
+            "path": "cmt/upload_report_file/455_1751607571291.pdf",
+            "manualDate": 1751567400000,
+            "uploadedDate": "04 Jul 2025 11:09:31 AM",
+            "fileText": "Ijarah Agreement - Sukuk Issue 2025",
+            "name": "VIDULLANKA PLC",
+            "symbol": "VLL"
+        },
+        {
+            "id": 48341,
+            "path": "cmt/upload_report_file/455_1751606908445.pdf",
+            "manualDate": 1751567400000,
+            "uploadedDate": "04 Jul 2025 10:58:28 AM",
+            "fileText": "Trust Deed - Sukuk Issue 2025",
+            "name": "VIDULLANKA PLC",
+            "symbol": "VLL"
+        },
+        {
+            "id": 48342,
+            "path": "cmt/upload_report_file/455_1751606864404.pdf",
+            "manualDate": 1751567400000,
+            "uploadedDate": "04 Jul 2025 10:57:44 AM",
+            "fileText": "Articles of Association - Sukuk Issue 2025",
+            "name": "VIDULLANKA PLC",
+            "symbol": "VLL"
+        },
+        {
+            "id": 48340,
+            "path": "cmt/upload_report_file/455_1751600765796.pdf",
+            "manualDate": 1741026600000,
+            "uploadedDate": "04 Jul 2025 09:16:05 AM",
+            "fileText": "Prospectus - Sukuk Issue 2025",
+            "name": "VIDULLANKA PLC",
+            "symbol": "VLL"
+        },
+        {
+            "id": 48339,
+            "path": "cmt/upload_report_file/663_1751597469559.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jul 2025 08:21:09 AM",
+            "fileText": "INTERIM FINANCIAL STATEMENTS FOR TWELVE MONTHS ENDED 31ST MARCH 2025",
+            "name": "BLUE DIAMONDS JEWELLERY WORLDWIDE PLC",
+            "symbol": "BLUE"
+        },
+        {
+            "id": 48338,
+            "path": "cmt/upload_report_file/458_1751536812506.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jul 2025 03:30:12 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "CEYLON BEVERAGE HOLDINGS PLC",
+            "symbol": "BREW"
+        },
+        {
+            "id": 48337,
+            "path": "cmt/upload_report_file/485_1751536384397.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jul 2025 03:23:04 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "LION BREWERY CEYLON PLC",
+            "symbol": "LION"
+        },
+        {
+            "id": 48336,
+            "path": "cmt/upload_report_file/607_1751457338259.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jul 2025 05:25:38 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "CEYLON GUARDIAN INVESTMENT TRUST PLC",
+            "symbol": "GUAR"
+        },
+        {
+            "id": 48335,
+            "path": "cmt/upload_report_file/608_1751456132488.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jul 2025 05:05:32 PM",
+            "fileText": "Annual Report 2024-25",
+            "name": "CEYLON INVESTMENT PLC",
+            "symbol": "CINV"
+        },
+        {
+            "id": 48367,
+            "path": "cmt/upload_report_file/1404_1752059929238.pdf",
+            "manualDate": 1751394600000,
+            "uploadedDate": "02 Jul 2025 04:48:49 PM",
+            "fileText": "Accountants Report Issuance of 50,000,000 Listed, Rated, Senior, Unsecured, Redeemable Debentures - 2025",
+            "name": "SIYAPATHA FINANCE PLC",
+            "symbol": "SLFL"
+        },
+        {
+            "id": 48366,
+            "path": "cmt/upload_report_file/1404_1752059860468.pdf",
+            "manualDate": 1751394600000,
+            "uploadedDate": "02 Jul 2025 04:47:40 PM",
+            "fileText": "AOA Issuance of 50,000,000 Listed, Rated, Senior, Unsecured, Redeemable Debentures - 2025",
+            "name": "SIYAPATHA FINANCE PLC",
+            "symbol": "SLFL"
+        },
+        {
+            "id": 48365,
+            "path": "cmt/upload_report_file/1404_1752059807601.pdf",
+            "manualDate": 1751394600000,
+            "uploadedDate": "02 Jul 2025 04:46:47 PM",
+            "fileText": "Trust Deed Issuance of 50,000,000 Listed, Rated, Senior, Unsecured, Redeemable Debentures - 2025",
+            "name": "SIYAPATHA FINANCE PLC",
+            "symbol": "SLFL"
+        },
+        {
+            "id": 48364,
+            "path": "cmt/upload_report_file/1404_1752059737461.pdf",
+            "manualDate": 1751394600000,
+            "uploadedDate": "02 Jul 2025 04:45:37 PM",
+            "fileText": "Prospectus Issuance of 50,000,000 Listed, Rated, Senior, Unsecured, Redeemable Debentures - 2025",
+            "name": "SIYAPATHA FINANCE PLC",
+            "symbol": "SLFL"
+        },
+        {
+            "id": 48331,
+            "path": "cmt/upload_report_file/1185_1751284841122.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "30 Jun 2025 05:30:41 PM",
+            "fileText": "Errata to the Interim Financial Statements as at 31st December 2024 and 31st March 2025",
+            "name": "RAMBODA FALLS PLC",
+            "symbol": "RFL"
+        },
+        {
+            "id": 48334,
+            "path": "cmt/upload_report_file/614_1751283580812.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "30 Jun 2025 05:09:40 PM",
+            "fileText": "ANNUAL REPORT 2024-2025",
+            "name": "C T LAND DEVELOPMENT PLC",
+            "symbol": "CTLD"
+        },
+        {
+            "id": 48333,
+            "path": "cmt/upload_report_file/567_1751282270906.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "30 Jun 2025 04:47:50 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "PEGASUS HOTELS OF CEYLON PLC",
+            "symbol": "PEG"
+        },
+        {
+            "id": 48332,
+            "path": "cmt/upload_report_file/503_1751279579289.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "30 Jun 2025 04:02:59 PM",
+            "fileText": "Annual Report 2024-2025",
+            "name": "C T HOLDINGS PLC",
+            "symbol": "CTHR"
+        },
+        {
+            "id": 48328,
+            "path": "cmt/upload_report_file/1073_1751254512522.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "30 Jun 2025 09:05:12 AM",
+            "fileText": "Annual Audited Financial Statements as of 03/31/2025",
+            "name": "LOLC FINANCE PLC",
+            "symbol": "LOFC"
+        },
+        {
+            "id": 48329,
+            "path": "cmt/upload_report_file/405_1751252658701.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "30 Jun 2025 08:34:18 AM",
+            "fileText": "Audited Financial Statements as at 31.03.2025",
+            "name": "PMF FINANCE PLC",
+            "symbol": "PMB"
+        },
+        {
+            "id": 48321,
+            "path": "cmt/upload_report_file/666_1751017642835.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "27 Jun 2025 03:17:22 PM",
+            "fileText": "Annual Report FY 2024-2025",
+            "name": "PGP GLASS CEYLON PLC",
+            "symbol": "GLAS"
+        },
+        {
+            "id": 48324,
+            "path": "cmt/upload_report_file/484_1751017189661.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "27 Jun 2025 03:09:49 PM",
+            "fileText": "Annual Report 2024-2025",
+            "name": "KOTMALE HOLDINGS PLC",
+            "symbol": "LAMB"
+        },
+        {
+            "id": 48323,
+            "path": "cmt/upload_report_file/441_1751017103582.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "27 Jun 2025 03:08:23 PM",
+            "fileText": "Audited Financial Statement for the year ended 31st March 2025",
+            "name": "SENKADAGALA FINANCE PLC",
+            "symbol": "SFCL"
+        },
+        {
+            "id": 48322,
+            "path": "cmt/upload_report_file/457_1751017054218.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "27 Jun 2025 03:07:34 PM",
+            "fileText": "Annual Report 2024-2025",
+            "name": "CARGILLS (CEYLON) PLC",
+            "symbol": "CARG"
+        },
+        {
+            "id": 48311,
+            "path": "cmt/upload_report_file/1064_1750673024176.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "23 Jun 2025 03:33:44 PM",
+            "fileText": "Audited Financial Statements as of 31st March 2025",
+            "name": "MERCANTILE INVESTMENTS AND FINANCE PLC",
+            "symbol": "MERC"
+        },
+        {
+            "id": 48310,
+            "path": "cmt/upload_report_file/442_1750421239254.pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "20 Jun 2025 05:37:19 PM",
+            "fileText": "Errata to the Annual Report 2024",
+            "name": "COLOMBO DOCKYARD PLC",
+            "symbol": "DOCK"
+        },
+        {
+            "id": 48309,
+            "path": "cmt/upload_report_file/2692_1750412776116.pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "20 Jun 2025 03:16:16 PM",
+            "fileText": "Annual Report for the year ended 31st December 2024 -Revised ",
+            "name": "CO-OPERATIVE INSURANCE COMPANY PLC",
+            "symbol": "COOP"
+        },
+        {
+            "id": 48307,
+            "path": "cmt/upload_report_file/564_1750388135351.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "20 Jun 2025 08:25:35 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "MARAWILA RESORTS PLC",
+            "symbol": "MARA"
+        },
+        {
+            "id": 48306,
+            "path": "cmt/upload_report_file/1201_1750388086766.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "20 Jun 2025 08:24:46 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "BERUWALA RESORTS PLC",
+            "symbol": "BERU"
+        },
+        {
+            "id": 48308,
+            "path": "cmt/upload_report_file/602_1750388025462.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "20 Jun 2025 08:23:45 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "SIGIRIYA VILLAGE HOTELS PLC",
+            "symbol": "SIGV"
+        },
+        {
+            "id": 48305,
+            "path": "cmt/upload_report_file/492_1750244778515.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "18 Jun 2025 04:36:18 PM",
+            "fileText": "Further Announcement to the Notice of Meeting - Annual Report 2024/25",
+            "name": "CHEMANEX PLC",
+            "symbol": "CHMX"
+        },
+        {
+            "id": 48304,
+            "path": "cmt/upload_report_file/1108_1750242249298.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "18 Jun 2025 03:54:09 PM",
+            "fileText": "Audited Financial Statements for the year ended 31.3.2025",
+            "name": "ASIA ASSET FINANCE PLC",
+            "symbol": "AAF"
+        },
+        {
+            "id": 48301,
+            "path": "cmt/upload_report_file/663_1750073590192.12.2024 (new (1).pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "16 Jun 2025 05:03:10 PM",
+            "fileText": "Interim Financial Statements for nine months ended 31st December 2024",
+            "name": "BLUE DIAMONDS JEWELLERY WORLDWIDE PLC",
+            "symbol": "BLUE"
+        },
+        {
+            "id": 48292,
+            "path": "cmt/upload_report_file/663_1750068649347.09.2024xlsx (1).pdf",
+            "manualDate": 1727634600000,
+            "uploadedDate": "16 Jun 2025 03:40:49 PM",
+            "fileText": "Interim Financial Statements for the six months ended 30th September 2024",
+            "name": "BLUE DIAMONDS JEWELLERY WORLDWIDE PLC",
+            "symbol": "BLUE"
+        },
+        {
+            "id": 48290,
+            "path": "cmt/upload_report_file/2512_1749799611992.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "13 Jun 2025 12:56:51 PM",
+            "fileText": "Audited Financial Statements for the year ended 31.03.2025",
+            "name": "LANKA CREDIT AND BUSINESS FINANCE PLC",
+            "symbol": "LCBF"
+        },
+        {
+            "id": 48288,
+            "path": "cmt/upload_report_file/781_1749783246910.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "13 Jun 2025 08:24:06 AM",
+            "fileText": "Errata to the Interim Financial Statements as of 31/03/2025",
+            "name": "TESS AGRO PLC",
+            "symbol": "TESS"
+        },
+        {
+            "id": 48287,
+            "path": "cmt/upload_report_file/694_1749728066796.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "12 Jun 2025 05:04:26 PM",
+            "fileText": "Errata to the Annual Report 2024/25",
+            "name": "DIESEL & MOTOR ENGINEERING PLC",
+            "symbol": "DIMO"
+        },
+        {
+            "id": 48286,
+            "path": "cmt/upload_report_file/694_1749727575663.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "12 Jun 2025 04:56:15 PM",
+            "fileText": " UPDATED ANNUAL REPORT 2024/2025",
+            "name": "DIESEL & MOTOR ENGINEERING PLC",
+            "symbol": "DIMO"
+        },
+        {
+            "id": 48279,
+            "path": "cmt/upload_report_file/525_1749725291926.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "12 Jun 2025 04:18:11 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "BROWNS BEACH HOTELS PLC",
+            "symbol": "BBH"
+        },
+        {
+            "id": 48283,
+            "path": "cmt/upload_report_file/376_1749724408789.pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "12 Jun 2025 04:03:28 PM",
+            "fileText": "ERRATA  TO THE ANNUAL REPORT 2024",
+            "name": "HOUSING DEVELOPMENT FINANCE CORPORATION BANK OF SRI LANKA",
+            "symbol": "HDFC"
+        },
+        {
+            "id": 48277,
+            "path": "cmt/upload_report_file/521_1749719155360.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "12 Jun 2025 02:35:55 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "AITKEN SPENCE HOTEL HOLDINGS PLC",
+            "symbol": "AHUN"
+        },
+        {
+            "id": 48276,
+            "path": "cmt/upload_report_file/501_1749719055782.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "12 Jun 2025 02:34:15 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "AITKEN SPENCE PLC",
+            "symbol": "SPEN"
+        },
+        {
+            "id": 48274,
+            "path": "cmt/upload_report_file/1074_1749230117220.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 10:45:17 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "VALLIBEL ONE PLC",
+            "symbol": "VONE"
+        },
+        {
+            "id": 48273,
+            "path": "cmt/upload_report_file/1992_1749228755334.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 10:22:35 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "HNB FINANCE PLC",
+            "symbol": "HNBF"
+        },
+        {
+            "id": 48272,
+            "path": "cmt/upload_report_file/1072_1749226867867.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 09:51:07 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "JANASHAKTHI FINANCE PLC ",
+            "symbol": "BFN"
+        },
+        {
+            "id": 48271,
+            "path": "cmt/upload_report_file/1426_1749223407370.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 08:53:27 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "FIRST CAPITAL TREASURIES PLC",
+            "symbol": "FCT"
+        },
+        {
+            "id": 48270,
+            "path": "cmt/upload_report_file/698_1749222802375.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 08:43:22 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "FIRST CAPITAL HOLDINGS PLC",
+            "symbol": "CFVF"
+        },
+        {
+            "id": 48266,
+            "path": "cmt/upload_report_file/1103_1749213770885.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 06:12:50 PM",
+            "fileText": "Annual Report 2024/25 (Clearer Version) ",
+            "name": "PEOPLE'S LEASING & FINANCE PLC",
+            "symbol": "PLC"
+        },
+        {
+            "id": 48269,
+            "path": "cmt/upload_report_file/3259_1749212722365.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 05:55:22 PM",
+            "fileText": "Annual Report - 2024/25",
+            "name": "FINTREX FINANCE PLC",
+            "symbol": "FFL"
+        },
+        {
+            "id": 48268,
+            "path": "cmt/upload_report_file/695_1749212403680.03.2025.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 05:50:03 PM",
+            "fileText": "Audited Financial Statements for the Year Ended 31.03.2025",
+            "name": "LANKA ASHOK LEYLAND PLC",
+            "symbol": "ASHO"
+        },
+        {
+            "id": 48267,
+            "path": "cmt/upload_report_file/442_1749209047642.pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "06 Jun 2025 04:54:07 PM",
+            "fileText": "Annual Report 2024",
+            "name": "COLOMBO DOCKYARD PLC",
+            "symbol": "DOCK"
+        },
+        {
+            "id": 48262,
+            "path": "cmt/upload_report_file/2727_1749205038217.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 03:47:18 PM",
+            "fileText": "Interim Financial Statements for the Quarter ended 31/3/2025",
+            "name": "HELA APPAREL HOLDINGS PLC",
+            "symbol": "HELA"
+        },
+        {
+            "id": 48249,
+            "path": "cmt/upload_report_file/2279_1749201727862.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 02:52:07 PM",
+            "fileText": "Amended Annual Report 2024/25",
+            "name": "PRIME LANDS RESIDENCIES PLC",
+            "symbol": "PLR"
+        },
+        {
+            "id": 48229,
+            "path": "cmt/upload_report_file/2279_1749201666597.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 02:51:06 PM",
+            "fileText": "Amended Annual Report 2024/25",
+            "name": "PRIME LANDS RESIDENCIES PLC",
+            "symbol": "PLR"
+        },
+        {
+            "id": 48261,
+            "path": "cmt/upload_report_file/1069_1749200776284.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 02:36:16 PM",
+            "fileText": "AUDITED FINANCIAL STATEMENT AS OF 31ST MARCH 2025",
+            "name": "ABANS FINANCE PLC",
+            "symbol": "AFSL"
+        },
+        {
+            "id": 48260,
+            "path": "cmt/upload_report_file/1080_1749183379522.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 09:46:19 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "TEEJAY LANKA PLC",
+            "symbol": "TJL"
+        },
+        {
+            "id": 48259,
+            "path": "cmt/upload_report_file/694_1749182190689.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 09:26:30 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "DIESEL & MOTOR ENGINEERING PLC",
+            "symbol": "DIMO"
+        },
+        {
+            "id": 48257,
+            "path": "cmt/upload_report_file/1103_1749178445219.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 08:24:05 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "PEOPLE'S LEASING & FINANCE PLC",
+            "symbol": "PLC"
+        },
+        {
+            "id": 48255,
+            "path": "cmt/upload_report_file/981_1749178046328.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 08:17:26 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "CITIZENS DEVELOPMENT BUSINESS FINANCE PLC",
+            "symbol": "CDB"
+        },
+        {
+            "id": 48254,
+            "path": "cmt/upload_report_file/341_1749177212157.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "06 Jun 2025 08:03:32 AM",
+            "fileText": "ANNUAL REPORT 2024/25",
+            "name": "ALLIANCE FINANCE COMPANY PLC",
+            "symbol": "ALLI"
+        },
+        {
+            "id": 48253,
+            "path": "cmt/upload_report_file/683_1749139078042.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 09:27:58 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "ROYAL CERAMICS LANKA PLC",
+            "symbol": "RCL"
+        },
+        {
+            "id": 48252,
+            "path": "cmt/upload_report_file/379_1749137525707.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 09:02:05 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "L B FINANCE PLC",
+            "symbol": "LFIN"
+        },
+        {
+            "id": 48250,
+            "path": "cmt/upload_report_file/2173_1749130764869.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 07:09:24 PM",
+            "fileText": "Annual Report for the year ended 31 March 2025",
+            "name": "WINDFORCE PLC",
+            "symbol": "WIND"
+        },
+        {
+            "id": 48248,
+            "path": "cmt/upload_report_file/676_1749129636599.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 06:50:36 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "LANKA CERAMIC PLC",
+            "symbol": "CERA"
+        },
+        {
+            "id": 48247,
+            "path": "cmt/upload_report_file/678_1749129285001.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 06:44:45 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "LANKA WALLTILES PLC",
+            "symbol": "LWL"
+        },
+        {
+            "id": 48246,
+            "path": "cmt/upload_report_file/677_1749129120466.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 06:42:00 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "LANKA TILES PLC",
+            "symbol": "TILE"
+        },
+        {
+            "id": 48245,
+            "path": "cmt/upload_report_file/1444_1749128928064.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 06:38:48 PM",
+            "fileText": "Annual Report for the year ended 31 March 2025",
+            "name": "SINGHE HOSPITALS PLC",
+            "symbol": "SINH"
+        },
+        {
+            "id": 48244,
+            "path": "cmt/upload_report_file/679_1749128626241.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 06:33:46 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "SWISSTEK (CEYLON) PLC",
+            "symbol": "PARQ"
+        },
+        {
+            "id": 48242,
+            "path": "cmt/upload_report_file/505_1749126315503.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 05:55:15 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "HAYLEYS PLC",
+            "symbol": "HAYL"
+        },
+        {
+            "id": 48235,
+            "path": "cmt/upload_report_file/2216_1749125317391.pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "05 Jun 2025 05:38:37 PM",
+            "fileText": "Rating Certificate for the Financial Year 2024",
+            "name": "CEYLON ELECTRICITY BOARD",
+            "symbol": "CEB"
+        },
+        {
+            "id": 48241,
+            "path": "cmt/upload_report_file/1544_1749124363237.06.2025_Final 5.21 PM.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 05:22:43 PM",
+            "fileText": "Annual Report for FY 2024/25",
+            "name": "R I L PROPERTY PLC",
+            "symbol": "RIL"
+        },
+        {
+            "id": 48239,
+            "path": "cmt/upload_report_file/2353_1749123203864.pdf",
+            "manualDate": 1751221800000,
+            "uploadedDate": "05 Jun 2025 05:03:23 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "JAT HOLDINGS PLC",
+            "symbol": "JAT"
+        },
+        {
+            "id": 48240,
+            "path": "cmt/upload_report_file/765_1749120750163.W.Mackie PLC Annual Report as of 31.03.2025.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 04:22:30 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "C. W. MACKIE PLC",
+            "symbol": "CWM"
+        },
+        {
+            "id": 48238,
+            "path": "cmt/upload_report_file/1686_1749120442813.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 04:17:22 PM",
+            "fileText": "Annual Report for the year ended 31st March 2025",
+            "name": "JETWING SYMPHONY PLC",
+            "symbol": "JETS"
+        },
+        {
+            "id": 48232,
+            "path": "cmt/upload_report_file/366_1749119928347.pdf",
+            "manualDate": 1748370600000,
+            "uploadedDate": "05 Jun 2025 04:08:48 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "CENTRAL FINANCE COMPANY PLC",
+            "symbol": "CFIN"
+        },
+        {
+            "id": 48236,
+            "path": "cmt/upload_report_file/562_1749119607910.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 04:03:27 PM",
+            "fileText": "Annual Report for the year ended 31st March 2025",
+            "name": "THE LIGHTHOUSE HOTEL PLC",
+            "symbol": "LHL"
+        },
+        {
+            "id": 48234,
+            "path": "cmt/upload_report_file/1121_1749118592622.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 03:46:32 PM",
+            "fileText": "Errata to the Quarterly Financial Statements - 31st March 2025",
+            "name": "AGSTAR PLC",
+            "symbol": "AGST"
+        },
+        {
+            "id": 48233,
+            "path": "cmt/upload_report_file/601_1749118515398.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 03:45:15 PM",
+            "fileText": "Errata to the Quarterly Financial Statements - 31st March 2025",
+            "name": "SERENDIB HOTELS PLC",
+            "symbol": "SHOT"
+        },
+        {
+            "id": 48230,
+            "path": "cmt/upload_report_file/454_1749115936891.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 03:02:16 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "VALLIBEL POWER ERATHNA PLC",
+            "symbol": "VPEL"
+        },
+        {
+            "id": 48226,
+            "path": "cmt/upload_report_file/707_1749093566197.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 08:49:26 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "ELPITIYA PLANTATIONS PLC",
+            "symbol": "ELPL"
+        },
+        {
+            "id": 48228,
+            "path": "cmt/upload_report_file/2511_1749092631974.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 08:33:51 AM",
+            "fileText": "Annual Report 2024/2025 ",
+            "name": "EX-PACK CORRUGATED CARTONS PLC",
+            "symbol": "PACK"
+        },
+        {
+            "id": 48227,
+            "path": "cmt/upload_report_file/697_1749090554418.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "05 Jun 2025 07:59:14 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "UNITED MOTORS LANKA PLC",
+            "symbol": "UML"
+        },
+        {
+            "id": 48223,
+            "path": "cmt/upload_report_file/693_1749037557262.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 05:15:57 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "C M HOLDINGS PLC",
+            "symbol": "COLO"
+        },
+        {
+            "id": 48224,
+            "path": "cmt/upload_report_file/1040_1749036812807.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 05:03:32 PM",
+            "fileText": "Annual Report for FY 2024/25",
+            "name": "PANASIAN POWER PLC",
+            "symbol": "PAP"
+        },
+        {
+            "id": 48217,
+            "path": "cmt/upload_report_file/2279_1749034427899.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 04:23:47 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "PRIME LANDS RESIDENCIES PLC",
+            "symbol": "PLR"
+        },
+        {
+            "id": 48222,
+            "path": "cmt/upload_report_file/949_1749034314223.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 04:21:54 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "VALLIBEL FINANCE PLC",
+            "symbol": "VFIN"
+        },
+        {
+            "id": 48221,
+            "path": "cmt/upload_report_file/641_1749033047962.06.2025) Final.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 04:00:47 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "YORK ARCADE HOLDINGS PLC",
+            "symbol": "YORK"
+        },
+        {
+            "id": 48220,
+            "path": "cmt/upload_report_file/452_1749030568326.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 03:19:28 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "BAIRAHA FARMS PLC",
+            "symbol": "BFL"
+        },
+        {
+            "id": 48490,
+            "path": "cmt/upload_report_file/380_1754032657553.pdf",
+            "manualDate": 1748975400000,
+            "uploadedDate": "04 Jun 2025 12:47:37 PM",
+            "fileText": "Trust Deed - Debenture Issue 2025",
+            "name": "MERCHANT BANK OF SRI LANKA & FINANCE PLC",
+            "symbol": "MBSL"
+        },
+        {
+            "id": 48489,
+            "path": "cmt/upload_report_file/380_1754032569642.pdf",
+            "manualDate": 1748975400000,
+            "uploadedDate": "04 Jun 2025 12:46:09 PM",
+            "fileText": "Prospectus - Debenture Issue 2025",
+            "name": "MERCHANT BANK OF SRI LANKA & FINANCE PLC",
+            "symbol": "MBSL"
+        },
+        {
+            "id": 48216,
+            "path": "cmt/upload_report_file/2692_1749017138690.pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "04 Jun 2025 11:35:38 AM",
+            "fileText": "Annual Report 2024",
+            "name": "CO-OPERATIVE INSURANCE COMPANY PLC",
+            "symbol": "COOP"
+        },
+        {
+            "id": 48213,
+            "path": "cmt/upload_report_file/541_1749006701825.pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "04 Jun 2025 08:41:41 AM",
+            "fileText": "Annual Report 2024",
+            "name": "GALADARI HOTELS (LANKA) PLC",
+            "symbol": "GHLL"
+        },
+        {
+            "id": 48209,
+            "path": "cmt/upload_report_file/493_1749006067334.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 08:31:07 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "CIC HOLDINGS PLC",
+            "symbol": "CIC"
+        },
+        {
+            "id": 48207,
+            "path": "cmt/upload_report_file/504_1749005707917.03.2025 - CSE Final.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 08:25:07 AM",
+            "fileText": "Quarterly Financial Report as of 31.03.2025",
+            "name": "THE COLOMBO FORT LAND & BUILDING PLC",
+            "symbol": "CFLB"
+        },
+        {
+            "id": 48210,
+            "path": "cmt/upload_report_file/510_1749005326179.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 08:18:46 AM",
+            "fileText": "Annual Report 2024/2025          ",
+            "name": "SUNSHINE HOLDINGS PLC",
+            "symbol": "SUN"
+        },
+        {
+            "id": 48214,
+            "path": "cmt/upload_report_file/621_1749004490301.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "04 Jun 2025 08:04:50 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "EQUITY TWO PLC",
+            "symbol": "ETWO"
+        },
+        {
+            "id": 48212,
+            "path": "cmt/upload_report_file/730_1748959875711.03.2025.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 07:41:15 PM",
+            "fileText": "Quarterly Financial report as of 31st March 2025",
+            "name": "CEYLON PRINTERS PLC",
+            "symbol": "CPRT"
+        },
+        {
+            "id": 48203,
+            "path": "cmt/upload_report_file/670_1748949953384.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 04:55:53 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "DIPPED PRODUCTS PLC",
+            "symbol": "DIPD"
+        },
+        {
+            "id": 48202,
+            "path": "cmt/upload_report_file/728_1748949890443.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 04:54:50 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "WATAWALA PLANTATIONS PLC",
+            "symbol": "WATA"
+        },
+        {
+            "id": 48201,
+            "path": "cmt/upload_report_file/494_1748949593898.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 04:49:53 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "HAYCARB PLC",
+            "symbol": "HAYC"
+        },
+        {
+            "id": 48200,
+            "path": "cmt/upload_report_file/492_1748948598925.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 04:33:18 PM",
+            "fileText": "Further Announcement to the Notice of Meeting - Annual Report 2024/25",
+            "name": "CHEMANEX PLC",
+            "symbol": "CHMX"
+        },
+        {
+            "id": 48199,
+            "path": "cmt/upload_report_file/3279_1748944660247.03.2025.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 03:27:40 PM",
+            "fileText": "Interim Financial Statements for the quarter ended 31st March 2025",
+            "name": "CAL FIVE YEAR CLOSED END FUND (“Units”)",
+            "symbol": "CALC"
+        },
+        {
+            "id": 48196,
+            "path": "cmt/upload_report_file/665_1748943262866.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 03:04:22 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "CENTRAL INDUSTRIES PLC",
+            "symbol": "CIND"
+        },
+        {
+            "id": 48197,
+            "path": "cmt/upload_report_file/768_1748943144634.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 03:02:24 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "HAYLEYS FIBRE PLC",
+            "symbol": "HEXP"
+        },
+        {
+            "id": 48193,
+            "path": "cmt/upload_report_file/492_1748922994402.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 09:26:34 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "CHEMANEX PLC",
+            "symbol": "CHMX"
+        },
+        {
+            "id": 48192,
+            "path": "cmt/upload_report_file/741_1748920184205.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 08:39:44 AM",
+            "fileText": "Interim Accounts for the quarter ended 31st March 2025",
+            "name": "LAKE HOUSE PRINTERS AND PUBLISHERS PLC",
+            "symbol": "LPRT"
+        },
+        {
+            "id": 48191,
+            "path": "cmt/upload_report_file/3218_1748918615265.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "03 Jun 2025 08:13:35 AM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "DIGITAL MOBILITY SOLUTIONS LANKA PLC",
+            "symbol": "PKME"
+        },
+        {
+            "id": 48188,
+            "path": "cmt/upload_report_file/490_1748869183435.06.2025).pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 06:29:43 PM",
+            "fileText": "Annual Audited Financial Statements as of 31st March 2025",
+            "name": "TEA SMALLHOLDER FACTORIES PLC",
+            "symbol": "TSML"
+        },
+        {
+            "id": 48190,
+            "path": "cmt/upload_report_file/497_1748867353541.03.2025.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 05:59:13 PM",
+            "fileText": "Quarterly Financial Report as of 31.03.2025",
+            "name": "LANKEM CEYLON PLC",
+            "symbol": "LCEY"
+        },
+        {
+            "id": 48189,
+            "path": "cmt/upload_report_file/2567_1748866099752.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 05:38:19 PM",
+            "fileText": "Annual Report 2024/2025",
+            "name": "SARVODAYA DEVELOPMENT FINANCE PLC",
+            "symbol": "SDF"
+        },
+        {
+            "id": 48187,
+            "path": "cmt/upload_report_file/532_1748865353896.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 05:25:53 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "HAYLEYS LEISURE  PLC",
+            "symbol": "CONN"
+        },
+        {
+            "id": 48185,
+            "path": "cmt/upload_report_file/713_1748865040025.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 05:20:40 PM",
+            "fileText": "Interim Financial Statements for the Period Ended 31.03.2025",
+            "name": "KOTAGALA PLANTATIONS PLC",
+            "symbol": "KOTA"
+        },
+        {
+            "id": 48186,
+            "path": "cmt/upload_report_file/543_1748864685778.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 05:14:45 PM",
+            "fileText": "Annual Report 2024/25",
+            "name": "THE KINGSBURY PLC",
+            "symbol": "SERV"
+        },
+        {
+            "id": 48183,
+            "path": "cmt/upload_report_file/1074_1748862657033.03.2025 - to be uploaded.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 04:40:57 PM",
+            "fileText": "Interim Financial Statements as at 31.03.2025 (Revised)",
+            "name": "VALLIBEL ONE PLC",
+            "symbol": "VONE"
+        },
+        {
+            "id": 48180,
+            "path": "cmt/upload_report_file/2279_1748861698234.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 04:24:58 PM",
+            "fileText": "Audited financial statement for the year ended 31st March 2025",
+            "name": "PRIME LANDS RESIDENCIES PLC",
+            "symbol": "PLR"
+        },
+        {
+            "id": 48195,
+            "path": "cmt/upload_report_file/861_1748935573701.Trust Deed.pdf",
+            "manualDate": 1748802600000,
+            "uploadedDate": "02 Jun 2025 12:56:13 PM",
+            "fileText": "Trust Deed - BASEL III Compliant Debenture Issue with Non-Viability Write Down Features 2025",
+            "name": "BANK OF CEYLON",
+            "symbol": "BOC"
+        },
+        {
+            "id": 48194,
+            "path": "cmt/upload_report_file/861_1748935525622. Prospectus.pdf",
+            "manualDate": 1748802600000,
+            "uploadedDate": "02 Jun 2025 12:55:25 PM",
+            "fileText": "Prospectus - BASEL III Compliant Debenture Issue with Non-Viability Write Down Features 2025",
+            "name": "BANK OF CEYLON",
+            "symbol": "BOC"
+        },
+        {
+            "id": 48158,
+            "path": "cmt/upload_report_file/764_1748835824812.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 09:13:44 AM",
+            "fileText": "Interim Financial Statements as of 31/03/2025",
+            "name": "BROWN & COMPANY PLC",
+            "symbol": "BRWN"
+        },
+        {
+            "id": 48124,
+            "path": "cmt/upload_report_file/687_1748834295336.03.2025 (1).pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 08:48:15 AM",
+            "fileText": "Interim Financial Statements for the period ended 31st March 2025",
+            "name": "SWADESHI INDUSTRIAL WORKS PLC",
+            "symbol": "SWAD"
+        },
+        {
+            "id": 48177,
+            "path": "cmt/upload_report_file/514_1748834164026.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 08:46:04 AM",
+            "fileText": "Quarterly Financial Statements as of 31 March 2025",
+            "name": "CEYLON HOSPITALS PLC (DURDANS)",
+            "symbol": "CHL"
+        },
+        {
+            "id": 48176,
+            "path": "cmt/upload_report_file/1072_1748832727191.03.2025.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 08:22:07 AM",
+            "fileText": "Audited Financial statements as of 31.03.2025",
+            "name": "JANASHAKTHI FINANCE PLC ",
+            "symbol": "BFN"
+        },
+        {
+            "id": 48165,
+            "path": "cmt/upload_report_file/722_1748832243941.pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "02 Jun 2025 08:14:03 AM",
+            "fileText": "Annual Report 2024",
+            "name": "MALWATTE VALLEY PLANTATIONS PLC",
+            "symbol": "MAL"
+        },
+        {
+            "id": 48157,
+            "path": "cmt/upload_report_file/729_1748832079751.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 08:11:19 AM",
+            "fileText": "Annual Report 2024/25",
+            "name": "LANKA IOC PLC",
+            "symbol": "LIOC"
+        },
+        {
+            "id": 48164,
+            "path": "cmt/upload_report_file/694_1748831950245.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 08:09:10 AM",
+            "fileText": "INTERIM FINANCIAL STATEMENTS FOR THE YEAR ENDED 31ST MARCH 2025",
+            "name": "DIESEL & MOTOR ENGINEERING PLC",
+            "symbol": "DIMO"
+        },
+        {
+            "id": 48173,
+            "path": "cmt/upload_report_file/1222_1748831691842.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 08:04:51 AM",
+            "fileText": "Interim Financial Statements for the quarter ended 31st March 2025",
+            "name": "HIKKADUWA BEACH RESORT PLC",
+            "symbol": "CITH"
+        },
+        {
+            "id": 48174,
+            "path": "cmt/upload_report_file/1106_1748831668790.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 08:04:28 AM",
+            "fileText": "Interim Financial Statements for the quarter ended 31st March 2025",
+            "name": "WASKADUWA BEACH RESORT PLC",
+            "symbol": "CITW"
+        },
+        {
+            "id": 48175,
+            "path": "cmt/upload_report_file/568_1748831608261.pdf",
+            "manualDate": 1743359400000,
+            "uploadedDate": "02 Jun 2025 08:03:28 AM",
+            "fileText": "Interim Financial Statements for the quarter ended 31st March 2025",
+            "name": "CITRUS LEISURE  PLC",
+            "symbol": "REEF"
+        },
+        {
+            "id": 48170,
+            "path": "cmt/upload_report_file/2352_1748830875453.pdf",
+            "manualDate": 1735583400000,
+            "uploadedDate": "02 Jun 2025 07:51:15 AM",
+            "fileText": "Annual Report 2024",
+            "name": "SANASA LIFE INSURANCE COMPANY PLC",
+            "symbol": "SIC"
+        }
+    ]
+}

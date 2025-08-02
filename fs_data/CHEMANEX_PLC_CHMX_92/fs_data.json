@@ -1,0 +1,53 @@
+{
+  "company_name": "CHEMANEX PLC",
+  "company_symbol": "CHMX",
+  "report_type": "Interim",
+  "report_date": "01 April 2024",
+  "currency_unit": "LKR",
+  "scale_factor": 1.0,
+  "financial_metrics": {
+    "revenue": 122944517343232.0,
+    "profit_for_period": -318814254525.0,
+    "operating_profit": null,
+    "total_assets": 4.840965405873445e+41,
+    "total_liabilities": 4.6644629364544156e+35,
+    "total_equity": 4.37451937650894e+41,
+    "basic_eps": null,
+    "gross_profit": 555614936613.0,
+    "ebitda": null,
+    "net_cash_flow": null
+  },
+  "shareholders": [],
+  "directors": [
+    {
+      "name": "P R Saldin - Chairman",
+      "role": null
+    },
+    {
+      "name": "R P Bandaranayake",
+      "role": null
+    },
+    {
+      "name": "S A B Ekanayake",
+      "role": null
+    },
+    {
+      "name": "T K D A P Samarasinghe",
+      "role": null
+    },
+    {
+      "name": "P A Seresinhe",
+      "role": "Company Secretary"
+    },
+    {
+      "name": "S A B P W M R R W T Wegodapola",
+      "role": null
+    }
+  ],
+  "audit_status": "Unknown",
+  "errata_notice": null,
+  "contingent_liabilities": "as at the reporting date, which require adjustment and/or disclosure in the Financial Statements.\nAs the float adjusted market capitalisation is below Rs.2.5 Bn, Chemanex PLC complies under option 5 with the minimum public holding \nrequirement.\nBased on the fair valuation methodology, other non- current equity investment at fair value though OCI amounting to Rs.386.47 Mn is \ncategorised under \"Level 3\" of the \"fair value measurement hierarchy\". Fair value would not significantly vary if one or more of the inputs were \nchanged.\nAs at 30 June 2025, all the listed equity instruments amounting to Rs.3,823.28Mn were measured based on the active market prices as at 30 \nJune 2025 and categorised under Level 1 of the fair value hierarchy.\nThe accounting policies followed in the preparation of the Interim Statement of Comprehensive Income  for the period ended  30 June 2025 and \nthe Interim Statement of Financial Position as at 30 June 2025 unless otherwise stated are consistent with those followed in the preparation of \nFinancial Statements for the year ended 31 March 2025 and are in compliance with Sri Lanka Accounting Standard 34 - Interim Financial \nReporting. The presentation and classification of the Financial Statements of the previous period have been amended, where relevant, for better \npresentation and to be comparable with those of the current period. \nCHEMANEX PLC",
+  "events_after_reporting": null,
+  "extraction_confidence": 0.6666666666666666,
+  "document_hash": null
+}

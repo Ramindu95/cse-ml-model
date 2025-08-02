@@ -1,0 +1,30 @@
+Financial Data Extraction Summary
+==================================
+
+Company: ABANS ELECTRICALS PLC (ABAN.N0000)
+Report Type: Interim
+Report Date: 1 April 2023
+Extraction Confidence: 0.50
+Document Hash: None
+
+Financial Metrics:
+- Revenue: None
+- Profit For Period: None
+- Operating Profit: None
+- Total Assets: 5.2792415575148265e+19
+- Total Liabilities: 2.6644009182881812e+19
+- Total Equity: 2.6148406382266454e+19
+- Basic Eps: None
+- Gross Profit: None
+- Ebitda: None
+- Net Cash Flow: None
+
+Directors (7):
+  - Shareholding as at (N/A)
+  - Mrs. Aban Pestonjee (Non-Executive Non-Independent Director)
+  - Mrs. Saroshi Dubash (Executive Director)
+  - Mr. Kumar Se Silva (Independent Director)
+  - Mr. D M R Phillips (Independent Director)
+  - Mr. Rajaratnam Selvaskandan (Senior Non-Executive Independent Director)
+  - Total Number of Public (N/A)
+

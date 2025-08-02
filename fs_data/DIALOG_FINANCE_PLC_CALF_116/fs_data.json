@@ -1,0 +1,28 @@
+{
+  "company_name": "DIALOG FINANCE PLC",
+  "company_symbol": "CALF",
+  "report_type": "Interim",
+  "report_date": "30 JUNE 2025",
+  "currency_unit": "LKR",
+  "scale_factor": 1.0,
+  "financial_metrics": {
+    "revenue": null,
+    "profit_for_period": null,
+    "operating_profit": null,
+    "total_assets": null,
+    "total_liabilities": null,
+    "total_equity": null,
+    "basic_eps": null,
+    "gross_profit": null,
+    "ebitda": null,
+    "net_cash_flow": null
+  },
+  "shareholders": [],
+  "directors": [],
+  "audit_status": "Audited",
+  "errata_notice": null,
+  "contingent_liabilities": "There were no material contingent liabilities as at the reporting date which require adjustments to / or disclosures \nin the financial statements. \n4       Other Assets \nThe Company has identified a case of external financial fraud in June 2024 and steps were taken to immediately \nrecover a portion of funds. As at the reporting date, the gross outstanding amount to be recovered was LKR \n41.4Mn and based on an assessment of recoverability, the Company has recognized a provision for loss of LKR \n30.9Mn in the statement of profit or loss. Consequently, the net amount outstanding to be recovered as of the \nreporting date is LKR 10.5Mn, which is reported under \"other assets\" in the statement of financial position. \n \nThe Company has initiated legal action as per the advice of external legal counsel and currently working with law \nenforcement authorities to recover the remaining funds. In response to this incident, the Company has enhanced \nits transaction monitoring processes and has implemented measures to educate customers on safeguarding their \naccounts against unauthorized third-party access. \n \nAs of the reporting date, the investigation and recovery efforts are ongoing. The Company will continue to \nmonitor the progress of these actions and will assess the recoverability of the outstanding receivables \nrecognised at each reporting date.    \n \n5       Fair value of financial instruments \n \nThe Company uses valuation techniques that are appropriate in the circumstances and for which sufficient data \nare available to measure fair value, maximizing the use of relevant observable inputs and minimizing the use of \nunobservable inputs. \n \nAll assets and liabilities for which fair value is measured or disclosed in the financial statements are categorized \nwithin the fair value hierarchy, described as follows, based on the lowest level input that is significant to the fair \nvalue measurement as a whole: \n \nLevel 1 - Quoted (unadjusted) market prices in active markets for identical assets or liabilities \n \nLevel 2 - Valuation techniques for which the lowest level input that is significant to the fair value measurement is                        \ndirectly or indirectly observable \n \nLevel 3 - Valuation techniques for which the lowest level input that is significant to the fair value measurement is \nunobservable \n \nFor assets and liabilities that are recognized in the financial statements on a recurring basis, the Company \ndetermines whether transfers have occurred between levels in the hierarchy by re-assessing categorization \n(based on the lowest level input that is significant to the fair value measurement as a whole) at the end of each \nreporting period. \n \nMeasurement criteria and the fair value \n \nLevel 1 \nLevel 3 \nTotal \n \n30 June \n2025 \n30 June \n2024 \n30 June \n2025 \n30 June \n2024 \n30 June \n2025 \n30 June \n2024 \nFinancial assets   \n \n \n \nFinancial assets at fair value through profit or loss \n3,493 \n   358,557 \n -   \n -   \n3,493 \n358,557 \nFinancial assets at fair value through other \ncomprehensive income  \n -   \n -   \n 2,358 \n  2,185 \n2,358 \n2,185",
+  "events_after_reporting": null,
+  "extraction_confidence": 0.5,
+  "document_hash": null
+}

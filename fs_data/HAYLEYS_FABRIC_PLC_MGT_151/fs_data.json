@@ -1,0 +1,133 @@
+{
+  "company_name": "HAYLEYS FABRIC PLC",
+  "company_symbol": "MGT",
+  "report_type": "Interim",
+  "report_date": "30 June 2025",
+  "currency_unit": "LKR",
+  "scale_factor": 1.0,
+  "financial_metrics": {
+    "revenue": -3.4461631422079804e+26,
+    "profit_for_period": null,
+    "operating_profit": null,
+    "total_assets": 1.1832517012430872e+33,
+    "total_liabilities": null,
+    "total_equity": null,
+    "basic_eps": null,
+    "gross_profit": -5.90434482926473e+21,
+    "ebitda": null,
+    "net_cash_flow": null
+  },
+  "shareholders": [],
+  "directors": [
+    {
+      "name": "Standard Chartered Bank PLC",
+      "role": "Chairman"
+    },
+    {
+      "name": "Hongkong and Shanghai Banking Corporation",
+      "role": "Managing Director"
+    },
+    {
+      "name": "Hatton National Bank PLC",
+      "role": null
+    },
+    {
+      "name": "Mr. S.C. Ganegoda",
+      "role": null
+    },
+    {
+      "name": "Bank of Ceylon",
+      "role": null
+    },
+    {
+      "name": "Mr. H. Somashantha",
+      "role": null
+    },
+    {
+      "name": "National Development Bank PLC",
+      "role": null
+    },
+    {
+      "name": "Ms. K.A.D.B. Perera",
+      "role": null
+    },
+    {
+      "name": "Sampath Bank PLC",
+      "role": null
+    },
+    {
+      "name": "Mr. N. Ekanayake",
+      "role": null
+    },
+    {
+      "name": "Citibank",
+      "role": null
+    },
+    {
+      "name": "Mr. M.N.R. Fernando",
+      "role": null
+    },
+    {
+      "name": "Seylan Bank PLC",
+      "role": null
+    },
+    {
+      "name": "Mr. I.B.R.R. Bandara",
+      "role": null
+    },
+    {
+      "name": "Pan Asia Banking Corporation PLC",
+      "role": null
+    },
+    {
+      "name": "Mr. M.H. Jayasinghe",
+      "role": null
+    },
+    {
+      "name": "People's Bank",
+      "role": null
+    },
+    {
+      "name": "Mr. K.P.C.P.K. Pathirana",
+      "role": null
+    },
+    {
+      "name": "DFCC Bank",
+      "role": null
+    },
+    {
+      "name": "Mr. J.A.N.R. Adhihetty",
+      "role": null
+    },
+    {
+      "name": "Union Bank of Colombo PLC",
+      "role": null
+    },
+    {
+      "name": "Mr. T.A.B. Speldewinde",
+      "role": null
+    },
+    {
+      "name": "Nations Trust Bank",
+      "role": null
+    },
+    {
+      "name": "Bank of China",
+      "role": null
+    },
+    {
+      "name": "Commercial Bank of Ceylon PLC",
+      "role": "Chairman"
+    },
+    {
+      "name": "Mr. M.N.R. Fernando",
+      "role": null
+    }
+  ],
+  "audit_status": "Audited",
+  "errata_notice": null,
+  "contingent_liabilities": null,
+  "events_after_reporting": null,
+  "extraction_confidence": 0.5833333333333334,
+  "document_hash": null
+}

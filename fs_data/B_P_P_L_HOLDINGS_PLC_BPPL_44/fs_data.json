@@ -1,0 +1,121 @@
+{
+  "company_name": "B P P L HOLDINGS PLC",
+  "company_symbol": "BPPL",
+  "report_type": "Interim",
+  "report_date": "1 April 2025",
+  "currency_unit": "LKR",
+  "scale_factor": 1.0,
+  "financial_metrics": {
+    "revenue": null,
+    "profit_for_period": -8.625018874203574e+18,
+    "operating_profit": null,
+    "total_assets": 8.257229804730016e+27,
+    "total_liabilities": 3.919647403166141e+25,
+    "total_equity": 4.337581401563912e+27,
+    "basic_eps": null,
+    "gross_profit": 3430483262325.0,
+    "ebitda": null,
+    "net_cash_flow": -1.9125520893307308e+18
+  },
+  "shareholders": [],
+  "directors": [
+    {
+      "name": "Company have approved an interim dividend of Rs.",
+      "role": null
+    },
+    {
+      "name": "August",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK ---",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Change",
+      "role": null
+    },
+    {
+      "name": "Rs. '",
+      "role": null
+    },
+    {
+      "name": "Rs. '",
+      "role": null
+    },
+    {
+      "name": "Revenue",
+      "role": null
+    },
+    {
+      "name": "Cost of Sales",
+      "role": null
+    },
+    {
+      "name": "Gross Profit",
+      "role": null
+    },
+    {
+      "name": "Other Operating Income",
+      "role": null
+    },
+    {
+      "name": "Distribution Costs",
+      "role": null
+    },
+    {
+      "name": "Net Foreign Exchange Gain",
+      "role": null
+    },
+    {
+      "name": "Administrative Expenses",
+      "role": null
+    },
+    {
+      "name": "Net Finance Income",
+      "role": null
+    },
+    {
+      "name": "Profit Before Tax",
+      "role": null
+    },
+    {
+      "name": "Income Tax",
+      "role": null
+    },
+    {
+      "name": "Deferred Tax",
+      "role": null
+    },
+    {
+      "name": "Profit",
+      "role": null
+    },
+    {
+      "name": "Earnings",
+      "role": null
+    },
+    {
+      "name": "The above figures are provisional and subject to audit.",
+      "role": null
+    },
+    {
+      "name": "The accounting policies and notes form an integral part of the",
+      "role": null
+    }
+  ],
+  "audit_status": "Audited",
+  "errata_notice": null,
+  "contingent_liabilities": "5.1 Finance Commitments\n5.2 Contingent Liabilities\n6\nNET FOREIGN EXCHANGE GAIN/LOSS\nAve.Ex.Rates\nClosing Rates\n3 Months ended 30th June\n12 Months ended 31st March\nForeign exchange differences arising on foreign exchange transactions are recognized in the \nStatement of Profit or Loss. Company uses the Central Bank of Sri Lanka published exchange \nrates for the above purposes.\n297.87\n318.00\n2025\n2024\n2025\n2024\n300.91\n299.30\nAs at 30th June\nAs at 31st March\n2025\nThese interim financial statements which have not been audited, comply with the Sri Lanka \nAccounting Standard LKAS 34-Interim financial reporting and they also provide the information \nrequired by the Colombo Stock Exchange.\nThe accounting policies adopted in these financial statements are consistent with the \naccounting policies set out in the Annual Report for the year ended 31.03.2024. \nThere are no any material contingent liabilities.\nThe Company's stated capital consists of 306,843,357 ordinary shares.\nThere are no any material financial commitments.\nSubsequent to the reporting date, no circumstances have arisen which required adjustment to or \ndisclosure in the Financial Statements.\n2024\n2025\n2024\n300.00\n305.69\n296.32\n300.44\nPage 8",
+  "events_after_reporting": null,
+  "extraction_confidence": 0.6666666666666666,
+  "document_hash": null
+}

@@ -1,0 +1,21 @@
+Financial Data Extraction Summary
+==================================
+
+Company: JOHN KEELLS PLC (JKL)
+Report Type: Interim
+Report Date: 30 June 2025
+Extraction Confidence: 0.75
+Document Hash: None
+
+Financial Metrics:
+- Revenue: 2.597822368441e+16
+- Profit For Period: 463272340598000.0
+- Operating Profit: 534592895085000.0
+- Total Assets: 6.529281590477065e+23
+- Total Liabilities: None
+- Total Equity: 4.5725464211659476e+23
+- Basic Eps: 730.0
+- Gross Profit: 1.5012212196323e+16
+- Ebitda: None
+- Net Cash Flow: 170433239648000.0
+

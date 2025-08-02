@@ -1,0 +1,28 @@
+{
+  "company_name": "TEEJAY LANKA PLC",
+  "company_symbol": "TJL",
+  "report_type": "Interim",
+  "report_date": "31 March 2025",
+  "currency_unit": "LKR",
+  "scale_factor": 1.0,
+  "financial_metrics": {
+    "revenue": null,
+    "profit_for_period": null,
+    "operating_profit": null,
+    "total_assets": 5.611034656608135e+47,
+    "total_liabilities": 2.51234522615929e+46,
+    "total_equity": null,
+    "basic_eps": null,
+    "gross_profit": null,
+    "ebitda": null,
+    "net_cash_flow": null
+  },
+  "shareholders": [],
+  "directors": [],
+  "audit_status": "Audited",
+  "errata_notice": null,
+  "contingent_liabilities": null,
+  "events_after_reporting": null,
+  "extraction_confidence": 0.4166666666666667,
+  "document_hash": null
+}

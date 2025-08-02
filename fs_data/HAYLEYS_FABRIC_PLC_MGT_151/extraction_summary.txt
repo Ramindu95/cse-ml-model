@@ -1,0 +1,49 @@
+Financial Data Extraction Summary
+==================================
+
+Company: HAYLEYS FABRIC PLC (MGT)
+Report Type: Interim
+Report Date: 30 June 2025
+Extraction Confidence: 0.58
+Document Hash: None
+
+Financial Metrics:
+- Revenue: -3.4461631422079804e+26
+- Profit For Period: None
+- Operating Profit: None
+- Total Assets: 1.1832517012430872e+33
+- Total Liabilities: None
+- Total Equity: None
+- Basic Eps: None
+- Gross Profit: -5.90434482926473e+21
+- Ebitda: None
+- Net Cash Flow: None
+
+Directors (26):
+  - Standard Chartered Bank PLC (Chairman)
+  - Hongkong and Shanghai Banking Corporation (Managing Director)
+  - Hatton National Bank PLC (N/A)
+  - Mr. S.C. Ganegoda (N/A)
+  - Bank of Ceylon (N/A)
+  - Mr. H. Somashantha (N/A)
+  - National Development Bank PLC (N/A)
+  - Ms. K.A.D.B. Perera (N/A)
+  - Sampath Bank PLC (N/A)
+  - Mr. N. Ekanayake (N/A)
+  - Citibank (N/A)
+  - Mr. M.N.R. Fernando (N/A)
+  - Seylan Bank PLC (N/A)
+  - Mr. I.B.R.R. Bandara (N/A)
+  - Pan Asia Banking Corporation PLC (N/A)
+  - Mr. M.H. Jayasinghe (N/A)
+  - People's Bank (N/A)
+  - Mr. K.P.C.P.K. Pathirana (N/A)
+  - DFCC Bank (N/A)
+  - Mr. J.A.N.R. Adhihetty (N/A)
+  - Union Bank of Colombo PLC (N/A)
+  - Mr. T.A.B. Speldewinde (N/A)
+  - Nations Trust Bank (N/A)
+  - Bank of China (N/A)
+  - Commercial Bank of Ceylon PLC (Chairman)
+  - Mr. M.N.R. Fernando (N/A)
+

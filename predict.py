@@ -3,215 +3,320 @@ import numpy as np
 import joblib
 import logging
 import warnings
-import re
+import json
 from datetime import datetime, timedelta
-import os # Import os for path manipulation
+import os
 
 # Assuming data_loader.py and feature_engineering.py are in the 'data' directory
 from data.data_loader import load_stock_data, load_financial_data
 from data.feature_engineering import FeatureEngineer 
 
 # Configure logging for better visibility during execution
-# Set to INFO by default, but specific sections (like feature loading) will temporarily go to DEBUG
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 warnings.filterwarnings('ignore', category=UserWarning)
 
-if __name__ == "__main__":
-    MODEL_PATH = 'models/random_forest_model.pkl'
-    FEATURE_INFO_PATH = 'results/feature_info.txt'
+def load_training_features(feature_path: str) -> list:
+    """
+    Load training features from JSON file (preferred) or fallback to text file
+    """
+    # Try JSON format first (recommended)
+    json_path = feature_path.replace('.txt', '.json')
+    if os.path.exists(json_path):
+        try:
+            with open(json_path, 'r') as f:
+                feature_info = json.load(f)
+            logging.info(f"✅ Loaded {feature_info['feature_count']} training features from JSON: {json_path}")
+            return feature_info['all_features']
+        except Exception as e:
+            logging.warning(f"Failed to load JSON features from {json_path}: {e}")
+    
+    # Fallback to text format parsing
+    if os.path.exists(feature_path):
+        return load_features_from_text_file(feature_path)
+    
+    raise FileNotFoundError(f"Training features not found at {json_path} or {feature_path}")
 
+def load_features_from_text_file(feature_path: str) -> list:
+    """
+    Load training features from the text file format (fallback method)
+    """
+    training_features = []
+    in_all_features_list_section = False
+    found_all_features_list_header = False
+    
+    try:
+        with open(feature_path, 'r') as f:
+            logging.info(f"Loading features from text file: {feature_path}")
+            
+            for line_num, line in enumerate(f, 1):
+                stripped_line = line.strip()
+
+                if "ALL FEATURES LIST" in stripped_line:
+                    logging.info("Found 'ALL FEATURES LIST' section header.")
+                    found_all_features_list_header = True
+                    continue
+
+                if found_all_features_list_header:
+                    if stripped_line.startswith("----"):
+                        logging.debug("Skipping separator line after 'ALL FEATURES LIST' header.")
+                        in_all_features_list_section = True
+                        continue
+
+                    if in_all_features_list_section:
+                        # Parse feature lines like " 1. feature_name"
+                        import re
+                        match = re.match(r'^\s*\d+\.\s*([\w_]+)\s*$', stripped_line)
+                        if match:
+                            feature_name = match.group(1)
+                            training_features.append(feature_name)
+                        elif not stripped_line or not re.match(r'^\s*\d+\.', stripped_line):
+                            logging.info(f"End of feature list section detected on line {line_num}.")
+                            break
+                        else:
+                            logging.warning(f"Line {line_num} did not match expected format: '{stripped_line}'")
+
+        # Remove duplicates while preserving order
+        training_features = list(dict.fromkeys(training_features))
+        logging.info(f"✅ Loaded {len(training_features)} unique training features from text file")
+        return training_features
+        
+    except Exception as e:
+        raise RuntimeError(f"Error parsing text file {feature_path}: {e}")
+
+def get_company_info(stock_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Get basic company information for display purposes
+    """
+    company_info = stock_df.groupby('company_id').agg({
+        'trade_date': 'max',
+        'close_price': 'last',
+        'volume': 'last'
+    }).reset_index()
+    
+    company_info.columns = ['company_id', 'latest_date', 'latest_close', 'latest_volume']
+    return company_info
+
+def save_predictions_to_file(predictions_df: pd.DataFrame, output_dir: str = "results"):
+    """
+    Save predictions to a timestamped CSV file
+    """
+    os.makedirs(output_dir, exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"stock_predictions_{timestamp}.csv"
+    filepath = os.path.join(output_dir, filename)
+    
+    predictions_df.to_csv(filepath, index=False)
+    logging.info(f"💾 Predictions saved to: {filepath}")
+    return filepath
+
+def display_prediction_summary(predictions_df: pd.DataFrame):
+    """
+    Display a summary of predictions
+    """
+    logging.info("\n" + "="*80)
+    logging.info("STOCK PREDICTIONS SUMMARY")
+    logging.info("="*80)
+    
+    # Action distribution
+    action_counts = predictions_df['Predicted_Action'].value_counts()
+    logging.info(f"\n📊 Action Distribution:")
+    for action, count in action_counts.items():
+        percentage = (count / len(predictions_df)) * 100
+        logging.info(f"   {action}: {count} companies ({percentage:.1f}%)")
+    
+    # High confidence predictions
+    high_confidence = predictions_df[predictions_df['Max_Probability'] > 0.7]
+    if not high_confidence.empty:
+        logging.info(f"\n🎯 High Confidence Predictions (>70%):")
+        for _, row in high_confidence.iterrows():
+            logging.info(f"   Company {row['company_id']}: {row['Predicted_Action']} ({row['Max_Probability']:.1%})")
+    
+    # Companies to watch
+    buy_signals = predictions_df[predictions_df['Predicted_Action'] == 'Buy'].sort_values('Probability_Buy', ascending=False)
+    if not buy_signals.empty:
+        logging.info(f"\n📈 Top Buy Signals:")
+        for _, row in buy_signals.head(5).iterrows():
+            logging.info(f"   Company {row['company_id']}: {row['Probability_Buy']:.1%} confidence")
+    
+    sell_signals = predictions_df[predictions_df['Predicted_Action'] == 'Sell'].sort_values('Probability_Sell', ascending=False)
+    if not sell_signals.empty:
+        logging.info(f"\n📉 Top Sell Signals:")
+        for _, row in sell_signals.head(5).iterrows():
+            logging.info(f"   Company {row['company_id']}: {row['Probability_Sell']:.1%} confidence")
+
+def main():
+    """Main prediction function"""
+    
+    # Configuration
+    MODEL_PATH = 'models/random_forest_model.pkl'
+    FEATURE_INFO_PATH = 'results/feature_info.txt'  # Primary path (your existing file)
+    FALLBACK_FEATURE_PATH = 'models/training_features.json'  # Fallback to JSON format
+    
     try:
         # 1. Load the trained model
+        logging.info("🔄 Loading trained model...")
+        if not os.path.exists(MODEL_PATH):
+            raise FileNotFoundError(f"Model file not found at {MODEL_PATH}")
+        
         model = joblib.load(MODEL_PATH)
-        logging.info(f"Successfully loaded model from {MODEL_PATH}")
+        logging.info(f"✅ Successfully loaded model from {MODEL_PATH}")
 
-        # 2. Load the list of features the model was trained on
-        training_features = []
-        in_all_features_list_section = False
-        found_all_features_list_header = False # New flag to correctly handle the separator line
-        
+        # 2. Load training features
+        logging.info("🔄 Loading training features...")
         try:
-            with open(FEATURE_INFO_PATH, 'r') as f:
-                logging.info(f"Attempting to read features from {FEATURE_INFO_PATH}")
-                # Temporarily set logging level to DEBUG to see detailed messages for this section
-                initial_log_level = logging.getLogger().level
-                logging.getLogger().setLevel(logging.DEBUG) 
-                
-                for line_num, line in enumerate(f, 1):
-                    stripped_line = line.strip()
-                    logging.debug(f"Line {line_num} (stripped): '{stripped_line}'") # Stripped line
-
-                    if "ALL FEATURES LIST" in stripped_line:
-                        logging.info("Found 'ALL FEATURES LIST' section header.")
-                        found_all_features_list_header = True
-                        continue # Skip the header line itself
-
-                    if found_all_features_list_header:
-                        # If we've found the header, and the next line is the '----' separator, skip it
-                        if stripped_line == "--------------------":
-                            logging.debug("Skipping separator line after 'ALL FEATURES LIST' header.")
-                            in_all_features_list_section = True # Now we are truly in the feature list content
-                            continue
-
-                        # Only start parsing features if we are past the header AND the separator
-                        if in_all_features_list_section:
-                            # Regex to match lines like " 1. feature_name" (handles leading space before number)
-                            match = re.match(r'^\s*\d+\.\s*([\w_]+)\s*$', stripped_line) 
-                            if match:
-                                feature_name = match.group(1)
-                                training_features.append(feature_name)
-                                logging.debug(f"Extracted feature: '{feature_name}'")
-                            # Stop reading if we hit an empty line or a line that doesn't match the feature format
-                            elif not stripped_line or not re.match(r'^\s*\d+\.', stripped_line):
-                                logging.info(f"End of feature list section detected on line {line_num}. Breaking. Stripped line: '{stripped_line}'")
-                                break
-                            else:
-                                logging.warning(f"Line {line_num} in feature list section did not match expected feature format: '{stripped_line}'")
-                                # Continue processing in case there are valid features after an unexpected line
-                                pass 
-
+            training_features = load_training_features(FEATURE_INFO_PATH)
         except FileNotFoundError:
-            raise FileNotFoundError(f"Feature info file not found at {FEATURE_INFO_PATH}. "
-                                    "Please ensure your training pipeline generates this file.")
-        finally:
-            # Reset logging level to its original value after this section
-            if 'initial_log_level' in locals():
-                logging.getLogger().setLevel(initial_log_level)
+            logging.warning(f"Primary feature file not found at {FEATURE_INFO_PATH}, trying fallback: {FALLBACK_FEATURE_PATH}")
+            training_features = load_training_features(FALLBACK_FEATURE_PATH)
         
-        logging.info(f"Finished reading feature info. Found {len(training_features)} features before deduplication.")
         if not training_features:
-            raise ValueError("Could not extract training features from feature_info.txt. "
-                             "Ensure 'ALL FEATURES LIST' section format is correct in your training output.")
-        
-        # Ensure unique features and maintain order from file (dict.fromkeys preserves insertion order)
-        training_features = list(dict.fromkeys(training_features)) 
-        logging.info(f"Loaded {len(training_features)} unique training features for prediction: {training_features}")
+            raise ValueError("No training features loaded. Cannot proceed with prediction.")
 
-        # 3. Load all necessary historical data
-        logging.info("Loading all historical stock data from the database... (This might take a moment)")
+        # 3. Load historical data
+        logging.info("🔄 Loading historical data from database...")
         all_historical_stock_data = load_stock_data()
-        
-        logging.info("Loading all historical financial data from the database... (This might take a moment)")
         all_historical_financial_data = load_financial_data()
 
         if all_historical_stock_data.empty:
-            raise ValueError("No historical stock data loaded from the database. Cannot proceed with prediction.")
-        if all_historical_financial_data.empty:
-            logging.warning("No historical financial data loaded. Fundamental indicators will be skipped.")
-
-        all_historical_stock_data['trade_date'] = pd.to_datetime(all_historical_stock_data['trade_date'])
+            raise ValueError("No historical stock data loaded from the database.")
         
+        if all_historical_financial_data.empty:
+            logging.warning("⚠️ No historical financial data loaded. Only technical indicators will be used.")
+
+        # Data preprocessing
+        all_historical_stock_data['trade_date'] = pd.to_datetime(all_historical_stock_data['trade_date'])
         latest_data_date = all_historical_stock_data['trade_date'].max().date()
-        logging.info(f"Latest available stock data date: {latest_data_date.strftime('%Y-%m-%d')}")
+        logging.info(f"📅 Latest available data: {latest_data_date}")
 
-        # Determine the prediction basis date (e.g., today or the latest available data)
-        # For a truly 'live' prediction, this would be the actual current date or yesterday's close.
-        # For backtesting or predicting on the latest available historical data, use max trade_date.
-        prediction_basis_date = latest_data_date 
-
-        logging.info(f"Preparing to generate features for predictions based on data up to: {prediction_basis_date.strftime('%Y-%m-%d')}")
-
-        # Define a window for indicator calculation (e.g., 90 days for MAs, RSI, etc.)
-        # This ensures enough historical context for feature engineering
-        max_indicator_window_days = 90 
+        # 4. Prepare data for feature engineering
+        prediction_basis_date = latest_data_date
+        max_indicator_window_days = 90
         start_date_for_indicators = prediction_basis_date - timedelta(days=max_indicator_window_days)
 
-        logging.info(f"Filtering stock data from {start_date_for_indicators.strftime('%Y-%m-%d')} "
-                     f"up to and including {prediction_basis_date.strftime('%Y-%m-%d')} for feature engineering.")
-
-        # Filter stock data to include only what's needed for feature engineering indicators
+        logging.info(f"🔄 Filtering data for feature engineering ({start_date_for_indicators} to {prediction_basis_date})...")
+        
         full_stock_data_for_features = all_historical_stock_data[
             (all_historical_stock_data['trade_date'].dt.date >= start_date_for_indicators) &
             (all_historical_stock_data['trade_date'].dt.date <= prediction_basis_date)
         ].copy()
 
+        if full_stock_data_for_features.empty:
+            raise ValueError("No stock data available for the specified date range.")
+
         # Filter financial data for relevant companies
         companies_in_scope = full_stock_data_for_features['company_id'].unique()
-        all_historical_financial_data['period_end_date'] = pd.to_datetime(all_historical_financial_data['period_end_date'])
-        financial_data_filtered = all_historical_financial_data[
-            all_historical_financial_data['company_id'].isin(companies_in_scope)
-        ].copy()
+        logging.info(f"🏢 Processing predictions for {len(companies_in_scope)} companies")
         
-        if full_stock_data_for_features.empty:
-            raise ValueError("No recent stock data available after filtering for feature engineering. "
-                             "Ensure your database has data for the specified date range.")
-        
-        logging.info(f"Filtered stock data for feature engineering: {full_stock_data_for_features.shape}")
-        logging.info(f"Filtered financial data for feature engineering: {financial_data_filtered.shape}")
+        financial_data_filtered = None
+        if not all_historical_financial_data.empty:
+            all_historical_financial_data['period_end_date'] = pd.to_datetime(all_historical_financial_data['period_end_date'])
+            financial_data_filtered = all_historical_financial_data[
+                all_historical_financial_data['company_id'].isin(companies_in_scope)
+            ].copy()
 
-        # 4. Instantiate FeatureEngineer and create features for prediction
+        # 5. Feature engineering
+        logging.info("🔄 Starting feature engineering...")
         engineer = FeatureEngineer()
         
-        # Call create_features_and_labels with is_prediction=True and training_features
-        # The FeatureEngineer will now handle aligning the created features with the training features
-        X_predicted_data, y_dummy, metadata_info = engineer.create_features_and_labels(
-            stock_df=full_stock_data_for_features, 
-            financial_df=financial_data_filtered, 
-            is_prediction=True, # Flag for prediction mode
-            training_features=training_features # Pass the features the model expects
+        X_predicted_data, _, metadata_info = engineer.create_features_and_labels(
+            stock_df=full_stock_data_for_features,
+            financial_df=financial_data_filtered,
+            is_prediction=True,
+            training_features=training_features
         )
         
-        logging.info(f"Feature engineering completed by FeatureEngineer for prediction. Shape: {X_predicted_data.shape}")
+        if X_predicted_data.empty:
+            raise ValueError("Feature engineering produced no data for prediction.")
+        
+        logging.info(f"✅ Feature engineering completed. Shape: {X_predicted_data.shape}")
 
-        # 5. Select the latest engineered data point for each company
-        # X_predicted_data now contains the engineered features for the filtered date range.
-        # metadata_info contains 'company_id', 'trade_date', 'original_index' etc.
+        # 6. Select latest data point for each company
+        logging.info("🔄 Selecting latest data points for prediction...")
         
-        # Create a combined DataFrame for easier latest row selection and mapping
-        # We merge X_predicted_data with metadata_info using their internal indices (which should align).
+        # Combine features with metadata for company/date selection
         combined_df = metadata_info.merge(X_predicted_data, left_index=True, right_index=True, how='inner')
-        
-        # Ensure combined_df is sorted by company and date to select the true latest row for each company
         combined_df = combined_df.sort_values(by=['company_id', 'trade_date'])
 
-        # Get the index (from combined_df) of the row with the latest trade_date for each company
+        # Get latest entry for each company
         idx_latest_per_company = combined_df.groupby('company_id')['trade_date'].idxmax()
+        latest_data_per_company = combined_df.loc[idx_latest_per_company].copy()
         
-        # Select the actual rows for prediction, which are the latest feature sets for each company
-        X_final_predict_with_meta = combined_df.loc[idx_latest_per_company].copy()
-        
-        if X_final_predict_with_meta.empty:
-            raise ValueError(f"No data found for prediction after selecting latest entries for basis date {prediction_basis_date.strftime('%Y-%m-%d')}. "
-                             "This might mean insufficient historical data for indicators, or no recent data after processing.")
+        if latest_data_per_company.empty:
+            raise ValueError("No latest data points found for prediction.")
 
-        # Extract only the features (columns present in training_features) and set 'company_id' as index
-        # FeatureEngineer already ensured these columns are present and in order in X_predicted_data.
-        X_final_predict = X_final_predict_with_meta.set_index('company_id')[training_features].copy() 
+        # Extract features for prediction
+        X_final_predict = latest_data_per_company[training_features].copy()
+        logging.info(f"📊 Final prediction dataset shape: {X_final_predict.shape}")
 
-        logging.info(f"Prepared final data for prediction with shape: {X_final_predict.shape}")
-        
-        if X_final_predict.empty:
-            raise ValueError("X_final_predict is empty after final alignment. No predictions can be made.")
-
-        # 6. Make predictions
+        # 7. Make predictions
+        logging.info("🔄 Making predictions...")
         predictions = model.predict(X_final_predict)
         prediction_probabilities = model.predict_proba(X_final_predict)
 
-        # Map integer labels to readable actions
-        # Ensure model.classes_ are sorted to match the order of probabilities
-        model_classes_sorted = sorted(model.classes_)
-        class_mapping = {cls: idx for idx, cls in enumerate(model_classes_sorted)}
-        label_map_display = {-1.0: 'Sell', 0.0: 'Hold', 1.0: 'Buy'}
+        # Map predictions to readable labels
+        # Handle different label encodings (0,1,2 or -1,0,1)
+        unique_predictions = np.unique(predictions)
+        if set(unique_predictions).issubset({0, 1, 2}):
+            # Standard encoding: 0=Sell, 1=Hold, 2=Buy
+            label_map = {0: 'Sell', 1: 'Hold', 2: 'Buy'}
+            class_order = [0, 1, 2]
+        elif set(unique_predictions).issubset({-1, 0, 1}):
+            # Alternative encoding: -1=Sell, 0=Hold, 1=Buy
+            label_map = {-1: 'Sell', 0: 'Hold', 1: 'Buy'}
+            class_order = [-1, 0, 1]
+        else:
+            # Generic handling
+            sorted_classes = sorted(model.classes_)
+            label_map = {cls: f'Action_{i}' for i, cls in enumerate(sorted_classes)}
+            class_order = sorted_classes
 
-        predicted_labels = [label_map_display.get(p, 'Unknown') for p in predictions]
+        predicted_labels = [label_map.get(p, 'Unknown') for p in predictions]
 
-        prob_sell = prediction_probabilities[:, class_mapping[-1.0]] if -1.0 in class_mapping else np.array([np.nan] * len(predictions))
-        prob_hold = prediction_probabilities[:, class_mapping[0.0]] if 0.0 in class_mapping else np.array([np.nan] * len(predictions))
-        prob_buy = prediction_probabilities[:, class_mapping[1.0]] if 1.0 in class_mapping else np.array([np.nan] * len(predictions))
+        # Extract probabilities in correct order
+        class_to_prob_idx = {cls: idx for idx, cls in enumerate(model.classes_)}
+        
+        prob_columns = {}
+        for cls in class_order:
+            if cls in class_to_prob_idx:
+                prob_idx = class_to_prob_idx[cls]
+                action_name = label_map[cls]
+                prob_columns[f'Probability_{action_name}'] = prediction_probabilities[:, prob_idx]
 
-        # 7. Display results
-        logging.info("\n--- Predictions ---")
+        # 8. Create results DataFrame
+        logging.info("🔄 Preparing results...")
+        
         prediction_results = pd.DataFrame({
-            'company_id': X_final_predict.index, # company_id is the index here
-            'trade_date': X_final_predict_with_meta['trade_date'].values, # Get the trade_date for the prediction
+            'company_id': latest_data_per_company['company_id'].values,
+            'prediction_date': latest_data_per_company['trade_date'].dt.date.values,
             'Predicted_Action': predicted_labels,
-            'Probability_Sell': prob_sell,
-            'Probability_Hold': prob_hold,
-            'Probability_Buy': prob_buy
+            **prob_columns
         })
-        prediction_results = prediction_results.reset_index(drop=False) # Reset index if company_id was the index
+        
+        # Add maximum probability for confidence assessment
+        prediction_results['Max_Probability'] = prediction_probabilities.max(axis=1)
+        
+        # Sort by company_id for better readability
+        prediction_results = prediction_results.sort_values('company_id').reset_index(drop=True)
 
-        logging.info("\n" + prediction_results.to_string())
+        # 9. Display and save results
+        display_prediction_summary(prediction_results)
+        
+        # Save detailed results
+        output_file = save_predictions_to_file(prediction_results)
+        
+        # Display detailed results
+        logging.info("\n" + "="*80)
+        logging.info("DETAILED PREDICTIONS")
+        logging.info("="*80)
+        logging.info("\n" + prediction_results.to_string(index=False))
+        
+        logging.info(f"\n✅ Prediction completed successfully!")
+        logging.info(f"📈 Processed {len(prediction_results)} companies")
+        logging.info(f"💾 Results saved to: {output_file}")
 
     except Exception as e:
-        logging.error(f"An error occurred during prediction: {e}", exc_info=True)
+        logging.error(f"❌ An error occurred during prediction: {e}", exc_info=True)
+        raise
+
+if __name__ == "__main__":
+    main()

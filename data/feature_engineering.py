@@ -3,12 +3,10 @@ import numpy as np
 import ta
 from typing import Optional, Tuple, List
 import warnings
-import logging # Added for better internal logging
+import logging 
 warnings.filterwarnings('ignore')
 
-# Configure logging for better visibility within FeatureEngineer
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
-
 
 class FeatureEngineer:
     """
@@ -31,36 +29,25 @@ class FeatureEngineer:
             
         merged_data = []
         
-        # Ensure 'period_end_date' is datetime in financial_df for proper comparison
         financial_df['period_end_date'] = pd.to_datetime(financial_df['period_end_date'])
-        
-        # Ensure financial_df columns are strings to prevent issues if column names are integers etc.
         financial_df.columns = financial_df.columns.astype(str)
-        
-        # Ensure company_id in financial_df is consistent string type
         financial_df['company_id'] = financial_df['company_id'].astype(str)
 
-        # Sort financial data by company and date, so .iloc[0] gets the latest before a trade_date
         financial_df_sorted = financial_df.sort_values(by=['company_id', 'period_end_date'], ascending=[True, False])
         
-        # Process each company separately
         for company_id_val in stock_df['company_id'].unique():
-            # Ensure the company_id from stock_df is also a string for consistent comparison
             company_id_val_str = str(company_id_val) 
             
             company_stock = stock_df[stock_df['company_id'] == company_id_val].copy()
-            # Use the string-converted company_id for filtering
             company_financial = financial_df_sorted[financial_df_sorted['company_id'] == company_id_val_str]
             
             if company_financial.empty:
                 merged_data.append(company_stock)
                 continue
             
-            # Process each stock row individually instead of using apply
             for idx, stock_row in company_stock.iterrows():
                 stock_trade_date = stock_row['trade_date']
                 
-                # Find the most recent financial data before or on the trade date
                 relevant_financials = company_financial[
                     company_financial['period_end_date'] <= stock_trade_date
                 ]
@@ -68,9 +55,8 @@ class FeatureEngineer:
                 if not relevant_financials.empty:
                     latest_financial_row = relevant_financials.iloc[0]
                     
-                    # Add financial data to the stock row and record as fundamental features
                     for col_name in financial_df.columns:
-                        if col_name not in ['company_id', 'period_end_date', 'statement_type']: # Exclude statement_type too
+                        if col_name not in ['company_id', 'period_end_date', 'statement_type']:
                             merged_col_name = f'financial_{col_name}'
                             if col_name in latest_financial_row.index:
                                 company_stock.at[idx, merged_col_name] = latest_financial_row[col_name]
@@ -79,7 +65,6 @@ class FeatureEngineer:
                             else:
                                 company_stock.at[idx, merged_col_name] = np.nan
                 else:
-                    # No financial data available for this date, fill with NaN for all financial_ columns
                     for col_name in financial_df.columns:
                         if col_name not in ['company_id', 'period_end_date', 'statement_type']:
                             merged_col_name = f'financial_{col_name}'
@@ -93,9 +78,7 @@ class FeatureEngineer:
         logging.info(f"✅ Merged data shape: {result.shape}")
         return result
 
-    # Technical Analysis Features (Leave these as is, they extend self.technical_features)
     def add_moving_averages(self, df: pd.DataFrame, windows: List[int] = [5, 10, 20, 50]) -> pd.DataFrame:
-        """Add multiple moving averages"""
         for w in windows:
             col_name = f'MA_{w}'
             df[col_name] = df.groupby('company_id')['close_price'].transform(
@@ -106,20 +89,17 @@ class FeatureEngineer:
         return df
 
     def add_exponential_moving_averages(self, df: pd.DataFrame, windows: List[int] = [12, 26]) -> pd.DataFrame:
-        """Add exponential moving averages"""
         for w in windows:
             col_name = f'EMA_{w}'
             df[col_name] = df.groupby('company_id')['close_price'].transform(
-                lambda x: x.ewm(span=w, adjust=False, min_periods=1).mean() # Added adjust=False for classic EMA
+                lambda x: x.ewm(span=w, adjust=False, min_periods=1).mean()
             )
             if col_name not in self.technical_features:
                 self.technical_features.append(col_name)
         return df
 
     def add_rsi(self, df: pd.DataFrame, window: int = 14) -> pd.DataFrame:
-        """Add Relative Strength Index"""
         def safe_rsi(series):
-            # Ensure proper handling for small series
             if len(series) < window:
                 return pd.Series([np.nan] * len(series), index=series.index)
             try:
@@ -140,8 +120,6 @@ class FeatureEngineer:
         return df
 
     def add_macd(self, df: pd.DataFrame, fast: int = 12, slow: int = 26, signal: int = 9) -> pd.DataFrame:
-        """Add MACD indicators"""
-        # Ensure 'close_price' is always present
         if 'close_price' not in df.columns:
             logging.warning("Missing 'close_price' for MACD calculation. Skipping.")
             return df
@@ -164,7 +142,6 @@ class FeatureEngineer:
         return df
 
     def add_bollinger_bands(self, df: pd.DataFrame, window: int = 20, std_dev: int = 2) -> pd.DataFrame:
-        """Add Bollinger Bands"""
         if 'close_price' not in df.columns:
             logging.warning("Missing 'close_price' for Bollinger Bands calculation. Skipping.")
             return df
@@ -193,7 +170,6 @@ class FeatureEngineer:
         return df
 
     def add_stochastic_oscillator(self, df: pd.DataFrame, k_window: int = 14, d_window: int = 3) -> pd.DataFrame:
-        """Add Stochastic Oscillator"""
         if not all(col in df.columns for col in ['high_price', 'low_price', 'close_price']):
             logging.warning("Missing high_price, low_price or close_price for Stochastic Oscillator. Skipping.")
             df['Stoch_K'] = np.nan
@@ -233,7 +209,6 @@ class FeatureEngineer:
         return df
 
     def _calculate_pvt(self, close_prices: pd.Series, volumes: pd.Series) -> pd.Series:
-        """Manually calculate Price-Volume Trend (PVT) for a single series, matching ta.volume.pvt(fillna=False) behavior."""
         close_prices_numeric = pd.to_numeric(close_prices, errors='coerce')
         volumes_numeric = pd.to_numeric(volumes, errors='coerce')
 
@@ -253,11 +228,8 @@ class FeatureEngineer:
         return final_pvt
 
     def add_volume_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Add volume-based indicators"""
-        # Ensure necessary columns are present for volume indicators
         if not all(col in df.columns for col in ['close_price', 'volume', 'high_price', 'low_price']):
             logging.warning("Missing required price/volume columns for some volume indicators. Skipping affected indicators.")
-            # Ensure columns exist, even if NaN
             for col in ['volume_change_pct', 'volume_MA_20', 'volume_ratio', 'PVT', 'OBV', 'VWAP']:
                 if col not in df.columns:
                     df[col] = np.nan
@@ -269,10 +241,12 @@ class FeatureEngineer:
         ).fillna(0)
         df['volume_ratio'] = (df['volume'] / df['volume_MA_20']).replace([np.inf, -np.inf], 1).fillna(1)
 
+        # FIX 1: Use correct PVT function name
         pvt_results = []
         for company_id, group_df in df.groupby('company_id'):
             try:
-                pvt_series = ta.volume.pvt(
+                # Changed from ta.volume.pvt_indicator to ta.volume.volume_price_trend
+                pvt_series = ta.volume.volume_price_trend( 
                     close=group_df['close_price'],
                     volume=group_df['volume'],
                     fillna=False
@@ -286,21 +260,24 @@ class FeatureEngineer:
             pvt_results.append(pvt_series)
         df['PVT'] = pd.concat(pvt_results).reindex(df.index)
 
-        # On-Balance Volume (OBV)
-        df['OBV'] = df.groupby('company_id').apply(
-            lambda x: ta.volume.on_balance_volume(x['close_price'], x['volume'], fillna=False)
-        ).droplevel(0) # droplevel because apply adds an extra level
+        # FIX 2: Handle the OBV calculation more safely to avoid MultiIndex issues
+        obv_results = []
+        for company_id, group_df in df.groupby('company_id'):
+            try:
+                obv_series = ta.volume.on_balance_volume(
+                    close=group_df['close_price'], 
+                    volume=group_df['volume'], 
+                    fillna=False
+                )
+                obv_results.append(obv_series)
+            except Exception as e:
+                logging.warning(f"Error calculating OBV for {company_id}: {e}. Using NaN values.")
+                obv_series = pd.Series(np.nan, index=group_df.index)
+                obv_results.append(obv_series)
         
-        # Volume Weighted Average Price (VWAP) - requires group apply as it needs high, low, close, volume for each date
-        # It's an aggregate function typically, but can be done rolling. ta.volume.vwap requires a 'period'
-        # Let's add it as a simple daily VWAP, or if a rolling VWAP is desired, that needs more logic.
-        # For simplicity, if your intent was a single-day VWAP, ensure all columns are there.
-        # If your intent was a rolling VWAP from `ta.volume`, it's not a direct 'transform' per company.
-        # I'll add a simple daily VWAP here as a feature, assuming the ta.volume.vwap function is intended for rolling.
-        # As your previous code called `ta.volume.volume_weighted_average_price`, let's stick to that if it implies a daily calculation without rolling.
-        # If ta.volume.volume_weighted_average_price means daily, then:
+        df['OBV'] = pd.concat(obv_results).reindex(df.index)
+        
         df['VWAP'] = (df['volume'] * (df['high_price'] + df['low_price'] + df['close_price']) / 3).fillna(0) / df['volume'].fillna(1)
-        # This is a common simplified daily VWAP. If you meant a different VWAP, clarify.
 
         volume_features = ['volume_change_pct', 'volume_MA_20', 'volume_ratio', 'PVT', 'OBV', 'VWAP']
         for feat in volume_features:
@@ -309,13 +286,10 @@ class FeatureEngineer:
         return df
 
     def add_volatility_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Add volatility indicators"""
-        # Price volatility (Rolling Standard Deviation of returns)
         df['price_volatility'] = df.groupby('company_id')['close_price'].transform(
             lambda x: x.pct_change().rolling(window=20, min_periods=1).std()
         ).fillna(0)
         
-        # Average True Range
         if all(col in df.columns for col in ['high_price', 'low_price', 'close_price']):
             atr_results = []
             atr_window = 14
@@ -345,7 +319,6 @@ class FeatureEngineer:
         return df
 
     def add_momentum_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Add momentum indicators"""
         if 'close_price' not in df.columns:
             logging.warning("Missing 'close_price' for momentum indicators. Skipping.")
             for col in ['ROC_10', 'momentum_5', 'price_acceleration']:
@@ -372,10 +345,9 @@ class FeatureEngineer:
         return df
 
     def add_price_action_features(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Add price action features"""
         if 'close_price' not in df.columns:
             logging.warning("Missing 'close_price' for price action features. Skipping.")
-            return df # Cannot compute most features without close_price
+            return df 
 
         df['daily_return'] = df.groupby('company_id')['close_price'].pct_change()
         
@@ -400,7 +372,6 @@ class FeatureEngineer:
             df['intraday_momentum'] = ((df['close_price'] - df['open_price']) / df['open_price'])
             price_action_features.extend(['hl_spread', 'intraday_momentum'])
             
-            # For opening_gap, ensure 'previous_close' is available from shifted 'close_price'
             df['previous_close'] = df.groupby('company_id')['close_price'].shift(1)
             df['opening_gap'] = ((df['open_price'] - df['previous_close']) / df['previous_close'])
             price_action_features.append('opening_gap')
@@ -410,11 +381,7 @@ class FeatureEngineer:
                 self.technical_features.append(feat)
         return df
 
-    # Fundamental Analysis Features
     def add_financial_ratios(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Add fundamental financial ratios"""
-        # Ensure required financial columns exist (prefixed with 'financial_')
-        # If they don't, the ratio columns will be created as NaN and filled later.
         required_base_financial_cols = [
             'market_cap', 'net_income', 'total_equity', 'long_term_debt',
             'short_term_debt', 'total_assets', 'current_assets',
@@ -424,39 +391,30 @@ class FeatureEngineer:
             'investing_cash_flow' 
         ]
         
-        # Ensure these columns exist, possibly as NaN if not merged
         for col in required_base_financial_cols:
             if f'financial_{col}' not in df.columns:
                 df[f'financial_{col}'] = np.nan 
 
-        # Valuation ratios
-        # Use .fillna(0) for denominator to avoid division by zero and inf results, before replace(0,np.nan) for ratio.
-        # Correcting logic: PE_ratio should use market_cap and financial_net_income
-        df['PE_ratio'] = df['market_cap'] / (df['financial_net_income'].replace(0, np.nan)) # Removed *4 as it's typically annual
+        df['PE_ratio'] = df['market_cap'] / (df['financial_net_income'].replace(0, np.nan))
         df['PB_ratio'] = df['market_cap'] / df['financial_total_equity'].replace(0, np.nan)
         
-        # Debt ratios
         total_debt = (df['financial_long_term_debt'].fillna(0) + df['financial_short_term_debt'].fillna(0))
         df['debt_to_equity'] = total_debt / df['financial_total_equity'].replace(0, np.nan)
         df['debt_to_assets'] = total_debt / df['financial_total_assets'].replace(0, np.nan)
         
-        # Liquidity ratios
         df['current_ratio'] = df['financial_current_assets'] / df['financial_current_liabilities'].replace(0, np.nan)
         df['cash_ratio'] = df['financial_cash_and_equivalents'] / df['financial_current_liabilities'].replace(0, np.nan)
         df['quick_ratio'] = (df['financial_current_assets'] - df['financial_inventory'].fillna(0)) / df['financial_current_liabilities'].replace(0, np.nan)
         
-        # Profitability ratios (assuming these are annual figures from financial_df)
         df['ROA'] = df['financial_net_income'] / df['financial_total_assets'].replace(0, np.nan) 
         df['ROE'] = df['financial_net_income'] / df['financial_total_equity'].replace(0, np.nan) 
         df['gross_margin'] = df['financial_gross_profit'] / df['financial_revenue'].replace(0, np.nan)
         df['operating_margin'] = df['financial_operating_income'] / df['financial_revenue'].replace(0, np.nan)
         df['net_margin'] = df['financial_net_income'] / df['financial_revenue'].replace(0, np.nan)
         
-        # Efficiency ratios (assuming these are annual figures from financial_df)
         df['asset_turnover'] = df['financial_revenue'] / df['financial_total_assets'].replace(0, np.nan) 
         df['inventory_turnover'] = df['financial_cost_of_goods_sold'] / df['financial_inventory'].replace(0, np.nan) 
         
-        # Cash flow ratios
         df['operating_cash_margin'] = df['financial_operating_cash_flow'] / df['financial_revenue'].replace(0, np.nan)
         df['free_cash_flow'] = df['financial_operating_cash_flow'].fillna(0) - df['financial_investing_cash_flow'].fillna(0)
         df['fcf_margin'] = df['free_cash_flow'] / df['financial_revenue'].replace(0, np.nan)
@@ -475,29 +433,20 @@ class FeatureEngineer:
         return df
 
     def add_growth_metrics(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Add growth metrics"""
-        # Ensure base cols exist for growth calculations
         base_growth_cols = ['financial_revenue', 'financial_net_income', 'financial_total_assets']
-        # financial_earnings_per_share might not be directly available, better to calculate EPS as a ratio
         
         for col_prefix in base_growth_cols:
-            if col_prefix not in df.columns: # Check for the financial_ prefix
+            if col_prefix not in df.columns:
                 df[col_prefix] = np.nan 
 
         growth_features = []
         for col_prefix in base_growth_cols:
-            # Need historical financial data for true growth rates, which is not directly from merge_financial_with_stock_data
-            # if financial_df only provides latest. For this, we'd need to shift.
-            # Assuming financial data is present for multiple periods per company due to merge strategy:
             if col_prefix in df.columns: 
                 growth_col = f'{col_prefix}_growth'
-                # Group by company_id and calculate percentage change based on previous financial period
                 df[growth_col] = df.groupby('company_id')[col_prefix].pct_change() 
                 growth_features.append(growth_col)
         
-        # Also add EPS growth if 'EPS' was calculated in add_financial_ratios
-        if 'PE_ratio' in df.columns: # Assuming PE_ratio implies EPS was calculated
-            # EPS needs to be calculated first, then its growth
+        if 'PE_ratio' in df.columns:
             if 'financial_net_income' in df.columns and 'financial_shares_outstanding' in df.columns:
                 df['EPS'] = df['financial_net_income'] / df['financial_shares_outstanding'].replace(0, np.nan)
                 eps_growth_col = 'EPS_growth'
@@ -511,118 +460,190 @@ class FeatureEngineer:
         
         return df
 
-    def clean_and_validate_features(self, df: pd.DataFrame, training_features: Optional[List[str]] = None) -> pd.DataFrame:
+    def align_prediction_features(self, df: pd.DataFrame, training_features: List[str]) -> pd.DataFrame:
         """
-        Clean and validate all engineered features.
+        Specifically designed to align prediction data with training features.
+        Handles missing financial data gracefully.
+        """
+        logging.info(f"🎯 Aligning prediction features to match training features...")
         
-        Args:
-            df (pd.DataFrame): The DataFrame with engineered features.
-            training_features (Optional[List[str]]): A list of feature names from the training set.
-                                                     If provided (in prediction mode), ensures the output DataFrame
-                                                     has these exact columns in the correct order, filling missing
-                                                     ones and dropping extra ones.
-        """
+        # Get current feature columns (excluding metadata)
+        non_feature_cols = [
+            'trade_date', 'company_id', 'symbol', 'close_price', 'open_price', 
+            'high_price', 'low_price', 'volume', 'market_cap', 'original_index'
+        ]
+        
+        current_features = [col for col in df.columns if col not in non_feature_cols]
+        missing_features = set(training_features) - set(current_features)
+        
+        if missing_features:
+            logging.warning(f"Adding {len(missing_features)} missing features with appropriate defaults")
+            
+            # Add missing features with intelligent defaults
+            for feature in missing_features:
+                if any(keyword in feature.lower() for keyword in ['financial_', 'pe_ratio', 'pb_ratio', 'debt_to', 'current_ratio', 'cash_ratio', 'quick_ratio']):
+                    # Financial features - use conservative defaults
+                    if 'ratio' in feature.lower():
+                        df[feature] = 1.0  # Neutral ratio
+                    elif 'margin' in feature.lower():
+                        df[feature] = 0.05  # 5% margin
+                    elif 'growth' in feature.lower():
+                        df[feature] = 0.0  # No growth
+                    elif 'eps' in feature.lower():
+                        df[feature] = 1.0  # $1 EPS
+                    else:
+                        df[feature] = 0.0
+                else:
+                    # Technical features - calculate if possible, otherwise use median
+                    df[feature] = 0.0
+        
+        # Ensure we have only the training features in the correct order
+        df_aligned = df[training_features].copy()
+        
+        # Final cleaning pass
+        for col in df_aligned.columns:
+            df_aligned[col] = pd.to_numeric(df_aligned[col], errors='coerce')
+            df_aligned[col] = df_aligned[col].replace([np.inf, -np.inf], np.nan)
+            df_aligned[col] = df_aligned[col].fillna(0.0)
+        
+        logging.info(f"✅ Successfully aligned {len(training_features)} features for prediction")
+        return df_aligned
+
+    def clean_and_validate_features(self, df: pd.DataFrame, training_features: Optional[List[str]] = None) -> pd.DataFrame:
         logging.info("🧹 Cleaning and validating features...")
         initial_shape = df.shape
 
-        # Identify all columns that should *not* be treated as features for imputation/clipping
-        # These are usually metadata, IDs, or target labels
         non_feature_cols = [
             'trade_date', 'company_id', 'symbol', 'next_close_price', 
             'price_diff', 'label', 'previous_close', 'period_end_date', 'statement_type',
-            'close_price', 'open_price', 'high_price', 'low_price', 'volume', 'market_cap' # Base columns, kept for calculations, but usually not treated as features for imputation in the same way as derived features.
+            'close_price', 'open_price', 'high_price', 'low_price', 'volume', 'market_cap'
         ]
         
-        # Columns that MUST be numeric and should be filled carefully if NaNs exist
         critical_numeric_for_fill = ['close_price', 'open_price', 'high_price', 'low_price', 'volume', 'market_cap']
         
-        # First, ensure base numeric columns are actually numeric and handle NaNs critically
         for col in critical_numeric_for_fill:
             if col in df.columns:
                 df[col] = pd.to_numeric(df[col], errors='coerce')
-                # For critical price/volume data, if NaN, drop the row or fill with 0 if it makes sense in your context
-                # For a prediction scenario, dropping might be too aggressive if it means losing all data for a company.
-                # For now, let's fill with 0 if it's NaN after coercion. You might want a more sophisticated strategy.
                 if df[col].isnull().any():
                     logging.warning(f"NaNs found in critical column '{col}'. Filling with 0.")
                     df[col].fillna(0, inplace=True)
         
-        # Apply cleaning for ALL current and potential technical/fundamental features
-        all_potential_feature_cols = list(set(self.technical_features + self.fundamental_features))
-        
-        for col in all_potential_feature_cols:
-            if col in df.columns:
-                df[col] = pd.to_numeric(df[col], errors='coerce')
-                df[col] = df[col].replace([np.inf, -np.inf], np.nan)
-                
-                # Clipping outliers
-                if df[col].std(skipna=True) > 0 and df[col].count() > 1: 
-                    mean_val = df[col].mean(skipna=True)
-                    std_val = df[col].std(skipna=True)
-                    if pd.notna(mean_val) and pd.notna(std_val) and std_val > 0:
-                        lower_bound = mean_val - 5 * std_val
-                        upper_bound = mean_val + 5 * std_val
-                        df[col] = df[col].clip(lower=lower_bound, upper=upper_bound)
-                
-                # Impute NaNs with median if available, otherwise 0
-                median_val = df[col].median(skipna=True)
-                df[col] = df[col].fillna(median_val if pd.notna(median_val) else 0)
-            else:
-                # If a feature from self.technical_features/self.fundamental_features was expected but not created,
-                # this is where we'd add it as NaN for consistency IF training_features is None.
-                # If training_features IS provided, it will handle adding missing columns.
-                pass # Handled by the training_features alignment below
-
-        # --- Feature Alignment for Prediction/Consistent Output ---
-        if training_features: # This block is active when `training_features` are provided (e.g., during prediction)
-            logging.info(f"Aligning features to {len(training_features)} training features...")
+        # Handle feature alignment for prediction mode
+        if training_features:
+            logging.info(f"🔧 Aligning features to {len(training_features)} training features...")
             
-            # Add any missing training features to df and fill with 0
+            # First, ensure all training features exist in DataFrame
             missing_cols = set(training_features) - set(df.columns)
-            for col in missing_cols:
-                df[col] = 0.0 # Use 0.0 for numerical consistency
+            if missing_cols:
+                logging.warning(f"Missing {len(missing_cols)} features from training. Adding with default values: {list(missing_cols)[:10]}{'...' if len(missing_cols) > 10 else ''}")
+                for col in missing_cols:
+                    # Use more intelligent defaults based on feature type
+                    if any(keyword in col.lower() for keyword in ['ratio', 'pe_', 'pb_', 'roe', 'roa']):
+                        df[col] = 1.0  # Neutral ratio values
+                    elif any(keyword in col.lower() for keyword in ['growth', 'change', 'return']):
+                        df[col] = 0.0  # No growth/change
+                    elif any(keyword in col.lower() for keyword in ['margin', 'percent']):
+                        df[col] = 0.0  # Zero margin/percentage
+                    else:
+                        df[col] = 0.0  # Default to zero
+            
+            # Clean and process all potential feature columns (including newly added ones)
+            all_potential_feature_cols = list(set(self.technical_features + self.fundamental_features + training_features))
+            
+            for col in all_potential_feature_cols:
+                if col in df.columns and col not in non_feature_cols:
+                    df[col] = pd.to_numeric(df[col], errors='coerce')
+                    df[col] = df[col].replace([np.inf, -np.inf], np.nan)
+                    
+                    # Outlier handling
+                    if df[col].std(skipna=True) > 0 and df[col].count() > 1: 
+                        mean_val = df[col].mean(skipna=True)
+                        std_val = df[col].std(skipna=True)
+                        if pd.notna(mean_val) and pd.notna(std_val) and std_val > 0:
+                            lower_bound = mean_val - 5 * std_val
+                            upper_bound = mean_val + 5 * std_val
+                            df[col] = df[col].clip(lower=lower_bound, upper=upper_bound)
+                    
+                    # Fill NaN values with appropriate defaults
+                    if df[col].isnull().any():
+                        if any(keyword in col.lower() for keyword in ['ratio', 'pe_', 'pb_', 'roe', 'roa']):
+                            fill_value = 1.0  # Neutral ratio values
+                        elif any(keyword in col.lower() for keyword in ['growth', 'change', 'return']):
+                            fill_value = 0.0  # No growth/change
+                        else:
+                            median_val = df[col].median(skipna=True)
+                            fill_value = median_val if pd.notna(median_val) else 0.0
+                        
+                        df[col].fillna(fill_value, inplace=True)
+            
+            # Remove extra columns not in training features
+            extra_cols = set(df.columns) - set(training_features) - set(non_feature_cols)
+            if extra_cols:
+                logging.info(f"Removing {len(extra_cols)} extra columns not in training features")
+                df.drop(columns=list(extra_cols), errors='ignore', inplace=True)
+            
+            # Ensure exact column order matches training
+            try:
+                df = df[training_features].copy()
+                logging.info(f"✅ Features successfully aligned to training order. Shape: {df.shape}")
+            except KeyError as e:
+                missing_after_processing = set(training_features) - set(df.columns)
+                logging.error(f"❌ Still missing features after processing: {missing_after_processing}")
+                raise ValueError(f"Cannot align features. Missing: {missing_after_processing}")
+                
+        else:
+            # Training mode - process all available features
+            all_potential_feature_cols = list(set(self.technical_features + self.fundamental_features))
+            
+            for col in all_potential_feature_cols:
+                if col in df.columns:
+                    df[col] = pd.to_numeric(df[col], errors='coerce')
+                    df[col] = df[col].replace([np.inf, -np.inf], np.nan)
+                    
+                    if df[col].std(skipna=True) > 0 and df[col].count() > 1: 
+                        mean_val = df[col].mean(skipna=True)
+                        std_val = df[col].std(skipna=True)
+                        if pd.notna(mean_val) and pd.notna(std_val) and std_val > 0:
+                            lower_bound = mean_val - 5 * std_val
+                            upper_bound = mean_val + 5 * std_val
+                            df[col] = df[col].clip(lower=lower_bound, upper=upper_bound)
+                    
+                    median_val = df[col].median(skipna=True)
+                    df[col] = df[col].fillna(median_val if pd.notna(median_val) else 0)
 
-            # Drop any columns in df that are NOT in training_features
-            extra_cols = set(df.columns) - set(training_features)
-            # Ensure we don't accidentally drop critical base columns or metadata
-            extra_cols = [col for col in extra_cols if col not in non_feature_cols]
-            df.drop(columns=list(extra_cols), errors='ignore', inplace=True)
-
-            # Ensure the order of columns matches training_features
-            df = df[training_features].copy()
-            logging.info(f"Features aligned. Current columns: {df.columns.tolist()}")
-
-        logging.info(f"Cleaned and validated features. Shape changed from {initial_shape} to {df.shape}")
+        logging.info(f"✅ Cleaned and validated features. Shape changed from {initial_shape} to {df.shape}")
         return df
 
-    def create_labels(self, df: pd.DataFrame, threshold: float = 0.02) -> pd.DataFrame:
+    def create_labels(self, df: pd.DataFrame) -> pd.DataFrame:
         """
-        Create target labels for prediction:
-        1 (Buy) if price increases by threshold,
-        -1 (Sell) if decreases by threshold,
-        0 (Hold) otherwise.
+        Creates target labels for classification.
+        Assumes 'close_price' is available and sorted by company_id and trade_date.
+        Labels: 0 (Sell), 1 (Hold), 2 (Buy) based on future price movement.
         """
-        logging.info("🎯 Creating target labels...")
-        # Ensure data is sorted for correct shifting within groups
-        df = df.sort_values(by=['company_id', 'trade_date'])
+        if 'close_price' not in df.columns:
+            logging.error("Cannot create labels: 'close_price' column is missing.")
+            df['label'] = np.nan
+            return df
 
-        # Calculate next day's close price for each company
         df['next_close_price'] = df.groupby('company_id')['close_price'].shift(-1)
+        
         df['price_diff'] = df['next_close_price'] - df['close_price']
-        df['price_change_percent'] = df['price_diff'] / df['close_price']
+        df['price_change_percent'] = (df['price_diff'] / df['close_price']) * 100
 
-        def apply_label(row, threshold_val):
-            if pd.isna(row['price_change_percent']) or row['close_price'] == 0:
-                return np.nan # Cannot create label if next_close_price is missing or current price is zero
-            elif row['price_change_percent'] >= threshold_val:
-                return 1.0  # Buy
-            elif row['price_change_percent'] <= -threshold_val:
-                return -1.0 # Sell
-            else:
-                return 0.0  # Hold
+        buy_threshold = 0.5  
+        sell_threshold = -0.5 
 
-        df['label'] = df.apply(apply_label, axis=1, threshold_val=threshold)
-        logging.info(f"Label distribution: {df['label'].value_counts().to_dict()}")
+        conditions = [
+            (df['price_change_percent'] >= buy_threshold),
+            (df['price_change_percent'] <= sell_threshold)
+        ]
+        choices = [2, 0] 
+
+        df['label'] = np.select(conditions, choices, default=1) 
+
+        df.dropna(subset=['label'], inplace=True)
+        
+        logging.info(f"Labels created. Label distribution: {df['label'].value_counts().sort_index().to_dict()}")
         return df
 
     def create_features_and_labels(self, stock_df: pd.DataFrame, financial_df: Optional[pd.DataFrame] = None, 
@@ -633,19 +654,17 @@ class FeatureEngineer:
         
         self.technical_features = []
         self.fundamental_features = []
-        self.all_features = [] # Reset this for each call
+        self.all_features = []
         
         logging.info("🔄 Starting feature engineering...")
         
         if 'trade_date' not in stock_df.columns:
             raise ValueError("stock_df must contain a 'trade_date' column.")
+        
         stock_df['trade_date'] = pd.to_datetime(stock_df['trade_date'])
         stock_df = stock_df.sort_values(by=['company_id', 'trade_date']).reset_index(drop=True)
+        stock_df['original_index'] = stock_df.index # Preserve original index for metadata
 
-        # Preserve the original index for metadata mapping later
-        stock_df['original_index'] = stock_df.index
-
-        # Merge financial data first if provided
         if financial_df is not None and not financial_df.empty:
             logging.info("💰 Merging financial data with stock data...")
             df = self.merge_financial_with_stock_data(stock_df, financial_df)
@@ -653,9 +672,23 @@ class FeatureEngineer:
             df = stock_df.copy()
             logging.info("ℹ️ No financial data provided, using technical indicators only")
         
-        df = df.sort_values(['company_id', 'trade_date'])
+        # --- Crucial Pre-clean_and_validate_features Index & Column Reset ---
+        # Ensure df is sorted and has a simple default integer index, and NO MultiIndex
+        if isinstance(df.index, pd.MultiIndex):
+            df = df.reset_index(drop=False) # Convert MultiIndex levels to columns, maintain data
+            logging.info("MultiIndex detected and converted to columns for processing.")
         
-        # Ensure base price/volume/market_cap columns are numeric right after initial load/merge
+        # Ensure a standard, unnamed RangeIndex for df before feature additions/cleaning
+        df = df.reset_index(drop=True)
+        df.index.name = None # Explicitly remove index name to prevent potential issues
+        logging.info("DataFrame index reset and name removed for consistency.")
+
+        # Re-sort to maintain order after potential MultiIndex reset, then re-reset index
+        df = df.sort_values(['company_id', 'trade_date']).reset_index(drop=True)
+        df.index.name = None # Ensure index name is still None after sort/reset
+        logging.info("DataFrame resorted and index re-reset to ensure consistent order.")
+        # ----------------------------------------------------------
+        
         base_numeric_cols = ['open_price', 'high_price', 'low_price', 'close_price', 'volume', 'market_cap']
         for col in base_numeric_cols:
             if col in df.columns:
@@ -673,7 +706,6 @@ class FeatureEngineer:
         df = self.add_momentum_indicators(df)
         df = self.add_price_action_features(df)
         
-        # Check for financial data and add fundamental indicators
         if 'financial_revenue' in df.columns and not df['financial_revenue'].isna().all():
             logging.info("💰 Adding fundamental indicators...")
             df = self.add_financial_ratios(df)
@@ -681,59 +713,91 @@ class FeatureEngineer:
         else:
             logging.warning("⚠️ Financial data not available or merged successfully for fundamental indicators (financial_revenue not found or all NaN).")
 
-        # --- IMPORTANT NEW LOGIC: Preserve full metadata BEFORE clean_and_validate_features potentially strips columns ---
-        # This is the key change to work around your existing clean_and_validate_features behavior.
-        metadata_cols_to_preserve = ['company_id', 'trade_date', 'symbol', 'close_price', 'original_index',
-                                     'open_price', 'high_price', 'low_price', 'volume', 'market_cap'] # Include all base stock data for metadata if needed
+        # --- Preserve full metadata BEFORE clean_and_validate_features potentially strips columns ---
+        metadata_cols_to_preserve = [
+            'company_id', 'trade_date', 'symbol', 'close_price', 'original_index',
+            'open_price', 'high_price', 'low_price', 'volume', 'market_cap'
+        ] 
         
-        # Ensure only columns actually present in df are considered for initial_metadata
         available_initial_metadata_cols = [col for col in metadata_cols_to_preserve if col in df.columns]
         initial_metadata = df[available_initial_metadata_cols].copy()
         
+        # Ensure initial_metadata has a clean RangeIndex and no name for later alignment
+        initial_metadata = initial_metadata.reset_index(drop=True)
+        initial_metadata.index.name = None
+        
         logging.info("🧹 Cleaning and validating features...")
-        # Your clean_and_validate_features will still get `df` (with all columns) and `training_features`.
-        # It will likely return a `df_processed` that only contains the 92 `training_features` columns.
         df_processed = self.clean_and_validate_features(df, training_features=training_features)
         
-        # --- Metadata extraction and final X, y preparation ---
-        # Filter the initial_metadata based on the indices that remain in df_processed
-        # This ensures metadata perfectly aligns with the rows in X.
-        metadata = initial_metadata.loc[df_processed.index].copy()
+        # --- Metadata extraction and final X, y preparation (more robust alignment) ---
+        if df_processed.empty:
+            logging.warning("df_processed is empty after cleaning and validation. Returning empty results.")
+            return pd.DataFrame(), pd.Series(dtype=float), pd.DataFrame()
+
+        # Align metadata using the 'original_index' column
+        if 'original_index' in df_processed.columns:
+            # Create a temporary index on 'original_index' for precise alignment
+            temp_df_processed_indexed = df_processed.set_index('original_index', drop=False) # Keep original_index as column
+            temp_initial_metadata_indexed = initial_metadata.set_index('original_index')
+
+            # Reindex metadata to match rows present in df_processed
+            metadata = temp_initial_metadata_indexed.reindex(temp_df_processed_indexed.index).reset_index(drop=False) # original_index back to column
+            
+            # Ensure df_processed itself also has a clean RangeIndex for model input, dropping original_index
+            df_processed.drop(columns=['original_index'], inplace=True, errors='ignore')
+            df_processed.reset_index(drop=True, inplace=True)
+        else:
+            # Fallback if original_index wasn't preserved (shouldn't happen)
+            logging.warning("original_index not found in df_processed, falling back to direct index alignment. This might cause issues if rows were dropped.")
+            metadata = initial_metadata.loc[df_processed.index].copy()
+            metadata.reset_index(drop=True, inplace=True) 
+
+        # Final check to ensure all outputs have simple RangeIndexes and no names
+        metadata.reset_index(drop=True, inplace=True)
+        metadata.index.name = None
         
+        # The 'y' Series should also be reset
+        y_final = pd.Series([], dtype=float) # Default empty series for prediction mode
+
         if not is_prediction:
             logging.info("🎯 Creating target labels for training...")
-            df_labeled = self.create_labels(df_processed) 
-            
+            df_labeled = self.create_labels(df_processed) # df_processed should have close_price for this
+
             # Filter metadata based on valid labels from df_labeled
             valid_label_indices = df_labeled['label'].dropna().index
-            df_final_for_training = df_labeled.loc[valid_label_indices].copy()
-            metadata = metadata.loc[valid_label_indices].copy() # Filter metadata here
             
+            if valid_label_indices.empty:
+                logging.warning("No valid labels after creation. Returning empty results for training.")
+                return pd.DataFrame(), pd.Series(dtype=float), pd.DataFrame()
+
+            df_final_for_training = df_labeled.loc[valid_label_indices].copy()
+            
+            # Re-align metadata to the rows that have valid labels
+            if 'original_index' in df_final_for_training.columns and 'original_index' in metadata.columns:
+                metadata = metadata[metadata['original_index'].isin(df_final_for_training['original_index'])].copy()
+                metadata.reset_index(drop=True, inplace=True)
+                # Drop original_index from df_final_for_training features, keep in metadata
+                df_final_for_training.drop(columns=['original_index'], inplace=True, errors='ignore')
+
             # Dynamically determine which features are actually present in the DataFrame for training
-            # This logic sets self.all_features for use outside the class (e.g., saving for prediction)
             all_potential_features_from_lists = list(set(self.technical_features + self.fundamental_features))
             
-            # --- CRITICAL CHANGE FOR self.all_features definition ---
-            # Exclude ALL base stock price/volume/market_cap columns from self.all_features,
-            # as these are considered "metadata" or base data, not derived features for the model.
-            # Your current 'base_stock_features_to_include' should only be used to ensure they are numeric.
-            # They should not implicitly be added to the final 'all_features' list.
-            excluded_from_model_features = ['trade_date', 'company_id', 'symbol', 'next_close_price', 
-                                            'price_diff', 'price_change_percent', 'label', 'previous_close',
-                                            'original_index', # These are the previous exclusions
-                                            'open_price', 'high_price', 'low_price', 'close_price', 
-                                            'volume', 'market_cap'] # <--- NEW EXCLUSIONS for model features
+            excluded_from_model_features = [
+                'trade_date', 'company_id', 'symbol', 'next_close_price', 
+                'price_diff', 'price_change_percent', 'label', 'previous_close',
+                'original_index', # Exclude if it accidentally got into final training features
+                'open_price', 'high_price', 'low_price', 'close_price', 
+                'volume', 'market_cap'
+            ] 
             
-            # Combine all features, ensuring they exist in the dataframe and are not excluded
             self.all_features = [
-                col for col in (all_potential_features_from_lists) # Only use derived features
+                col for col in (all_potential_features_from_lists) 
                 if col in df_final_for_training.columns and col not in excluded_from_model_features
             ]
-            self.all_features.sort() # Keep features sorted for consistency
+            self.all_features.sort() 
 
-            # X for training: select only the actual features
             X = df_final_for_training[self.all_features].copy()
-            y = df_final_for_training['label'].copy()
+            y_final = df_final_for_training['label'].copy()
             
             logging.info(f"✅ Feature engineering complete for training!")
             logging.info(f"   📊 Technical features: {len(self.technical_features)}")
@@ -742,31 +806,33 @@ class FeatureEngineer:
             logging.info(f"📋 Final dataset summary for training:")
             logging.info(f"   🔢 Samples: {len(X)}")
             logging.info(f"   📊 Features: {len(X.columns)}")
-            logging.info(f"   🏷️ Label distribution: {y.value_counts().sort_index().to_dict()}")
+            logging.info(f"   🏷️ Label distribution: {y_final.value_counts().sort_index().to_dict()}")
 
         else: # If is_prediction is True
-            logging.info("ℹ️ Skipping target label creation for prediction.")
-            y = pd.Series([], dtype=float) # Return an empty Series for y in prediction mode
-
+            logging.info("ℹ️ Skipping target label creation for prediction...")
             if training_features is None:
                 raise ValueError("training_features must be provided when is_prediction is True for prediction mode.")
             
-            # X for prediction: df_processed already has columns aligned to training_features by your clean_and_validate_features
-            X = df_processed[training_features].copy() 
-
-            # The metadata DataFrame was already filtered based on df_processed's index earlier
-            # So, metadata is already aligned with X.
-
-            logging.info(f"✅ Feature engineering complete for prediction!")
-            logging.info(f"   🔢 Samples for prediction: {len(X)}")
-            logging.info(f"   📊 Features: {len(X.columns)}")
+            # Use the specialized alignment method for predictions
+            try:
+                X = self.align_prediction_features(df_processed, training_features)
+                logging.info(f"✅ Feature engineering complete for prediction!")
+                logging.info(f"   🔢 Samples for prediction: {len(X)}")
+                logging.info(f"   📊 Features: {len(X.columns)}")
+            except Exception as e:
+                logging.error(f"❌ Error in feature alignment for prediction: {str(e)}")
+                # Fallback to basic alignment
+                X = df_processed[training_features].copy() if all(col in df_processed.columns for col in training_features) else pd.DataFrame()
+                if X.empty:
+                    logging.error("Cannot create prediction features - too many missing columns")
+                    return pd.DataFrame(), pd.Series(dtype=float), pd.DataFrame()
         
-        # Return results, ensuring indices are reset for all three outputs
+        # Final reset of indices for all returned DataFrames/Series
         X.reset_index(drop=True, inplace=True)
-        y.reset_index(drop=True, inplace=True)
+        y_final.reset_index(drop=True, inplace=True)
         metadata.reset_index(drop=True, inplace=True)
         
-        return X, y, metadata
+        return X, y_final, metadata
     
     def get_feature_importance_groups(self) -> dict:
         """Return features grouped by category for analysis"""
@@ -810,6 +876,39 @@ class FeatureEngineer:
                 f.write(f"{i:2d}. {feature}\n")
         
         print(f"💾 Feature information saved to: {filepath}")
+
+    def save_training_features(self, filepath: str = 'training_features.txt'):
+        """Save the list of features used in training for prediction alignment"""
+        import json
+        
+        feature_info = {
+            'all_features': self.all_features,
+            'technical_features': self.technical_features,
+            'fundamental_features': self.fundamental_features,
+            'feature_count': len(self.all_features)
+        }
+        
+        with open(filepath, 'w') as f:
+            json.dump(feature_info, f, indent=2)
+        
+        logging.info(f"💾 Training features saved to: {filepath}")
+    
+    def load_training_features(self, filepath: str = 'training_features.txt') -> List[str]:
+        """Load the list of features used in training"""
+        import json
+        
+        try:
+            with open(filepath, 'r') as f:
+                feature_info = json.load(f)
+            
+            logging.info(f"📂 Loaded {feature_info['feature_count']} training features from: {filepath}")
+            return feature_info['all_features']
+        except FileNotFoundError:
+            logging.warning(f"Training features file not found: {filepath}")
+            return []
+        except Exception as e:
+            logging.error(f"Error loading training features: {str(e)}")
+            return []
 
 # Convenience function for backward compatibility
 def prepare_features_labels(stock_df: pd.DataFrame, financial_df: Optional[pd.DataFrame] = None, include_financials: bool = True) -> Tuple[pd.DataFrame, pd.Series]:

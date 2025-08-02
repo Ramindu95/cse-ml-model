@@ -1,0 +1,21 @@
+Financial Data Extraction Summary
+==================================
+
+Company: TEEJAY LANKA PLC (TJL)
+Report Type: Interim
+Report Date: 31 March 2025
+Extraction Confidence: 0.42
+Document Hash: None
+
+Financial Metrics:
+- Revenue: None
+- Profit For Period: None
+- Operating Profit: None
+- Total Assets: 5.611034656608135e+47
+- Total Liabilities: 2.51234522615929e+46
+- Total Equity: None
+- Basic Eps: None
+- Gross Profit: None
+- Ebitda: None
+- Net Cash Flow: None
+

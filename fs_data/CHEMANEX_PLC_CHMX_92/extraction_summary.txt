@@ -1,0 +1,29 @@
+Financial Data Extraction Summary
+==================================
+
+Company: CHEMANEX PLC (CHMX)
+Report Type: Interim
+Report Date: 01 April 2024
+Extraction Confidence: 0.67
+Document Hash: None
+
+Financial Metrics:
+- Revenue: 122944517343232.0
+- Profit For Period: -318814254525.0
+- Operating Profit: None
+- Total Assets: 4.840965405873445e+41
+- Total Liabilities: 4.6644629364544156e+35
+- Total Equity: 4.37451937650894e+41
+- Basic Eps: None
+- Gross Profit: 555614936613.0
+- Ebitda: None
+- Net Cash Flow: None
+
+Directors (6):
+  - P R Saldin - Chairman (N/A)
+  - R P Bandaranayake (N/A)
+  - S A B Ekanayake (N/A)
+  - T K D A P Samarasinghe (N/A)
+  - P A Seresinhe (Company Secretary)
+  - S A B P W M R R W T Wegodapola (N/A)
+

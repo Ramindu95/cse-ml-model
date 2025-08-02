@@ -4,296 +4,9 @@ INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
 INFO: 🔄 Starting feature engineering...
 INFO: 💰 Merging financial data with stock data...
 INFO: ✅ Merged data shape: (854, 44)
+INFO: DataFrame index reset and name removed for consistency.
+INFO: DataFrame resorted and index re-reset to ensure consistent order.
 INFO: 📈 Adding technical indicators...
-WARNING: Error calculating PVT for 1: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 2: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 3: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 4: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 6: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 8: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 9: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 10: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 13: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 14: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 16: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 18: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 19: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 20: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 21: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 22: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 23: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 24: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 25: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 26: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 30: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 31: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 32: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 33: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 34: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 35: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 37: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 40: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 43: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 44: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 45: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 46: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 48: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 49: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 53: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 54: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 55: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 56: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 58: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 59: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 60: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 61: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 62: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 63: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 64: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 65: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 66: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 67: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 68: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 69: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 70: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 71: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 72: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 73: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 74: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 76: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 78: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 79: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 81: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 82: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 83: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 84: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 85: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 86: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 89: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 90: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 91: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 92: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 93: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 95: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 96: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 97: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 98: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 100: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 101: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 102: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 103: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 104: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 105: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 106: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 107: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 108: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 111: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 112: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 113: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 115: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 116: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 117: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 118: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 119: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 120: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 121: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 122: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 123: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 124: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 125: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 126: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 127: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 128: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 129: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 132: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 133: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 135: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 139: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 140: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 141: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 142: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 143: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 145: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 146: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 147: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 148: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 149: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 150: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 151: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 152: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 153: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 154: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 155: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 156: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 157: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 158: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 159: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 160: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 162: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 163: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 164: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 166: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 167: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 168: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 170: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 171: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 172: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 175: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 176: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 177: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 178: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 179: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 180: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 182: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 183: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 184: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 185: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 186: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 187: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 189: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 190: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 192: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 193: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 195: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 196: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 198: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 199: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 200: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 201: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 202: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 203: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 204: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 205: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 206: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 207: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 208: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 209: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 210: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 211: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 212: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 215: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 216: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 217: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 218: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 220: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 221: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 222: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 223: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 224: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 225: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 226: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 227: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 228: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 229: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 231: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 232: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 234: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 235: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 241: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 243: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 245: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 246: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 247: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 250: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 251: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 252: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 255: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 256: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 257: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 258: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 259: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 262: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 265: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 266: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 267: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 268: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 271: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 272: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 274: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 275: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 276: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 277: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 279: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 280: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 281: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 282: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 283: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 284: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 285: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 286: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 288: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 289: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 290: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 291: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 293: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 295: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 296: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 299: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 301: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 302: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 303: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 304: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 306: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 307: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 308: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 309: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 311: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 314: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 315: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 316: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 317: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 318: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 319: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 321: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 325: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 326: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 327: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 328: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 329: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 330: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 331: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 333: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 335: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 336: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 337: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 338: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 339: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 340: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 341: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 342: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 346: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 347: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 348: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 349: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 350: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 351: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 353: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 355: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 356: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 357: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 359: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 360: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 361: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 362: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 363: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 364: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 365: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 366: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 367: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 368: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 369: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 370: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 371: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 372: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 373: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 374: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 375: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 376: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 377: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 378: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 379: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 380: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
-WARNING: Error calculating PVT for 381: module 'ta.volume' has no attribute 'pvt'. Falling back to manual calculation.
 WARNING: Not enough data for ATR calculation for company_id 1. Expected at least 14 rows, got 1. Filling with NaN.
 WARNING: Not enough data for ATR calculation for company_id 2. Expected at least 14 rows, got 1. Filling with NaN.
 WARNING: Not enough data for ATR calculation for company_id 3. Expected at least 14 rows, got 4. Filling with NaN.
@@ -586,18 +299,18 @@ WARNING: Not enough data for ATR calculation for company_id 381. Expected at lea
 INFO: 💰 Adding fundamental indicators...
 INFO: 🧹 Cleaning and validating features...
 INFO: 🧹 Cleaning and validating features...
-INFO: Cleaned and validated features. Shape changed from (854, 102) to (854, 102)
+INFO: ✅ Cleaned and validated features. Shape changed from (854, 102) to (854, 102)
 INFO: 🎯 Creating target labels for training...
-INFO: 🎯 Creating target labels...
-INFO: Label distribution: {0.0: 398, 1.0: 108, -1.0: 59}
+INFO: Labels created. Label distribution: {0: 181, 1: 465, 2: 208}
 INFO: ✅ Feature engineering complete for training!
 INFO:    📊 Technical features: 35
 INFO:    💼 Fundamental features: 51
 INFO:    🔢 Total features (dynamically selected): 86
 INFO: 📋 Final dataset summary for training:
-INFO:    🔢 Samples: 565
+INFO:    🔢 Samples: 854
 INFO:    📊 Features: 86
-INFO:    🏷️ Label distribution: {-1.0: 59, 0.0: 398, 1.0: 108}
+INFO:    🏷️ Label distribution: {0: 181, 1: 465, 2: 208}
+INFO: 💾 Training features saved to: models/training_features.json
 🚀 Starting Stock Prediction Model Training
 ============================================================
 
@@ -611,143 +324,144 @@ INFO:    🏷️ Label distribution: {-1.0: 59, 0.0: 398, 1.0: 108}
 
 🔧 Engineering features...
 💾 Feature information saved to: results/feature_info.txt
+💾 Training features list saved to: models/training_features.json
 
 📊 Splitting dataset...
-Training set: 452 samples
-Test set: 113 samples
-Train labels: {-1.0: 47, 0.0: 318, 1.0: 87}
-Test labels: {-1.0: 12, 0.0: 80, 1.0: 21}
+Training set: 683 samples
+Test set: 171 samples
+Train labels: {0: 145, 1: 372, 2: 166}
+Test labels: {0: 36, 1: 93, 2: 42}
 
 🤖 Training models...
 
 🔄 Training random_forest...
-   ⚖️ Class weights: {np.float64(-1.0): np.float64(3.2056737588652484), np.float64(0.0): np.float64(0.47379454926624737), np.float64(1.0): np.float64(1.7318007662835249)}
+   ⚖️ Class weights: {np.int64(0): np.float64(1.5701149425287357), np.int64(1): np.float64(0.6120071684587813), np.int64(2): np.float64(1.3714859437751004)}
    🔍 Performing hyperparameter tuning for random_forest...
-   ✅ Best parameters: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 200}
-   ✅ Best CV F1 score: 0.6161
+   ✅ Best parameters: {'max_depth': 20, 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 100}
+   ✅ Best CV F1 score: 0.6437
 
 ============================================================
 EVALUATION RESULTS FOR RANDOM_FOREST
 ============================================================
-Accuracy: 0.6283
-F1 Score (weighted): 0.6039
+Accuracy: 0.5205
+F1 Score (weighted): 0.5408
 
 Classification Report:
               precision    recall  f1-score   support
 
-        Sell       0.29      0.17      0.21        12
-        Hold       0.72      0.81      0.76        80
-         Buy       0.25      0.19      0.22        21
+        Sell       0.26      0.31      0.28        36
+        Hold       0.84      0.71      0.77        93
+         Buy       0.24      0.29      0.26        42
 
-    accuracy                           0.63       113
-   macro avg       0.42      0.39      0.40       113
-weighted avg       0.59      0.63      0.60       113
+    accuracy                           0.52       171
+   macro avg       0.45      0.43      0.44       171
+weighted avg       0.57      0.52      0.54       171
 
 
 Confusion Matrix:
-[[ 2 10  0]
- [ 3 65 12]
- [ 2 15  4]]
+[[11  4 21]
+ [11 66 16]
+ [21  9 12]]
 
 Top 15 Most Important Features:
-          feature  importance
-     volume_MA_20    0.068725
-              OBV    0.067370
-        hl_spread    0.065771
-intraday_momentum    0.065059
-             VWAP    0.062213
-           EMA_26    0.062087
-            MA_50    0.061780
-            MA_10    0.060937
-           EMA_12    0.060547
-             MA_5    0.060080
-              PVT    0.055156
-            MA_20    0.053810
-     volume_ratio    0.053353
-      opening_gap    0.051092
-volume_change_pct    0.049859
+           feature  importance
+  price_volatility    0.124966
+price_acceleration    0.064782
+   volatility_rank    0.059268
+         hl_spread    0.054862
+               OBV    0.053978
+ intraday_momentum    0.048992
+      volume_MA_20    0.048572
+              VWAP    0.046694
+            EMA_26    0.044858
+       opening_gap    0.044153
+             MA_50    0.043579
+             MA_10    0.042962
+              MA_5    0.041498
+            EMA_12    0.040837
+      volume_ratio    0.040077
 💾 Feature importance saved to: results/random_forest_feature_importance.csv
    💾 Model saved to: models/random_forest_model.pkl
 
 🔄 Training gradient_boosting...
-   ⚖️ Class weights: {np.float64(-1.0): np.float64(3.2056737588652484), np.float64(0.0): np.float64(0.47379454926624737), np.float64(1.0): np.float64(1.7318007662835249)}
+   ⚖️ Class weights: {np.int64(0): np.float64(1.5701149425287357), np.int64(1): np.float64(0.6120071684587813), np.int64(2): np.float64(1.3714859437751004)}
    🔍 Performing hyperparameter tuning for gradient_boosting...
-   ✅ Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'min_samples_split': 5, 'n_estimators': 100}
-   ✅ Best CV F1 score: 0.6001
+   ✅ Best parameters: {'learning_rate': 0.1, 'max_depth': 5, 'min_samples_split': 2, 'n_estimators': 200}
+   ✅ Best CV F1 score: 0.5983
 
 ============================================================
 EVALUATION RESULTS FOR GRADIENT_BOOSTING
 ============================================================
-Accuracy: 0.6814
-F1 Score (weighted): 0.6218
+Accuracy: 0.6316
+F1 Score (weighted): 0.6159
 
 Classification Report:
               precision    recall  f1-score   support
 
-        Sell       0.60      0.25      0.35        12
-        Hold       0.72      0.91      0.81        80
-         Buy       0.14      0.05      0.07        21
+        Sell       0.47      0.39      0.42        36
+        Hold       0.75      0.86      0.80        93
+         Buy       0.40      0.33      0.36        42
 
-    accuracy                           0.68       113
-   macro avg       0.49      0.40      0.41       113
-weighted avg       0.60      0.68      0.62       113
+    accuracy                           0.63       171
+   macro avg       0.54      0.53      0.53       171
+weighted avg       0.61      0.63      0.62       171
 
 
 Confusion Matrix:
-[[ 3  8  1]
- [ 2 73  5]
- [ 0 20  1]]
+[[14 10 12]
+ [ 4 80  9]
+ [12 16 14]]
 
 Top 15 Most Important Features:
           feature  importance
-intraday_momentum    0.132014
-     volume_MA_20    0.112877
-        hl_spread    0.110940
-              PVT    0.106519
-              OBV    0.104548
-      opening_gap    0.079538
-volume_change_pct    0.068839
-     volume_ratio    0.067015
-             VWAP    0.052798
-     daily_return    0.027730
-            MA_20    0.026088
-           EMA_26    0.020117
-           EMA_12    0.018348
-             MA_5    0.018203
-            MA_10    0.016205
+ price_volatility    0.265175
+     volume_MA_20    0.112673
+        hl_spread    0.106952
+              OBV    0.088900
+intraday_momentum    0.087809
+      opening_gap    0.042538
+             VWAP    0.042042
+volume_change_pct    0.031380
+     volume_ratio    0.029758
+              PVT    0.025168
+            MA_50    0.024792
+             MA_5    0.022976
+           EMA_12    0.022160
+            MA_20    0.020350
+     daily_return    0.015335
 💾 Feature importance saved to: results/gradient_boosting_feature_importance.csv
    💾 Model saved to: models/gradient_boosting_model.pkl
 
 🔄 Training logistic_regression...
    🔄 Scaling features for logistic_regression...
    💾 Scaler saved to: scalers/logistic_regression_scaler.pkl
-   ⚖️ Class weights: {np.float64(-1.0): np.float64(3.2056737588652484), np.float64(0.0): np.float64(0.47379454926624737), np.float64(1.0): np.float64(1.7318007662835249)}
+   ⚖️ Class weights: {np.int64(0): np.float64(1.5701149425287357), np.int64(1): np.float64(0.6120071684587813), np.int64(2): np.float64(1.3714859437751004)}
    🔍 Performing hyperparameter tuning for logistic_regression...
    ✅ Best parameters: {'C': 0.1, 'penalty': 'l2', 'solver': 'liblinear'}
-   ✅ Best CV F1 score: 0.6167
+   ✅ Best CV F1 score: 0.5957
 
 ============================================================
 EVALUATION RESULTS FOR LOGISTIC_REGRESSION
 ============================================================
-Accuracy: 0.6991
-F1 Score (weighted): 0.6339
+Accuracy: 0.5731
+F1 Score (weighted): 0.5984
 
 Classification Report:
               precision    recall  f1-score   support
 
-        Sell       0.75      0.25      0.38        12
-        Hold       0.73      0.94      0.82        80
-         Buy       0.17      0.05      0.07        21
+        Sell       0.38      0.33      0.35        36
+        Hold       0.92      0.66      0.77        93
+         Buy       0.34      0.60      0.43        42
 
-    accuracy                           0.70       113
-   macro avg       0.55      0.41      0.42       113
-weighted avg       0.63      0.70      0.63       113
+    accuracy                           0.57       171
+   macro avg       0.55      0.53      0.52       171
+weighted avg       0.67      0.57      0.60       171
 
 
 Confusion Matrix:
-[[ 3  8  1]
- [ 1 75  4]
- [ 0 20  1]]
+[[12  1 23]
+ [ 7 61 25]
+ [13  4 25]]
    💾 Model saved to: models/logistic_regression_model.pkl
 
 📈 Comparing models...
@@ -756,15 +470,15 @@ Confusion Matrix:
 MODEL COMPARISON SUMMARY
 ================================================================================
               Model CV F1 Score Test Accuracy Test F1 Score
-logistic_regression      0.6167        0.6991        0.6339
-  gradient_boosting      0.6001        0.6814        0.6218
-      random_forest      0.6161        0.6283        0.6039
+  gradient_boosting      0.5983        0.6316        0.6159
+logistic_regression      0.5957        0.5731        0.5984
+      random_forest      0.6437        0.5205        0.5408
 
 💾 Model comparison saved to: results/model_comparison.csv
 
-🏆 Best performing model: logistic_regression
-🎯 Test F1 Score: 0.6339
-🎯 Test Accuracy: 0.6991
+🏆 Best performing model: gradient_boosting
+🎯 Test F1 Score: 0.6159
+🎯 Test Accuracy: 0.6316
 
 💾 Saving training summary...
 💾 Training summary saved to: results/training_summary.txt
@@ -772,6 +486,5 @@ logistic_regression      0.6167        0.6991        0.6339
 🎉 Training Complete!
 📁 Results saved in: results/
 📁 Models saved in: models/
-🏆 Best model: logistic_regression
-📊 Use 'logistic_regression_model.pkl' for predictions
-🔧 Remember to use 'logistic_regression_scaler.pkl' for feature scaling
+🏆 Best model: gradient_boosting
+📊 Use 'gradient_boosting_model.pkl' for predictions

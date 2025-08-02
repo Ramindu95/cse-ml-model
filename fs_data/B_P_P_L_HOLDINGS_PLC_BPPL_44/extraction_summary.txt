@@ -1,0 +1,46 @@
+Financial Data Extraction Summary
+==================================
+
+Company: B P P L HOLDINGS PLC (BPPL)
+Report Type: Interim
+Report Date: 1 April 2025
+Extraction Confidence: 0.67
+Document Hash: None
+
+Financial Metrics:
+- Revenue: None
+- Profit For Period: -8.625018874203574e+18
+- Operating Profit: None
+- Total Assets: 8.257229804730016e+27
+- Total Liabilities: 3.919647403166141e+25
+- Total Equity: 4.337581401563912e+27
+- Basic Eps: None
+- Gross Profit: 3430483262325.0
+- Ebitda: None
+- Net Cash Flow: -1.9125520893307308e+18
+
+Directors (23):
+  - Company have approved an interim dividend of Rs. (N/A)
+  - August (N/A)
+  - PAGE BREAK --- (N/A)
+  - Unaudited (N/A)
+  - Unaudited (N/A)
+  - Change (N/A)
+  - Rs. ' (N/A)
+  - Rs. ' (N/A)
+  - Revenue (N/A)
+  - Cost of Sales (N/A)
+  - Gross Profit (N/A)
+  - Other Operating Income (N/A)
+  - Distribution Costs (N/A)
+  - Net Foreign Exchange Gain (N/A)
+  - Administrative Expenses (N/A)
+  - Net Finance Income (N/A)
+  - Profit Before Tax (N/A)
+  - Income Tax (N/A)
+  - Deferred Tax (N/A)
+  - Profit (N/A)
+  - Earnings (N/A)
+  - The above figures are provisional and subject to audit. (N/A)
+  - The accounting policies and notes form an integral part of the (N/A)
+

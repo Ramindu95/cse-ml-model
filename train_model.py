@@ -300,6 +300,13 @@ def train():
     # Save feature information
     engineer.save_feature_info(os.path.join(RESULTS_DIR, 'feature_info.txt'))
     
+    # --- ADD THIS LINE ---
+    # Save the list of training features to a JSON file
+    # NEW (Correct):
+    engineer.save_training_features(os.path.join(MODEL_DIR, 'training_features.json'))
+    print(f"💾 Training features list saved to: {MODEL_DIR}/training_features.json") # Keep the print
+    # ---------------------
+    
     # Split dataset
     print(f"\n📊 Splitting dataset...")
     X_train, X_test, y_train, y_test = train_test_split(

@@ -1,0 +1,21 @@
+Financial Data Extraction Summary
+==================================
+
+Company: PEOPLE'S LEASING & FINANCE PLC (PLC)
+Report Type: Interim
+Report Date: 01 April 2024
+Extraction Confidence: 0.67
+Document Hash: None
+
+Financial Metrics:
+- Revenue: -5.2891014600013454e+35
+- Profit For Period: -2.482385325292863e+33
+- Operating Profit: None
+- Total Assets: 1.5918636171553956e+39
+- Total Liabilities: None
+- Total Equity: 1.1068903221135466e+39
+- Basic Eps: None
+- Gross Profit: -2.299506425488345e+35
+- Ebitda: None
+- Net Cash Flow: None
+

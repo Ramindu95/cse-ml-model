@@ -1,0 +1,28 @@
+{
+  "company_name": "DIGITAL MOBILITY SOLUTIONS LANKA PLC",
+  "company_symbol": "PKME",
+  "report_type": "Interim",
+  "report_date": "31 December 2024",
+  "currency_unit": "RS. thousands",
+  "scale_factor": 1000.0,
+  "financial_metrics": {
+    "revenue": 1.524047108327641e+30,
+    "profit_for_period": 2.759412116037785e+26,
+    "operating_profit": null,
+    "total_assets": null,
+    "total_liabilities": null,
+    "total_equity": null,
+    "basic_eps": null,
+    "gross_profit": null,
+    "ebitda": null,
+    "net_cash_flow": null
+  },
+  "shareholders": [],
+  "directors": [],
+  "audit_status": "Unaudited",
+  "errata_notice": "",
+  "contingent_liabilities": "There has not been a significant change to the disclosure made on contingent liabilities in the Financial Statements for the year \nended 31st March 2024. \n8",
+  "events_after_reporting": "No events have occurred since the statement of financial position date which would require adjustments to, or disclosure in the \nfinancial statements. \n9",
+  "extraction_confidence": 0.6666666666666666,
+  "document_hash": null
+}

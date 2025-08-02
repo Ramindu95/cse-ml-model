@@ -1,0 +1,21 @@
+2025-08-02 14:15:04,366 - INFO - Starting CSE Financial Statement Scraper (Educational Purpose)
+2025-08-02 14:15:04,366 - INFO - This may take 1-3 hours to complete depending on the number of files
+2025-08-02 14:15:04,366 - INFO - Starting stealth CSE financial statements download...
+2025-08-02 14:15:04,366 - INFO - Establishing session by visiting main page...
+2025-08-02 14:15:05,002 - INFO - Request successful: GET https://www.cse.lk/ - Status: 200
+2025-08-02 14:15:05,003 - INFO - Visiting financial reports page...
+2025-08-02 14:15:05,003 - INFO - Intelligent delay: waiting additional 4.09 seconds
+2025-08-02 14:15:09,409 - INFO - Request successful: GET https://www.cse.lk/pages/financial-reports/financial-reports.component.html - Status: 200
+2025-08-02 14:15:09,409 - INFO - Making API request to: https://www.cse.lk/api/getFinancialAnnouncementRequest
+2025-08-02 14:15:09,409 - INFO - Intelligent delay: waiting additional 5.31 seconds
+2025-08-02 14:15:14,718 - INFO - Simulating human thinking time: 24.98 seconds
+2025-08-02 14:15:39,916 - INFO - Request successful: POST https://www.cse.lk/api/getFinancialAnnouncementRequest - Status: 400
+2025-08-02 14:15:39,917 - ERROR - Critical error in main scraping function: 400 Client Error:  for url: https://www.cse.lk/api/getFinancialAnnouncementRequest
+Traceback (most recent call last):
+  File "/Users/raminduvindana/Desktop/POS_Sell_me/CSE/cse-ml-model/data/fs_on_pdf_downloader.py", line 412, in scrape_and_download
+    api_response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/Caskroom/miniconda/base/lib/python3.13/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error:  for url: https://www.cse.lk/api/getFinancialAnnouncementRequest
+2025-08-02 14:15:39,929 - INFO - Scraping completed. Check the logs above for details.
