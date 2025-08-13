@@ -2,27 +2,2286 @@
   "company_name": "JOHN KEELLS PLC",
   "company_symbol": "JKL",
   "report_type": "Interim",
-  "report_date": "30 June 2025",
-  "currency_unit": "RUPEES thousands",
-  "scale_factor": 1000.0,
+  "report_date": "2025-06-30 00:00:00",
+  "currency_unit": "Rs.",
+  "scale_factor": 1.0,
   "financial_metrics": {
-    "revenue": 2.597822368441e+16,
-    "profit_for_period": 463272340598000.0,
-    "operating_profit": 534592895085000.0,
-    "total_assets": 6.529281590477065e+23,
+    "revenue": 124447.0,
+    "profit_for_period": 46327.0,
+    "operating_profit": 53459.0,
+    "total_assets": 6529281.0,
     "total_liabilities": null,
-    "total_equity": 4.5725464211659476e+23,
-    "basic_eps": 730.0,
-    "gross_profit": 1.5012212196323e+16,
+    "total_equity": 4572546.0,
+    "basic_eps": 0.73,
+    "gross_profit": 150122.0,
     "ebitda": null,
-    "net_cash_flow": 170433239648000.0
+    "net_cash_flow": 170433.0,
+    "profit_before_tax": 69106.0,
+    "income_tax_expense": -22779.0,
+    "other_income": 294.0,
+    "administrative_expenses": -92030.0,
+    "distribution_expenses": -1889.0,
+    "total_comprehensive_income": -117898.0,
+    "cash_generated_from_operations": 173766.0,
+    "property_plant_equipment_assets": null,
+    "intangible_assets_balance": 13891.0,
+    "inventories_balance": 1166.0,
+    "trade_and_other_receivables_balance": 1206352.0,
+    "cash_and_cash_equivalents_balance": 56404.0,
+    "trade_payables_balance": 1457494.0,
+    "income_tax_payable_balance": 24109.0,
+    "net_assets_per_share": 74.18
   },
   "shareholders": [],
-  "directors": [],
-  "audit_status": "Unaudited",
+  "directors": [
+    {
+      "name": "is responsible for these financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "K. N. J. Balendra",
+      "role": "Director"
+    },
+    {
+      "name": "J. G. A. Cooray",
+      "role": "Director"
+    },
+    {
+      "name": "Chairperson",
+      "role": null
+    },
+    {
+      "name": "th July",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "CONSOLIDATED",
+      "role": null
+    },
+    {
+      "name": "CASH FLOW STATEMENT",
+      "role": null
+    },
+    {
+      "name": "For the three months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Note",
+      "role": null
+    },
+    {
+      "name": "CASH FLOWS FROM OPERATING ACTIVITIES",
+      "role": null
+    },
+    {
+      "name": "Profit before working capital changes",
+      "role": "Director"
+    },
+    {
+      "name": "A",
+      "role": null
+    },
+    {
+      "name": "Increase  Decrease in inventories",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in amounts due from related parties",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in trade and other receivables",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in other current assets",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in trade and other payables",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in amounts due to related parties",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in other current liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Cash generated from operations",
+      "role": "Director"
+    },
+    {
+      "name": "Finance income received",
+      "role": "Director"
+    },
+    {
+      "name": "Finance costs paid",
+      "role": "Director"
+    },
+    {
+      "name": "Tax paid and setoff",
+      "role": "Director"
+    },
+    {
+      "name": "Gratuity paid transfers out",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash flow fromused in operating activities",
+      "role": "Director"
+    },
+    {
+      "name": "CASH FLOWS FROMUSED IN INVESTING ACTIVITIES",
+      "role": null
+    },
+    {
+      "name": "Purchase and construction of property plant and equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Dividend received",
+      "role": "Director"
+    },
+    {
+      "name": "Purchase of intangible assets",
+      "role": "Director"
+    },
+    {
+      "name": "Proceeds from sale of property plant  equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash flow used in investing activities",
+      "role": "Director"
+    },
+    {
+      "name": "CASH FLOWS FROMUSED IN FINANCING ACTIVITIES",
+      "role": null
+    },
+    {
+      "name": "Dividend paid to equity holders of parent",
+      "role": "Director"
+    },
+    {
+      "name": "Proceeds from Repayment of long term borrowings",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash flow used in financing activities",
+      "role": "Director"
+    },
+    {
+      "name": "NET INCREASEDECREASE IN CASH AND CASH EQUIVALENTS",
+      "role": null
+    },
+    {
+      "name": "CASH AND CASH EQUIVALENTS AT THE BEGINNING",
+      "role": null
+    },
+    {
+      "name": "CASH AND CASH EQUIVALENTS AT THE END",
+      "role": null
+    },
+    {
+      "name": "ANALYSIS OF CASH AND CASH EQUIVALENTS",
+      "role": null
+    },
+    {
+      "name": "Favourable balances",
+      "role": "Director"
+    },
+    {
+      "name": "Short term investments",
+      "role": "Director"
+    },
+    {
+      "name": "Cash in hand and at bank",
+      "role": "Director"
+    },
+    {
+      "name": "Unfavourable balances",
+      "role": "Director"
+    },
+    {
+      "name": "Bank overdrafts",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and cash equivalents",
+      "role": "Director"
+    },
+    {
+      "name": "Note All values are in Rupees s unless otherwise stated.",
+      "role": "Director"
+    },
+    {
+      "name": "Figures in brackets indicate deductions.",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are not audited.",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "CONSOLIDATED",
+      "role": null
+    },
+    {
+      "name": "CASH FLOW STATEMENT",
+      "role": null
+    },
+    {
+      "name": "For the three months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "A.",
+      "role": null
+    },
+    {
+      "name": "Profit before working capital changes",
+      "role": "Director"
+    },
+    {
+      "name": "Profit before tax",
+      "role": "Director"
+    },
+    {
+      "name": "Adjustments for",
+      "role": "Director"
+    },
+    {
+      "name": "Finance income",
+      "role": "Director"
+    },
+    {
+      "name": "Finance expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Dividend income  FVOCI financial assets",
+      "role": "Director"
+    },
+    {
+      "name": "Share of results of equityaccounted investees",
+      "role": "Director"
+    },
+    {
+      "name": "Depreciation of property plant and equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Amortisation of intangible assets",
+      "role": "Director"
+    },
+    {
+      "name": "Amortisation of rightofuse assets",
+      "role": "Director"
+    },
+    {
+      "name": "Profit  loss on sale of property plant and equipment and intangible assets",
+      "role": "Director"
+    },
+    {
+      "name": "Share based payment expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Gratuity provision and related costs",
+      "role": "Director"
+    },
+    {
+      "name": "Impairment of trade debtors",
+      "role": "Director"
+    },
+    {
+      "name": "Note  All values are in Rupees s unless otherwise stated.",
+      "role": "Director"
+    },
+    {
+      "name": "Figures in brackets indicate deductions.",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are not audited.",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Stated",
+      "role": null
+    },
+    {
+      "name": "Revenue",
+      "role": null
+    },
+    {
+      "name": "Revaluation Fair value reserve",
+      "role": "Director"
+    },
+    {
+      "name": "Other capital",
+      "role": "Director"
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "Noncontrolling",
+      "role": null
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "capital",
+      "role": null
+    },
+    {
+      "name": "reserves",
+      "role": null
+    },
+    {
+      "name": "reserves",
+      "role": null
+    },
+    {
+      "name": "of financial",
+      "role": "Director"
+    },
+    {
+      "name": "reserves",
+      "role": null
+    },
+    {
+      "name": "interest",
+      "role": null
+    },
+    {
+      "name": "Equity",
+      "role": null
+    },
+    {
+      "name": "assets at FVOCI",
+      "role": "Director"
+    },
+    {
+      "name": "As at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the year",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Share based payment expenses",
+      "role": "Director"
+    },
+    {
+      "name": "As at th June",
+      "role": "Director"
+    },
+    {
+      "name": "As at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the year",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Share based payment expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Final dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "As at th June",
+      "role": "Director"
+    },
+    {
+      "name": "Note  All values are in Rupees s unless otherwise stated.",
+      "role": "Director"
+    },
+    {
+      "name": "Figures in brackets indicate deductions.",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are not audited.",
+      "role": "Director"
+    },
+    {
+      "name": "CONSOLIDATED STATEMENT OF CHANGES IN EQUITY",
+      "role": null
+    },
+    {
+      "name": "Attributable to equity holders of parent",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells  PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Other Components of Equity",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "COMPANY",
+      "role": null
+    },
+    {
+      "name": "INCOME STATEMENT",
+      "role": null
+    },
+    {
+      "name": "For the three months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Change",
+      "role": "Director"
+    },
+    {
+      "name": "Continuing operations",
+      "role": "Director"
+    },
+    {
+      "name": "Revenue from contracts with customers",
+      "role": "Director"
+    },
+    {
+      "name": "Cost of sales",
+      "role": "Director"
+    },
+    {
+      "name": "Gross profit",
+      "role": "Director"
+    },
+    {
+      "name": "Other operating income",
+      "role": "Director"
+    },
+    {
+      "name": "Other operating expense",
+      "role": "Director"
+    },
+    {
+      "name": "Distribution expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Administrative expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Results from operating activities",
+      "role": "Director"
+    },
+    {
+      "name": "Finance expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Finance income",
+      "role": "Director"
+    },
+    {
+      "name": "Net finance income  expense",
+      "role": "Director"
+    },
+    {
+      "name": "Profit before tax",
+      "role": "Director"
+    },
+    {
+      "name": "Tax expense",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.                            Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Dividend per share",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Note  All values are in Rupees s unless otherwise stated.",
+      "role": "Director"
+    },
+    {
+      "name": "Figures in brackets indicate deductions.",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are not audited.",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "COMPANY STATEMENT OF",
+      "role": null
+    },
+    {
+      "name": "COMPREHENSIVE INCOME",
+      "role": null
+    },
+    {
+      "name": "For the three months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income not to be reclassified to income statement in subsequent periods",
+      "role": "Director"
+    },
+    {
+      "name": "Net lossgain on equity instruments at fair value through other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Net other comprehensive income not to be reclassified to income statement in subsequent periods",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income for the period net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income for the period net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Note All values are in Rupees s unless otherwise stated.",
+      "role": "Director"
+    },
+    {
+      "name": "Figures in brackets indicate deductions.",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are not audited.",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "COMPANY",
+      "role": null
+    },
+    {
+      "name": "STATEMENT OF FINANCIAL POSITION",
+      "role": null
+    },
+    {
+      "name": "As at th June",
+      "role": "Director"
+    },
+    {
+      "name": "..",
+      "role": null
+    },
+    {
+      "name": "ASSETS",
+      "role": null
+    },
+    {
+      "name": "Noncurrent assets",
+      "role": "Director"
+    },
+    {
+      "name": "Property plant and equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Investment property",
+      "role": "Director"
+    },
+    {
+      "name": "Investment in subsidiaries",
+      "role": "Director"
+    },
+    {
+      "name": "Investments in associates",
+      "role": "Director"
+    },
+    {
+      "name": "Noncurrent financial assets",
+      "role": "Director"
+    },
+    {
+      "name": "Other noncurrent assets",
+      "role": "Director"
+    },
+    {
+      "name": "Current assets",
+      "role": "Director"
+    },
+    {
+      "name": "Inventories",
+      "role": null
+    },
+    {
+      "name": "Trade and other receivables",
+      "role": "Director"
+    },
+    {
+      "name": "Amounts due from related parties",
+      "role": "Director"
+    },
+    {
+      "name": "Other current assets",
+      "role": "Director"
+    },
+    {
+      "name": "Cash in hand and at bank",
+      "role": "Director"
+    },
+    {
+      "name": "Total assets",
+      "role": "Director"
+    },
+    {
+      "name": "EQUITY AND LIABILITIES",
+      "role": null
+    },
+    {
+      "name": "Stated capital",
+      "role": "Director"
+    },
+    {
+      "name": "Revenue reserves",
+      "role": "Director"
+    },
+    {
+      "name": "Other components of equity",
+      "role": "Director"
+    },
+    {
+      "name": "Total equity",
+      "role": "Director"
+    },
+    {
+      "name": "Noncurrent liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred tax liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Employee benefit liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Current liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Trade and other payables",
+      "role": "Director"
+    },
+    {
+      "name": "Amounts due to related parties",
+      "role": "Director"
+    },
+    {
+      "name": "Income tax payable",
+      "role": "Director"
+    },
+    {
+      "name": "Other current liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Bank overdrafts",
+      "role": "Director"
+    },
+    {
+      "name": "Total equity and liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Net assets per share",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Note  All values are in Rupees s unless otherwise stated.",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are not audited.",
+      "role": "Director"
+    },
+    {
+      "name": "I certify that the  financial statements comply with the requirements of the Companies Act No. of .",
+      "role": "Director"
+    },
+    {
+      "name": "N. W. R. Wijewantha",
+      "role": "Director"
+    },
+    {
+      "name": "The Board of Directors is responsible for the preparation and presentation of these financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "K. N. J. Balendra",
+      "role": "Director"
+    },
+    {
+      "name": "J. G. A. Cooray",
+      "role": "Director"
+    },
+    {
+      "name": "Chairperson",
+      "role": null
+    },
+    {
+      "name": "th July",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "COMPANY",
+      "role": null
+    },
+    {
+      "name": "CASH FLOW STATEMENT",
+      "role": null
+    },
+    {
+      "name": "For the three months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "CASH FLOWS FROM OPERATING ACTIVITIES",
+      "role": null
+    },
+    {
+      "name": "Profit before tax",
+      "role": "Director"
+    },
+    {
+      "name": "Adjustments for",
+      "role": "Director"
+    },
+    {
+      "name": "Interest income",
+      "role": "Director"
+    },
+    {
+      "name": "Dividend income  FVOCI Financial Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Finance expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Depreciation of property plant and equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Impairment of trade debtors",
+      "role": "Director"
+    },
+    {
+      "name": "Gratuity provision and related costs",
+      "role": "Director"
+    },
+    {
+      "name": "Share based payment expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Profit before working capital changes",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in inventories",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in trade and other receivables",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in amounts due from related parties",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in other current assets",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in amounts due to related parties",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in other current liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  Decrease in trade and other payables",
+      "role": "Director"
+    },
+    {
+      "name": "Cash generated from  used in operations",
+      "role": "Director"
+    },
+    {
+      "name": "Finance income received",
+      "role": "Director"
+    },
+    {
+      "name": "Finance expenses paid",
+      "role": "Director"
+    },
+    {
+      "name": "Tax paid",
+      "role": "Director"
+    },
+    {
+      "name": "Gratuity paid transfers out",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash flow from  used in operating activities",
+      "role": "Director"
+    },
+    {
+      "name": "CASH FLOWS FROM  USED IN INVESTING ACTIVITIES",
+      "role": null
+    },
+    {
+      "name": "Purchase and construction of property plant and equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Dividend income FVOCI Financial Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash flow used in investing activities",
+      "role": "Director"
+    },
+    {
+      "name": "CASH FLOWS FROM  USED IN FINANCING ACTIVITIES",
+      "role": null
+    },
+    {
+      "name": "Dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash flow used in financing activities",
+      "role": "Director"
+    },
+    {
+      "name": "NET INCREASEDECREASE IN CASH AND CASH EQUIVALENTS",
+      "role": null
+    },
+    {
+      "name": "CASH AND CASH EQUIVALENTS AT THE BEGINNING",
+      "role": null
+    },
+    {
+      "name": "CASH AND CASH EQUIVALENTS AT THE END",
+      "role": null
+    },
+    {
+      "name": "ANALYSIS OF CASH  CASH EQUIVALENTS",
+      "role": null
+    },
+    {
+      "name": "Favourable balances",
+      "role": "Director"
+    },
+    {
+      "name": "Cash in hand and at bank",
+      "role": "Director"
+    },
+    {
+      "name": "Unfavourable balances",
+      "role": "Director"
+    },
+    {
+      "name": "Bank overdrafts",
+      "role": "Director"
+    },
+    {
+      "name": "Note  All values are in Rupees s unless otherwise stated.",
+      "role": "Director"
+    },
+    {
+      "name": "Figures in brackets indicate deductions.",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are not audited.",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Stated",
+      "role": null
+    },
+    {
+      "name": "Revenue",
+      "role": null
+    },
+    {
+      "name": "Fair value",
+      "role": "Director"
+    },
+    {
+      "name": "Other",
+      "role": null
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "capital",
+      "role": null
+    },
+    {
+      "name": "reserves",
+      "role": null
+    },
+    {
+      "name": "reserve of financial",
+      "role": "Director"
+    },
+    {
+      "name": "capital",
+      "role": null
+    },
+    {
+      "name": "equity",
+      "role": null
+    },
+    {
+      "name": "assets at FVOCI",
+      "role": "Director"
+    },
+    {
+      "name": "reserves",
+      "role": null
+    },
+    {
+      "name": "As at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the year",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Share based payment expenses",
+      "role": "Director"
+    },
+    {
+      "name": "As at th June",
+      "role": "Director"
+    },
+    {
+      "name": "As at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the year",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Share based payment expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Final dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "As at th June",
+      "role": "Director"
+    },
+    {
+      "name": "Note    All values are in Rupees s unless otherwise stated.",
+      "role": "Director"
+    },
+    {
+      "name": "Figures in brackets indicate deductions.",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are not audited.",
+      "role": "Director"
+    },
+    {
+      "name": "Other Components of Equity",
+      "role": "Director"
+    },
+    {
+      "name": "COMPANY STATEMENT OF CHANGES IN EQUITY",
+      "role": null
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "OPERATING SEGMENT INFORMATION",
+      "role": null
+    },
+    {
+      "name": "OPERATING SEGMENTS",
+      "role": null
+    },
+    {
+      "name": "The following table presents revenue and profit information regarding the groups operating segments.",
+      "role": "Director"
+    },
+    {
+      "name": "For the three months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Services transferred over time",
+      "role": "Director"
+    },
+    {
+      "name": "Inter segment revenue",
+      "role": "Director"
+    },
+    {
+      "name": "Total Segment Revenue",
+      "role": "Director"
+    },
+    {
+      "name": "Eliminations of inter segment revenue",
+      "role": "Director"
+    },
+    {
+      "name": "External Revenue",
+      "role": "Director"
+    },
+    {
+      "name": "Segment Results",
+      "role": "Director"
+    },
+    {
+      "name": "Finance expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Finance income",
+      "role": "Director"
+    },
+    {
+      "name": "Share of results of equityaccounted investees",
+      "role": "Director"
+    },
+    {
+      "name": "Profit  before tax",
+      "role": "Director"
+    },
+    {
+      "name": "Tax expense",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Purchase and construction of PPE",
+      "role": "Director"
+    },
+    {
+      "name": "Depreciation of PPE",
+      "role": "Director"
+    },
+    {
+      "name": "Amortisation of intangible assets",
+      "role": "Director"
+    },
+    {
+      "name": "Amortisation of  rightofuse assets",
+      "role": "Director"
+    },
+    {
+      "name": "Gratuity provision and related cost",
+      "role": "Director"
+    },
+    {
+      "name": "Segment Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Segment Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Note  All values are in Rupees s unless otherwise stated.",
+      "role": "Director"
+    },
+    {
+      "name": "Figures in brackets indicate deductions.",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are not audited.",
+      "role": "Director"
+    },
+    {
+      "name": "PPE Property plant and equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Group Total",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells  PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Produce Broking",
+      "role": "Director"
+    },
+    {
+      "name": "Warehousing",
+      "role": null
+    },
+    {
+      "name": "Stock Broking",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "NOTES TO THE INTERIM CONDENSED FINANCIAL STATEMENTS",
+      "role": null
+    },
+    {
+      "name": "CORPORATE INFORMATION",
+      "role": null
+    },
+    {
+      "name": "John Keells PLC is a public limited company incorporated and domiciled in Sri Lanka and listed on the Colombo Stock Exchange.",
+      "role": "Director"
+    },
+    {
+      "name": "INTERIM CONDENSED FINANCIAL STATEMENTS",
+      "role": null
+    },
+    {
+      "name": "APPROVAL OF FINANCIAL STATEMENTS",
+      "role": null
+    },
+    {
+      "name": "BASIS OF PREPARATION AND CHANGES TO THE GROUPS ACCOUNTING POLICIES",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "BASIS OF PREPARATION",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "FAIR VALUE  MEASUREMENT AND RELATED FAIR VALUE DISCLOSURES",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "TAXES",
+      "role": null
+    },
+    {
+      "name": "In Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Income Statement",
+      "role": "Director"
+    },
+    {
+      "name": "Current income tax",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred tax chargereversal",
+      "role": "Director"
+    },
+    {
+      "name": "Tax expense",
+      "role": "Director"
+    },
+    {
+      "name": "OPERATING SEGMENTS",
+      "role": null
+    },
+    {
+      "name": ".  Produce Broking",
+      "role": "Director"
+    },
+    {
+      "name": "This  includes tea and rubber broking.",
+      "role": "Director"
+    },
+    {
+      "name": ". Warehousing",
+      "role": "Director"
+    },
+    {
+      "name": "This  includes tea auction produce warehousing.",
+      "role": "Director"
+    },
+    {
+      "name": ". Stock Broking",
+      "role": "Director"
+    },
+    {
+      "name": "This includes the stock broking segment.",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "For management purposes the group is organised into business units based on their products and services and has three reportable",
+      "role": "Director"
+    },
+    {
+      "name": "operating segments as follows",
+      "role": "Director"
+    },
+    {
+      "name": "The fair values of all the financial assets and financial liabilities recognised during the quarter were not materially different from the",
+      "role": "Director"
+    },
+    {
+      "name": "transaction prices at the date of initial recognition. There were no transfers between Level  and Level  and no transfers into or out",
+      "role": "Director"
+    },
+    {
+      "name": "of Level  categories as per the fair value hierarchy during the period. The fair value changes on financial instruments in Level",
+      "role": "Director"
+    },
+    {
+      "name": "category was properly recorded in the statement of other comprehensive income and there were no purchases andor disposals during",
+      "role": "Director"
+    },
+    {
+      "name": "the period. Fair valuation was done as at th June  for all unquoted equity shares classified as level  in the fair value hierarchy",
+      "role": "Director"
+    },
+    {
+      "name": "according to fair valuation methodology.",
+      "role": "Director"
+    },
+    {
+      "name": "The financial statements for the period ended th June  includes the Company referring to John Keells PLC as the holding",
+      "role": "Director"
+    },
+    {
+      "name": "company and the Group referring to the companies whose accounts have been consolidated therein.",
+      "role": "Director"
+    },
+    {
+      "name": "The interim condensed financial statements of the Group and the Company for the period ended th June  were authorised for",
+      "role": "Director"
+    },
+    {
+      "name": "issue by the Board of Directors on  th July .",
+      "role": "Director"
+    },
+    {
+      "name": "The interim condensed financial statements have been prepared in accordance with Sri Lanka Accounting Standard SLAS LKAS",
+      "role": "Director"
+    },
+    {
+      "name": "Interim Financial Reporting. These interim condensed financial statements should be read in conjunction with the annual financial",
+      "role": "Director"
+    },
+    {
+      "name": "statements for the year ended  March",
+      "role": "Director"
+    },
+    {
+      "name": "The presentation and classification of the financial statements of the previous year have been amended where relevant for better",
+      "role": "Director"
+    },
+    {
+      "name": "presentation and to be comparable with  those of the current year.",
+      "role": "Director"
+    },
+    {
+      "name": "The interim condensed financial statements are presented in Sri Lankan Rupees and all values are rounded to the nearest thousand",
+      "role": "Director"
+    },
+    {
+      "name": "except when otherwise indicated.",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "NOTES TO THE INTERIM CONDENSED FINANCIAL STATEMENTS",
+      "role": null
+    },
+    {
+      "name": "RELATED PARTY TRANSACTIONS",
+      "role": null
+    },
+    {
+      "name": "For the three months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Rs s",
+      "role": "Director"
+    },
+    {
+      "name": "Rs s",
+      "role": "Director"
+    },
+    {
+      "name": "Rs s",
+      "role": "Director"
+    },
+    {
+      "name": "Rs s",
+      "role": "Director"
+    },
+    {
+      "name": "Transactions with related parties",
+      "role": "Director"
+    },
+    {
+      "name": "Ultimate Parent",
+      "role": "Director"
+    },
+    {
+      "name": "Receiving of Services for which fees are paid",
+      "role": "Director"
+    },
+    {
+      "name": "Subsidiaries",
+      "role": null
+    },
+    {
+      "name": "Renting of stores space for which rent is paid",
+      "role": "Director"
+    },
+    {
+      "name": "Associates",
+      "role": null
+    },
+    {
+      "name": "Interest received  Interest paid",
+      "role": "Director"
+    },
+    {
+      "name": "Key management personnel",
+      "role": "Director"
+    },
+    {
+      "name": "Receiving  Rendering of services",
+      "role": "Director"
+    },
+    {
+      "name": "Close family members of KMP",
+      "role": "Director"
+    },
+    {
+      "name": "Receiving  Rendering of services",
+      "role": "Director"
+    },
+    {
+      "name": "Companies under common control",
+      "role": "Director"
+    },
+    {
+      "name": "Purchases of goods for a fee",
+      "role": "Director"
+    },
+    {
+      "name": "Receiving of Services for which fees are paid",
+      "role": "Director"
+    },
+    {
+      "name": "Lending Money for which interest is received",
+      "role": "Director"
+    },
+    {
+      "name": "Renting Office space for which rent is received",
+      "role": "Director"
+    },
+    {
+      "name": "Providing of Services for which fees are received",
+      "role": "Director"
+    },
+    {
+      "name": "Post employment benefit plan",
+      "role": "Director"
+    },
+    {
+      "name": "Contributions to the provident fund",
+      "role": "Director"
+    },
+    {
+      "name": "NET FINANCE INCOMEEXPENSES",
+      "role": null
+    },
+    {
+      "name": "For the three months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Finance income",
+      "role": "Director"
+    },
+    {
+      "name": "Interest income",
+      "role": "Director"
+    },
+    {
+      "name": "Dividend income on financial assets at FVOCI Keells Foods Products PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Total finance income",
+      "role": "Director"
+    },
+    {
+      "name": "Finance cost",
+      "role": "Director"
+    },
+    {
+      "name": "Interest expense on borrowings",
+      "role": "Director"
+    },
+    {
+      "name": "Total finance cost",
+      "role": "Director"
+    },
+    {
+      "name": "Net finance income  expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "NOTES TO THE INTERIM CONDENSED FINANCIAL STATEMENTS",
+      "role": null
+    },
+    {
+      "name": "SHARE INFORMATION",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Stated capital",
+      "role": "Director"
+    },
+    {
+      "name": "Stated capital is represented by number of shares in issue as given below",
+      "role": "Director"
+    },
+    {
+      "name": "As at",
+      "role": "Director"
+    },
+    {
+      "name": "Ordinary shares",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Public share holdings",
+      "role": "Director"
+    },
+    {
+      "name": "Percentage of shares held by the public and the number of public shareholders is as given below",
+      "role": "Director"
+    },
+    {
+      "name": "As at",
+      "role": "Director"
+    },
+    {
+      "name": "The percentage of shares held by the public",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "The number of  Public  Shareholders",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Directors and CEOs share holdings",
+      "role": "Director"
+    },
+    {
+      "name": "The number of shares held by the Board of DirectorsCEO are as follows",
+      "role": "Director"
+    },
+    {
+      "name": "As at",
+      "role": "Director"
+    },
+    {
+      "name": "K. N. J. Balendra  Chairperson",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "J. G. A. Cooray",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "A. Z. Hashim",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "N. W. R. Wijewantha",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "B. A. I. Rajakarier",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "A. K. Gunawardhana",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "C. N. Wijewardane",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "P. D. Samarasinghe",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "P. T.  Wanigasekara  Date of Appointment  ..",
+      "role": "Director"
+    },
+    {
+      "name": "NA",
+      "role": null
+    },
+    {
+      "name": "NA",
+      "role": null
+    },
+    {
+      "name": "H. G. R. De Mel",
+      "role": "CEO"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Twenty largest shareholders of the company are as follows",
+      "role": "Director"
+    },
+    {
+      "name": "As at",
+      "role": "Director"
+    },
+    {
+      "name": "Number of shares",
+      "role": "Director"
+    },
+    {
+      "name": "Number of shares",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Holdings PLC",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Peoples Leasing  Finance PLCL.P. Hapangama",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "H.S.D.Soysa  Mrs. G. Soysa",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Peoples Leasing  Finance PLCDr.H.S.D. Soysa  Mrs.G. Soysa",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "H.G.S. Ansell  Mrs. A.P. Ansell",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Peoples Leasing  Finance PLCL.H.L.M.P. Haradasa",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "M.L. De Silva",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Bank Of Ceylon No.  Account",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "A.M. Weerasinghe",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Catholic Bishops Conference In Sri Lanka",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Employees Trust Fund Board",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Miss N.S. De Mel",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Miss. M.P.Rdhakrishnan",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Miss. A.Radhakrishnan",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "A.J.M. Jinadasa",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Sisira Investors Limited",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Colombo Fort Investments PLC",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "G. Soysa  Dr. H.S.D. Soysa",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Colombo Investment Trust PLC",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "H.P.N. Soysa  Mrs. S.N. Jayewardene",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Net assets per share",
+      "role": "Director"
+    },
+    {
+      "name": "Net assets per share have been calculated for all periods based on the number of shares in issue as at th June",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Market price per share",
+      "role": "Director"
+    },
+    {
+      "name": "For the quarter ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Highest",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Lowest",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Last traded",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "CONTINGENCIES CAPITAL AND OTHER COMMITMENTS",
+      "role": null
+    },
+    {
+      "name": "EVENTS AFTER THE REPORTING PERIOD",
+      "role": null
+    },
+    {
+      "name": "There have been no events subsequent to the reporting date which require disclosure in the interim condensed financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells PLC",
+      "role": "Director"
+    },
+    {
+      "name": "There has been no significant change in the nature of the contingencies and other commitments which were disclosed in the annual report for the year ended  March",
+      "role": "Director"
+    },
+    {
+      "name": "and  no circumstances have arisen since the Statement of Financial Position date which would require adjustments to or disclosure in the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Compliant under Rule .. b option   Float adjusted market capitalization Rs Bn",
+      "role": "Director"
+    },
+    {
+      "name": "John Keells Group  Confidential",
+      "role": "Director"
+    }
+  ],
+  "audit_status": "Unknown",
   "errata_notice": null,
   "contingent_liabilities": null,
   "events_after_reporting": null,
-  "extraction_confidence": 0.75,
-  "document_hash": null
+  "extraction_confidence": 0.85,
+  "document_hash": "placeholder_hash",
+  "extraction_method": "Rule-based",
+  "processing_time": null,
+  "report_filename": "731_1753869978077.pdf"
 }

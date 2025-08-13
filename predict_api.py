@@ -24,13 +24,13 @@ if str(fs_parser_path) not in sys.path:
     sys.path.insert(0, str(fs_parser_path))
 
 try:
-    # Import FinancialParser and related data models for feedback
-    from fs_parser import FinancialParser, ExtractedFinancialData, ExtractionFeedback
+    # Import FinancialDataExtractor and related data models for feedback
+    from data.fs_data.fs_parser import FinancialDataExtractor, ExtractedFinancialData, ExtractionFeedback
     logger.info("✅ Successfully imported fs_parser for feedback functionality.")
 except ImportError as e:
     logger.error(f"❌ Failed to import fs_parser: {e}. Feedback API will not be available.")
     # Do not sys.exit(1) here, as the main prediction API should still function.
-    FinancialParser = None # Set to None to prevent errors later
+    FinancialDataExtractor = None # Set to None to prevent errors later
 
 # --- Data Loader and Feature Engineering Imports (from your original predict_api.py) ---
 # Assuming these are in a 'data' directory relative to the project root.
@@ -69,12 +69,12 @@ app = FastAPI(
 model = None
 feature_engineer = None
 training_features = None
-financial_parser: Optional[FinancialParser] = None # Global instance for feedback
+financial_data_extractor: Optional[FinancialDataExtractor] = None # Global instance for feedback
 
 @app.on_event("startup")
 async def load_resources():
-    """Load all resources: ML model, Feature Engineer, and FinancialParser."""
-    global model, feature_engineer, training_features, financial_parser
+    """Load all resources: ML model, Feature Engineer, and FinancialDataExtractor."""
+    global model, feature_engineer, training_features, financial_data_extractor
     
     # --- Load Stock Prediction Resources ---
     try:
@@ -107,22 +107,22 @@ async def load_resources():
         logger.error(f"❌ Error during stock prediction resource startup: {e}")
         # Allow the app to start, but prediction functionality might be impaired.
 
-    # --- Initialize FinancialParser for Feedback ---
-    if FinancialParser: # Check if FinancialParser was imported successfully
+    # --- Initialize FinancialDataExtractor for Feedback ---
+    if FinancialDataExtractor: # Check if FinancialDataExtractor was imported successfully
         try:
-            # Adjust ml_model_dir and db_path for FinancialParser
+            # Adjust ml_model_dir and db_path for FinancialDataExtractor
             # Assuming 'ml_models' is at the project root and 'extraction_learning.db' is in 'data/fs_data'
             # relative to the project root.
             fp_ml_model_dir = script_dir / "ml_models" # Project root / ml_models
             fp_db_path = script_dir / "data" / "fs_data" / "extraction_learning.db" # Project root / data / fs_data / db
             
-            financial_parser = FinancialParser(ml_model_dir=str(fp_ml_model_dir), db_path=str(fp_db_path))
-            logger.info("✅ FinancialParser initialized successfully for feedback API.")
+            financial_data_extractor = FinancialDataExtractor(ml_model_dir=str(fp_ml_model_dir), db_path=str(fp_db_path))
+            logger.info("✅ FinancialDataExtractor initialized successfully for feedback API.")
         except Exception as e:
-            logger.error(f"❌ Failed to initialize FinancialParser for feedback: {e}")
-            financial_parser = None # Ensure it's None if initialization fails
+            logger.error(f"❌ Failed to initialize FinancialDataExtractor for feedback: {e}")
+            financial_data_extractor = None # Ensure it's None if initialization fails
     else:
-        logger.warning("⚠️ FinancialParser not initialized: Class not found due to import error.")
+        logger.warning("⚠️ FinancialDataExtractor not initialized: Class not found due to import error.")
 
 
 # --- Pydantic Models for Request and Response (Stock Prediction) ---
@@ -517,11 +517,11 @@ async def record_feedback_api(feedback_item: FeedbackItem):
     API endpoint to record user feedback for extracted financial data.
     This data will be used for retraining ML models.
     """
-    if financial_parser is None:
-        raise HTTPException(status_code=500, detail="FinancialParser not initialized. Feedback functionality is unavailable.")
+    if financial_data_extractor is None:
+        raise HTTPException(status_code=500, detail="FinancialDataExtractor not initialized. Feedback functionality is unavailable.")
 
     try:
-        financial_parser.record_feedback(
+        financial_data_extractor.record_feedback(
             document_hash=feedback_item.document_hash,
             field_name=feedback_item.field_name,
             extracted_value=feedback_item.extracted_value,
@@ -551,7 +551,7 @@ async def get_status():
         "feature_engineer_initialized": feature_engineer is not None,
         "training_features_loaded": training_features is not None and len(training_features) > 0,
         "training_features_count": len(training_features) if training_features else 0,
-        "financial_parser_initialized": financial_parser is not None,
+        "financial_data_extractor_initialized": financial_data_extractor is not None,
         "model_path": str(MODEL_PATH),
         "training_features_path": str(TRAINING_FEATURES_PATH),
         "feature_counts": feature_counts
@@ -560,7 +560,7 @@ async def get_status():
 @app.get("/health")
 async def health_check():
     """Simple health check endpoint."""
-    if model is None or feature_engineer is None or financial_parser is None:
+    if model is None or feature_engineer is None or financial_data_extractor is None:
         raise HTTPException(status_code=503, detail="Service not fully ready. Check /status for details.")
     
     return {"status": "healthy", "message": "API is running and ready to serve predictions and feedback"}

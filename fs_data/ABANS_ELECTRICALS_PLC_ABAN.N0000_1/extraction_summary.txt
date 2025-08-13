@@ -2,29 +2,115 @@ Financial Data Extraction Summary
 ==================================
 
 Company: ABANS ELECTRICALS PLC (ABAN.N0000)
-Report Type: Interim
-Report Date: 1 April 2023
-Extraction Confidence: 0.50
-Document Hash: None
+Report Type: None
+Report Date: None
+Extraction Confidence: 0.85
+Document Hash: placeholder_hash
 
 Financial Metrics:
-- Revenue: None
+- Revenue: 3709.67
 - Profit For Period: None
 - Operating Profit: None
-- Total Assets: 5.2792415575148265e+19
-- Total Liabilities: 2.6644009182881812e+19
-- Total Equity: 2.6148406382266454e+19
+- Total Assets: 5279241557.0
+- Total Liabilities: 2664400918.0
+- Total Equity: 2614840638.0
 - Basic Eps: None
-- Gross Profit: None
+- Gross Profit: 413751071.0
 - Ebitda: None
 - Net Cash Flow: None
+- Profit Before Tax: None
+- Income Tax Expense: None
+- Other Income: 24370336.0
+- Administrative Expenses: -159346516.0
+- Distribution Expenses: -95054652.0
+- Total Comprehensive Income: None
+- Cash Generated From Operations: None
+- Property Plant Equipment Assets: -7070803.0
+- Intangible Assets Balance: None
+- Inventories Balance: 1543866381.0
+- Trade And Other Receivables Balance: 753052271.0
+- Cash And Cash Equivalents Balance: -52347631.0
+- Trade Payables Balance: 1529167382.0
+- Income Tax Payable Balance: None
+- Net Assets Per Share: 511.65
 
-Directors (7):
-  - Shareholding as at (N/A)
-  - Mrs. Aban Pestonjee (Non-Executive Non-Independent Director)
-  - Mrs. Saroshi Dubash (Executive Director)
-  - Mr. Kumar Se Silva (Independent Director)
-  - Mr. D M R Phillips (Independent Director)
-  - Mr. Rajaratnam Selvaskandan (Senior Non-Executive Independent Director)
-  - Total Number of Public (N/A)
+Directors (78):
+  - Shareholding as at .. (Director)
+  - Name (N/A)
+  - Position (N/A)
+  - No of Shares (Director)
+  - Aban Pestonjee (Director)
+  - NonExecutive NonIndependent Chairperson (Director)
+  - Saroshi Dubash (Director)
+  - Executive Managing (Director)
+  - Kumar Se Silva (Director)
+  - NonExecutive Independent (Director)
+  - NIL (N/A)
+  - D M R Phillips (Director)
+  - NonExecutive Independent (Director)
+  - NIL (N/A)
+  - Rajaratnam Selvaskandan (Director)
+  - Senior NonExecutive Independent (Director)
+  - NIL (N/A)
+  - Total Number of Public (Director)
+  - Shareholders (N/A)
+  - Public Holding Percentage (Director)
+  - . (N/A)
+  - Float Adjusted Market (Director)
+  - Capitalization (N/A)
+  - Rs. (N/A)
+  - The Company has complied with the minimum public holding requirement under Option . (Director)
+  - PAGE BREAK (N/A)
+  - ABANS ELECTRICALS PLC (N/A)
+  - ADDITIONAL NOTES (N/A)
+  - Largest Shareholders as at .. (Director)
+  - Name (N/A)
+  - No. of Shares (Director)
+  - ABANS PLC (N/A)
+  - . (N/A)
+  - S. DUBASH (N/A)
+  - . (N/A)
+  - R. PESTONJEE (N/A)
+  - . (N/A)
+  - A. PESTONJEE (N/A)
+  - . (N/A)
+  - B. PESTONJEE (N/A)
+  - . (N/A)
+  - A.J.M. JINADASA (N/A)
+  - . (N/A)
+  - PEOPLES LEASING  FINANCE PLCMR. K.K.SHUJEEVAN (N/A)
+  - . (N/A)
+  - CLEANTECH PVT LTD (N/A)
+  - . (N/A)
+  - K. POOLOGASUNDRAM (N/A)
+  - . (N/A)
+  - SEYLAN BANK PLCKARAGODA LOKU GAMAGE UDAYANANDA (N/A)
+  - . (N/A)
+  - S. ABISHEK (N/A)
+  - . (N/A)
+  - G.C. GOONETILLEKE (N/A)
+  - . (N/A)
+  - B.S. RASANAYAGAM (N/A)
+  - . (N/A)
+  - P. TILLAKARATNE (N/A)
+  - . (N/A)
+  - A. SITHAMPALAM (N/A)
+  - . (N/A)
+  - TRANZ DOMINIONL.L.C. (N/A)
+  - . (N/A)
+  - HATTON NATIONAL BANK PLCHENNASY GEETH BALASURIYA (N/A)
+  - . (N/A)
+  - MR T. LIYANAGE (N/A)
+  - . (N/A)
+  - J.D. JORGE CALDERON (N/A)
+  - . (N/A)
+  - G.C.W. DE SILVADECEASED (N/A)
+  - . (N/A)
+  - . (N/A)
+  - . (N/A)
+  - Sgd Mrs. Aban Pestonjee (Director)
+  - Sgd Dr. Saroshi Dubash (Director)
+  - Chairperson (N/A)
+  - Managing (Director)
+  - Date   th February (Director)
 

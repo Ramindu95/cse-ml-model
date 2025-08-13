@@ -1,16 +1,16 @@
 STOCK PREDICTION MODEL TRAINING SUMMARY
 ============================================================
 
-Training Date: 2025-08-01 14:41:15
-Dataset Size: 854 samples
-Number of Features: 86
+Training Date: 2025-08-13 08:15:09
+Dataset Size: 2830 samples
+Number of Features: 35
 Number of Companies: 289
-Date Range: 2025-07-27 00:00:00 to 2025-07-31 00:00:00
+Date Range: 2025-07-27 00:00:00 to 2025-08-12 00:00:00
 
 LABEL DISTRIBUTION:
-  Hold: 181 (21.2%)
-  Buy: 465 (54.4%)
-  2: 208 (24.4%)
+  Hold: 919 (32.5%)
+  Buy: 1094 (38.7%)
+  2: 817 (28.9%)
 
 FEATURE GROUPS:
   Moving Averages: 7 features
@@ -18,35 +18,30 @@ FEATURE GROUPS:
   Volatility: 8 features
   Volume: 4 features
   Price Action: 6 features
-  Valuation: 5 features
-  Profitability: 7 features
-  Liquidity: 12 features
-  Growth: 4 features
-  Debt: 4 features
 
 MODEL PERFORMANCE:
 Best Model: gradient_boosting
   random_forest:
-    CV F1 Score: 0.6437
-    Test Accuracy: 0.5205
-    Test F1 Score: 0.5408
+    CV F1 Score: 0.4487
+    Test Accuracy: 0.4611
+    Test F1 Score: 0.4620
   gradient_boosting:
-    CV F1 Score: 0.5983
-    Test Accuracy: 0.6316
-    Test F1 Score: 0.6159
+    CV F1 Score: 0.4327
+    Test Accuracy: 0.4735
+    Test F1 Score: 0.4711
   logistic_regression:
-    CV F1 Score: 0.5957
-    Test Accuracy: 0.5731
-    Test F1 Score: 0.5984
+    CV F1 Score: 0.4077
+    Test Accuracy: 0.4541
+    Test F1 Score: 0.4531
 
 TOP 10 FEATURES (from best model):
-   1. price_volatility: 0.2652
-   2. volume_MA_20: 0.1127
-   3. hl_spread: 0.1070
-   4. OBV: 0.0889
-   5. intraday_momentum: 0.0878
-   6. opening_gap: 0.0425
-   7. VWAP: 0.0420
-   8. volume_change_pct: 0.0314
-   9. volume_ratio: 0.0298
-  10. PVT: 0.0252
+   1. hl_spread: 0.0911
+   2. volume_MA_20: 0.0807
+   3. volume_ratio: 0.0640
+   4. OBV: 0.0620
+   5. intraday_momentum: 0.0601
+   6. price_volatility: 0.0593
+   7. price_acceleration: 0.0589
+   8. opening_gap: 0.0588
+   9. volume_change_pct: 0.0586
+  10. daily_return: 0.0493

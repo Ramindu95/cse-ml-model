@@ -2,33 +2,60 @@
   "company_name": "B P P L HOLDINGS PLC",
   "company_symbol": "BPPL",
   "report_type": "Interim",
-  "report_date": "1 April 2025",
-  "currency_unit": "LKR",
-  "scale_factor": 1.0,
+  "report_date": "2025-06-30 00:00:00",
+  "currency_unit": "Rs. 1000",
+  "scale_factor": 1000.0,
   "financial_metrics": {
-    "revenue": null,
-    "profit_for_period": -8.625018874203574e+18,
-    "operating_profit": null,
-    "total_assets": 8.257229804730016e+27,
-    "total_liabilities": 3.919647403166141e+25,
-    "total_equity": 4.337581401563912e+27,
+    "revenue": 1446082000.0,
+    "profit_for_period": 86250000.0,
+    "operating_profit": 208280000.0,
+    "total_assets": 8257229000.0,
+    "total_liabilities": 3919647000.0,
+    "total_equity": 4337581000.0,
     "basic_eps": null,
-    "gross_profit": 3430483262325.0,
-    "ebitda": null,
-    "net_cash_flow": -1.9125520893307308e+18
+    "gross_profit": 343048000.0,
+    "ebitda": 203000.0,
+    "net_cash_flow": null,
+    "profit_before_tax": 61031000.0,
+    "income_tax_expense": -14615000.0,
+    "other_income": 1568000.0,
+    "administrative_expenses": -155545000.0,
+    "distribution_expenses": null,
+    "total_comprehensive_income": null,
+    "cash_generated_from_operations": 71623000.0,
+    "property_plant_equipment_assets": null,
+    "intangible_assets_balance": null,
+    "inventories_balance": 1342879000.0,
+    "trade_and_other_receivables_balance": 1732451000.0,
+    "cash_and_cash_equivalents_balance": 188988000.0,
+    "trade_payables_balance": 471407000.0,
+    "income_tax_payable_balance": 27983000.0,
+    "net_assets_per_share": null
   },
   "shareholders": [],
   "directors": [
     {
-      "name": "Company have approved an interim dividend of Rs.",
+      "name": "of the Company have approved an interim dividend of Rs. . per share",
+      "role": "Director"
+    },
+    {
+      "name": "payable in August .",
+      "role": "Director"
+    },
+    {
+      "name": "Managing Director",
+      "role": "Chairman"
+    },
+    {
+      "name": "PAGE BREAK",
       "role": null
     },
     {
-      "name": "August",
+      "name": "BPPL HOLDINGS PLC",
       "role": null
     },
     {
-      "name": "PAGE BREAK ---",
+      "name": "INCOME STATEMENT",
       "role": null
     },
     {
@@ -41,15 +68,15 @@
     },
     {
       "name": "Change",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Rs. '",
-      "role": null
+      "name": "Rs.",
+      "role": "Director"
     },
     {
-      "name": "Rs. '",
-      "role": null
+      "name": "Rs.",
+      "role": "Director"
     },
     {
       "name": "Revenue",
@@ -57,46 +84,650 @@
     },
     {
       "name": "Cost of Sales",
-      "role": null
+      "role": "Director"
     },
     {
       "name": "Gross Profit",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Other Operating Income",
-      "role": null
+      "name": "Other Operating Income Loss",
+      "role": "Director"
     },
     {
       "name": "Distribution Costs",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Net Foreign Exchange Gain",
-      "role": null
+      "name": "Net Foreign Exchange GainLoss",
+      "role": "Director"
     },
     {
       "name": "Administrative Expenses",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Net Finance Income",
-      "role": null
+      "name": "Net Finance Income  Expense",
+      "role": "Director"
     },
     {
       "name": "Profit Before Tax",
+      "role": "Director"
+    },
+    {
+      "name": "Income Tax Expense  Reversal",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred Tax Expense  Reversal",
+      "role": "Director"
+    },
+    {
+      "name": "Profit loss for the yearperiod",
+      "role": "Director"
+    },
+    {
+      "name": "Earnings  Loss per Ordinary Share Rs.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
       "role": null
     },
     {
-      "name": "Income Tax",
+      "name": ".",
       "role": null
     },
     {
-      "name": "Deferred Tax",
+      "name": "The above figures are provisional and subject to audit.",
+      "role": "Director"
+    },
+    {
+      "name": "The accounting policies and notes form an integral part of the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Notes",
       "role": null
     },
     {
-      "name": "Profit",
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Months ended thJune",
+      "role": "Director"
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "BPPL HOLDINGS PLC",
+      "role": null
+    },
+    {
+      "name": "INCOME STATEMENT",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Change",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Revenue",
+      "role": null
+    },
+    {
+      "name": "Cost of Sales",
+      "role": "Director"
+    },
+    {
+      "name": "Gross Profit",
+      "role": "Director"
+    },
+    {
+      "name": "Other Operating Income",
+      "role": "Director"
+    },
+    {
+      "name": "Distribution Costs",
+      "role": "Director"
+    },
+    {
+      "name": "Net Foreign Exchange GainLoss",
+      "role": "Director"
+    },
+    {
+      "name": "Administrative Expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Net Finance Income  Expense",
+      "role": "Director"
+    },
+    {
+      "name": "Profit Before Tax",
+      "role": "Director"
+    },
+    {
+      "name": "Income Tax Expense  Reversal",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred Tax Expense  Reversal",
+      "role": "Director"
+    },
+    {
+      "name": "Profit loss for the yearperiod",
+      "role": "Director"
+    },
+    {
+      "name": "Earnings Loss per Ordinary Share Rs.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "The above figures are provisional and subject to audit.",
+      "role": "Director"
+    },
+    {
+      "name": "The accounting policies and notes form an integral part of the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Months ended thJune",
+      "role": "Director"
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Notes",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "BPPL HOLDINGS PLC",
+      "role": null
+    },
+    {
+      "name": "STATEMENT OF FINANCIAL POSITION",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "ASSETS",
+      "role": null
+    },
+    {
+      "name": "NonCurrent Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Property Plant and Equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Right of Use Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Intangible Asset",
+      "role": "Director"
+    },
+    {
+      "name": "Investment in Subsidiaries",
+      "role": "Director"
+    },
+    {
+      "name": "Other Investments",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred Tax Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Total NonCurrent Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Current Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Inventories",
+      "role": null
+    },
+    {
+      "name": "Trade and Other Receivables",
+      "role": "Director"
+    },
+    {
+      "name": "Income Tax Receivables",
+      "role": "Director"
+    },
+    {
+      "name": "Other Financial Investments",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and Bank Balances",
+      "role": "Director"
+    },
+    {
+      "name": "Total Current Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Total Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Equity",
+      "role": null
+    },
+    {
+      "name": "Stated Capital",
+      "role": "Director"
+    },
+    {
+      "name": "Revaluation Reserve",
+      "role": "Director"
+    },
+    {
+      "name": "Hedging Reserve",
+      "role": "Director"
+    },
+    {
+      "name": "Translation Reserve",
+      "role": "Director"
+    },
+    {
+      "name": "Retained Earnings",
+      "role": "Director"
+    },
+    {
+      "name": "Total Equity",
+      "role": "Director"
+    },
+    {
+      "name": "NonCurrent Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Interest Bearing Loans and Borrowings",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred Tax Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Lease Liability",
+      "role": "Director"
+    },
+    {
+      "name": "Retirement Benefit Obligations",
+      "role": "Director"
+    },
+    {
+      "name": "Total NonCurrent Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Current Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Trade and Other Payables",
+      "role": "Director"
+    },
+    {
+      "name": "Income Tax Payable",
+      "role": "Director"
+    },
+    {
+      "name": "Lease Liability",
+      "role": "Director"
+    },
+    {
+      "name": "Interest Bearing Loans and Borrowings",
+      "role": "Director"
+    },
+    {
+      "name": "Total Current Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Total Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Total Equity and Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Net Asset per Share",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "The above figures are provisional and subject to audit.",
+      "role": "Director"
+    },
+    {
+      "name": "The accounting policies and notes form an integral part of the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "These Financial Statements are in compliance with the requirements of the Companies Act No  of .",
+      "role": "Director"
+    },
+    {
+      "name": "Sgd.",
+      "role": null
+    },
+    {
+      "name": "Vernee Kularasan",
+      "role": "Director"
+    },
+    {
+      "name": "DGM  Finance",
+      "role": "Director"
+    },
+    {
+      "name": "The board of directors is responsible for the preparation and presentation of these Financial Statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Signed for and on behalf of the board by",
+      "role": "Director"
+    },
+    {
+      "name": "Sgd.",
+      "role": null
+    },
+    {
+      "name": "Sgd.",
+      "role": null
+    },
+    {
+      "name": "Anush Amarasinghe",
+      "role": "Director"
+    },
+    {
+      "name": "Rizan Jiffrey",
+      "role": "Director"
+    },
+    {
+      "name": "Managing Director",
+      "role": "Chairman"
+    },
+    {
+      "name": "July",
+      "role": "Director"
+    },
+    {
+      "name": "Colombo.",
+      "role": null
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "BPPL HOLDINGS PLC",
+      "role": null
+    },
+    {
+      "name": "STATEMENT OF COMPREHENSIVE INCOME",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the Period",
+      "role": "Director"
+    },
+    {
+      "name": "Other Comprehensive Income",
+      "role": "Director"
+    },
+    {
+      "name": "Retirement Benefit Obligations",
+      "role": "Director"
+    },
+    {
+      "name": "Actuarial Gain Loss",
+      "role": "Director"
+    },
+    {
+      "name": "Net Gain Loss on Cash Flow Hedge",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred Tax Attributable to Actuarial",
+      "role": "Director"
+    },
+    {
+      "name": "Gain Loss",
+      "role": "Director"
+    },
+    {
+      "name": "Total Other Comprehensive Income",
+      "role": "Director"
+    },
+    {
+      "name": "Loss for the Period",
+      "role": "Director"
+    },
+    {
+      "name": "Total Comprehensive Income Loss",
+      "role": "Director"
+    },
+    {
+      "name": "for the Period",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are provisional and subject to audit.",
+      "role": "Director"
+    },
+    {
+      "name": "The accounting policies and notes form an integral part of the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Notes",
+      "role": null
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "BPPL HOLDINGS PLC",
+      "role": null
+    },
+    {
+      "name": "STATEMENT OF CHANGES IN EQUITY",
+      "role": null
+    },
+    {
+      "name": "Stated",
+      "role": null
+    },
+    {
+      "name": "Retained",
+      "role": null
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "Capital",
       "role": null
     },
     {
@@ -104,18 +735,1537 @@
       "role": null
     },
     {
-      "name": "The above figures are provisional and subject to audit.",
+      "name": "Equity",
       "role": null
     },
     {
-      "name": "The accounting policies and notes form an integral part of the",
+      "name": "Group",
       "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the Period",
+      "role": "Director"
+    },
+    {
+      "name": "Other Comprehensive Income Loss",
+      "role": "Director"
+    },
+    {
+      "name": "Tax on Other Comprehensive Income",
+      "role": "Director"
+    },
+    {
+      "name": "Total Comprehensive Income",
+      "role": "Director"
+    },
+    {
+      "name": "Dividend Paid",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at th June",
+      "role": "Director"
+    },
+    {
+      "name": "Stated",
+      "role": null
+    },
+    {
+      "name": "Retained",
+      "role": null
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "Capital",
+      "role": null
+    },
+    {
+      "name": "Earnings",
+      "role": null
+    },
+    {
+      "name": "Equity",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the Period",
+      "role": "Director"
+    },
+    {
+      "name": "Other Comprehensive Income Loss",
+      "role": "Director"
+    },
+    {
+      "name": "Tax on Other Comprehensive Income",
+      "role": "Director"
+    },
+    {
+      "name": "Total Comprehensive Income",
+      "role": "Director"
+    },
+    {
+      "name": "Dividend Paid",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at th June",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are provisional and subject to audit.",
+      "role": "Director"
+    },
+    {
+      "name": "The accounting policies and notes form an integral part of the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Revaluation",
+      "role": null
+    },
+    {
+      "name": "Reserve",
+      "role": null
+    },
+    {
+      "name": "Revaluation",
+      "role": null
+    },
+    {
+      "name": "Reserve",
+      "role": null
+    },
+    {
+      "name": "Translation",
+      "role": null
+    },
+    {
+      "name": "Reserve",
+      "role": null
+    },
+    {
+      "name": "Translation",
+      "role": null
+    },
+    {
+      "name": "Reserve",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "BPPL HOLDINGS PLC",
+      "role": null
+    },
+    {
+      "name": "STATEMENT  OF CASH FLOW",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Cash Flow from Operating Activities",
+      "role": "Director"
+    },
+    {
+      "name": "Profit Before Tax",
+      "role": "Director"
+    },
+    {
+      "name": "Adjustments for",
+      "role": "Director"
+    },
+    {
+      "name": "Depreciation",
+      "role": null
+    },
+    {
+      "name": "Amortization  Leasehold Land",
+      "role": "Director"
+    },
+    {
+      "name": "Provision for Retirement Benefit Obligations",
+      "role": "Director"
+    },
+    {
+      "name": "Interest Income",
+      "role": "Director"
+    },
+    {
+      "name": "Finance Cost",
+      "role": "Director"
+    },
+    {
+      "name": "ProfitLoss from disposal of fixed assets",
+      "role": "Director"
+    },
+    {
+      "name": "Operating Profit Loss Before Working Capital Changes",
+      "role": "Director"
+    },
+    {
+      "name": "IncreaseDecrease in Inventories",
+      "role": "Director"
+    },
+    {
+      "name": "IncreaseDecrease in Trade and Other Receivables",
+      "role": "Director"
+    },
+    {
+      "name": "IncreaseDecrease in Trade and Other Payables",
+      "role": "Director"
+    },
+    {
+      "name": "Cash Generated from Operations",
+      "role": "Director"
+    },
+    {
+      "name": "Income Tax Paid",
+      "role": "Director"
+    },
+    {
+      "name": "Retirement Benefit Obligations Costs Paid",
+      "role": "Director"
+    },
+    {
+      "name": "IncreaseDecrease in Lease Liability",
+      "role": "Director"
+    },
+    {
+      "name": "Interest Paid",
+      "role": "Director"
+    },
+    {
+      "name": "Net Cash Flow from Operating Activities",
+      "role": "Director"
+    },
+    {
+      "name": "Cash Flow from Investing Activities",
+      "role": "Director"
+    },
+    {
+      "name": "Acquisition of Property Plant and Equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Proceeds from Disposal of Fixed Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Investment in Other Financial Investments",
+      "role": "Director"
+    },
+    {
+      "name": "Interest Received",
+      "role": "Director"
+    },
+    {
+      "name": "Net Cash Flows used in Investing Activities",
+      "role": "Director"
+    },
+    {
+      "name": "Cash Flow from Financing Activities",
+      "role": "Director"
+    },
+    {
+      "name": "Net of Interest Bearing Loans and Borrowings",
+      "role": "Director"
+    },
+    {
+      "name": "Dividends Paid",
+      "role": "Director"
+    },
+    {
+      "name": "Net Cash Flows fromused in Financing Activities",
+      "role": "Director"
+    },
+    {
+      "name": "Net Increase Decrease in Cash and Cash Equivalents",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and Cash Equivalent at the Beginning of the Period",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and Cash Equivalent at the End of the Period",
+      "role": "Director"
+    },
+    {
+      "name": "The above figures are provisional and subject to audit.",
+      "role": "Director"
+    },
+    {
+      "name": "The accounting policies and notes form an integral part of the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "B P P L Holdings PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Notes to Interim Condensed Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "STATED CAPITAL",
+      "role": null
+    },
+    {
+      "name": "EVENTS AFTER THE REPORTING PERIOD",
+      "role": null
+    },
+    {
+      "name": "FINANCIAL COMMITMENTS AND CONTINGENT LIABILITIES",
+      "role": null
+    },
+    {
+      "name": ". Finance Commitments",
+      "role": "Director"
+    },
+    {
+      "name": ". Contingent Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "NET FOREIGN EXCHANGE GAINLOSS",
+      "role": null
+    },
+    {
+      "name": "Ave.Ex.Rates",
+      "role": null
+    },
+    {
+      "name": "Closing Rates",
+      "role": "Director"
+    },
+    {
+      "name": "Months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Months ended st March",
+      "role": "Director"
+    },
+    {
+      "name": "Foreign exchange differences arising on foreign exchange transactions are recognized in the",
+      "role": "Director"
+    },
+    {
+      "name": "Statement of Profit or Loss. Company uses the Central Bank of Sri Lanka published exchange",
+      "role": "Director"
+    },
+    {
+      "name": "rates for the above purposes.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "As at th June",
+      "role": "Director"
+    },
+    {
+      "name": "As at st March",
+      "role": "Director"
+    },
+    {
+      "name": "These interim financial statements which have not been audited comply with the Sri Lanka",
+      "role": "Director"
+    },
+    {
+      "name": "Accounting Standard LKAS Interim financial reporting and they also provide the information",
+      "role": "Director"
+    },
+    {
+      "name": "required by the Colombo Stock Exchange.",
+      "role": "Director"
+    },
+    {
+      "name": "The accounting policies adopted in these financial statements are consistent with the",
+      "role": "Director"
+    },
+    {
+      "name": "accounting policies set out in the Annual Report for the year ended ...",
+      "role": "Director"
+    },
+    {
+      "name": "There are no any material contingent liabilities.",
+      "role": "Director"
+    },
+    {
+      "name": "The Companys stated capital consists of  ordinary shares.",
+      "role": "Director"
+    },
+    {
+      "name": "There are no any material financial commitments.",
+      "role": "Director"
+    },
+    {
+      "name": "Subsequent to the reporting date no circumstances have arisen which required adjustment to or",
+      "role": "Director"
+    },
+    {
+      "name": "disclosure in the Financial Statements.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "B P P L Holdings PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Notes to Interim Condensed Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "Cash Profit",
+      "role": "Director"
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Profit after tax",
+      "role": "Director"
+    },
+    {
+      "name": "Add NonCash Transactions",
+      "role": "Director"
+    },
+    {
+      "name": "Depreciation",
+      "role": null
+    },
+    {
+      "name": "Gratuity",
+      "role": null
+    },
+    {
+      "name": "Exchange GainLoss",
+      "role": "Director"
+    },
+    {
+      "name": "SLFR  adj",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred Tax",
+      "role": "Director"
+    },
+    {
+      "name": "Cash Profit",
+      "role": "Director"
+    },
+    {
+      "name": "Appointment and Retirement of Directors",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Months ended th June",
+      "role": "Director"
+    },
+    {
+      "name": "Cash profit is derived after eliminating all non cash entries from the reported net profit after tax.",
+      "role": "Director"
+    },
+    {
+      "name": "Ukwatte Kankanamage Dinesh Dharmadasa Ms. Natasha Mary Boralessa and Mr. Mohamed Adamaly were",
+      "role": "Director"
+    },
+    {
+      "name": "appointed as Independent Non Executive Directors of BPPL Holdings PLC with effect from st July .",
+      "role": "Director"
+    },
+    {
+      "name": "In line with the criteria for  independence Mr. Manjula Hiranya De Silva Mrs. Sharmini Tamara",
+      "role": "Director"
+    },
+    {
+      "name": "Ratwatte and Mr. Savantha Rishad Sproule De Saram resigned as Independent Non Executive Directors of BPPL",
+      "role": "Director"
+    },
+    {
+      "name": "Holdings PLC with effect from st July  upon the completion of nine years of service on the Board.",
+      "role": "Director"
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "B P P L Holdings PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Notes to Interim Condensed Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "INVESTOR INFORMATION",
+      "role": null
+    },
+    {
+      "name": ". Share Trading Information",
+      "role": "Director"
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Mar",
+      "role": null
+    },
+    {
+      "name": "Mar",
+      "role": null
+    },
+    {
+      "name": "Share Information",
+      "role": "Director"
+    },
+    {
+      "name": "Highest Price Rs.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Lowest Price Rs.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Closing Price Rs.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ". Public Holding as at th June",
+      "role": "Director"
+    },
+    {
+      "name": "The percentage of shares held by public as at th June  was .",
+      "role": "Director"
+    },
+    {
+      "name": "Number of shareholders representing the public holding as at th June  was .",
+      "role": "Director"
+    },
+    {
+      "name": "Float adjusted Market Capitalization as at th June  was LKR",
+      "role": "Director"
+    },
+    {
+      "name": "There were no nonvoting shares as at th June .",
+      "role": "Director"
+    },
+    {
+      "name": "The Stock Exchange code for BPPL Holding PLC shares is BPPL.",
+      "role": "Director"
+    },
+    {
+      "name": ". TwentyFive Major Shareholders as at ..",
+      "role": "Director"
+    },
+    {
+      "name": "No",
+      "role": null
+    },
+    {
+      "name": "No. of Shares",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Deutsche Bank AG AS Trustee To Assetline Income Plus Growth Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Peoples Leasing  Finance PLCMr.D.M.P.Disanayake",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Peoples Leasing  Finance PLCL.P.Hapangama",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Hallsville Frontier Equities Ltd",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Hatton National Bank PLC Account No.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Capital Alliance Holdings Ltd",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "D.G. Ushani Pavithra Jayasekara",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Iromi Chandi Angella Alles",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Jafferjee Brothers Exports Limited",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Est. of Late Mr. M.J. Fernando",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Akshay Anil Hirdaramani",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "M.A.H. Esufally",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Hatton National Bank PLC CT CLSA Equity Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "J.B. Cocoshell Pvt Ltd",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "GF Capital Global Limited",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Mahesh Lalchand Hirdaramani",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Katunayake Garments Limited",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Kishore Shashi Nikhil Hirdaramani",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Allianz Life Insurance Lanka Limited  AC No.  Allianz Growth Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Derek Joseph De Silva Wijeyeratne",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Year Ended",
+      "role": "Director"
+    },
+    {
+      "name": "Hirdaramani Investment Holdings Private Limited",
+      "role": "Director"
+    },
+    {
+      "name": "Name of the Shareholder",
+      "role": "Director"
+    },
+    {
+      "name": "Infinity Capital Pvt Ltd",
+      "role": "Director"
+    },
+    {
+      "name": "Kalsha Upeka Amarasinghe",
+      "role": "Director"
+    },
+    {
+      "name": "The Company complies with option  of the Listing Rules .. i a which requires a minimum Public Holding of",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Quarter Ended",
+      "role": "Director"
+    },
+    {
+      "name": "Roger Keith Modder",
+      "role": "Director"
+    },
+    {
+      "name": "MAS Capital Private Limited",
+      "role": "Director"
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "B P P L Holdings PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Notes to Interim Condensed Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "OPERATING SEGMENTS INFORMATION",
+      "role": null
+    },
+    {
+      "name": "Business Segment",
+      "role": "Director"
+    },
+    {
+      "name": "For the Three Months Ended  th  June",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Revenue",
+      "role": null
+    },
+    {
+      "name": "Cost of Sales",
+      "role": "Director"
+    },
+    {
+      "name": "Gross Profit",
+      "role": "Director"
+    },
+    {
+      "name": "Other Operating Income Loss",
+      "role": "Director"
+    },
+    {
+      "name": "Net Foreign Exchange GainLoss",
+      "role": "Director"
+    },
+    {
+      "name": "Distribution Costs",
+      "role": "Director"
+    },
+    {
+      "name": "Administrative Expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Net Finance Cost Income",
+      "role": "Director"
+    },
+    {
+      "name": "Profit Before Tax",
+      "role": "Director"
+    },
+    {
+      "name": "Income Tax Expense  Reversal",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred Tax Expense  Reversal",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the Year",
+      "role": "Director"
+    },
+    {
+      "name": "Assets Equity  Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "As at  st  March",
+      "role": "Director"
+    },
+    {
+      "name": "Total NonCurrent Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Total Current Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Total Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Total Equity",
+      "role": "Director"
+    },
+    {
+      "name": "Total NonCurrent Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Total Current Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Total Equity and Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Brushware",
+      "role": null
+    },
+    {
+      "name": "Filament and Yarn",
+      "role": "Director"
+    },
+    {
+      "name": "Eliminations and Adjustments",
+      "role": "Director"
+    },
+    {
+      "name": "Consolidated",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "B P P L Holdings PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Notes to Interim Condensed Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "S SHAREHOLDINGS",
+      "role": "Director"
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Jun",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "NED",
+      "role": null
+    },
+    {
+      "name": "Name of the",
+      "role": "Director"
+    },
+    {
+      "name": "Role",
+      "role": null
+    },
+    {
+      "name": "No. of Shares",
+      "role": "Director"
+    },
+    {
+      "name": "INED",
+      "role": null
+    },
+    {
+      "name": "Ranil Pathirana",
+      "role": "Director"
+    },
+    {
+      "name": "Anush Amarasinghe",
+      "role": "Director"
+    },
+    {
+      "name": "B D P D Perera",
+      "role": "Director"
+    },
+    {
+      "name": "MD Appointed on th May",
+      "role": "Chairman"
+    },
+    {
+      "name": "Executive",
+      "role": "Director"
+    },
+    {
+      "name": "Muhammed Rizan Jiffrey",
+      "role": "Director"
+    },
+    {
+      "name": "Executive  Appointed on st April",
+      "role": "Director"
+    },
+    {
+      "name": "INED",
+      "role": null
+    },
+    {
+      "name": "Manjula De Silva",
+      "role": "Director"
+    },
+    {
+      "name": "Sharmini Ratwatte",
+      "role": "Director"
+    },
+    {
+      "name": "Savantha S De Saram",
+      "role": "Director"
+    },
+    {
+      "name": "INED",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Corporate Information",
+      "role": "Director"
+    },
+    {
+      "name": "B P P L Holdings PLC is a public limited company incorporated and",
+      "role": "Director"
+    },
+    {
+      "name": "domiciled in Sri Lanka and listed on the Colombo Stock Exchange.",
+      "role": "Director"
+    },
+    {
+      "name": "Incorporated in Sri Lanka on th August  as a public company under",
+      "role": "Director"
+    },
+    {
+      "name": "the Companies Act No. of  N PBS  reregistered under the",
+      "role": "Director"
+    },
+    {
+      "name": "Companies Act No.  of  on st January  PB  converted to",
+      "role": "Director"
+    },
+    {
+      "name": "a private limited liability on th July  PB  PVconverted to a",
+      "role": "Director"
+    },
+    {
+      "name": "public company on th July  PB  PV and subsequently converted",
+      "role": "Director"
+    },
+    {
+      "name": "to Public Quoted Company PB  PQ on th June  .",
+      "role": "Director"
+    },
+    {
+      "name": "Authority of Incorporation Registrar of Companies ROC Colombo.",
+      "role": "Director"
+    },
+    {
+      "name": "Interim Condensed Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "The financial statements for the period ended  June  includes the",
+      "role": "Director"
+    },
+    {
+      "name": "Company referring to B P P L Holdings PLC as the holding company and",
+      "role": "Director"
+    },
+    {
+      "name": "the Group referring to the companies whose accounts have been",
+      "role": "Director"
+    },
+    {
+      "name": "consolidated therein.",
+      "role": "Director"
+    },
+    {
+      "name": "Approval Of Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "The interim condensed financial statements of the Group and the",
+      "role": "Director"
+    },
+    {
+      "name": "Company for the Three months ended  June  were authorised for",
+      "role": "Director"
+    },
+    {
+      "name": "issue by the Board of Directors on  July .",
+      "role": "Director"
+    },
+    {
+      "name": "Basis of Preparation and Changes to the Groups Accounting",
+      "role": "Director"
+    },
+    {
+      "name": "Policies",
+      "role": null
+    },
+    {
+      "name": "The interim condensed consolidated financial statements for the three",
+      "role": "Director"
+    },
+    {
+      "name": "months ended  June  have been prepared in accordance with LKAS",
+      "role": "Director"
+    },
+    {
+      "name": "Interim Financial Reporting.",
+      "role": "Director"
+    },
+    {
+      "name": "The interim condensed consolidated financial statements do not include",
+      "role": "Director"
+    },
+    {
+      "name": "all the information and disclosures required in the annual financial",
+      "role": "Director"
+    },
+    {
+      "name": "statements and should be read in conjunction with the Groups annual",
+      "role": "Director"
+    },
+    {
+      "name": "consolidated financial statements as at  March .",
+      "role": "Director"
+    },
+    {
+      "name": "The presentation and classification of the financial statements of the",
+      "role": "Director"
+    },
+    {
+      "name": "previous period have been amended where relevant for better",
+      "role": "Director"
+    },
+    {
+      "name": "presentation and to be comparable with those of the current period.",
+      "role": "Director"
+    },
+    {
+      "name": "Operating Segments",
+      "role": "Director"
+    },
+    {
+      "name": "For management purposes the Group organised into business units based",
+      "role": "Director"
+    },
+    {
+      "name": "on their products and services and has seven reportable operating",
+      "role": "Director"
+    },
+    {
+      "name": "segments as follows",
+      "role": "Director"
+    },
+    {
+      "name": "Brushware",
+      "role": null
+    },
+    {
+      "name": "Filament and Yarn",
+      "role": "Director"
+    },
+    {
+      "name": "Board of Directors",
+      "role": "Director"
+    },
+    {
+      "name": "Anush Amarasinghe    MD Appointed on th May",
+      "role": "Chairman"
+    },
+    {
+      "name": "B. D. Prasad Devapriya Perera  Executive",
+      "role": "Director"
+    },
+    {
+      "name": "Muhammed Rizan Jiffrey  Executive  Appointed on st April",
+      "role": "Director"
+    },
+    {
+      "name": "Ranil Pathirana  NonExecutive",
+      "role": "Director"
+    },
+    {
+      "name": "Manjula De Silva  Independent NonExecutive  Resigned",
+      "role": "Director"
+    },
+    {
+      "name": "w.e.f. st July",
+      "role": "Director"
+    },
+    {
+      "name": "Sharmini Ratwatte  Independent NonExecutive  Resigned",
+      "role": "Director"
+    },
+    {
+      "name": "w.e.f. st July",
+      "role": "Director"
+    },
+    {
+      "name": "Savantha De Saram  Independent NonExecutive  Resigned",
+      "role": "Director"
+    },
+    {
+      "name": "w.e.f. st July",
+      "role": "Director"
+    },
+    {
+      "name": "Dinesh Dharmadasa  Independent NonExecutive  Appointed",
+      "role": "Director"
+    },
+    {
+      "name": "on st July",
+      "role": "Director"
+    },
+    {
+      "name": "Natasha Boralessa  Independent NonExecutive  Appointed on",
+      "role": "Director"
+    },
+    {
+      "name": "st July",
+      "role": "Director"
+    },
+    {
+      "name": "Mohamed Adamaly  Independent NonExecutive  Appointed",
+      "role": "Director"
+    },
+    {
+      "name": "on st July",
+      "role": "Director"
     }
   ],
-  "audit_status": "Audited",
+  "audit_status": "Unknown",
   "errata_notice": null,
-  "contingent_liabilities": "5.1 Finance Commitments\n5.2 Contingent Liabilities\n6\nNET FOREIGN EXCHANGE GAIN/LOSS\nAve.Ex.Rates\nClosing Rates\n3 Months ended 30th June\n12 Months ended 31st March\nForeign exchange differences arising on foreign exchange transactions are recognized in the \nStatement of Profit or Loss. Company uses the Central Bank of Sri Lanka published exchange \nrates for the above purposes.\n297.87\n318.00\n2025\n2024\n2025\n2024\n300.91\n299.30\nAs at 30th June\nAs at 31st March\n2025\nThese interim financial statements which have not been audited, comply with the Sri Lanka \nAccounting Standard LKAS 34-Interim financial reporting and they also provide the information \nrequired by the Colombo Stock Exchange.\nThe accounting policies adopted in these financial statements are consistent with the \naccounting policies set out in the Annual Report for the year ended 31.03.2024. \nThere are no any material contingent liabilities.\nThe Company's stated capital consists of 306,843,357 ordinary shares.\nThere are no any material financial commitments.\nSubsequent to the reporting date, no circumstances have arisen which required adjustment to or \ndisclosure in the Financial Statements.\n2024\n2025\n2024\n300.00\n305.69\n296.32\n300.44\nPage 8",
+  "contingent_liabilities": null,
   "events_after_reporting": null,
-  "extraction_confidence": 0.6666666666666666,
-  "document_hash": null
+  "extraction_confidence": 0.85,
+  "document_hash": "placeholder_hash",
+  "extraction_method": "Rule-based",
+  "processing_time": null,
+  "report_filename": "1524_1754022292111.N.pdf"
 }

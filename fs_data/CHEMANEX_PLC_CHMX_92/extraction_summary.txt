@@ -3,27 +3,41 @@ Financial Data Extraction Summary
 
 Company: CHEMANEX PLC (CHMX)
 Report Type: Interim
-Report Date: 01 April 2024
-Extraction Confidence: 0.67
-Document Hash: None
+Report Date: 2025-06-30 00:00:00
+Extraction Confidence: 0.85
+Document Hash: placeholder_hash
 
 Financial Metrics:
-- Revenue: 122944517343232.0
-- Profit For Period: -318814254525.0
-- Operating Profit: None
-- Total Assets: 4.840965405873445e+41
-- Total Liabilities: 4.6644629364544156e+35
-- Total Equity: 4.37451937650894e+41
-- Basic Eps: None
-- Gross Profit: 555614936613.0
+- Revenue: 1000.0
+- Profit For Period: 31881000.0
+- Operating Profit: 18553000.0
+- Total Assets: 4840965000.0
+- Total Liabilities: 466446000.0
+- Total Equity: 4374519000.0
+- Basic Eps: 2029.9999999999998
+- Gross Profit: 55561000.0
 - Ebitda: None
-- Net Cash Flow: None
+- Net Cash Flow: -66872000.0
+- Profit Before Tax: 37101000.0
+- Income Tax Expense: -5220000.0
+- Other Income: 2000.0
+- Administrative Expenses: -13511000.0
+- Distribution Expenses: -26642000.0
+- Total Comprehensive Income: 375111000.0
+- Cash Generated From Operations: -58400000.0
+- Property Plant Equipment Assets: 12518000.0
+- Intangible Assets Balance: 486000.0
+- Inventories Balance: 204948000.0
+- Trade And Other Receivables Balance: 248886000.0
+- Cash And Cash Equivalents Balance: 4000.0
+- Trade Payables Balance: 18721000.0
+- Income Tax Payable Balance: 26786000.0
+- Net Assets Per Share: None
 
-Directors (6):
-  - P R Saldin - Chairman (N/A)
-  - R P Bandaranayake (N/A)
-  - S A B Ekanayake (N/A)
-  - T K D A P Samarasinghe (N/A)
-  - P A Seresinhe (Company Secretary)
-  - S A B P W M R R W T Wegodapola (N/A)
+Directors (5):
+  - P R Saldin (Chairman)
+  - R P Bandaranayake (Director)
+  - S A B Ekanayake (Director)
+  - T K D A P Samarasinghe (Director)
+  - P A Seresinhe (Director)
 

@@ -2,27 +2,1638 @@
   "company_name": "DIALOG FINANCE PLC",
   "company_symbol": "CALF",
   "report_type": "Interim",
-  "report_date": "30 JUNE 2025",
-  "currency_unit": "LKR",
-  "scale_factor": 1.0,
+  "report_date": "2025-06-30 00:00:00",
+  "currency_unit": "Rs. 1000",
+  "scale_factor": 1000.0,
   "financial_metrics": {
     "revenue": null,
-    "profit_for_period": null,
+    "profit_for_period": 22683000.0,
     "operating_profit": null,
-    "total_assets": null,
-    "total_liabilities": null,
+    "total_assets": 3443568000.0,
+    "total_liabilities": 3328303000.0,
     "total_equity": null,
     "basic_eps": null,
     "gross_profit": null,
     "ebitda": null,
-    "net_cash_flow": null
+    "net_cash_flow": null,
+    "profit_before_tax": 74200.0,
+    "income_tax_expense": -51527000.0,
+    "other_income": 18669000.0,
+    "administrative_expenses": null,
+    "distribution_expenses": null,
+    "total_comprehensive_income": null,
+    "cash_generated_from_operations": null,
+    "property_plant_equipment_assets": null,
+    "intangible_assets_balance": -87068000.0,
+    "inventories_balance": null,
+    "trade_and_other_receivables_balance": null,
+    "cash_and_cash_equivalents_balance": 480233000.0,
+    "trade_payables_balance": null,
+    "income_tax_payable_balance": null,
+    "net_assets_per_share": null
   },
   "shareholders": [],
-  "directors": [],
-  "audit_status": "Audited",
+  "directors": [
+    {
+      "name": "is responsible for the preparation and presentation of these financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Signed foand on behalf of the Board of Directors by",
+      "role": "Director"
+    },
+    {
+      "name": "i",
+      "role": null
+    },
+    {
+      "name": "DirectoryCEO",
+      "role": "Director"
+    },
+    {
+      "name": "Date",
+      "role": "Director"
+    },
+    {
+      "name": "Date",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "DIALOG FINANCE PLC",
+      "role": null
+    },
+    {
+      "name": "Statement of profit or loss and other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "all amounts in Sri Lanka Rupees thousands",
+      "role": "Director"
+    },
+    {
+      "name": "Six months ended  June",
+      "role": "Director"
+    },
+    {
+      "name": "Three months ended  June",
+      "role": "Director"
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Change",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Change",
+      "role": null
+    },
+    {
+      "name": "Interest income",
+      "role": "Director"
+    },
+    {
+      "name": "Less Interest expense",
+      "role": "Director"
+    },
+    {
+      "name": "Net interest income",
+      "role": "Director"
+    },
+    {
+      "name": "Fee and commission income",
+      "role": "Director"
+    },
+    {
+      "name": "Net gain  loss from trading",
+      "role": "Director"
+    },
+    {
+      "name": "Other operating income",
+      "role": "Director"
+    },
+    {
+      "name": "Total operating income",
+      "role": "Director"
+    },
+    {
+      "name": "Less Impairment charges and",
+      "role": "Director"
+    },
+    {
+      "name": "other losses",
+      "role": "Director"
+    },
+    {
+      "name": "Net operating income",
+      "role": "Director"
+    },
+    {
+      "name": "Less Operating expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Personnel expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Depreciation and amortization",
+      "role": "Director"
+    },
+    {
+      "name": "Other expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Operating Profit  Loss before",
+      "role": "Director"
+    },
+    {
+      "name": "taxes on financial services",
+      "role": "Director"
+    },
+    {
+      "name": "Taxes on financial services",
+      "role": "Director"
+    },
+    {
+      "name": "Profit  Loss before tax for the",
+      "role": "Director"
+    },
+    {
+      "name": "period",
+      "role": null
+    },
+    {
+      "name": "Income tax expense",
+      "role": "Director"
+    },
+    {
+      "name": "Profit  Loss for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "items that will not be",
+      "role": "Director"
+    },
+    {
+      "name": "reclassified to profit or loss",
+      "role": "Director"
+    },
+    {
+      "name": "Changes in the fair value of",
+      "role": "Director"
+    },
+    {
+      "name": "equity investments at fair value",
+      "role": "Director"
+    },
+    {
+      "name": "through other comprehensive",
+      "role": "Director"
+    },
+    {
+      "name": "income",
+      "role": null
+    },
+    {
+      "name": "Remeasurement of defined",
+      "role": "Director"
+    },
+    {
+      "name": "benefit obligations",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred tax effect on other",
+      "role": "Director"
+    },
+    {
+      "name": "comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income for",
+      "role": "Director"
+    },
+    {
+      "name": "the period net of tax",
+      "role": "Director"
+    },
+    {
+      "name": "Profit  Loss per share Rs.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "DIALOG FINANCE PLC",
+      "role": null
+    },
+    {
+      "name": "Statement of changes in equity",
+      "role": "Director"
+    },
+    {
+      "name": "all amounts in Sri Lanka Rupees thousands",
+      "role": "Director"
+    },
+    {
+      "name": "Stated",
+      "role": null
+    },
+    {
+      "name": "capital",
+      "role": null
+    },
+    {
+      "name": "Retained",
+      "role": null
+    },
+    {
+      "name": "earnings",
+      "role": "Director"
+    },
+    {
+      "name": "accumulated",
+      "role": null
+    },
+    {
+      "name": "losses",
+      "role": null
+    },
+    {
+      "name": "Statutory",
+      "role": null
+    },
+    {
+      "name": "reserve",
+      "role": null
+    },
+    {
+      "name": "fund",
+      "role": null
+    },
+    {
+      "name": "Fair value through",
+      "role": "Director"
+    },
+    {
+      "name": "other",
+      "role": null
+    },
+    {
+      "name": "comprehensive",
+      "role": null
+    },
+    {
+      "name": "income reserve",
+      "role": "Director"
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "Balance at  January",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income net of",
+      "role": "Director"
+    },
+    {
+      "name": "tax",
+      "role": null
+    },
+    {
+      "name": "Transfer to statutory reserve fund",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income for",
+      "role": "Director"
+    },
+    {
+      "name": "the period",
+      "role": "Director"
+    },
+    {
+      "name": "Balance at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Balance at  January",
+      "role": "Director"
+    },
+    {
+      "name": "Loss for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income net of",
+      "role": "Director"
+    },
+    {
+      "name": "tax",
+      "role": null
+    },
+    {
+      "name": "Transfer to statutory reserve fund",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income for",
+      "role": "Director"
+    },
+    {
+      "name": "the period",
+      "role": "Director"
+    },
+    {
+      "name": "Balance at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Balance at  July",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income net of",
+      "role": "Director"
+    },
+    {
+      "name": "tax",
+      "role": null
+    },
+    {
+      "name": "Transfer to statutory reserve fund",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income for",
+      "role": "Director"
+    },
+    {
+      "name": "the period",
+      "role": "Director"
+    },
+    {
+      "name": "Balance at  December",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "DIALOG FINANCE PLC",
+      "role": null
+    },
+    {
+      "name": "Statement of cash flows",
+      "role": "Director"
+    },
+    {
+      "name": "all amounts in Sri Lanka Rupees thousands",
+      "role": "Director"
+    },
+    {
+      "name": "Six months ended  June",
+      "role": "Director"
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Cash flows from operating activities",
+      "role": "Director"
+    },
+    {
+      "name": "Profit  loss before income tax",
+      "role": "Director"
+    },
+    {
+      "name": "Adjustments for",
+      "role": "Director"
+    },
+    {
+      "name": "Interest expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Impairment charges and other losses",
+      "role": "Director"
+    },
+    {
+      "name": "Provision for retirement benefits obligation",
+      "role": "Director"
+    },
+    {
+      "name": "Depreciation and amortization",
+      "role": "Director"
+    },
+    {
+      "name": "Interest on lease liability",
+      "role": "Director"
+    },
+    {
+      "name": "Net losses  gains on financial assets at fair value through profit or loss",
+      "role": "Director"
+    },
+    {
+      "name": "Cash generated from operations before changes in operating assets and",
+      "role": "Director"
+    },
+    {
+      "name": "liabilities",
+      "role": null
+    },
+    {
+      "name": "Decrease in loans and advances",
+      "role": "Director"
+    },
+    {
+      "name": "Decrease in other assets",
+      "role": "Director"
+    },
+    {
+      "name": "Increase in amounts due to customers",
+      "role": "Director"
+    },
+    {
+      "name": "Increase  decrease in amounts due to banks",
+      "role": "Director"
+    },
+    {
+      "name": "Decrease  increase in other liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Cash generated from  used in operations",
+      "role": "Director"
+    },
+    {
+      "name": "Interest paid",
+      "role": "Director"
+    },
+    {
+      "name": "Retirement benefits paid",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash generated from  used in operating activities",
+      "role": "Director"
+    },
+    {
+      "name": "Cash flows from investing activities",
+      "role": "Director"
+    },
+    {
+      "name": "Acquisition of property plant and equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Acquisition of intangible assets",
+      "role": "Director"
+    },
+    {
+      "name": "Net investment in treasury bills",
+      "role": "Director"
+    },
+    {
+      "name": "Net investment in securities purchased under repurchased agreement",
+      "role": "Director"
+    },
+    {
+      "name": "Net investment in unit trust",
+      "role": "Director"
+    },
+    {
+      "name": "Net placements with banks and financial institutions",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash flows from investing activities",
+      "role": "Director"
+    },
+    {
+      "name": "Cash flows from financing activities",
+      "role": "Director"
+    },
+    {
+      "name": "Principle element of lease payment",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash used in from financing activities",
+      "role": "Director"
+    },
+    {
+      "name": "Net increase in cash and cash equivalents",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and cash equivalents at the beginning of the period",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and cash equivalents at the end of the period",
+      "role": "Director"
+    },
+    {
+      "name": "Analysis of cash and cash equivalents at the end of the period",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and bank balances",
+      "role": "Director"
+    },
+    {
+      "name": "Add Placements with financial Institutions less than  days",
+      "role": "Director"
+    },
+    {
+      "name": "Less Impairment provision",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "DIALOG FINANCE PLC",
+      "role": null
+    },
+    {
+      "name": "Financial reporting by segment",
+      "role": "Director"
+    },
+    {
+      "name": "all amounts in Sri Lanka Rupees thousands",
+      "role": "Director"
+    },
+    {
+      "name": "For the six months ended",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": null
+    },
+    {
+      "name": "Consumer Segment",
+      "role": "Director"
+    },
+    {
+      "name": "MSME Segment",
+      "role": "Director"
+    },
+    {
+      "name": "Treasuryinvestments",
+      "role": null
+    },
+    {
+      "name": "Unallocated",
+      "role": null
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "Interest Income",
+      "role": "Director"
+    },
+    {
+      "name": "Interest Expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Net interest income",
+      "role": "Director"
+    },
+    {
+      "name": "Net fees and commission income",
+      "role": "Director"
+    },
+    {
+      "name": "Other income",
+      "role": "Director"
+    },
+    {
+      "name": "Operating income by segment",
+      "role": "Director"
+    },
+    {
+      "name": "Impairment expense  reversal",
+      "role": "Director"
+    },
+    {
+      "name": "Net operating income",
+      "role": "Director"
+    },
+    {
+      "name": "Operating expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Segment result",
+      "role": "Director"
+    },
+    {
+      "name": "Personnel expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Depreciation and amortization",
+      "role": "Director"
+    },
+    {
+      "name": "Profit  loss from operations",
+      "role": "Director"
+    },
+    {
+      "name": "VAT on financial services",
+      "role": "Director"
+    },
+    {
+      "name": "Income tax expense",
+      "role": "Director"
+    },
+    {
+      "name": "Profit  loss for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other information",
+      "role": "Director"
+    },
+    {
+      "name": "Balance at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Segment assets",
+      "role": "Director"
+    },
+    {
+      "name": "Total assets",
+      "role": "Director"
+    },
+    {
+      "name": "Segment liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Total liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "DIALOG FINANCE PLC",
+      "role": null
+    },
+    {
+      "name": "Notes to the condensed interim financial statements",
+      "role": "Director"
+    },
+    {
+      "name": "all amounts in the notes are in Sri Lanka Rupees thousands unless otherwise stated",
+      "role": "Director"
+    },
+    {
+      "name": "Basis of preparation",
+      "role": "Director"
+    },
+    {
+      "name": "The condensed interim financial statements for the six months ended  June  of the Company have been",
+      "role": "Director"
+    },
+    {
+      "name": "prepared in accordance with Sri Lanka Accounting Standard LKAS  Interim Financial Reporting. The",
+      "role": "Director"
+    },
+    {
+      "name": "condensed interim financial statements should be read in conjunction with the audited financial statements for",
+      "role": "Director"
+    },
+    {
+      "name": "the year ended  December .",
+      "role": "Director"
+    },
+    {
+      "name": "There were no changes to the accounting policies since the publication of the audited financial statements for the",
+      "role": "Director"
+    },
+    {
+      "name": "year ended  December .",
+      "role": "Director"
+    },
+    {
+      "name": "Events after the reporting period",
+      "role": "Director"
+    },
+    {
+      "name": "No circumstances have arisen since the statement of financial position date which requires adjustments to or",
+      "role": "Director"
+    },
+    {
+      "name": "disclosures in the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Contingent liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "There were no material contingent liabilities as at the reporting date which require adjustments to  or disclosures",
+      "role": "Director"
+    },
+    {
+      "name": "in the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Other Assets",
+      "role": "Director"
+    },
+    {
+      "name": "The Company has identified a case of external financial fraud in June  and steps were taken to immediately",
+      "role": "Director"
+    },
+    {
+      "name": "recover a portion of funds. As at the reporting date the gross outstanding amount to be recovered was LKR",
+      "role": "Director"
+    },
+    {
+      "name": ".Mn and based on an assessment of recoverability the Company has recognized a provision for loss of LKR",
+      "role": "Director"
+    },
+    {
+      "name": ".Mn in the statement of profit or loss. Consequently the net amount outstanding to be recovered as of the",
+      "role": "Director"
+    },
+    {
+      "name": "reporting date is LKR .Mn which is reported under other assets in the statement of financial position.",
+      "role": "Director"
+    },
+    {
+      "name": "The Company has initiated legal action as per the advice of external legal counsel and currently working with law",
+      "role": "Director"
+    },
+    {
+      "name": "enforcement authorities to recover the remaining funds. In response to this incident the Company has enhanced",
+      "role": "Director"
+    },
+    {
+      "name": "its transaction monitoring processes and has implemented measures to educate customers on safeguarding their",
+      "role": "Director"
+    },
+    {
+      "name": "accounts against unauthorized thirdparty access.",
+      "role": "Director"
+    },
+    {
+      "name": "As of the reporting date the investigation and recovery efforts are ongoing. The Company will continue to",
+      "role": "Director"
+    },
+    {
+      "name": "monitor the progress of these actions and will assess the recoverability of the outstanding receivables",
+      "role": "Director"
+    },
+    {
+      "name": "recognised at each reporting date.",
+      "role": "Director"
+    },
+    {
+      "name": "Fair value of financial instruments",
+      "role": "Director"
+    },
+    {
+      "name": "The Company uses valuation techniques that are appropriate in the circumstances and for which sufficient data",
+      "role": "Director"
+    },
+    {
+      "name": "are available to measure fair value maximizing the use of relevant observable inputs and minimizing the use of",
+      "role": "Director"
+    },
+    {
+      "name": "unobservable inputs.",
+      "role": "Director"
+    },
+    {
+      "name": "All assets and liabilities for which fair value is measured or disclosed in the financial statements are categorized",
+      "role": "Director"
+    },
+    {
+      "name": "within the fair value hierarchy described as follows based on the lowest level input that is significant to the fair",
+      "role": "Director"
+    },
+    {
+      "name": "value measurement as a whole",
+      "role": "Director"
+    },
+    {
+      "name": "Level   Quoted unadjusted market prices in active markets for identical assets or liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Level   Valuation techniques for which the lowest level input that is significant to the fair value measurement is",
+      "role": "Director"
+    },
+    {
+      "name": "directly or indirectly observable",
+      "role": "Director"
+    },
+    {
+      "name": "Level   Valuation techniques for which the lowest level input that is significant to the fair value measurement is",
+      "role": "Director"
+    },
+    {
+      "name": "unobservable",
+      "role": null
+    },
+    {
+      "name": "For assets and liabilities that are recognized in the financial statements on a recurring basis the Company",
+      "role": "Director"
+    },
+    {
+      "name": "determines whether transfers have occurred between levels in the hierarchy by reassessing categorization",
+      "role": "Director"
+    },
+    {
+      "name": "based on the lowest level input that is significant to the fair value measurement as a whole at the end of each",
+      "role": "Director"
+    },
+    {
+      "name": "reporting period.",
+      "role": "Director"
+    },
+    {
+      "name": "Measurement criteria and the fair value",
+      "role": "Director"
+    },
+    {
+      "name": "Level",
+      "role": "Director"
+    },
+    {
+      "name": "Level",
+      "role": "Director"
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "Financial assets",
+      "role": "Director"
+    },
+    {
+      "name": "Financial assets at fair value through profit or loss",
+      "role": "Director"
+    },
+    {
+      "name": "Financial assets at fair value through other",
+      "role": "Director"
+    },
+    {
+      "name": "comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "DIALOG FINANCE PLC",
+      "role": null
+    },
+    {
+      "name": "Notes to the condensed interim financial statements Continued",
+      "role": "Director"
+    },
+    {
+      "name": "Market price per share",
+      "role": "Director"
+    },
+    {
+      "name": "For the six months ended  June",
+      "role": "Director"
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Highest",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Lowest",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Last traded",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Twenty largest shareholders of the company",
+      "role": "Director"
+    },
+    {
+      "name": "Name of Shareholders",
+      "role": "Director"
+    },
+    {
+      "name": "No. of",
+      "role": "Director"
+    },
+    {
+      "name": "shares",
+      "role": null
+    },
+    {
+      "name": "Holding",
+      "role": null
+    },
+    {
+      "name": "Dialog Axiata PLC",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "P.S. Goonewardene JNR",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "R. Gukenthiran",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "A.P.Dhammika",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Dialog Finance PLC  D.M.H.B. Dasanayake",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "C.R. Narangoda",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "P. Poongunaseelan",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "W.C. Madhushanka",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "R.C.J. Goonewardene",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Senkadagala Finance PLC  G.B.R.P. Gunawardana",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "R.J.K.I. Ranathunga",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Peoples Leasing  Finance PLC C.D.Kohombanwickramage",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Senkadagala Finance PLC  C.R. Narangoda",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "M.A.T. Raaymakers",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "M.K. Gunawardena M.K. Gunawardena Joint",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "P.S.M. Fernando",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Citizens Development Business Finance PLC K.D.C. Somalatha and K. Nandasiri",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "G.D.M. Ranasinghe Mrs. O.R.K. Ranasinghe Joint",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "S. Suwandaratne",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "C.H.M.S. Wanduragala",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Others",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Directors shareholdings",
+      "role": "Director"
+    },
+    {
+      "name": "None of the Directors and their close family members held any shares in the company as at  June .",
+      "role": "Director"
+    },
+    {
+      "name": "Public shareholdings",
+      "role": "Director"
+    },
+    {
+      "name": "Information pertaining to public shareholding is as follows",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "Public holding percentage",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Number of public shareholders",
+      "role": "Director"
+    },
+    {
+      "name": "Float adjusted market capitalization Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "a   The Company is not compliant with the Minimum Public Holding requirement under option  of Rule ..b",
+      "role": "Director"
+    },
+    {
+      "name": "of the Listing Rules of the Colombo Stock Exchange CSE. Accordingly the Company was transferred to the",
+      "role": "Director"
+    },
+    {
+      "name": "Second Board on  February .",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "DIALOG FINANCE PLC",
+      "role": null
+    },
+    {
+      "name": "Notes to the condensed interim financial statements Continued",
+      "role": "Director"
+    },
+    {
+      "name": "Selected performance indicators",
+      "role": "Director"
+    },
+    {
+      "name": "Item",
+      "role": null
+    },
+    {
+      "name": "As at  June",
+      "role": "Director"
+    },
+    {
+      "name": "As at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Regulatory capital adequacy",
+      "role": "Director"
+    },
+    {
+      "name": "Tier I capital base Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Total capital base Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Risk weighted assets Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Tier I capital adequacy ratio",
+      "role": "Director"
+    },
+    {
+      "name": "As a  of risk weighted assets  Minimum requirement  .",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Total capital adequacy ratio",
+      "role": "Director"
+    },
+    {
+      "name": "As a  of risk weighted assets  Minimum requirement  .",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Capital funds to deposit liabilities ratio",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Minimum requirement",
+      "role": "Director"
+    },
+    {
+      "name": "Assets quality quality of loan portfolio",
+      "role": "Director"
+    },
+    {
+      "name": "Gross nonperforming accommodations Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Gross nonperforming accommodations ratio",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Netnonperforming accommodations ratio",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Profitability",
+      "role": null
+    },
+    {
+      "name": "Net Interest margin",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Return on assets before taxes",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Return on equity after taxes",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Regulatory liquidity Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Required minimum amount of liquid assets",
+      "role": "Director"
+    },
+    {
+      "name": "Available amount of liquid assets",
+      "role": "Director"
+    },
+    {
+      "name": "Required minimum amount of government securities",
+      "role": "Director"
+    },
+    {
+      "name": "Available amount of government securities",
+      "role": "Director"
+    },
+    {
+      "name": "Memorandum information",
+      "role": "Director"
+    },
+    {
+      "name": "Number of employees",
+      "role": "Director"
+    },
+    {
+      "name": "Number of branches",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Page",
+      "role": "Director"
+    },
+    {
+      "name": "Corporate Information",
+      "role": "Director"
+    },
+    {
+      "name": "Name of the Company",
+      "role": "Director"
+    },
+    {
+      "name": "Bankers",
+      "role": null
+    },
+    {
+      "name": "Dialog Finance PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Seylan Bank PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Commercial Bank of Ceylon PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Legal Form and Stock Exchange Listing",
+      "role": "Director"
+    },
+    {
+      "name": "Nations Trust Bank PLC",
+      "role": "Director"
+    },
+    {
+      "name": "A Public Quoted Company with Limited Liability which",
+      "role": "Director"
+    },
+    {
+      "name": "was quoted on the Diri Savi Board of the Colombo Stock",
+      "role": "Director"
+    },
+    {
+      "name": "Exchange on th October  and subsequently",
+      "role": "Director"
+    },
+    {
+      "name": "transferred to the Second Board on  February .",
+      "role": "Director"
+    },
+    {
+      "name": "Bank of Ceylon",
+      "role": "Director"
+    },
+    {
+      "name": "Cargills Bank Ltd",
+      "role": "Director"
+    },
+    {
+      "name": "Peoples Bank",
+      "role": "Director"
+    },
+    {
+      "name": "Hatton National Bank PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Date of Incorporation",
+      "role": "Director"
+    },
+    {
+      "name": "National Development Bank PLC",
+      "role": "Director"
+    },
+    {
+      "name": "November",
+      "role": "Director"
+    },
+    {
+      "name": "DFCC Bank PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Sampath Bank",
+      "role": "Director"
+    }
+  ],
+  "audit_status": "Unknown",
   "errata_notice": null,
-  "contingent_liabilities": "There were no material contingent liabilities as at the reporting date which require adjustments to / or disclosures \nin the financial statements. \n4       Other Assets \nThe Company has identified a case of external financial fraud in June 2024 and steps were taken to immediately \nrecover a portion of funds. As at the reporting date, the gross outstanding amount to be recovered was LKR \n41.4Mn and based on an assessment of recoverability, the Company has recognized a provision for loss of LKR \n30.9Mn in the statement of profit or loss. Consequently, the net amount outstanding to be recovered as of the \nreporting date is LKR 10.5Mn, which is reported under \"other assets\" in the statement of financial position. \n \nThe Company has initiated legal action as per the advice of external legal counsel and currently working with law \nenforcement authorities to recover the remaining funds. In response to this incident, the Company has enhanced \nits transaction monitoring processes and has implemented measures to educate customers on safeguarding their \naccounts against unauthorized third-party access. \n \nAs of the reporting date, the investigation and recovery efforts are ongoing. The Company will continue to \nmonitor the progress of these actions and will assess the recoverability of the outstanding receivables \nrecognised at each reporting date.    \n \n5       Fair value of financial instruments \n \nThe Company uses valuation techniques that are appropriate in the circumstances and for which sufficient data \nare available to measure fair value, maximizing the use of relevant observable inputs and minimizing the use of \nunobservable inputs. \n \nAll assets and liabilities for which fair value is measured or disclosed in the financial statements are categorized \nwithin the fair value hierarchy, described as follows, based on the lowest level input that is significant to the fair \nvalue measurement as a whole: \n \nLevel 1 - Quoted (unadjusted) market prices in active markets for identical assets or liabilities \n \nLevel 2 - Valuation techniques for which the lowest level input that is significant to the fair value measurement is                        \ndirectly or indirectly observable \n \nLevel 3 - Valuation techniques for which the lowest level input that is significant to the fair value measurement is \nunobservable \n \nFor assets and liabilities that are recognized in the financial statements on a recurring basis, the Company \ndetermines whether transfers have occurred between levels in the hierarchy by re-assessing categorization \n(based on the lowest level input that is significant to the fair value measurement as a whole) at the end of each \nreporting period. \n \nMeasurement criteria and the fair value \n \nLevel 1 \nLevel 3 \nTotal \n \n30 June \n2025 \n30 June \n2024 \n30 June \n2025 \n30 June \n2024 \n30 June \n2025 \n30 June \n2024 \nFinancial assets   \n \n \n \nFinancial assets at fair value through profit or loss \n3,493 \n   358,557 \n -   \n -   \n3,493 \n358,557 \nFinancial assets at fair value through other \ncomprehensive income  \n -   \n -   \n 2,358 \n  2,185 \n2,358 \n2,185",
+  "contingent_liabilities": null,
   "events_after_reporting": null,
-  "extraction_confidence": 0.5,
-  "document_hash": null
+  "extraction_confidence": 0.85,
+  "document_hash": "placeholder_hash",
+  "extraction_method": "Rule-based",
+  "processing_time": null,
+  "report_filename": "1101_1754044658211.pdf"
 }

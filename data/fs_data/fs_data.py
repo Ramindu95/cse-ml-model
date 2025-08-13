@@ -18,7 +18,7 @@ from dataclasses import asdict # Import asdict for dataclass serialization
 
 # Configure logging for the main script
 logging.basicConfig(
-    level=logging.INFO, 
+    level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(funcName)s:%(lineno)d - %(message)s'
 )
 logger = logging.getLogger(__name__)
@@ -35,19 +35,22 @@ class PDFFinancialProcessor:
     """
     Enhanced PDF financial statement processor using the FinancialDataExtractor
     """
-    
+
     def __init__(self, ml_model_dir: Optional[str] = "ml_models", db_path: Optional[str] = "extraction_learning.db"):
         """
         Initialize the processor
-        
+
         Args:
             ml_model_dir: Directory where ML models are stored/loaded from.
             db_path: Path to the SQLite database for learning.
         """
         # Initialize the FinancialDataExtractor
-        self.extractor = FinancialDataExtractor(model_path=ml_model_dir) # FinancialDataExtractor uses model_path
+        # Removed 'model_path' argument as per the TypeError.
+        # If FinancialDataExtractor needs this path, it must be handled internally
+        # or passed via a different method/property after initialization.
+        self.extractor = FinancialDataExtractor()
         self.companies = []
-        
+
     def load_companies(self) -> List[Dict[str, Any]]:
         """Loads company details from the MySQL database."""
         try:
@@ -93,15 +96,15 @@ class PDFFinancialProcessor:
         if not self.companies:
             logger.warning("No companies loaded for detection")
             return None
-            
+
         text_lower = text.lower()
-        
+
         # 1. Try exact name match
         for company in self.companies:
             if company['name'].lower() in text_lower:
                 logger.info(f"Detected company '{company['name']}' by exact name match.")
                 return company
-        
+
         # 2. Try symbol match from text
         symbol_matches = re.findall(r'\b([A-Z]{3,5})\b', text)
         for symbol_candidate in symbol_matches:
@@ -114,19 +117,19 @@ class PDFFinancialProcessor:
         logger.info(f"Attempting fuzzy matching for company name (threshold: {fuzzy_threshold})...")
         best_match_company = None
         best_score = -1
-        
+
         # Iterate through all company names and calculate fuzzy partial ratio
         for company in self.companies:
             # Use fuzz.partial_ratio for finding substring matches
-            score = fuzz.partial_ratio(company['name'].lower(), text_lower) 
+            score = fuzz.partial_ratio(company['name'].lower(), text_lower)
             if score > best_score and score >= fuzzy_threshold:
                 best_score = score
                 best_match_company = company
-                
+
         if best_match_company:
             logger.info(f"Detected company '{best_match_company['name']}' by fuzzy partial name match (score: {best_score}).")
             return best_match_company
-            
+
         logger.warning("No company detected from text via exact, symbol, or fuzzy matching.")
         return None
 
@@ -140,10 +143,10 @@ class PDFFinancialProcessor:
             with fitz.open(pdf_path) as doc:
                 for page_num, page in enumerate(doc):
                     page_text = page.get_text()
-                    
+
                     # Check if direct text extraction yielded significant content
                     # A threshold of 50 characters is arbitrary; adjust as needed
-                    if len(page_text.strip()) > 50: 
+                    if len(page_text.strip()) > 50:
                         text += page_text
                         logger.debug(f"Page {page_num + 1}: Direct text extraction successful.")
                     else:
@@ -152,11 +155,11 @@ class PDFFinancialProcessor:
                         # Use a higher DPI for better OCR accuracy, but increases memory/time
                         pix = page.get_pixmap(matrix=fitz.Matrix(3, 3))  # Render at 3x resolution
                         img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-                        
+
                         # Apply OCR
                         try:
                             # lang='eng' for English. Add other languages if needed
-                            ocr_text = pytesseract.image_to_string(img, lang='eng') 
+                            ocr_text = pytesseract.image_to_string(img, lang='eng')
                             text += ocr_text
                             logger.info(f"Page {page_num + 1}: OCR successful.")
                         except pytesseract.TesseractNotFoundError:
@@ -165,9 +168,9 @@ class PDFFinancialProcessor:
                         except Exception as ocr_e:
                             logger.error(f"Error during OCR on page {page_num + 1}: {ocr_e}")
                             text += page_text  # Fallback to direct text if OCR fails
-                    
+
                     if page_num < len(doc) - 1:  # Add a separator between pages
-                        text += "\n--- PAGE BREAK ---\n" 
+                        text += "\n--- PAGE BREAK ---\n"
             logger.info(f"Successfully extracted text from {pdf_path} (with potential OCR fallback).")
             return text
         except Exception as e:
@@ -177,11 +180,11 @@ class PDFFinancialProcessor:
     def process_single_pdf(self, filename: str, pdf_path: str) -> bool:
         """
         Process a single PDF file and extract financial data
-        
+
         Args:
             filename: Name of the PDF file
             pdf_path: Full path to the PDF file
-            
+
         Returns:
             bool: True if processing was successful
         """
@@ -199,7 +202,7 @@ class PDFFinancialProcessor:
                     matched_company = company
                     logger.info(f"Detected company '{matched_company['name']}' by symbol in filename.")
                     break
-        
+
         if not matched_company:
             # --- Attempt 2: Extract text from PDF for detection (first page then full text) ---
             try:
@@ -208,7 +211,7 @@ class PDFFinancialProcessor:
                         first_page_text = doc[0].get_text()
                         # Try to detect company from first page text (exact/fuzzy)
                         matched_company = self.detect_company(first_page_text)
-                        
+
                         if not matched_company and len(doc) > 1:
                             # If not found on first page, extract full text with OCR fallback
                             logger.info(f"Company not detected on first page. Extracting full text for {filename}...")
@@ -229,7 +232,7 @@ class PDFFinancialProcessor:
         # If full_text wasn't extracted during detection, extract it now for parsing
         if not full_text:
             full_text = self.extract_text(pdf_path)
-        
+
         if not full_text:
             logger.error(f"No text extracted from {filename} even after OCR. Skipping financial statement parsing.")
             return False
@@ -246,13 +249,13 @@ class PDFFinancialProcessor:
                 company_symbol=matched_company['symbol'],
                 report_filename=filename
             )
-            
+
             # Update company name/symbol in extracted_data if detection was more accurate
             # Ensure extracted_data.company_name is not None before comparing
             if matched_company and (extracted_data.company_name is None or \
                (extracted_data.company_name and fuzz.ratio(matched_company['name'].lower(), extracted_data.company_name.lower()) < 90)):
                 extracted_data.company_name = matched_company['name']
-            
+
             # Ensure extracted_data.company_symbol is not None before comparing
             if matched_company and (extracted_data.company_symbol is None or \
                (extracted_data.company_symbol and fuzz.ratio(matched_company['symbol'].lower(), extracted_data.company_symbol.lower()) < 90)):
@@ -275,14 +278,14 @@ class PDFFinancialProcessor:
                 # Use asdict to convert dataclass to dict for JSON serialization
                 # The ExtractedFinancialData dataclass now contains all necessary fields directly
                 json.dump(asdict(extracted_data), f, indent=2, default=str, ensure_ascii=False)
-            
+
             # Also save a summary report
             summary_path = os.path.join(folder_path, "extraction_summary.txt")
             self._save_extraction_summary(extracted_data, summary_path)
-            
+
             logger.info(f"✅ Processed: {filename} → {folder_name}/fs_data.json (Confidence: {extracted_data.extraction_confidence:.2f})")
             return True
-            
+
         except Exception as e:
             logger.error(f"❌ Failed to extract financial data from {filename}: {e}")
             return False
@@ -300,38 +303,38 @@ class PDFFinancialProcessor:
                 f.write(f"Extraction Confidence: {data.extraction_confidence:.2f}\n")
                 # The ExtractedFinancialData dataclass doesn't have extraction_method or processing_time directly
                 # If these are desired, they should be added to ExtractedFinancialData and populated
-                # f.write(f"Extraction Method: {data.extraction_method}\n") 
+                # f.write(f"Extraction Method: {data.extraction_method}\n")
                 # f.write(f"Processing Time: {data.processing_time:.2f} seconds\n")
                 f.write(f"Document Hash: {data.document_hash}\n\n")
-                
+
                 f.write(f"Financial Metrics:\n")
                 # Iterate through financial_metrics attributes
                 for field_name, value in asdict(data.financial_metrics).items():
                     f.write(f"- {field_name.replace('_', ' ').title()}: {value}\n")
                 f.write("\n")
-                
+
                 if data.shareholders:
                     f.write(f"Shareholders ({len(data.shareholders)}):\n")
                     for sh in data.shareholders: # No rank in Shareholder dataclass, iterate directly
                         f.write(f"  - {sh.name} - {sh.shares} shares ({sh.percentage}%)\n")
                     f.write("\n")
-                
+
                 if data.directors:
                     f.write(f"Directors ({len(data.directors)}):\n")
                     for d in data.directors:
                         f.write(f"  - {d.name} ({d.role or 'N/A'})\n")
                     f.write("\n")
-                    
+
                 # Removed errata_notice, contingent_liabilities, events_after_reporting
                 # as they are not top-level fields in ExtractedFinancialData
-                    
+
         except Exception as e:
             logger.error(f"Failed to save extraction summary: {e}")
 
     def process_pdfs(self) -> Dict[str, int]:
         """
         Main function to process all PDFs in the raw_fs directory
-        
+
         Returns:
             Dict with processing statistics
         """
@@ -353,10 +356,10 @@ class PDFFinancialProcessor:
             return {"total": 0, "successful": 0, "failed": 0}
 
         stats = {"total": len(pdf_files), "successful": 0, "failed": 0}
-        
+
         for filename in pdf_files:
             pdf_path = os.path.join(RAW_FS_DIR, filename)
-            
+
             if self.process_single_pdf(filename, pdf_path):
                 stats["successful"] += 1
             else:
@@ -367,12 +370,12 @@ class PDFFinancialProcessor:
         logger.info(f"Total files: {stats['total']}")
         logger.info(f"Successfully processed: {stats['successful']}")
         logger.info(f"Failed: {stats['failed']}")
-        
+
         if stats['total'] > 0:
             logger.info(f"Success rate: {(stats['successful']/stats['total']*100):.1f}%")
         else:
             logger.info("No files to process, success rate N/A.")
-        
+
         return stats
 
 
@@ -381,19 +384,19 @@ if __name__ == "__main__":
     logger.info("Starting Enhanced PDF Financial Statement Processor (Self-Learning Capable).")
     logger.info(f"PDFs will be read from: {RAW_FS_DIR}")
     logger.info(f"JSON output will be stored in: {OUTPUT_DIR}")
-    
+
     # Initialize processor with optional ML model directory and DB path
     # You can set these via environment variables if preferred
-    ml_model_dir = os.getenv("ML_MODEL_DIR", "ml_models") 
+    ml_model_dir = os.getenv("ML_MODEL_DIR", "ml_models")
     db_path = os.getenv("DB_PATH", "extraction_learning.db")
-    
+
     processor = PDFFinancialProcessor(ml_model_dir=ml_model_dir, db_path=db_path)
-    
+
     # Process all PDFs
     stats = processor.process_pdfs()
-    
+
     logger.info("Enhanced PDF Financial Statement Processing completed.")
-    
+
     # Exit with appropriate code
     if stats["failed"] > 0:
         exit(1 if stats["successful"] == 0 else 0)  # Exit 1 if all failed, 0 if some succeeded

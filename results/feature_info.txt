@@ -1,9 +1,9 @@
 STOCK PREDICTION FEATURES SUMMARY
 ==================================================
 
-Total Features: 86
+Total Features: 35
 Technical Features: 35
-Fundamental Features: 51
+Fundamental Features: 0
 
 Moving Averages (7 features):
   - MA_5
@@ -49,48 +49,6 @@ Price Action (6 features):
   - intraday_momentum
   - opening_gap
 
-Valuation (5 features):
-  - PE_ratio
-  - PB_ratio
-  - current_ratio
-  - cash_ratio
-  - quick_ratio
-
-Profitability (7 features):
-  - ROA
-  - ROE
-  - gross_margin
-  - operating_margin
-  - net_margin
-  - operating_cash_margin
-  - fcf_margin
-
-Liquidity (12 features):
-  - financial_cash_and_equivalents
-  - financial_current_assets
-  - financial_current_liabilities
-  - financial_operating_cash_flow
-  - financial_investing_cash_flow
-  - financial_financing_cash_flow
-  - financial_net_cash_change
-  - current_ratio
-  - cash_ratio
-  - quick_ratio
-  - operating_cash_margin
-  - free_cash_flow
-
-Growth (4 features):
-  - financial_revenue_growth
-  - financial_net_income_growth
-  - financial_total_assets_growth
-  - EPS_growth
-
-Debt (4 features):
-  - financial_short_term_debt
-  - financial_long_term_debt
-  - debt_to_equity
-  - debt_to_assets
-
 ALL FEATURES LIST (Dynamically Selected for the Last Run):
 --------------------
  1. ATR
@@ -101,81 +59,30 @@ ALL FEATURES LIST (Dynamically Selected for the Last Run):
  6. BB_Width
  7. EMA_12
  8. EMA_26
- 9. EPS
-10. EPS_growth
-11. MACD
-12. MACD_Histogram
-13. MACD_Signal
-14. MA_10
-15. MA_20
-16. MA_5
-17. MA_50
-18. OBV
-19. PB_ratio
-20. PE_ratio
-21. PVT
-22. ROA
-23. ROC_10
-24. ROE
-25. RSI
-26. Stoch_D
-27. Stoch_K
-28. VWAP
-29. asset_turnover
-30. cash_ratio
-31. current_ratio
-32. daily_return
-33. debt_to_assets
-34. debt_to_equity
-35. fcf_margin
-36. financial_accounts_payable
-37. financial_accounts_receivable
-38. financial_cash_and_equivalents
-39. financial_cost_of_goods_sold
-40. financial_current_assets
-41. financial_current_liabilities
-42. financial_dividends_paid
-43. financial_earnings_per_share
-44. financial_financing_cash_flow
-45. financial_gross_profit
-46. financial_interest_expense
-47. financial_inventory
-48. financial_investing_cash_flow
-49. financial_is_audited
-50. financial_long_term_debt
-51. financial_net_cash_change
-52. financial_net_income
-53. financial_net_income_growth
-54. financial_operating_cash_flow
-55. financial_operating_expenses
-56. financial_operating_income
-57. financial_period_start_date
-58. financial_period_type
-59. financial_revenue
-60. financial_revenue_growth
-61. financial_shares_outstanding
-62. financial_short_term_debt
-63. financial_tax_expense
-64. financial_total_assets
-65. financial_total_assets_growth
-66. financial_total_equity
-67. financial_total_liabilities
-68. free_cash_flow
-69. gross_margin
-70. hl_spread
-71. intraday_momentum
-72. inventory_turnover
-73. momentum_5
-74. net_margin
-75. opening_gap
-76. operating_cash_margin
-77. operating_margin
-78. price_acceleration
-79. price_volatility
-80. price_vs_20day_high
-81. price_vs_20day_low
-82. quick_ratio
-83. volatility_rank
-84. volume_MA_20
-85. volume_change_pct
-86. volume_ratio
+ 9. MACD
+10. MACD_Histogram
+11. MACD_Signal
+12. MA_10
+13. MA_20
+14. MA_5
+15. MA_50
+16. OBV
+17. PVT
+18. ROC_10
+19. RSI
+20. Stoch_D
+21. Stoch_K
+22. VWAP
+23. daily_return
+24. hl_spread
+25. intraday_momentum
+26. momentum_5
+27. opening_gap
+28. price_acceleration
+29. price_volatility
+30. price_vs_20day_high
+31. price_vs_20day_low
+32. volatility_rank
+33. volume_MA_20
+34. volume_change_pct
+35. volume_ratio

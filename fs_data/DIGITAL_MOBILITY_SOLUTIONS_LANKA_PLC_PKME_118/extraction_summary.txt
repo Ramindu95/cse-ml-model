@@ -2,15 +2,15 @@ Financial Data Extraction Summary
 ==================================
 
 Company: DIGITAL MOBILITY SOLUTIONS LANKA PLC (PKME)
-Report Type: Interim
-Report Date: 31 December 2024
-Extraction Confidence: 0.67
-Document Hash: None
+Report Type: None
+Report Date: None
+Extraction Confidence: 0.85
+Document Hash: placeholder_hash
 
 Financial Metrics:
-- Revenue: 1.524047108327641e+30
-- Profit For Period: 2.759412116037785e+26
-- Operating Profit: None
+- Revenue: 1524047000.0
+- Profit For Period: 275941000.0
+- Operating Profit: 429603000.0
 - Total Assets: None
 - Total Liabilities: None
 - Total Equity: None
@@ -18,4 +18,19 @@ Financial Metrics:
 - Gross Profit: None
 - Ebitda: None
 - Net Cash Flow: None
+- Profit Before Tax: None
+- Income Tax Expense: None
+- Other Income: 13368000.0
+- Administrative Expenses: -542868000.0
+- Distribution Expenses: -100012000.0
+- Total Comprehensive Income: None
+- Cash Generated From Operations: None
+- Property Plant Equipment Assets: None
+- Intangible Assets Balance: None
+- Inventories Balance: None
+- Trade And Other Receivables Balance: None
+- Cash And Cash Equivalents Balance: None
+- Trade Payables Balance: None
+- Income Tax Payable Balance: None
+- Net Assets Per Share: None
 

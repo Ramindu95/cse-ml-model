@@ -2,132 +2,166 @@
   "company_name": "HAYLEYS FABRIC PLC",
   "company_symbol": "MGT",
   "report_type": "Interim",
-  "report_date": "30 June 2025",
-  "currency_unit": "LKR",
+  "report_date": "2025-06-30 00:00:00",
+  "currency_unit": "Rs.",
   "scale_factor": 1.0,
   "financial_metrics": {
-    "revenue": -3.4461631422079804e+26,
-    "profit_for_period": null,
-    "operating_profit": null,
-    "total_assets": 1.1832517012430872e+33,
+    "revenue": null,
+    "profit_for_period": 7036277.0,
+    "operating_profit": 4357091.0,
+    "total_assets": 118325170.0,
     "total_liabilities": null,
-    "total_equity": null,
+    "total_equity": 38699591.0,
     "basic_eps": null,
-    "gross_profit": -5.90434482926473e+21,
+    "gross_profit": 5904344.0,
     "ebitda": null,
-    "net_cash_flow": null
+    "net_cash_flow": null,
+    "profit_before_tax": 1955238.0,
+    "income_tax_expense": -660483.0,
+    "other_income": 121330.0,
+    "administrative_expenses": -3254514.0,
+    "distribution_expenses": -168875.0,
+    "total_comprehensive_income": 1294755.0,
+    "cash_generated_from_operations": null,
+    "property_plant_equipment_assets": null,
+    "intangible_assets_balance": 423005.0,
+    "inventories_balance": 30690409.0,
+    "trade_and_other_receivables_balance": -3459292.0,
+    "cash_and_cash_equivalents_balance": 7402240.0,
+    "trade_payables_balance": 24421327.0,
+    "income_tax_payable_balance": null,
+    "net_assets_per_share": null
   },
   "shareholders": [],
   "directors": [
     {
       "name": "Standard Chartered Bank PLC",
+      "role": "Director"
+    },
+    {
+      "name": "A.M. Pandithage",
       "role": "Chairman"
     },
     {
       "name": "Hongkong and Shanghai Banking Corporation",
-      "role": "Managing Director"
+      "role": "Director"
+    },
+    {
+      "name": "E.R.P. Goonetilleke Managing",
+      "role": "Director"
     },
     {
       "name": "Hatton National Bank PLC",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Mr. S.C. Ganegoda",
-      "role": null
+      "name": "S.C. Ganegoda",
+      "role": "Director"
     },
     {
       "name": "Bank of Ceylon",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Mr. H. Somashantha",
-      "role": null
+      "name": "H. Somashantha",
+      "role": "Director"
     },
     {
       "name": "National Development Bank PLC",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Ms. K.A.D.B. Perera",
-      "role": null
+      "name": "K.A.D.B. Perera",
+      "role": "Director"
     },
     {
       "name": "Sampath Bank PLC",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Mr. N. Ekanayake",
-      "role": null
+      "name": "N. Ekanayake",
+      "role": "Director"
     },
     {
-      "name": "Citibank",
-      "role": null
+      "name": "Citibank N.A.",
+      "role": "Director"
     },
     {
-      "name": "Mr. M.N.R. Fernando",
-      "role": null
+      "name": "M.N.R. Fernando",
+      "role": "Director"
     },
     {
       "name": "Seylan Bank PLC",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Mr. I.B.R.R. Bandara",
-      "role": null
+      "name": "I.B.R.R. Bandara",
+      "role": "Director"
     },
     {
       "name": "Pan Asia Banking Corporation PLC",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Mr. M.H. Jayasinghe",
-      "role": null
+      "name": "M.H. Jayasinghe",
+      "role": "Director"
     },
     {
-      "name": "People's Bank",
-      "role": null
+      "name": "Peoples Bank",
+      "role": "Director"
     },
     {
-      "name": "Mr. K.P.C.P.K. Pathirana",
-      "role": null
+      "name": "K.P.C.P.K. Pathirana",
+      "role": "Director"
     },
     {
       "name": "DFCC Bank",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Mr. J.A.N.R. Adhihetty",
-      "role": null
+      "name": "J.A.N.R. Adhihetty",
+      "role": "Director"
     },
     {
       "name": "Union Bank of Colombo PLC",
-      "role": null
+      "role": "Director"
     },
     {
-      "name": "Mr. T.A.B. Speldewinde",
-      "role": null
+      "name": "T.A.B. Speldewinde",
+      "role": "Director"
     },
     {
       "name": "Nations Trust Bank",
-      "role": null
+      "role": "Director"
     },
     {
       "name": "Bank of China",
+      "role": "Director"
+    },
+    {
+      "name": "AUDIT COMMITTEE",
       "role": null
     },
     {
       "name": "Commercial Bank of Ceylon PLC",
+      "role": "Director"
+    },
+    {
+      "name": "N. Ekanayake",
       "role": "Chairman"
     },
     {
-      "name": "Mr. M.N.R. Fernando",
-      "role": null
+      "name": "M.N.R. Fernando",
+      "role": "Director"
     }
   ],
-  "audit_status": "Audited",
+  "audit_status": "Unknown",
   "errata_notice": null,
   "contingent_liabilities": null,
   "events_after_reporting": null,
-  "extraction_confidence": 0.5833333333333334,
-  "document_hash": null
+  "extraction_confidence": 0.85,
+  "document_hash": "placeholder_hash",
+  "extraction_method": "Rule-based",
+  "processing_time": null,
+  "report_filename": "403_1754046922052.pdf"
 }

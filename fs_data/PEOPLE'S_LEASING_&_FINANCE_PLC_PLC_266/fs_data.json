@@ -2,27 +2,1342 @@
   "company_name": "PEOPLE'S LEASING & FINANCE PLC",
   "company_symbol": "PLC",
   "report_type": "Interim",
-  "report_date": "01 April 2024",
-  "currency_unit": "LKR",
+  "report_date": "2025-06-30 00:00:00",
+  "currency_unit": "Rs.",
   "scale_factor": 1.0,
   "financial_metrics": {
-    "revenue": -5.2891014600013454e+35,
-    "profit_for_period": -2.482385325292863e+33,
-    "operating_profit": null,
-    "total_assets": 1.5918636171553956e+39,
+    "revenue": 52891014.0,
+    "profit_for_period": 24823853.0,
+    "operating_profit": 40379609.0,
+    "total_assets": 1591863617.0,
     "total_liabilities": null,
-    "total_equity": 1.1068903221135466e+39,
+    "total_equity": 1106890322.0,
     "basic_eps": null,
-    "gross_profit": -2.299506425488345e+35,
+    "gross_profit": 22995064.0,
     "ebitda": null,
-    "net_cash_flow": null
+    "net_cash_flow": null,
+    "profit_before_tax": 36241789.0,
+    "income_tax_expense": -11417936.0,
+    "other_income": 22107884.0,
+    "administrative_expenses": -8248785.0,
+    "distribution_expenses": null,
+    "total_comprehensive_income": 24823853.0,
+    "cash_generated_from_operations": 35950568.0,
+    "property_plant_equipment_assets": -61500.0,
+    "intangible_assets_balance": null,
+    "inventories_balance": 7694573.0,
+    "trade_and_other_receivables_balance": 140186301.0,
+    "cash_and_cash_equivalents_balance": 92598162.0,
+    "trade_payables_balance": 96653520.0,
+    "income_tax_payable_balance": null,
+    "net_assets_per_share": null
   },
   "shareholders": [],
-  "directors": [],
-  "audit_status": "Audited",
+  "directors": [
+    {
+      "name": "is responsible for the preparation and presentation of these financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Signed for and on behalf of the Board by",
+      "role": "Director"
+    },
+    {
+      "name": "Sgd",
+      "role": null
+    },
+    {
+      "name": "Sgd",
+      "role": null
+    },
+    {
+      "name": "A.M. Weerasinghe",
+      "role": "Director"
+    },
+    {
+      "name": "L.P.B. Talwatte",
+      "role": "Director"
+    },
+    {
+      "name": "Managing",
+      "role": "Director"
+    },
+    {
+      "name": "July",
+      "role": "Director"
+    },
+    {
+      "name": "LANKA CERAMIC PLC",
+      "role": null
+    },
+    {
+      "name": "Statement of Financial Position",
+      "role": "Director"
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "..",
+      "role": null
+    },
+    {
+      "name": "..",
+      "role": null
+    },
+    {
+      "name": "..",
+      "role": null
+    },
+    {
+      "name": "..",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Revenue",
+      "role": null
+    },
+    {
+      "name": "Cost of sales",
+      "role": "Director"
+    },
+    {
+      "name": "Gross profit",
+      "role": "Director"
+    },
+    {
+      "name": "Other income",
+      "role": "Director"
+    },
+    {
+      "name": "Distribution cost",
+      "role": "Director"
+    },
+    {
+      "name": "Administrative expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Finance cost",
+      "role": "Director"
+    },
+    {
+      "name": "Finance income",
+      "role": "Director"
+    },
+    {
+      "name": "Profit before tax",
+      "role": "Director"
+    },
+    {
+      "name": "Income tax expense",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred tax reversal on land disposal",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Earnings Per Share   Basic   Rs.",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Quarter",
+      "role": null
+    },
+    {
+      "name": "Quarter",
+      "role": null
+    },
+    {
+      "name": "Lanka Ceramic PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Statement of Profit or Loss and Other Comprehensive Income",
+      "role": "Director"
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Stated",
+      "role": null
+    },
+    {
+      "name": "Revaluation",
+      "role": null
+    },
+    {
+      "name": "Retained",
+      "role": null
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "capital",
+      "role": null
+    },
+    {
+      "name": "reserve",
+      "role": null
+    },
+    {
+      "name": "earnings",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Balance as at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Transfer from revaluation reserve on disposal of land",
+      "role": "Director"
+    },
+    {
+      "name": "Final dividend",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at th June",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Final dividend",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at th June",
+      "role": "Director"
+    },
+    {
+      "name": "Stated",
+      "role": null
+    },
+    {
+      "name": "Revaluation",
+      "role": null
+    },
+    {
+      "name": "Fair value",
+      "role": "Director"
+    },
+    {
+      "name": "Retained",
+      "role": null
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "capital",
+      "role": null
+    },
+    {
+      "name": "reserve",
+      "role": null
+    },
+    {
+      "name": "reserve",
+      "role": null
+    },
+    {
+      "name": "earnings",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Balance as at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Transfer from revaluation reserve on disposal of land",
+      "role": "Director"
+    },
+    {
+      "name": "Final dividend",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at th June",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at st April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Final dividend",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at th June",
+      "role": "Director"
+    },
+    {
+      "name": "Statement of Changes in Equity",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Lanka Ceramic PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Statement of Changes in Equity",
+      "role": "Director"
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "For the period ended",
+      "role": "Director"
+    },
+    {
+      "name": "..",
+      "role": null
+    },
+    {
+      "name": "..",
+      "role": null
+    },
+    {
+      "name": "..",
+      "role": null
+    },
+    {
+      "name": "..",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "CASH FLOWS FROM OPERATING ACTIVITIES",
+      "role": null
+    },
+    {
+      "name": "Profitloss before income tax",
+      "role": "Director"
+    },
+    {
+      "name": "Adjustments for",
+      "role": "Director"
+    },
+    {
+      "name": "Depreciation  amortization",
+      "role": "Director"
+    },
+    {
+      "name": "Finance cost",
+      "role": "Director"
+    },
+    {
+      "name": "Profit loss on sale of property plant  equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred income",
+      "role": "Director"
+    },
+    {
+      "name": "Interest income",
+      "role": "Director"
+    },
+    {
+      "name": "Provision for retirement benefit obligations",
+      "role": "Director"
+    },
+    {
+      "name": "Operating profit before working capital changes",
+      "role": "Director"
+    },
+    {
+      "name": "Increasedecrease in inventories",
+      "role": "Director"
+    },
+    {
+      "name": "Increasedecrease in trade and other receivables",
+      "role": "Director"
+    },
+    {
+      "name": "Increasedecrease in trade and other payables",
+      "role": "Director"
+    },
+    {
+      "name": "Cash generated from operations",
+      "role": "Director"
+    },
+    {
+      "name": "Finance cost paid",
+      "role": "Director"
+    },
+    {
+      "name": "Retirement benefit costs paid",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash from used in  operating activities",
+      "role": "Director"
+    },
+    {
+      "name": "CASH FLOWS FROM USED IN  INVESTING ACTIVITIES",
+      "role": null
+    },
+    {
+      "name": "Acquisition of property plant  equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Interest Income",
+      "role": "Director"
+    },
+    {
+      "name": "Proceeds from sale of propertyplant  equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash flows from  used in investing activities",
+      "role": "Director"
+    },
+    {
+      "name": "CASH FLOWS FROM FINANCING ACTIVITIES",
+      "role": null
+    },
+    {
+      "name": "Interim dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "Repayment of interest bearing borrowings",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash flows from financing activities",
+      "role": "Director"
+    },
+    {
+      "name": "Net increase  decrease in cash and cash equivalents",
+      "role": "Director"
+    },
+    {
+      "name": "MOVEMENT IN CASH  CASH EQUIVALENTS",
+      "role": null
+    },
+    {
+      "name": "Cash and cash equivalents at the beginning of the period",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and cash equivalents at the end of the period",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Lanka Ceramic PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Cash Flow Statement",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "Notes",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ". Basis of Preparation",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Bank overdrafts",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Events occurring after the Balance Sheet date",
+      "role": "Director"
+    },
+    {
+      "name": "There have been no material events occurring after the Balance Sheet date that require adjustments or disclosure to these",
+      "role": "Director"
+    },
+    {
+      "name": "financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "There have been no significant changes in contingent liabilities other than which were disclosed in the annual report for the year",
+      "role": "Director"
+    },
+    {
+      "name": "ended st March .",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and cash equivalents for the cash flow purposes",
+      "role": "Director"
+    },
+    {
+      "name": "Fair value measurement and related fair value disclosures",
+      "role": "Director"
+    },
+    {
+      "name": "The fair values of all the financial assets and financial liabilities recognized during the period were not materially different from the",
+      "role": "Director"
+    },
+    {
+      "name": "transaction prices at the date of initial recognition. There were no transfers between Level  and Level  and no transfers into or",
+      "role": "Director"
+    },
+    {
+      "name": "out of Level  categories as per the fair value hierarchy during the period. Further carrying values of financial assets and financial",
+      "role": "Director"
+    },
+    {
+      "name": "liabilities as at the end of the reporting period were assumed that the respective carrying amounts approximate their fair values.",
+      "role": "Director"
+    },
+    {
+      "name": "The Companys parent undertaking is Royal Ceramics Lanka PLC and ultimate parent undertaking is Vallibel One PLC.",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and cash equivalents for the cash flow purposes.",
+      "role": "Director"
+    },
+    {
+      "name": "CompanyGroup",
+      "role": null
+    },
+    {
+      "name": "As at th June",
+      "role": "Director"
+    },
+    {
+      "name": "As at th June",
+      "role": "Director"
+    },
+    {
+      "name": "Favourable cash and cash equivalent balances.",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and bank balances",
+      "role": "Director"
+    },
+    {
+      "name": "Unfavourable cash and cash equivalent balances.",
+      "role": "Director"
+    },
+    {
+      "name": "The presentation and classification of the financial statements of the previous period have been amended where relevant for",
+      "role": "Director"
+    },
+    {
+      "name": "better presentation and to be comparable with those of the current period.",
+      "role": "Director"
+    },
+    {
+      "name": "Number of fully paid ordinary shares as at th June  is  st March   .",
+      "role": "Director"
+    },
+    {
+      "name": "The principal activity of LC Plantation Projects Limited is holding of investments. The Company was incorporated on th March",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "The financial statements of the Company and the Group have been prepared in accordance with Sri Lanka Accounting Standards",
+      "role": "Director"
+    },
+    {
+      "name": "comprising of SLFRS and LKAS as issued by the Institute of Chartered Accountants of Sri Lanka.",
+      "role": "Director"
+    },
+    {
+      "name": "The financial statements of the Company and the Group have been prepared on a historical cost basis other than land and",
+      "role": "Director"
+    },
+    {
+      "name": "buildings that have been measured at fair value.",
+      "role": "Director"
+    },
+    {
+      "name": "Significant Accounting Policies",
+      "role": "Director"
+    },
+    {
+      "name": "The same accounting policies as disclosed in the  annual report for the year ended st March  have been followed in the",
+      "role": "Director"
+    },
+    {
+      "name": "preparation of interim financial statements and are in compliance with LKAS   Interim Financial Reporting.",
+      "role": "Director"
+    },
+    {
+      "name": "The consolidated financial statements of the Group comprise of Lanka Ceramic PLC Parent Company and its fully owned",
+      "role": "Director"
+    },
+    {
+      "name": "subsidiary LC Plantation Projects Limited.",
+      "role": "Director"
+    },
+    {
+      "name": "Figures for the period ended th June  are provisional and subject to audit.",
+      "role": "Director"
+    },
+    {
+      "name": "Corporate Information",
+      "role": "Director"
+    },
+    {
+      "name": "Lanka Ceramic PLC the Company is a public limited liability Company incorporated and domiciled in Sri Lanka and listed on",
+      "role": "Director"
+    },
+    {
+      "name": "the Colombo Stock Exchange. The registered office of the Company is located at No. Narahenpita Road Nawala.",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": ". Share Information",
+      "role": "Director"
+    },
+    {
+      "name": "Market price of the shares",
+      "role": "Director"
+    },
+    {
+      "name": "Price Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Price Rs.",
+      "role": "Director"
+    },
+    {
+      "name": "Highest",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Lowest",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Last Traded",
+      "role": "Director"
+    },
+    {
+      "name": ".              .",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Shareholder",
+      "role": null
+    },
+    {
+      "name": "No. of shares",
+      "role": "Director"
+    },
+    {
+      "name": "S.M. Liyanage",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Shareholder",
+      "role": null
+    },
+    {
+      "name": "No. of shares",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "R.S. Ingram",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "M. Balasubramaniam",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "R. Maheswaran Deceased",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Miss. M.P. Radhakrishnan",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Miss. A. Radhakrishnan",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Arunodhaya Industries Pvt Limited",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Arunodhaya Pvt Limited",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "A. Kailasapillai",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "U.I. Suriyabandara",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Z.G. Carimjee",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "U.C. Bandaranayake and Mrs. L. Bandaranayake",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "J.D. Vithanage  Mrs. R.P. Priyadarshani",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "S. Subramaniam",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "K.A.U. Kodithuwakku",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "DFCC Bank PLC P. Gagendra",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "K. Veerabagu",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "EST of LAT D.M.G. Perera",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "J. Aloysius",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "N. Mohamed Mackeen",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Sub Total",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Other Shareholders",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Grand  Total",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Twenty five major shareholders as at th June",
+      "role": "Director"
+    },
+    {
+      "name": "Royal Ceramics Lanka PLC",
+      "role": "Director"
+    },
+    {
+      "name": "A.A. Page",
+      "role": "Director"
+    },
+    {
+      "name": "Bimputh Finance PLC",
+      "role": "Director"
+    },
+    {
+      "name": "TRL Holdings Pvt Limited",
+      "role": "Director"
+    },
+    {
+      "name": "Vyjayanthi  Company Limited",
+      "role": "Director"
+    },
+    {
+      "name": "Arunodhaya Investments Pvt Limited",
+      "role": "Director"
+    },
+    {
+      "name": "The Percentage of shares held by the public as at th June  . comprising of  shareholders.",
+      "role": "Director"
+    },
+    {
+      "name": "The float adjusted market capitalization as at th June  is Rs. .",
+      "role": "Director"
+    },
+    {
+      "name": "Ordinary voting shares of Lanka Ceramic PLC have been transferred from the Main Board to Diri Savi Board with effect from",
+      "role": "Director"
+    },
+    {
+      "name": "nd July .",
+      "role": "Director"
+    },
+    {
+      "name": "The Float adjusted market capitalization of the Company falls under Option  of Rule .. i b of the listing rules of the",
+      "role": "Director"
+    },
+    {
+      "name": "Colombo Stock Exchange and the Company has complied with the minimum public holding requirement applicable under the",
+      "role": "Director"
+    },
+    {
+      "name": "said option.",
+      "role": "Director"
+    },
+    {
+      "name": "K.D. Weerasinghe",
+      "role": "Director"
+    },
+    {
+      "name": "st",
+      "role": "Director"
+    },
+    {
+      "name": "Quarter",
+      "role": null
+    },
+    {
+      "name": "st",
+      "role": "Director"
+    },
+    {
+      "name": "Quarter",
+      "role": null
+    },
+    {
+      "name": "Directors shareholding as at th June",
+      "role": "Director"
+    },
+    {
+      "name": "A.M. Weerasinghe",
+      "role": "Director"
+    },
+    {
+      "name": "L.P.B Talwatte",
+      "role": "Director"
+    },
+    {
+      "name": "T.G. Thoradeniya",
+      "role": "Director"
+    },
+    {
+      "name": "A.M.L. Page",
+      "role": "Director"
+    },
+    {
+      "name": "J.D.N. Kekulawala",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "CORPORATE INFORMATION",
+      "role": null
+    },
+    {
+      "name": "Name of the Company",
+      "role": "Director"
+    },
+    {
+      "name": "Lanka Ceramic PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Legal Form",
+      "role": "Director"
+    },
+    {
+      "name": "A Public Quoted Company with Limited Liability Incorporated under the provision of",
+      "role": "Director"
+    },
+    {
+      "name": "Companies Act No  of  and reregistered under the Companies Act No.  of .",
+      "role": "Director"
+    },
+    {
+      "name": "Company Registration Number",
+      "role": "Director"
+    },
+    {
+      "name": "PQ",
+      "role": null
+    },
+    {
+      "name": "Board of Directors",
+      "role": "Director"
+    },
+    {
+      "name": "A.M. Weerasinghe",
+      "role": "Chairman"
+    },
+    {
+      "name": "L.P.B. Talwatte  Managing",
+      "role": "Director"
+    },
+    {
+      "name": "T.G. Thoradeniya",
+      "role": "Director"
+    },
+    {
+      "name": "A.M.L. Page",
+      "role": "Director"
+    },
+    {
+      "name": "J.D.N. Kekulawala",
+      "role": "Director"
+    },
+    {
+      "name": "S.M. Liyanage",
+      "role": "Director"
+    },
+    {
+      "name": "K.D. Weerasinghe",
+      "role": "Director"
+    },
+    {
+      "name": "Company Secretaries",
+      "role": "Director"
+    },
+    {
+      "name": "P W Corporate Secretarial Pvt Ltd",
+      "role": "Director"
+    },
+    {
+      "name": "Kynsey Road Colombo",
+      "role": "Director"
+    },
+    {
+      "name": "Tel",
+      "role": "Director"
+    },
+    {
+      "name": "Company Registrars",
+      "role": "Director"
+    },
+    {
+      "name": "Central Depository Systems Pvt Limited",
+      "role": "Director"
+    },
+    {
+      "name": "Ground Floor M  M Center  Kotte Road Rajagiriya.",
+      "role": "Director"
+    },
+    {
+      "name": "Tel    Fax    Web www.cds.lk",
+      "role": "Director"
+    },
+    {
+      "name": "Registered Office",
+      "role": "Director"
+    },
+    {
+      "name": "No.  Narahenpita Road Nawala",
+      "role": "Director"
+    },
+    {
+      "name": "Telephone",
+      "role": "Director"
+    },
+    {
+      "name": "Facsimile",
+      "role": "Director"
+    }
+  ],
+  "audit_status": "Unknown",
   "errata_notice": null,
-  "contingent_liabilities": "other than which were disclosed in the annual report for the year \nended 31st March 2025.\nCash and cash equivalents for the cash flow purposes\nFair value measurement and related fair value disclosures\nThe fair values of all the financial assets and financial liabilities recognized during the period were not materially different from the \ntransaction prices at the date of initial recognition. There were no transfers between Level 1 and Level 2 and no transfers into or \nout of Level 3 categories as per the fair value hierarchy, during the period. Further, carrying values of financial assets and financial \nliabilities as at the end of the reporting period were assumed that the respective carrying amounts approximate their fair values.\nThe Company's parent undertaking is Royal Ceramics Lanka PLC and ultimate parent undertaking is Vallibel One PLC.\nCash and cash equivalents for the cash flow purposes.\nCompany/Group\nAs at 30th June \n2025\nAs at 30th June \n2024\nFavourable cash and cash equivalent balances.\nCash and bank balances\nUnfavourable cash and cash equivalent balances.\nThe presentation and classification of the financial statements of the previous period have been amended, where relevant, for\nbetter presentation and to be comparable with those of the current period.\nNumber of fully paid ordinary shares as at 30th June 2025 is 6,000,000 (31st March 2025 - 6,000,000).\nThe principal activity of LC Plantation Projects Limited is holding of investments. The Company was incorporated on 5th March \n2021.\nThe financial statements of the Company and the Group have been prepared in accordance with Sri Lanka Accounting Standards \ncomprising of SLFRS and LKAS as issued by the Institute of Chartered Accountants of Sri Lanka. \nThe financial statements of the Company and the Group have been prepared on a historical cost basis, other than land and \nbuildings that have been measured at fair value.\nSignificant Accounting Policies\nThe same accounting policies as disclosed in the  annual report for the year ended 31st March 2025 have been followed in the  \npreparation of interim financial statements and are in compliance with LKAS 34 - Interim Financial Reporting. \nThe consolidated financial statements of the Group comprise of Lanka Ceramic PLC (Parent Company) and its fully owned \nsubsidiary; LC Plantation Projects Limited.\nFigures for the period ended 30th June 2025 are provisional and subject to audit.\nCorporate Information\nLanka Ceramic PLC (\"the Company\") is a public limited liability Company incorporated and domiciled in Sri Lanka and listed on\nthe Colombo Stock Exchange. The registered office of the Company is located at No.23, Narahenpita Road, Nawala.",
+  "contingent_liabilities": null,
   "events_after_reporting": null,
-  "extraction_confidence": 0.6666666666666666,
-  "document_hash": null
+  "extraction_confidence": 0.85,
+  "document_hash": "placeholder_hash",
+  "extraction_method": "Rule-based",
+  "processing_time": null,
+  "report_filename": "676_1754041198437.pdf"
 }

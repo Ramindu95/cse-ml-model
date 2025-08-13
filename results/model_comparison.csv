@@ -1,4 +1,4 @@
 Model,CV F1 Score,Test Accuracy,Test F1 Score
-gradient_boosting,0.5983,0.6316,0.6159
-logistic_regression,0.5957,0.5731,0.5984
-random_forest,0.6437,0.5205,0.5408
+gradient_boosting,0.4327,0.4735,0.4711
+random_forest,0.4487,0.4611,0.4620
+logistic_regression,0.4077,0.4541,0.4531

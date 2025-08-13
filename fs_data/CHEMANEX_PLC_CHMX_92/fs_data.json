@@ -2,52 +2,66 @@
   "company_name": "CHEMANEX PLC",
   "company_symbol": "CHMX",
   "report_type": "Interim",
-  "report_date": "01 April 2024",
-  "currency_unit": "LKR",
-  "scale_factor": 1.0,
+  "report_date": "2025-06-30 00:00:00",
+  "currency_unit": "Rs. 1000",
+  "scale_factor": 1000.0,
   "financial_metrics": {
-    "revenue": 122944517343232.0,
-    "profit_for_period": -318814254525.0,
-    "operating_profit": null,
-    "total_assets": 4.840965405873445e+41,
-    "total_liabilities": 4.6644629364544156e+35,
-    "total_equity": 4.37451937650894e+41,
-    "basic_eps": null,
-    "gross_profit": 555614936613.0,
+    "revenue": 1000.0,
+    "profit_for_period": 31881000.0,
+    "operating_profit": 18553000.0,
+    "total_assets": 4840965000.0,
+    "total_liabilities": 466446000.0,
+    "total_equity": 4374519000.0,
+    "basic_eps": 2029.9999999999998,
+    "gross_profit": 55561000.0,
     "ebitda": null,
-    "net_cash_flow": null
+    "net_cash_flow": -66872000.0,
+    "profit_before_tax": 37101000.0,
+    "income_tax_expense": -5220000.0,
+    "other_income": 2000.0,
+    "administrative_expenses": -13511000.0,
+    "distribution_expenses": -26642000.0,
+    "total_comprehensive_income": 375111000.0,
+    "cash_generated_from_operations": -58400000.0,
+    "property_plant_equipment_assets": 12518000.0,
+    "intangible_assets_balance": 486000.0,
+    "inventories_balance": 204948000.0,
+    "trade_and_other_receivables_balance": 248886000.0,
+    "cash_and_cash_equivalents_balance": 4000.0,
+    "trade_payables_balance": 18721000.0,
+    "income_tax_payable_balance": 26786000.0,
+    "net_assets_per_share": null
   },
   "shareholders": [],
   "directors": [
     {
-      "name": "P R Saldin - Chairman",
-      "role": null
+      "name": "P R Saldin",
+      "role": "Chairman"
     },
     {
       "name": "R P Bandaranayake",
-      "role": null
+      "role": "Director"
     },
     {
       "name": "S A B Ekanayake",
-      "role": null
+      "role": "Director"
     },
     {
       "name": "T K D A P Samarasinghe",
-      "role": null
+      "role": "Director"
     },
     {
       "name": "P A Seresinhe",
-      "role": "Company Secretary"
-    },
-    {
-      "name": "S A B P W M R R W T Wegodapola",
-      "role": null
+      "role": "Director"
     }
   ],
   "audit_status": "Unknown",
   "errata_notice": null,
-  "contingent_liabilities": "as at the reporting date, which require adjustment and/or disclosure in the Financial Statements.\nAs the float adjusted market capitalisation is below Rs.2.5 Bn, Chemanex PLC complies under option 5 with the minimum public holding \nrequirement.\nBased on the fair valuation methodology, other non- current equity investment at fair value though OCI amounting to Rs.386.47 Mn is \ncategorised under \"Level 3\" of the \"fair value measurement hierarchy\". Fair value would not significantly vary if one or more of the inputs were \nchanged.\nAs at 30 June 2025, all the listed equity instruments amounting to Rs.3,823.28Mn were measured based on the active market prices as at 30 \nJune 2025 and categorised under Level 1 of the fair value hierarchy.\nThe accounting policies followed in the preparation of the Interim Statement of Comprehensive Income  for the period ended  30 June 2025 and \nthe Interim Statement of Financial Position as at 30 June 2025 unless otherwise stated are consistent with those followed in the preparation of \nFinancial Statements for the year ended 31 March 2025 and are in compliance with Sri Lanka Accounting Standard 34 - Interim Financial \nReporting. The presentation and classification of the Financial Statements of the previous period have been amended, where relevant, for better \npresentation and to be comparable with those of the current period. \nCHEMANEX PLC",
+  "contingent_liabilities": "There are no material contingent liabilities as at the reporting date, which require adjustment and/or disclosure in the Financial Statements.",
   "events_after_reporting": null,
-  "extraction_confidence": 0.6666666666666666,
-  "document_hash": null
+  "extraction_confidence": 0.85,
+  "document_hash": "placeholder_hash",
+  "extraction_method": "Rule-based",
+  "processing_time": null,
+  "report_filename": "492_1754048774591.06.2025.pdf"
 }

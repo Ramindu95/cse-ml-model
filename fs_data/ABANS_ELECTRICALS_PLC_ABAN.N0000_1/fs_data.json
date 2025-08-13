@@ -1,57 +1,359 @@
 {
   "company_name": "ABANS ELECTRICALS PLC",
   "company_symbol": "ABAN.N0000",
-  "report_type": "Interim",
-  "report_date": "1 April 2023",
-  "currency_unit": "LKR",
+  "report_type": null,
+  "report_date": null,
+  "currency_unit": "Rs.",
   "scale_factor": 1.0,
   "financial_metrics": {
-    "revenue": null,
+    "revenue": 3709.67,
     "profit_for_period": null,
     "operating_profit": null,
-    "total_assets": 5.2792415575148265e+19,
-    "total_liabilities": 2.6644009182881812e+19,
-    "total_equity": 2.6148406382266454e+19,
+    "total_assets": 5279241557.0,
+    "total_liabilities": 2664400918.0,
+    "total_equity": 2614840638.0,
     "basic_eps": null,
-    "gross_profit": null,
+    "gross_profit": 413751071.0,
     "ebitda": null,
-    "net_cash_flow": null
+    "net_cash_flow": null,
+    "profit_before_tax": null,
+    "income_tax_expense": null,
+    "other_income": 24370336.0,
+    "administrative_expenses": -159346516.0,
+    "distribution_expenses": -95054652.0,
+    "total_comprehensive_income": null,
+    "cash_generated_from_operations": null,
+    "property_plant_equipment_assets": -7070803.0,
+    "intangible_assets_balance": null,
+    "inventories_balance": 1543866381.0,
+    "trade_and_other_receivables_balance": 753052271.0,
+    "cash_and_cash_equivalents_balance": -52347631.0,
+    "trade_payables_balance": 1529167382.0,
+    "income_tax_payable_balance": null,
+    "net_assets_per_share": 511.65
   },
   "shareholders": [],
   "directors": [
     {
-      "name": "Shareholding as at",
+      "name": "Shareholding as at ..",
+      "role": "Director"
+    },
+    {
+      "name": "Name",
       "role": null
     },
     {
-      "name": "Mrs. Aban Pestonjee",
-      "role": "Non-Executive Non-Independent Director"
+      "name": "Position",
+      "role": null
     },
     {
-      "name": "Mrs. Saroshi Dubash",
-      "role": "Executive Director"
+      "name": "No of Shares",
+      "role": "Director"
     },
     {
-      "name": "Mr. Kumar Se Silva",
-      "role": "Independent Director"
+      "name": "Aban Pestonjee",
+      "role": "Director"
     },
     {
-      "name": "Mr. D M R Phillips",
-      "role": "Independent Director"
+      "name": "NonExecutive NonIndependent Chairperson",
+      "role": "Director"
     },
     {
-      "name": "Mr. Rajaratnam Selvaskandan",
-      "role": "Senior Non-Executive Independent Director"
+      "name": "Saroshi Dubash",
+      "role": "Director"
+    },
+    {
+      "name": "Executive Managing",
+      "role": "Director"
+    },
+    {
+      "name": "Kumar Se Silva",
+      "role": "Director"
+    },
+    {
+      "name": "NonExecutive Independent",
+      "role": "Director"
+    },
+    {
+      "name": "NIL",
+      "role": null
+    },
+    {
+      "name": "D M R Phillips",
+      "role": "Director"
+    },
+    {
+      "name": "NonExecutive Independent",
+      "role": "Director"
+    },
+    {
+      "name": "NIL",
+      "role": null
+    },
+    {
+      "name": "Rajaratnam Selvaskandan",
+      "role": "Director"
+    },
+    {
+      "name": "Senior NonExecutive Independent",
+      "role": "Director"
+    },
+    {
+      "name": "NIL",
+      "role": null
     },
     {
       "name": "Total Number of Public",
+      "role": "Director"
+    },
+    {
+      "name": "Shareholders",
       "role": null
+    },
+    {
+      "name": "Public Holding Percentage",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Float Adjusted Market",
+      "role": "Director"
+    },
+    {
+      "name": "Capitalization",
+      "role": null
+    },
+    {
+      "name": "Rs.",
+      "role": null
+    },
+    {
+      "name": "The Company has complied with the minimum public holding requirement under Option .",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "ABANS ELECTRICALS PLC",
+      "role": null
+    },
+    {
+      "name": "ADDITIONAL NOTES",
+      "role": null
+    },
+    {
+      "name": "Largest Shareholders as at ..",
+      "role": "Director"
+    },
+    {
+      "name": "Name",
+      "role": null
+    },
+    {
+      "name": "No. of Shares",
+      "role": "Director"
+    },
+    {
+      "name": "ABANS PLC",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "S. DUBASH",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "R. PESTONJEE",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "A. PESTONJEE",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "B. PESTONJEE",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "A.J.M. JINADASA",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "PEOPLES LEASING  FINANCE PLCMR. K.K.SHUJEEVAN",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "CLEANTECH PVT LTD",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "K. POOLOGASUNDRAM",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "SEYLAN BANK PLCKARAGODA LOKU GAMAGE UDAYANANDA",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "S. ABISHEK",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "G.C. GOONETILLEKE",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "B.S. RASANAYAGAM",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "P. TILLAKARATNE",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "A. SITHAMPALAM",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "TRANZ DOMINIONL.L.C.",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "HATTON NATIONAL BANK PLCHENNASY GEETH BALASURIYA",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "MR T. LIYANAGE",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "J.D. JORGE CALDERON",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "G.C.W. DE SILVADECEASED",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Sgd Mrs. Aban Pestonjee",
+      "role": "Director"
+    },
+    {
+      "name": "Sgd Dr. Saroshi Dubash",
+      "role": "Director"
+    },
+    {
+      "name": "Chairperson",
+      "role": null
+    },
+    {
+      "name": "Managing",
+      "role": "Director"
+    },
+    {
+      "name": "Date   th February",
+      "role": "Director"
     }
   ],
   "audit_status": "Unknown",
   "errata_notice": null,
-  "contingent_liabilities": "Letter of credit opened with banks favoring suppliers  \nLKR 519.13 Million \n \n \nQtr Ended \nQtr Ended \nYear Ended \n \n31.12.2024 \n31.12.2023 \n31.03.2024 \n \nRs. \nRs. \nRs.",
+  "contingent_liabilities": null,
   "events_after_reporting": null,
-  "extraction_confidence": 0.5,
-  "document_hash": null
+  "extraction_confidence": 0.85,
+  "document_hash": "placeholder_hash",
+  "extraction_method": "Rule-based",
+  "processing_time": null,
+  "report_filename": "642_1739527719477.12.2024.pdf"
 }

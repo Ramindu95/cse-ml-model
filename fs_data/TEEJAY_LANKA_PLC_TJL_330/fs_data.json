@@ -2,27 +2,2890 @@
   "company_name": "TEEJAY LANKA PLC",
   "company_symbol": "TJL",
   "report_type": "Interim",
-  "report_date": "31 March 2025",
-  "currency_unit": "LKR",
-  "scale_factor": 1.0,
+  "report_date": "2025-06-30 00:00:00",
+  "currency_unit": "Rs. 1000",
+  "scale_factor": 1000.0,
   "financial_metrics": {
-    "revenue": null,
-    "profit_for_period": null,
-    "operating_profit": null,
-    "total_assets": 5.611034656608135e+47,
-    "total_liabilities": 2.51234522615929e+46,
-    "total_equity": null,
+    "revenue": 30000.0,
+    "profit_for_period": -1685408000.0,
+    "operating_profit": -2650086000.0,
+    "total_assets": 56110346000.0,
+    "total_liabilities": 25123452000.0,
+    "total_equity": 56110346000.0,
     "basic_eps": null,
-    "gross_profit": null,
+    "gross_profit": 3000.0,
     "ebitda": null,
-    "net_cash_flow": null
+    "net_cash_flow": null,
+    "profit_before_tax": -2329059000.0,
+    "income_tax_expense": null,
+    "other_income": -217212000.0,
+    "administrative_expenses": 1326691000.0,
+    "distribution_expenses": 300061000.0,
+    "total_comprehensive_income": -518223000.0,
+    "cash_generated_from_operations": null,
+    "property_plant_equipment_assets": 17039916000.0,
+    "intangible_assets_balance": 393967000.0,
+    "inventories_balance": 11825473000.0,
+    "trade_and_other_receivables_balance": 11964018000.0,
+    "cash_and_cash_equivalents_balance": 5297765000.0,
+    "trade_payables_balance": 13733671000.0,
+    "income_tax_payable_balance": null,
+    "net_assets_per_share": null
   },
   "shareholders": [],
-  "directors": [],
-  "audit_status": "Audited",
+  "directors": [
+    {
+      "name": "is responsible for the preparation and presentation of these financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Sgd.",
+      "role": null
+    },
+    {
+      "name": "Sgd.",
+      "role": null
+    },
+    {
+      "name": "Ashroff Omar",
+      "role": "Director"
+    },
+    {
+      "name": "Hasitha Premaratne",
+      "role": "Director"
+    },
+    {
+      "name": "Jul",
+      "role": null
+    },
+    {
+      "name": "As at  June",
+      "role": "Director"
+    },
+    {
+      "name": "As at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Statement Of Changes In Equity  Group",
+      "role": "Director"
+    },
+    {
+      "name": "All amounts in Sri Lanka Rupees Thousands",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at  April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Final dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Interim dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Shared issued under employee share scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Balance as at  March",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at  April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Final Dividend",
+      "role": "Director"
+    },
+    {
+      "name": "Final Dividend",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Issue of shares under Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Balance as at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at  April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Final dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Employee share option scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Issue of shares under Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Balance as at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Exchange",
+      "role": null
+    },
+    {
+      "name": "equalisation",
+      "role": null
+    },
+    {
+      "name": "reserve",
+      "role": null
+    },
+    {
+      "name": "Retained",
+      "role": null
+    },
+    {
+      "name": "earnings",
+      "role": null
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "Share option",
+      "role": "Director"
+    },
+    {
+      "name": "scheme",
+      "role": null
+    },
+    {
+      "name": "Stated capital",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Statement Of Changes In Equity  Company",
+      "role": "Director"
+    },
+    {
+      "name": "All amounts in Sri Lanka Rupees Thousands",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at  April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Final dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Interim dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Shares issued under employee share scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Balance as at  March",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at  April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Final Dividend",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Issue of shares under Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Balance as at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Balance as at  April",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Total comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Final dividend paid",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Issue of shares under Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Balance as at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Total",
+      "role": null
+    },
+    {
+      "name": "Stated capital",
+      "role": "Director"
+    },
+    {
+      "name": "Exchange",
+      "role": null
+    },
+    {
+      "name": "equalisation",
+      "role": null
+    },
+    {
+      "name": "reserve",
+      "role": null
+    },
+    {
+      "name": "Retained",
+      "role": null
+    },
+    {
+      "name": "earnings",
+      "role": null
+    },
+    {
+      "name": "Share option",
+      "role": "Director"
+    },
+    {
+      "name": "scheme",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Statement Of Cash Flows",
+      "role": "Director"
+    },
+    {
+      "name": "All amounts in Sri Lanka Rupees Thousands",
+      "role": "Director"
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Cash flows from operating activities",
+      "role": "Director"
+    },
+    {
+      "name": "Cash generated from  Used in operations",
+      "role": "Director"
+    },
+    {
+      "name": "Finance income received",
+      "role": "Director"
+    },
+    {
+      "name": "Finance cost paid",
+      "role": "Director"
+    },
+    {
+      "name": "Retirement benefit obligations paid",
+      "role": "Director"
+    },
+    {
+      "name": "Tax paid",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash generatedused from operating activities",
+      "role": "Director"
+    },
+    {
+      "name": "Cash flows from investing activities",
+      "role": "Director"
+    },
+    {
+      "name": "Additions to capital work  in  progress",
+      "role": "Director"
+    },
+    {
+      "name": "Net decreaseincrease in investment in financial assets",
+      "role": "Director"
+    },
+    {
+      "name": "Net cash used in investing activities",
+      "role": "Director"
+    },
+    {
+      "name": "Cash flows from financing activities",
+      "role": "Director"
+    },
+    {
+      "name": "Issue of shares under Employee Share Option Scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Net proceeds from  settlement of borrowings",
+      "role": "Director"
+    },
+    {
+      "name": "Principal elements of lease payments",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Net cash generated from  used in financing activities",
+      "role": "Director"
+    },
+    {
+      "name": "Net increasedecrease in cash and cash equivalents",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and cash equivalents at the beginning of the period",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and cash equivalents at the end of the period",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Period ended  June",
+      "role": "Director"
+    },
+    {
+      "name": "Period ended  June",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Balance as at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Notes To The Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "In the notes all amounts are shown in Sri Lankan Rupees Thousands unless otherwise stated",
+      "role": "Director"
+    },
+    {
+      "name": ".  Corporate Information",
+      "role": "Director"
+    },
+    {
+      "name": ".  Condensed Interim Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "The financial statements for the period ended  June  includes the Company referring to Teejay Lanka PLC.",
+      "role": "Director"
+    },
+    {
+      "name": ".  Approval of Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": ".  Basis of Preparation",
+      "role": "Director"
+    },
+    {
+      "name": ".  Accounting Policies",
+      "role": "Director"
+    },
+    {
+      "name": ". Other Financial Assets",
+      "role": "Director"
+    },
+    {
+      "name": ". Contingencies Capital and Other Commitments",
+      "role": "Director"
+    },
+    {
+      "name": ".  Key Ratios of the Group and the Company",
+      "role": "Director"
+    },
+    {
+      "name": "Profitability  Ratios",
+      "role": "Director"
+    },
+    {
+      "name": "Net Profit Margin",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Asset to Turnover",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Debt  Equity",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Return on Assets ROA",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Return on Equity ROE",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Investor Ratios",
+      "role": "Director"
+    },
+    {
+      "name": "Earnings per Share EPS  LKR",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Net Asset Value per Share  LKR",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Price  Earnings Ratio PE Ratio",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Price to Book Value Ratio PBV Ratio",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "PE and PBV Ratios are based on a market price of LKR . per share closed  June",
+      "role": "Director"
+    },
+    {
+      "name": ".  Number of shares representing the entitys Stated Capital    Shares",
+      "role": "Director"
+    },
+    {
+      "name": ".  Directors Interest in Shares of the Company As at  June",
+      "role": "Director"
+    },
+    {
+      "name": "No. of Shares",
+      "role": "Director"
+    },
+    {
+      "name": "Hasitha Premaratne",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Ajit Damon Gunewardene",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".  s holding in Shares of the Company As at  June",
+      "role": "Chief Executive Officer"
+    },
+    {
+      "name": "No. of Shares",
+      "role": "Director"
+    },
+    {
+      "name": "Pubudu De Silva",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Short term deposits with original maturity of more than  months but less than one year which previously reported under cash and cash equivalents are now shown under other financial assets.",
+      "role": "Director"
+    },
+    {
+      "name": "The condensed interim financial statements of the Company have been prepared in accordance with Sri Lanka Accounting Standard  LKAS  Interim Financial Reporting . The condensed interim",
+      "role": "Director"
+    },
+    {
+      "name": "financial statements should be read in conjunction with the annual financial statements for the year ended  March .",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "The condensed interim financial statements of the Company for the  months ended  June  were authorised for issue by the Board of Directors on  July .",
+      "role": "Director"
+    },
+    {
+      "name": "Teejay Lanka PLC is a public limited company incorporated and domiciled in Sri Lanka and listed on the Colombo Stock Exchange. The address of its registered office is Block D  D Seethawaka",
+      "role": "Director"
+    },
+    {
+      "name": "Export Processing Zone Avissawella.",
+      "role": "Director"
+    },
+    {
+      "name": "Period ended  June",
+      "role": "Director"
+    },
+    {
+      "name": "Period ended  June",
+      "role": "Director"
+    },
+    {
+      "name": "There has been no significant change in the nature of the contingencies and other commitments which were disclosed in the annual report for the year ended  March .",
+      "role": "Director"
+    },
+    {
+      "name": "The condensed interim  financial statements have been prepared on a historical cost basis.",
+      "role": "Director"
+    },
+    {
+      "name": "The Company has also presented the statement of comprehensive income and the statement of financial position in United States Dollars USD since the functional currency of the enterprise is USD.",
+      "role": "Director"
+    },
+    {
+      "name": "With effect from  April  the estimated useful life of plant and machinery has been revised from  years to  years. This change has been accounted for prospectively in accordance with the",
+      "role": "Director"
+    },
+    {
+      "name": "applicable accounting standards.",
+      "role": "Director"
+    },
+    {
+      "name": "Except for this change in accounting estimate the accounting policies applied in the preparation of these interim financial statements are consistent with those applied in the previous financial year.",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Balance as at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Notes To The Financial Statements",
+      "role": "Director"
+    },
+    {
+      "name": "In the notes all amounts are shown in Sri Lankan Rupees Thousands unless otherwise stated",
+      "role": "Director"
+    },
+    {
+      "name": ".  Market Price per Share",
+      "role": "Director"
+    },
+    {
+      "name": "Highest LKR",
+      "role": "Director"
+    },
+    {
+      "name": "Lowest LKR",
+      "role": "Director"
+    },
+    {
+      "name": "Quarter ended  June",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Last traded price on  June",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".  Public Shareholding   shares  .",
+      "role": "Director"
+    },
+    {
+      "name": "The percentage of shares held by the public as at  June  was .  number of shares.",
+      "role": "Director"
+    },
+    {
+      "name": "The number of public shareholders as at  June  was  and a float adjusted market capitalisation of LKR .",
+      "role": "Director"
+    },
+    {
+      "name": "In terms of the rule ..a of the Listing Rules if the Colombo Stock Exchange the Company Qualifies under option one  of the minimum public holding requirement.",
+      "role": "Director"
+    },
+    {
+      "name": ".  List of the  Largest Shareholders",
+      "role": "Director"
+    },
+    {
+      "name": "No. of Shares",
+      "role": "Director"
+    },
+    {
+      "name": "Brandix Lanka LtdNumber  Account",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Pacific Textured Jersey Holdings Limited",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "BBH  Fidelity Funds",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Citibank Newyork SA Norges Bank Account",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "JPMCB NAFidelity Asian Values Plc",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Lynear Wealth ManagementMr.Hanif Yusoof",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Pemberton Asian Opportunities Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "J.B. Cocoshell Pvt Ltd",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "R.P. Weerasooriya",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Employees Provident Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Union Assurance PlcUniversal Life Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Citibank Hong Kong SA Hostplus Pooled Superannuation Trust",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Deutsche Bank AG Trustee To Lynear Wealth Dynamic Opportunities  Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Hatton National Bank PlcSenfin Growth Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "SSBTSunsuper Pty. Ltd. As Trustee For Sunsuper Superannuation Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "GF Capital Global Limited",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Employees Trust Fund Board",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Sam Innovators Pvt Ltd",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Union Assurance PLCTraditional Life Participating Fund",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "MCSEN Range Private Limitd",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".  Material events  that occurred subsequent to the interim period",
+      "role": "Director"
+    },
+    {
+      "name": "No events have occurred since the date of the statement of financial position which would require adjustments to or disclosure in the financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Statement of Profit or Loss",
+      "role": "Director"
+    },
+    {
+      "name": "All amounts in United States Dollars",
+      "role": "Director"
+    },
+    {
+      "name": "Year Ended",
+      "role": "Director"
+    },
+    {
+      "name": "March",
+      "role": "Director"
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Audited",
+      "role": null
+    },
+    {
+      "name": "Revenue from contracts with customers",
+      "role": "Director"
+    },
+    {
+      "name": "Cost of sales",
+      "role": "Director"
+    },
+    {
+      "name": "Gross profit",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Other operating income  net",
+      "role": "Director"
+    },
+    {
+      "name": "Distribution expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Administrative expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Net impairment gainloss on financial assets",
+      "role": "Director"
+    },
+    {
+      "name": "Results from operating activities",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Finance income",
+      "role": "Director"
+    },
+    {
+      "name": "Finance costs",
+      "role": "Director"
+    },
+    {
+      "name": "Net finance incomecosts",
+      "role": "Director"
+    },
+    {
+      "name": "Profit before tax",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Income tax",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Attributable to",
+      "role": "Director"
+    },
+    {
+      "name": "Equity holders of the parent",
+      "role": "Director"
+    },
+    {
+      "name": "Noncontrolling interest",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "March",
+      "role": "Director"
+    },
+    {
+      "name": "Quarter Ended",
+      "role": "Director"
+    },
+    {
+      "name": "Quarter Ended",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Statement Of Comprehensive Income",
+      "role": "Director"
+    },
+    {
+      "name": "All amounts in United States Dollars",
+      "role": "Director"
+    },
+    {
+      "name": "Year Ended",
+      "role": "Director"
+    },
+    {
+      "name": "March",
+      "role": "Director"
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Audited",
+      "role": null
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Effect on remeasurement of retirement",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "benefit obligations",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred tax attributable to",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "remeasurement of retirement benefit",
+      "role": "Director"
+    },
+    {
+      "name": "obligations",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Attributable to",
+      "role": "Director"
+    },
+    {
+      "name": "Equity holders of the parent",
+      "role": "Director"
+    },
+    {
+      "name": "Noncontrolling interest",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Quarter Ended",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "Quarter Ended",
+      "role": "Director"
+    },
+    {
+      "name": "March",
+      "role": "Director"
+    },
+    {
+      "name": "Total other comprehensive income for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Statement of Profit or Loss",
+      "role": "Director"
+    },
+    {
+      "name": "All amounts in United States Dollars",
+      "role": "Director"
+    },
+    {
+      "name": "Year Ended",
+      "role": "Director"
+    },
+    {
+      "name": "March",
+      "role": "Director"
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Audited",
+      "role": null
+    },
+    {
+      "name": "Revenue from contracts with customers",
+      "role": "Director"
+    },
+    {
+      "name": "Cost of sales",
+      "role": "Director"
+    },
+    {
+      "name": "Gross profit",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Other income",
+      "role": "Director"
+    },
+    {
+      "name": "Distribution expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Administrative expenses",
+      "role": "Director"
+    },
+    {
+      "name": "Net impairment gainloss on financial assets",
+      "role": "Director"
+    },
+    {
+      "name": "Results from operating activities",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Finance income",
+      "role": "Director"
+    },
+    {
+      "name": "Finance costs",
+      "role": "Director"
+    },
+    {
+      "name": "Net finance incomecosts",
+      "role": "Director"
+    },
+    {
+      "name": "Profit before tax",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Income tax",
+      "role": "Director"
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": ".",
+      "role": null
+    },
+    {
+      "name": "Quarter Ended",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "March",
+      "role": "Director"
+    },
+    {
+      "name": "Quarter Ended",
+      "role": "Director"
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Statement Of Comprehensive Income",
+      "role": "Director"
+    },
+    {
+      "name": "All amounts in United States Dollars",
+      "role": "Director"
+    },
+    {
+      "name": "Year Ended",
+      "role": "Director"
+    },
+    {
+      "name": "March",
+      "role": "Director"
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Variance",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Audited",
+      "role": null
+    },
+    {
+      "name": "Profit for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Other comprehensive income",
+      "role": "Director"
+    },
+    {
+      "name": "Effect on remeasurement of retirement",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "benefit obligations",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred tax attributable to",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "remeasurement of retirement benefit",
+      "role": "Director"
+    },
+    {
+      "name": "obligations",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "March",
+      "role": "Director"
+    },
+    {
+      "name": "Quarter Ended",
+      "role": "Director"
+    },
+    {
+      "name": "Total other comprehensive income for the period",
+      "role": "Director"
+    },
+    {
+      "name": "Total comprehensive income for the period",
+      "role": "Director"
+    },
+    {
+      "name": "June",
+      "role": "Director"
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "Quarter Ended",
+      "role": "Director"
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Statement Of Financial Position",
+      "role": "Director"
+    },
+    {
+      "name": "All amounts in United States Dollars",
+      "role": "Director"
+    },
+    {
+      "name": "As at  March",
+      "role": "Director"
+    },
+    {
+      "name": "As at  March",
+      "role": "Director"
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Audited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Unaudited",
+      "role": null
+    },
+    {
+      "name": "Audited",
+      "role": null
+    },
+    {
+      "name": "ASSETS",
+      "role": null
+    },
+    {
+      "name": "Non  current assets",
+      "role": "Director"
+    },
+    {
+      "name": "Property plant  equipment",
+      "role": "Director"
+    },
+    {
+      "name": "Capital workinprogress",
+      "role": "Director"
+    },
+    {
+      "name": "Intangible assets",
+      "role": "Director"
+    },
+    {
+      "name": "Goodwill",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Investment in Subsidiaries",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Rightofuse assets",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred tax Assets",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Noncurrent receivables",
+      "role": "Director"
+    },
+    {
+      "name": "Current assets",
+      "role": "Director"
+    },
+    {
+      "name": "Inventories",
+      "role": null
+    },
+    {
+      "name": "Trade and other receivables",
+      "role": "Director"
+    },
+    {
+      "name": "Current tax receivables",
+      "role": "Director"
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Other financial assets",
+      "role": "Director"
+    },
+    {
+      "name": "Cash and cash equivalents",
+      "role": "Director"
+    },
+    {
+      "name": "Total assets",
+      "role": "Director"
+    },
+    {
+      "name": "EQUITY AND LIABILITIES",
+      "role": null
+    },
+    {
+      "name": "Capital and reserves",
+      "role": "Director"
+    },
+    {
+      "name": "Stated capital",
+      "role": "Director"
+    },
+    {
+      "name": "Share option scheme",
+      "role": "Director"
+    },
+    {
+      "name": "Retained earnings",
+      "role": "Director"
+    },
+    {
+      "name": "Non  current liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Borrowings",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Nil",
+      "role": null
+    },
+    {
+      "name": "Lease liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Deferred tax liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Retirement benefit obligations",
+      "role": "Director"
+    },
+    {
+      "name": "Current liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Trade and other payables",
+      "role": "Director"
+    },
+    {
+      "name": "Current Tax Liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Lease liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Borrowings",
+      "role": null
+    },
+    {
+      "name": "Total liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "Total equity and liabilities",
+      "role": "Director"
+    },
+    {
+      "name": "I certify that financial statements comply with the requirements of the Companies Act No.  of .",
+      "role": "Director"
+    },
+    {
+      "name": "Sgd.",
+      "role": null
+    },
+    {
+      "name": "Renuja Selvanathan",
+      "role": "Director"
+    },
+    {
+      "name": "Sgd.",
+      "role": null
+    },
+    {
+      "name": "Pubudu De Silva",
+      "role": "Director"
+    },
+    {
+      "name": "The Board of Directors is responsible for the preparation and presentation of these financial statements.",
+      "role": "Director"
+    },
+    {
+      "name": "Sgd.",
+      "role": null
+    },
+    {
+      "name": "Sgd.",
+      "role": null
+    },
+    {
+      "name": "Ashroff Omar",
+      "role": "Director"
+    },
+    {
+      "name": "Hasitha Premaratne",
+      "role": "Director"
+    },
+    {
+      "name": "Jul",
+      "role": null
+    },
+    {
+      "name": "As at  June",
+      "role": "Director"
+    },
+    {
+      "name": "As at  June",
+      "role": "Director"
+    },
+    {
+      "name": "Group",
+      "role": null
+    },
+    {
+      "name": "Company",
+      "role": null
+    },
+    {
+      "name": "PAGE BREAK",
+      "role": null
+    },
+    {
+      "name": "TEEJAY LANKA PLC",
+      "role": null
+    },
+    {
+      "name": "Corporate Information",
+      "role": "Director"
+    },
+    {
+      "name": "Name",
+      "role": null
+    },
+    {
+      "name": "Attorneys",
+      "role": null
+    },
+    {
+      "name": "Teejay Lanka PLC",
+      "role": "Director"
+    },
+    {
+      "name": "F J  G de Saram",
+      "role": "Director"
+    },
+    {
+      "name": "AttorneysatLaw",
+      "role": null
+    },
+    {
+      "name": "Legal Form",
+      "role": "Director"
+    },
+    {
+      "name": "De Saram Place",
+      "role": "Director"
+    },
+    {
+      "name": "A public quoted Company with limited",
+      "role": "Director"
+    },
+    {
+      "name": "Colombo .",
+      "role": "Director"
+    },
+    {
+      "name": "liability incorporated on  July .",
+      "role": "Director"
+    },
+    {
+      "name": "Sri Lanka",
+      "role": "Director"
+    },
+    {
+      "name": "Company Registration No.",
+      "role": "Director"
+    },
+    {
+      "name": "Bankers",
+      "role": null
+    },
+    {
+      "name": "PV  PBPQ",
+      "role": null
+    },
+    {
+      "name": "The Hongkong and Shanghai Banking Corporation Limited",
+      "role": "Director"
+    },
+    {
+      "name": "Standard Chartered Bank",
+      "role": "Director"
+    },
+    {
+      "name": "Stock Exchange Listing",
+      "role": "Director"
+    },
+    {
+      "name": "ICICI Bank Limited",
+      "role": "Director"
+    },
+    {
+      "name": "The issued Ordinary Shares of the",
+      "role": "Director"
+    },
+    {
+      "name": "Deutsche Bank AG",
+      "role": "Director"
+    },
+    {
+      "name": "Company was listed on the Main Board",
+      "role": "Director"
+    },
+    {
+      "name": "Canara Bank",
+      "role": "Director"
+    },
+    {
+      "name": "of the Colombo Stock Exchange of",
+      "role": "Director"
+    },
+    {
+      "name": "Bank of China",
+      "role": "Director"
+    },
+    {
+      "name": "Sri Lanka on  August .",
+      "role": "Director"
+    },
+    {
+      "name": "Commercial Bank of Ceylon PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Peoples Bank",
+      "role": "Director"
+    },
+    {
+      "name": "Registered Office",
+      "role": "Director"
+    },
+    {
+      "name": "Bank of Ceylon",
+      "role": "Director"
+    },
+    {
+      "name": "Block D  D Seethawaka",
+      "role": "Director"
+    },
+    {
+      "name": "Nations Trust Bank PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Export Processing Zone",
+      "role": "Director"
+    },
+    {
+      "name": "National Development Bank PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Avissawella.",
+      "role": null
+    },
+    {
+      "name": "Hatton National Bank",
+      "role": "Director"
+    },
+    {
+      "name": "DFCC Bank PLC",
+      "role": "Director"
+    },
+    {
+      "name": "Directors",
+      "role": "Director"
+    },
+    {
+      "name": "Ajit Damon Gunewardene",
+      "role": "Chairman"
+    },
+    {
+      "name": "Mohamed Ashroff Omar",
+      "role": "Director"
+    },
+    {
+      "name": "Investor Relations",
+      "role": "Director"
+    },
+    {
+      "name": "Hasitha Premaratne",
+      "role": "Director"
+    },
+    {
+      "name": "Pubudu De Silva",
+      "role": "Director"
+    },
+    {
+      "name": "Shrihan Blaise Perera",
+      "role": "Director"
+    },
+    {
+      "name": "Renuja Selvanathan",
+      "role": "Director"
+    },
+    {
+      "name": "William Charles McRaith",
+      "role": "Director"
+    },
+    {
+      "name": "Masaru Okutomi",
+      "role": "Director"
+    },
+    {
+      "name": "Kit Vai Tou",
+      "role": "Director"
+    },
+    {
+      "name": "Secretaries",
+      "role": null
+    },
+    {
+      "name": "Corporate Services Private Limited",
+      "role": "Director"
+    },
+    {
+      "name": "De Saram Place",
+      "role": "Director"
+    },
+    {
+      "name": "Colombo .",
+      "role": "Director"
+    },
+    {
+      "name": "Sri Lanka.",
+      "role": "Director"
+    }
+  ],
+  "audit_status": "Unknown",
   "errata_notice": null,
   "contingent_liabilities": null,
   "events_after_reporting": null,
-  "extraction_confidence": 0.4166666666666667,
-  "document_hash": null
+  "extraction_confidence": 0.85,
+  "document_hash": "placeholder_hash",
+  "extraction_method": "Rule-based",
+  "processing_time": null,
+  "report_filename": "1080_1753961652537.06.2025.pdf"
 }
