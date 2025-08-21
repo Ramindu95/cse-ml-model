@@ -1299,7 +1299,7 @@ class FinancialDataExtractor:
 # Example Usage and Testing
 if __name__ == "__main__":
     # Ensure a dummy database file exists for testing
-    dummy_db_path = "test_extraction_learning.db"
+    dummy_db_path = "extraction_learning.db"
     if Path(dummy_db_path).exists():
         Path(dummy_db_path).unlink() # Delete existing for a clean test
 

@@ -25,7 +25,7 @@ if str(fs_parser_path) not in sys.path:
 
 try:
     # Import FinancialDataExtractor and related data models for feedback
-    from data.fs_data.fs_parser import FinancialDataExtractor, ExtractedFinancialData, ExtractionFeedback
+    from fs_data_extraction.fs_parser import FinancialDataExtractor, ExtractedFinancialData, ExtractionFeedback
     logger.info("✅ Successfully imported fs_parser for feedback functionality.")
 except ImportError as e:
     logger.error(f"❌ Failed to import fs_parser: {e}. Feedback API will not be available.")
