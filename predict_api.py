@@ -1,4 +1,5 @@
 import pandas as pd
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import joblib # For loading scikit-learn models
@@ -9,6 +10,13 @@ import logging
 import json
 from pathlib import Path
 import sys
+
+
+# Load .env file
+load_dotenv()
+
+# Get the minimum historical days, default to 15 if not set
+MIN_HISTORICAL_DAYS = int(os.getenv("MIN_HISTORICAL_DAYS", 15))
 
 # --- Configure Logging ---
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -350,11 +358,12 @@ async def predict_stock_action(request: PredictionRequest):
         )
 
     # Validate minimum data requirements
-    if len(request.recent_stock_data) < 20:
+    if len(request.recent_stock_data) < MIN_HISTORICAL_DAYS:
         raise HTTPException(
             status_code=400,
-            detail="Insufficient historical data. Please provide at least 20 days of stock data for accurate predictions."
+            detail=f"Insufficient historical data. Please provide at least {MIN_HISTORICAL_DAYS} days of stock data for accurate predictions."
         )
+
 
     # Validate data consistency
     validate_data_consistency(request)
